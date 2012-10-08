@@ -815,7 +815,7 @@ small {
 nav {
   width: 230px;
   position: fixed;
-  top: 220px;
+  top: 150px;
   left: 50%;
   margin-left: -580px;
   text-align: right;
