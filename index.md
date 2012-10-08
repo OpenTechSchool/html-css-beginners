@@ -62,3 +62,13 @@ def foo
   puts 'foo'
 end
 {% endhighlight %}
+
+Bit of command line:
+
+{% highlight sh %}
+$ holla holla
+get dolla
+$ 
+{% endhighlight %}
+
+booya!
