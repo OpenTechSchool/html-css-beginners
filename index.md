@@ -8,5 +8,3 @@ OpenTechSchool.
 
 The content is still being worked on. Authors: read the [README](README.html)
 
-<pre>{{site}}</pre>
-
