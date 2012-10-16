@@ -48,8 +48,8 @@ you want to share your source code and contribute to other projects.
 
 # The course
 
-* [Setting up](setup.html)
-* [Your first repository](first-repo.html)
+* [Setting up](core/setup.html)
+* [Your first repository](core/first-repo.html)
 
 more stuff...
 
