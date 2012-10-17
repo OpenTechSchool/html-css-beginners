@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ots
 title: Core Content 
 ---
 

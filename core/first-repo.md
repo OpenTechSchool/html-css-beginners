@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: ots
 title: Your first repository
 ---
 
-# Your first repository
 
 {% highlight sh %}
 $ git init myfirstrepo
 Initialized empty Git repository in /tmp/myfirstrepo/.git/
 {% endhighlight %}
 
-Git creates a directory called `myfirstrepo`, this is where you'll be keeping all
+Git creates a directory called `myfirstrepo`. This is where you'll be keeping all
 your code. Then git creates a subdirectory called `.git` which is where it keeps
 all the settings and history for this repository. It starts with a dot, which means
 that it is a hidden directory, to keep it out of the way of your files.
