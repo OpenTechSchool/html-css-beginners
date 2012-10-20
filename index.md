@@ -57,4 +57,5 @@ you want to share your source code and contribute to other projects.
 * Repository wikis
 * Code snippets with Gist
 * Hosting a website
+* [Delete and restore all your files](extras/delete-restore.html)
 * Add something amazing here
