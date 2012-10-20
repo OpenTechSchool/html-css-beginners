@@ -51,3 +51,6 @@ Since there will be no output following to the command you need to check yoursel
 ## Lessons learned
 
 From this task you should have learned at least two things. First, as long as you take care of the `.git/` folder and commit your changes on a regular basis everything will be fine. Second, `git checkout` is quite useful to restore all content to the working directory which is kept in the repository.
+
+If you want to go a step further go to another exercise: [Delete and restore your local repository](delete-restore-local-repository.html).
+
