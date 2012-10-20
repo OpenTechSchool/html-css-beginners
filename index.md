@@ -50,10 +50,9 @@ you want to share your source code and contribute to other projects.
 
 * [Setting up](core/setup.html)
 * [Your first repository](core/first-repo.html)
+* [Social coding with the Berlin Underground](core/berlin-underground.html)
 
-more stuff...
-
-Extra fun stuff
+# Extra fun stuff
 * GitHub Explore
 * Repository wikis
 * Code snippets with Gist
