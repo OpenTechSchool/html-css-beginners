@@ -4,7 +4,10 @@ title: push-to-heroku
 ---
 # Extra credit
     In this module we'll explore how to host your snazzy website on Heroku.
-    Why Heroku? Simply because heroku works like magic with Git! And for us beginers, not having to pull your hair out to try and deploy your web app is a god send. Oh, and Heroku is free for 'light' users, i.e. for people like you and me.
+    Why Heroku? Simply because heroku works like magic with Git!
+    And for us beginers, not having to pull your hair out to try and deploy
+    your web app is a god send.
+    Oh, and Heroku is free for 'light' users, i.e. for people like you and me.
 
 # The Hosting Conundrun for Beginers
 
@@ -14,11 +17,14 @@ Enter services like Heroku. Hosting providers really try and simplify your life 
 
 # Setup
 
+testing image link:
+![alt_text](extras/images/heroku.gif)
 
 
 
 
---- to be deleted later
+---
+to be deleted later
 # Markup Guide
 
 # First level section
