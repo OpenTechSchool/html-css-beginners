@@ -59,6 +59,7 @@ you want to share your source code and contribute to other projects.
 * Hosting a website
 * [Delete and restore all your files](extras/delete-restore.html)
 * [Delete and restore your local repository](extras/delete-restore-local-repository.html)
+* [Push to heroku FTW!](extras/push-to-heroku.html)
 * Add something amazing here
 
 # Reference material
