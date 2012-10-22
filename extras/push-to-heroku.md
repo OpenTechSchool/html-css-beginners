@@ -5,11 +5,11 @@ title: push-to-heroku
 # Extra credit
     In this module we'll explore how to host your snazzy website on Heroku.
     Why Heroku? Simply because heroku works like magic with Git!
-    And for us beginers, not having to pull your hair out to try and deploy
+    And for us beginners, not having to pull your hair out to try and deploy
     your web app is a god send.
     Oh, and Heroku is free for 'light' users, i.e. for people like you and me.
 
-# The Hosting Conundrun for Beginers
+# The Hosting Conundrun for Beginners
 
 Learning to code is a fun, creative endeavour. At some point, you may want to share your creation with the world... and depending on the technology you used, this can become a real thorn in your side. There's enough to do without having to get pulled into the complexities of deplaying your webapp on a publicly accessible server.
 
@@ -18,7 +18,7 @@ Enter services like Heroku. Hosting providers really try and simplify your life 
 # Setup
 
 testing image link:
-![alt_text](images/heroku.gif)
+![alt_text](images/heroku.GIF)
 
 
 
