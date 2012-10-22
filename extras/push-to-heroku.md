@@ -18,7 +18,7 @@ Enter services like Heroku. Hosting providers really try and simplify your life 
 # Setup
 
 testing image link:
-![alt_text](extras/images/heroku.gif)
+![alt_text](images/heroku.gif)
 
 
 
