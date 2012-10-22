@@ -53,7 +53,7 @@ you want to share your source code and contribute to other projects.
 * [Social coding with the Berlin Underground](core/berlin-underground.html)
 
 # Extra fun stuff
-* GitHub Explore
+* [GitHub Explore](extras/github-explore.html)
 * Repository wikis
 * Code snippets with Gist
 * Hosting a website
