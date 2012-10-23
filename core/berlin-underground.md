@@ -132,8 +132,10 @@ fails to load, or if the person is using a screen reader (yes, there
 are blind programmers!). So maybe try to come up with a long-winded
 in-depth analysis of what is happening in the image. For example: 
 
-> A cat, wearing a suit, is sitting a table with a newspaper in
-> hand. Looking up, the cat states "I should buy GitHub".
+![A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: "I should buy GitHub".](http://i.qkme.me/3rgytr.jpg)
+
+> A cat, wearing a business suit, is sitting a table with a newspaper
+> in hand. Looking up, the cat ponders: "I should buy GitHub".
 
 Sure, it's highly unlikely that anybody will ever read your
 alt-text. But it'll be hilarious.
