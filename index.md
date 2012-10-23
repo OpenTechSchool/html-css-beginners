@@ -60,3 +60,20 @@ you want to share your source code and contribute to other projects.
 * [Delete and restore all your files](extras/delete-restore.html)
 * [Delete and restore your local repository](extras/delete-restore-local-repository.html)
 * [Push to heroku FTW!](extras/push-to-heroku.html)
+* Add something amazing here
+
+# Reference material
+
+* [Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
+  - Definition of common git terms such as _commit_ and _working
+  tree_.
+* The fundamental commands from the [git manual](http://www.kernel.org/pub/software/scm/git/docs/) -
+  [init](http://www.kernel.org/pub/software/scm/git/docs/git-init.html),
+  [commit](http://www.kernel.org/pub/software/scm/git/docs/git-commit.html),
+  [push](http://www.kernel.org/pub/software/scm/git/docs/git-push.html)
+  and
+  [pull](http://www.kernel.org/pub/software/scm/git/docs/git-pull.html).
+* [GitHub Bootcamp](https://help.github.com/categories/54/articles) -
+  A getting started guide for GitHub.
+* [Pro Git](http://git-scm.com/book) - The complete book on Git,
+  available for free online.
