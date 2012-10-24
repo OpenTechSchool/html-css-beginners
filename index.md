@@ -54,7 +54,7 @@ you want to share your source code and contribute to other projects.
 
 # Extra fun stuff
 * [GitHub Explore](extras/github-explore.html)
-* Repository wikis
+* [GitHub Wikis](extras/github-wiki.html)
 * Code snippets with Gist
 * Hosting a website
 * [Delete and restore all your files](extras/delete-restore.html)
