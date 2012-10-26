@@ -53,9 +53,10 @@ you want to share your source code and contribute to other projects.
 * [Social coding with the Berlin Underground](core/berlin-underground.html)
 
 # Extra fun stuff
+
 * [GitHub Explore](extras/github-explore.html)
 * [GitHub Wikis](extras/github-wiki.html)
-* Code snippets with Gist
+* [Code snippets with Gist](extras/github-gist.html)
 * Hosting a website
 * [Delete and restore all your files](extras/delete-restore.html)
 * [Delete and restore your local repository](extras/delete-restore-local-repository.html)
