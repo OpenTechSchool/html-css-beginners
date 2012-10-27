@@ -3,11 +3,8 @@ layout: ots
 title: Your first repository
 ---
 
-
-{% highlight sh %}
-$ git init myfirstrepo
-Initialized empty Git repository in /tmp/myfirstrepo/.git/
-{% endhighlight %}
+	$ git init myfirstrepo
+	Initialized empty Git repository in /tmp/myfirstrepo/.git/
 
 Git creates a directory called `myfirstrepo`. This is where you'll be keeping all
 your code. Then git creates a subdirectory called `.git` which is where it keeps
@@ -19,15 +16,14 @@ files. From now on, your command line will need to be inside `myfirstrepo` so
 that git knows which repository to use. The `status` command in git will let you
 know this current status of your repository:
 
-{% highlight sh %}
-$ cd myfirstrepo
-$ git status
-# On branch master
-#
-# Initial commit
-#
-nothing to commit (create/copy files and use "git add" to track)
-{% endhighlight %}
+	$ cd myfirstrepo
+	$ git status
+	# On branch master
+	#
+	# Initial commit
+	#
+	nothing to commit (create/copy files and use "git add" to track)
+
 
 ## Add a file
 
@@ -52,34 +48,30 @@ Yes, this seems suitable.
 Once you have the file saved then it's time to add it to your repository. In
 git, you add and remove files with the `add` and `rm` commands.
 
-{% highlight sh %}
-$ git status
-# On branch master
-#
-# Initial commit
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	README
-nothing added to commit but untracked files present (use "git add" to track)
-{% endhighlight %}
+	$ git status
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Untracked files:
+	#   (use "git add <file>..." to include in what will be committed)
+	#
+	#	README
+	nothing added to commit but untracked files present (use "git add" to track)
 
 Here git is saying that the README file is not being tracked. Let's add it.
 
-{% highlight sh %}
-$ git add README
-$ git status
-# On branch master
-#
-# Initial commit
-#
-# Changes to be committed:
-#   (use "git rm --cached <file>..." to unstage)
-#
-#	new file:   README
-#
-{% endhighlight %}
+	$ git add README
+	$ git status
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Changes to be committed:
+	#   (use "git rm --cached <file>..." to unstage)
+	#
+	#	new file:   README
+	#
 
 Ok, it's in. Now we can create our first commit. A commit is a snapshot of the
 repository at a particular point in time. Everything that we `add` counts
@@ -87,23 +79,19 @@ towards the next commit.
 
 For now we just want the new README file in our commit. So let's commit it:
 
-{% highlight sh %}
-$ git commit -m "This is my first commit."
-[master (root-commit) 199b7a1] This is my first commit.
- 1 file changed, 7 insertions(+)
- create mode 100644 README
-{% endhighlight %}
+	$ git commit -m "This is my first commit."
+	[master (root-commit) 199b7a1] This is my first commit.
+	1 file changed, 7 insertions(+)
+	create mode 100644 README
 
 And `log` will tell us that the commit is now in the repository:
 
-{% highlight sh %}
-$ git log
-commit 199b7a1457ebd5c1df3cb5fde21a45b769d9c31c
-Author: Steven Farlie <steven.farlie@gmail.com>
-Date:   Mon Oct 15 15:01:26 2012 +0200
+	$ git log
+	commit 199b7a1457ebd5c1df3cb5fde21a45b769d9c31c
+	Author: Steven Farlie <steven.farlie@gmail.com>
+	Date:   Mon Oct 15 15:01:26 2012 +0200
 
-    This is my first commit.
-{% endhighlight %}
+	    This is my first commit.
 
 Git has saved a snapshot of your repository at the moment you committed. If you
 will take a look at `git status` it will tell you that your directory is
@@ -149,14 +137,12 @@ easier than this. If you know at the beginning that you want to share your code
 on GitHub, you can just [create a new repository](https://github.com/new), check
 "Initialize this repository with a README" and `clone` the repository, like so:
 
-{% highlight sh %}
-$ git clone git@github.com:stevenfarlie/myfirstrepo.git
-Cloning into 'myfirstrepo'...
-remote: Counting objects: 3, done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 3 (delta 0), reused 3 (delta 0)
-Receiving objects: 100% (3/3), done.
-{% endhighlight %}
+	$ git clone git@github.com:stevenfarlie/myfirstrepo.git
+	Cloning into 'myfirstrepo'...
+	remote: Counting objects: 3, done.
+	remote: Compressing objects: 100% (2/2), done.
+	remote: Total 3 (delta 0), reused 3 (delta 0)
+	Receiving objects: 100% (3/3), done.
 
 Everything will be set up for you, with an initial README commit and _origin_
 pointing to GitHub. If you use a graphical tool like GitHub for Mac it can be
