@@ -1,6 +1,8 @@
 ---
+
 layout: ots
 title: Your first repository
+
 ---
 
 	$ git init myfirstrepo
@@ -23,7 +25,6 @@ know this current status of your repository:
 	# Initial commit
 	#
 	nothing to commit (create/copy files and use "git add" to track)
-
 
 ## Add a file
 
@@ -108,6 +109,48 @@ workflow. Try adding an attribution to the README (it's John Keats from the poem
 [Endymion](http://www.gutenberg.org/ebooks/24280)), or adding some source files
 of your own to the repository, and committing a few changes here and there.
 
+# Commits are on branches
+
+In the example, you may have noticed the word `master` several
+times. In git, commits are organised into _branches_. The branch
+`master` is the default branch name for a new git repository.
+
+At the moment, your repository is very simple. There is just a single
+commit, and the master branch is a label that points to it. Like so:
+
+        o  <-- master
+
+Now say you have made some more changes. Like before you'll use _add_
+and _commit_ to create a new commit. Git knows you are on the `master`
+branch, so it looks at the commit `master` points to, adds your commit
+to it, and points `master` to your new commit. Now you have two
+commits in your repository, and the `master` branch points to the
+new one.
+
+        o---o <-- master
+
+There isn't anything special about a `branch`. It is just a label that
+we add to the latest commit you made. It's a much easier way than
+typing out the identifier of the commit, which is a crazy-long unique
+hash string.
+
+## Multiple branches
+
+We won't be getting too deep into this today, but branches become very
+useful in day-to-day use by teams, as they allow you to experiment
+with _topic branches_. It's like fan-fiction for developers! You can
+make a branch off the official `master` branch, then if people like
+them you can _merge_ the branch back.
+
+It can get very complicated over time, when a project might have at
+least a dozen active branches at any one time. But git is very good at
+managing lots of branches. Even the git project itself has gotten a
+little crazy at times with the number of branches!
+
+![git project branches](images/git-branches.png)
+
+We cover branching in more detail in the extras section. 
+
 # Pushing to GitHub
 
 Now that we have this fantastic local repository, it's time to change the world
@@ -117,7 +160,8 @@ Fortunately, the process is pretty simple. We'll create a repository on GitHub
 using the exact same name, then copy our repository to GitHub.
 
 * Create a repository called 'myfirstrepo' on the [new repository
-  page](https://github.com/new). Leave all the options as default.
+
+page](https://github.com/new). Leave all the options as default.
 
 Now see the section *Push an existing repository from the command line*. It
 has the two key commands you'll need, tailored for your repository.
