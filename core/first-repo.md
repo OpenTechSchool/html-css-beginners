@@ -4,6 +4,9 @@ layout: ots
 title: Your first repository
 
 ---
+Note:
+
+_All the commands will be typed in the termainal for Linux/MAc users, and on Windows, in the git bash for those who installed the official msysgit from the git website, or the git-shell if you installed the github client._
 
 We'll be doing most of our Git actions with the command line tool. So
 you'll need to open up a terminal (aka a console). You'll also need to
@@ -194,7 +197,7 @@ the one at GitHub.
   [new repository page](https://github.com/new). Leave all the options
   as default.
 
-Now see the section *Push an existing repository from the command line*. It
+Now, on that web page, see the section *Push an existing repository from the command line*. It
 has the two key commands you'll need, tailored for your repository.
 
 * *git remote add* associates your local repository to your GitHub repository,
@@ -202,8 +205,8 @@ has the two key commands you'll need, tailored for your repository.
   remote repository). You could also call it _github_ or _upstream_ or anything
   you like, as it only applies to your local repository.
 * *git push* pushes commits to _origin_ (GitHub) from the branch _master_ (the
-  default branch). The `-u` option tells git that we want _origin_ as the
-  default in future, so we don't have to type it every time.
+  default branch). The `-u` option tells git that we want to push to a branch called _master_ on the remote repository called _origin_ as the
+  default in future, so we don't have to type it every time. Our local and remote _master_ branches are now linked.
 
 # Streamlining the process
 
