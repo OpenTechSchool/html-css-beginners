@@ -10,6 +10,8 @@ title: push-to-heroku
     save yourself all the headaches of app deployment and server maintenance.
     Oh, and Heroku is free for casual users, i.e. if you have very little traffic.
 
+> Note: this module is written assuming you are programming with Ruby. If you want to try and push to Heroku using another language/framework (e.g. Python/Django) we can probably work it out, just grab one of the coaches.
+
 # The Hosting Conundrun
 
 Learning to code is a fun, creative endeavour. At some point, you may want to share your creation with the world... and depending on the technology you used, this can become a real thorn in your side. There's enough to do without having to get pulled into the complexities of deploying, maintaining and scaling your webapp on a public-facing server. The skills required are quite specific and go beyond coding your application.
@@ -140,50 +142,3 @@ Replacing *newname* with the name you want. And, voila, you can now access your 
 If you want to delve further into Heroku, let me tell you that if you run a database powered webapp, Heroku will really shine. It makes deployment and maintenance of your DB a much simpler affair. DB development is a whole other topic, but with Heroku you will be surprised by how quickly you'll be able to run your webapp with a DB in the backend. I encourage you to read Heroku's [doc](https://devcenter.heroku.com/categories/heroku-postgres) on the subject to wet your appetite. And while Heroku is very much a Postgresql centered service, there are a number of other options available, though not always free (unlike the Postrgesql basic plan which is free!)
 
 > If you made it this far, great job! If you are looking for a Hosting provider, I encourage you to shop around. I like Heroku, but there are plenty of solutions out there, and more coming out every 6 months, so find the one that best suits your needs.
-
-
-******
-
-testing image link:
-![alt_text](images/heroku.GIF)
-
-# Markup Guide
-
-# First level section
-## Second level section
-### Third level section
-#### Fourth level section
-
-* List item
-  * Sub item
-  * Sub item 2
-* List it m 2
-
-1. Ordered list item
-2. Ordered list item 2
-3. Ordered list item 3
-  * Sub item 1
-  * Sub item 2
-4. Ordered list item 4
-  1. Ordered sub item 1
-  2. Ordered sub item 2
-5. Ordered list item 5
-
-
-*emphasis text* for emphasis
-
-**strong text** for strong
-
-Getting literal with `backticks`
-
-    Or use an indent of 4 spaces,
-    to get yourself a code block,
-    that looks lovely.
-
-> Do a bit of blockquoting. You can still reflow the text as much as you like.
-Newlines are awesome.
-And made of win.
-
-[links for nerds](http://slashdot.org)
-
-[links for internal stuff](section8.html)
