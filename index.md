@@ -1,12 +1,12 @@
 ---
+
 layout: ots
-title: Hello World
+title: Social Coding with GitHub
+
 ---
 
-This is the course content for Social Coding with GitHub, which is run by
-OpenTechSchool.
-
-The content is still being worked on. Authors: read the [README](README.html)
+This is the course content for Social Coding with GitHub, which has
+been developed and maintained by OpenTechSchool.
 
 # Welcome
 
@@ -14,10 +14,10 @@ Welcome to social coding with GitHub! This course is intended to introduce
 beginners to the social side of programming. We'll be looking at one of the
 most popular sites for social programming: GitHub.
 
-We'll be using Git, a popular tool for storing and sharing source code. It's
-a tool that keeps a copy of your source code, but not just one copy. It keeps
-track of every version of every file. In addition we'll also use GitHub, a
-free website which will host your Git repositories for you.
+We'll be using Git, a popular tool for storing and sharing source
+code. It's a tool that keeps a copy of your source code, but not just
+one copy. It keeps track of every version of every file. In addition
+we'll also use GitHub to host your Git repositories online for you.
 
 ## What we'll do today
 
@@ -26,7 +26,7 @@ to get you up and running with Git and GitHub. We'll create a simple repository
 and show you how to get it on GitHub. The second part are all optional extras.
 There are a few really neat things that you can do with GitHub, so we've
 prepared these extra topics for you to explore and try out if you find them
-interesting.
+interesting. You can do as many or as few of the optional extras as you please.
 
 ## A bit of history
 

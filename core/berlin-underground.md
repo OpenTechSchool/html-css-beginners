@@ -56,8 +56,8 @@ forward your changes, and the changes of others, to the Grand Poobah.
 # Fork this!
 
 There are two methods to contributing on GitHub. The first and most
-direct is for the owner to grant push access to you. This allows you
-to clone their repository directly and push changes without requiring
+direct is for the owner to grant `push` access to you. This allows you
+to `clone` their repository directly and push changes without requiring
 their approval. Very convenient, but also a security nightmare and a
 real hassle to add and remove people from the list.
 
@@ -68,7 +68,7 @@ changes you want, it's _your code_ (well, except for the
 copyright). Your git repository is exactly the same as theirs. The
 only difference in GitHub is that your repository will be shown as
 "forked from" theirs, so people know what the "real" repository is
-(but we all know that yours is much better).
+(but we all know that yours is so much better).
 
 So what you are going to do is _fork_ the repository of _your
 coach_. *DO NOT FORK THE GRAND POOBAH!* You can click the Fork button
@@ -101,7 +101,7 @@ In Markdown this is much simpler:
 The main caveat is that you need to put a blank line between
 paragraphs. Otherwise it will just lump all your text together.
 
-# Commit, Push and Pull Request
+# Commit and Push
 
 After you've made your contributions locally, it's time to get them to
 the coach. We'll do this by pushing to _your_ repository on GitHub,
@@ -114,7 +114,29 @@ Use the same method as before to _add_ and _commit_ to your local
 repository, then _push_ to your repository on GitHub. Now you should
 be able to see your changes on your repositories GitHub page.
 
-Time to create a pull request!
+# Pull request!
+
+Time to create a pull request! Open your browser and navigate to
+_your_ `berlin-underground` repository. There you can see the "Pull
+Request" button up the top. Click it, and GitHub will start the Pull
+Request process:
+
+![Pull request button](images/pull-request.png)
+
+A pull request is a GitHub way of saying "I made some changes and I
+think you should add them to your repository". It allows developers to
+share changes entirely within the website. If the developer on the
+other end accepts your pull request then GitHub will copy your changes
+over to their repository and merge them automatically.
+
+If you see "Oops! master  is already up-to-date.." then it probably
+means that you still need to `push` your changes to GitHub.
+
+Otherwise, make sure your coach is on the left and your repository is
+on the right. Then fill out a friendly comment and click `Send pull
+request`.
+
+Now your coach will shortly receive a pull request notification.
 
 ## Shenanigans
 
@@ -132,13 +154,15 @@ fails to load, or if the person is using a screen reader (yes, there
 are blind programmers!). So maybe try to come up with a long-winded
 in-depth analysis of what is happening in the image. For example: 
 
+	![A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: "I should buy GitHub".](http://i.qkme.me/3rgytr.jpg)
+
+becomes:
+
 ![A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: "I should buy GitHub".](http://i.qkme.me/3rgytr.jpg)
 
-> A cat, wearing a business suit, is sitting a table with a newspaper
-> in hand. Looking up, the cat ponders: "I should buy GitHub".
-
 Sure, it's highly unlikely that anybody will ever read your
-alt-text. But it'll be hilarious.
+alt-text. But one day, maybe, someone will have a chuckle
+at it.
 
 # Upstream changes
 
