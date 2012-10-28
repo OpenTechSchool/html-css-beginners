@@ -200,6 +200,20 @@ If you want to bring the changes into your work, use _merge_:
 $ git merge stevenfarlie/master
 {% endhighlight %}
 
+You might want to have a look at the changes it brought, by typing :
+
+{% highlight sh %}
+$ git log
+{% endhighlight %}
+
+This lists all the commits from the most recent one. 
+_git log_ has lots of options, but you might find it more entertaining
+not learning them and use the ugly but very informative:
+
+{% highlight sh %}
+$ gitk
+{% endhighlight %}
+
 Now bear in mind, your GitHub repository doesn't know about these
 changes yet, so you'll need to push to get it up-to-date:
 
