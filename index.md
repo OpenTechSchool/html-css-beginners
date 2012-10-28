@@ -34,7 +34,7 @@ Git was created in 2005 by Linus Torvalds (who is also the creator of Linux).
 Linus was looking for an easy way to manage source code for Linux, which has
 thousands of developers all over the world. Frustrated with current tools, he
 wrote the first version of Git during a cross-Atlantic flight. It quickly
-became the defacto tool for storing and sharing source code thanks to it's
+became the defacto tool for storing and sharing source code thanks to its
 quick speed and versatility.
 
 In 2008 GitHub launched. It allowed developers to share their Git repositories
