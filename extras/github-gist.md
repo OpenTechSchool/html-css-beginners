@@ -28,7 +28,7 @@ into gists of their own.
 
 Using Markdown in your gist will end up with it being rendered into
 HTML when viewed on the GitHub website. So if you have some important
-piece of text
+piece of text feel free to add some format to it.
 
 ## Gist is just git!
 
@@ -41,6 +41,6 @@ gist repository into a full GitHub repository.
 There are a few third-party services that have started around gists:
 
 * [bl.ocks.org](http://bl.ocks.org/) - Can turn gists into full
-webpages. For example: [Epicyclic Gearing](http://bl.ocks.org/1353700).
+webpages. For example: [Epicyclic Gearing](http://bl.ocks.org/1353700) or [Molecule](http://bl.ocks.org/3037015).
 * [gist.io](http://gist.io/) - Can turn a gist into a blog post. ([example](http://gist.io/3135754))
 * [gistflow](http://gistflow.com) - Is like a social network of gists.
