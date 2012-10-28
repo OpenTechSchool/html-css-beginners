@@ -1,3 +1,8 @@
+/* 1024px container width? That's pretty wide! */
+body .container {
+    max-width: 800px;
+}
+
 /* OTS h1 has less emphasis than h2 */
 h1 {
     font-size: 2em;
