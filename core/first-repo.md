@@ -197,8 +197,14 @@ the one at GitHub.
   [new repository page](https://github.com/new). Leave all the options
   as default.
 
+![Create repo button on GitHub](images/first-repo-1.png)
+
+![Create repo page on GitHub](images/first-repo-2.png)
+
 Now, on that web page, see the section *Push an existing repository from the command line*. It
 has the two key commands you'll need, tailored for your repository.
+
+![Push an existing repository from the command line](images/first-repo-3.png)
 
 * *git remote add* associates your local repository to your GitHub repository,
   which will be called _origin_ (which is a git convention for the default
