@@ -1,16 +1,20 @@
 ---
-layout: ots
-title: push-to-heroku 
----
-# Extra Credit
-    In this module we'll explore how to host your snazzy webapp on Heroku.
-    What's Heroku? It's a hosting provider that, amongts many things, tries to simplify
-    your life with regards to deploying and hosting your application.
-    Why Heroku? Simply because Heroku works like magic with Git! This means that you can
-    save yourself all the headaches of app deployment and server maintenance.
-    Oh, and Heroku is free for casual users, i.e. if you have very little traffic.
 
-> Note: this module is written assuming you are programming with Ruby. If you want to try and push to Heroku using another language/framework (e.g. Python/Django) we can probably work it out, just grab one of the coaches.
+layout: ots
+title: Pushing to Heroku
+
+---
+
+> This extra is lovingly provided by our coach [funkybrain](https://github.com/funkybrain).
+
+In this module we'll explore how to host your snazzy webapp on Heroku.
+What's Heroku? It's a hosting provider that, amongst many things, tries to simplify
+your life with regards to deploying and hosting your application.
+Why Heroku? Simply because Heroku works like magic with Git! This means that you can
+save yourself all the headaches of app deployment and server maintenance.
+Oh, and Heroku is free for casual users, i.e. if you have very little traffic.
+
+Note: this module is written assuming you are programming with Ruby. If you want to try and push to Heroku using another language/framework (e.g. Python/Django) we can probably work it out, just grab one of the coaches.
 
 # The Hosting Conundrun
 
@@ -98,7 +102,7 @@ For completeness sake, you should also add a 'Procfile.txt' in your root folder 
 web: bundle exec rackup config.ru -p $PORT
 {% endhighlight %}
 
-replacing $PORT with the port the app server listens to. But in a strict Sinatra application you can ommit all of this, it gets it by default.
+replacing $PORT with the port the app server listens to. But in a strict Sinatra application you can omit all of this, it gets it by default.
 
 ### Create a Heroku App and Link it to Your Webapp
 This is our final preparation step. A Heroku app is basically a Git remote repository coupled with a URL where your application will be visible to the world.
@@ -125,7 +129,7 @@ $ heroku open
 {% endhighlight %}
 Which will open your default browser and point to 'http://blazing-comet-99814.herokuapp.com'
 
-And that's it! From now on, every time you want to push an update to your hosting server, just '$ git push heroku master'.
+And that's it! From now on, every time you want to push an update to your hosting server, just `$ git push heroku master`.
 
 ## Renaming your webapp's URL
 Clearly 'http://blazing-comet-99814.herokuapp.com' is not the most user friendly URL. Not surprisingly, Heroku allows you to rename the URL's prefix. (you can also use [custom domain](https://devcenter.heroku.com/articles/custom-domains) names if you get very serious about your app).
@@ -141,4 +145,4 @@ Replacing *newname* with the name you want. And, voila, you can now access your 
 # But Where the Real Magic Happens is...
 If you want to delve further into Heroku, let me tell you that if you run a database powered webapp, Heroku will really shine. It makes deployment and maintenance of your DB a much simpler affair. DB development is a whole other topic, but with Heroku you will be surprised by how quickly you'll be able to run your webapp with a DB in the backend. I encourage you to read Heroku's [doc](https://devcenter.heroku.com/categories/heroku-postgres) on the subject to wet your appetite. And while Heroku is very much a Postgresql centered service, there are a number of other options available, though not always free (unlike the Postrgesql basic plan which is free!)
 
-> If you made it this far, great job! If you are looking for a Hosting provider, I encourage you to shop around. I like Heroku, but there are plenty of solutions out there, and more coming out every 6 months, so find the one that best suits your needs.
+If you made it this far, great job! If you are looking for a Hosting provider, I encourage you to shop around. I like Heroku, but there are plenty of solutions out there, and more coming out every 6 months, so find the one that best suits your needs.

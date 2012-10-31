@@ -48,20 +48,19 @@ you want to share your source code and contribute to other projects.
 
 # The course
 
-* [Setting up](core/setup.html)
-* [Your first repository](core/first-repo.html)
-* [Social coding with the Berlin Underground](core/berlin-underground.html)
+* [Setting up](core/setup.html) - Installation instructions for Windows, OSX and Linux.
+* [Your first repository](core/first-repo.html) - Create a git repository on your laptop and share it on GitHub.
+* [Social coding with the Berlin Underground](core/berlin-underground.html) - Contributing to the New (Social) World Order.
 
 # Extra fun stuff
 
 * [GitHub Explore](extras/github-explore.html)
 * [GitHub Wikis](extras/github-wiki.html)
-* [Code snippets with Gist](extras/github-gist.html)
+* [Code snippets with Gist](extras/github-gist.html) 
 * [Hosting a website](extras/github-pages.html)
 * [Delete and restore all your files](extras/delete-restore.html)
 * [Delete and restore your local repository](extras/delete-restore-local-repository.html)
 * [Push to heroku FTW!](extras/push-to-heroku.html)
-* Add something amazing here
 
 # Reference material
 
