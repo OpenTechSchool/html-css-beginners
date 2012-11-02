@@ -38,6 +38,11 @@ you make:
 	$ git config user.name "Your Name"
 	$ git config user.email "youremailaddress@example.com"
 
+These configuration parameters will only apply to the current repository. 
+There is also the option to configure the user name and email address for 
+all repositories of the user currently logged on. I am sure you can find 
+out how it works yourself. If not don't hesitate to ask one of the coaches.
+
 Things get a little prettier if you turn on colors:
 
 	$ git config color.ui auto

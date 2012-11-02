@@ -30,7 +30,7 @@ our repository. Our planning efforts depend heavily on having enough
 food, caffeine and alcohol. Without places to hang out the
 organisation will wither away, as students, coaches and even the Grand
 Poobah himself spend more and more of their time at home, browsing cat
-pictures on the internet.
+pictures on the Internet.
 
 Your mission is to add to our database of Berlin bars, restaurants and
 cafes. The goal is to get your changes into the master repository
@@ -65,7 +65,7 @@ What sets GitHub apart is their second method of contribution:
 forking. When you _fork_ someone's repository, you get a complete copy
 of their repository under your name. Then you are free to make any
 changes you want, it's _your code_ (well, except for the
-copyright). Your git repository is exactly the same as theirs. The
+copyright). Your Git repository is exactly the same as theirs. The
 only difference in GitHub is that your repository will be shown as
 "forked from" theirs, so people know what the "real" repository is
 (but we all know that yours is so much better).
@@ -104,14 +104,14 @@ paragraphs. Otherwise it will just lump all your text together.
 # Commit and Push
 
 After you've made your contributions locally, it's time to get them to
-the coach. We'll do this by pushing to _your_ repository on GitHub,
-then submit a _pull request_ to your coach, kindly asking them to
+the coach. We'll do this by (1) pushing to _your_ repository on GitHub,
+then (2) submit a _pull request_ to your coach, (3) kindly asking them to
 accept your changes into _their_ GitHub repository. Your coach will
 eventually do the same thing, submitting a _pull request_ to his
 splendiferousness, the Grand Poobah.
 
-Use the same method as before to _add_ and _commit_ to your local
-repository, then _push_ to your repository on GitHub. Now you should
+Use the same method as before to `add` and `commit` to your local
+repository, then `push` to your repository on GitHub. Now you should
 be able to see your changes on your repositories GitHub page.
 
 # Pull request!
@@ -130,7 +130,7 @@ other end accepts your pull request then GitHub will copy your changes
 over to their repository and merge them automatically.
 
 If you see "Oops! master  is already up-to-date.." then it probably
-means that you still need to `push` your changes to GitHub.
+means that you still need to `push` your local changes to GitHub.
 
 Otherwise, make sure your coach is on the left and your repository is
 on the right. Then fill out a friendly comment and click `Send pull
@@ -169,7 +169,7 @@ at it.
 Congratulations on making it this far! You're almost there!
 
 There is one more thing left to do: keeping up to date with
-upstream. In git _upstream_ refers to some remote repository that you
+upstream. In Git _upstream_ refers to some remote repository that you
 consider higher or more authoritative than yours. At the moment your
 local repository has one upstream repository, your GitHub
 repository. When you type `git pull`, that's where it pulls from.
@@ -186,7 +186,7 @@ $ git remote add stevenfarlie https://github.com/stevenfarlie/berlin-underground
 {% endhighlight %}
 
 This adds an upstream repository called `stevenfarlie`. Now we can
-_fetch_ directly from the Grand Poobah. This will download the
+`fetch` directly from the Grand Poobah. This will download the
 `stevenfarlie/berlin-underground` repository and store it under
 `stevenfarlie/`, so it won't interfere with your changes:
 
@@ -194,7 +194,7 @@ _fetch_ directly from the Grand Poobah. This will download the
 $ git fetch stevenfarlie
 {% endhighlight %}
 
-If you want to bring the changes into your work, use _merge_:
+If you want to bring the changes into your work, use `merge`:
 
 {% highlight sh %}
 $ git merge stevenfarlie/master
@@ -207,7 +207,7 @@ $ git log
 {% endhighlight %}
 
 This lists all the commits from the most recent one. 
-_git log_ has lots of options, but you might find it more entertaining
+`git log` has lots of options, but you might find it more entertaining
 not learning them and use the ugly but very informative:
 
 {% highlight sh %}
@@ -215,7 +215,7 @@ $ gitk
 {% endhighlight %}
 
 Now bear in mind, your GitHub repository doesn't know about these
-changes yet, so you'll need to push to get it up-to-date:
+changes yet, so you'll need to `push` to get it up-to-date:
 
 {% highlight sh %}
 $ git push

@@ -16,7 +16,7 @@ most popular sites for social programming: GitHub.
 
 We'll be using Git, a popular tool for storing and sharing source
 code. It's a tool that keeps a copy of your source code, but not just
-one copy. It keeps track of every version of every file. In addition
+one copy. It keeps track of every version of every file in a repository. In addition
 we'll also use GitHub to host your Git repositories online for you.
 
 ## What we'll do today
