@@ -6,7 +6,7 @@ title: Your first repository
 ---
 Note:
 
-_All the commands will be typed in the termainal for Linux/MAc users, and on Windows, in the git bash for those who installed the official msysgit from the git website, or the git-shell if you installed the github client._
+_All the commands will be typed in the terminal for Linux/Mac users. On Windows, use the git bash for those who installed the official msysgit from the git website, or the git-shell if you installed the github client._
 
 We'll be doing most of our Git actions with the command line tool. So
 you'll need to open up a terminal (aka a console). You'll also need to
