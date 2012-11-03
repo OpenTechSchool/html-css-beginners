@@ -19,7 +19,7 @@ useful, allowing you to paste and share code with others. GitHub has a
 similar system, called [GitHub Gist](https://gist.github.com/).
 
 Basic usages is simple. Just paste your code and select one of the
-billion or so languages from the Language list. Your code will show up
+billion or so languages from the _Language_ list. Your code will show up
 formatted and you can share the URL with anybody and
 everybody. GitHubbers can add their own comments, or fork your gist
 into gists of their own.
@@ -30,10 +30,10 @@ Using Markdown in your gist will end up with it being rendered into
 HTML when viewed on the GitHub website. So if you have some important
 piece of text feel free to add some format to it.
 
-## Gist is just git!
+## Gist is just Git!
 
-A gist is a git repository. So it can be cloned, pulled and pushed
-just like any other git repository. You can use this to "upgrade" your
+A gist is a Git repository. So it can be cloned, pulled and pushed
+just like any other Git repository. You can use this to "upgrade" your
 gist repository into a full GitHub repository.
 
 ## More gist magic
