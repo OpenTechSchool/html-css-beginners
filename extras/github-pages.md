@@ -15,7 +15,7 @@ under your own GitHub domain. For example,
 [OpenTechSchool](https://github.com/OpenTechSchool) has the repository
 [social-coding](https://github.com/OpenTechSchool/social-coding),
 which is automatically published to
-[this site](http://opentechschool.github.com/social-coding/). GitHub
+[http://opentechschool.github.com/social-coding/](http://opentechschool.github.com/social-coding/). GitHub
 handling the publishing and serving of the site. All we have to do is
 push to our repository on the `gh-pages` branch and GitHub will take
 care of the rest.
@@ -73,7 +73,8 @@ default branch in git, then GitHub will not care. It only looks to see
 if you have a `gh-pages` branch (if it watched `master` it would try
 to publish almost every GitHub repo).
 
-Start by creating a repo on GitHub and cloning it locally:
+Start by creating a repository on GitHub and cloning it locally. Be sure
+to use your own URL to execute the `clone` command on.
 
 	$ git clone git@github.com:stevenfarlie/blank.git
 	Cloning into 'blank'...
@@ -93,7 +94,7 @@ have a branch or an initial commit. Let's start by creating a
 
 You can download a zip file with minimal website
 [here](https://github.com/stevenfarlie/blank/zipball/gh-pages). Unzip
-the files into your repository, then _add_ and _commit_ them.
+the files into your repository, then `add` and `commit` them.
 
 	$ git add index.html site.css site.js
 	$ git commit -m "Basic GitHub Pages site"
@@ -103,7 +104,7 @@ the files into your repository, then _add_ and _commit_ them.
 	 create mode 100644 site.css
 	 create mode 100644 site.js
 
-Now we can push to GitHub, but remember that we are pushing to
+Now we can `push` to GitHub, but remember that we are pushing to
 `gh-pages`, which doesn't exist yet on our GitHub repository
 
 	$ git push origin gh-pages
@@ -130,4 +131,4 @@ You'll need a Ruby setup to get the most out of it, and at least the
 `jekyll` gem installed. Maciakl has provided a simple Jekyll template
 [here](https://github.com/maciakl/Sample-Jekyll-Site) which you can
 use to get started. But be careful to switch to the `gh-pages` branch,
-because their repo is using `master`.
+because their repository is using `master`.
