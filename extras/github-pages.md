@@ -74,7 +74,7 @@ if you have a `gh-pages` branch (if it watched `master` it would try
 to publish almost every GitHub repo).
 
 Start by creating a repository on GitHub and cloning it locally. Be sure
-to use your own URL to execute the `clone` command on.
+to use your **own** URL to execute the `clone` command on.
 
 	$ git clone git@github.com:stevenfarlie/blank.git
 	Cloning into 'blank'...
