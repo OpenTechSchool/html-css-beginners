@@ -18,7 +18,7 @@ If you have untracked or modified files you should definitely take care of those
 
 ## Delete all content in your working directory
 
-There are several ways to delete files and folders. You could open a file explorer, select the files and folders and simply delete them. Another option is to use the command line. Since you already working in this environment you should also learn how to delete files and folders. Please mind: You will delete all files and folders **except** one `.git/` folder. That is important! The following command will also leave out other hidden files. Be sure to navigate into the correct directory before running the remove command.
+There are several ways to delete files and folders. You could open a file explorer, select the files and folders and simply delete them. Another option is to use the command line. Since you already working in this environment you should also learn how to delete files and folders. Please mind: You will delete all files and folders **except** one `.git/` folder. That is important! The following command will also omit other hidden files. Be sure to navigate into the correct directory before running the remove command.
 
 {% highlight sh %}
 $ cd ~/myfirstrepo
@@ -37,10 +37,12 @@ $ ls -1a
 
 As you can see all that is left are the `.git/` folder and the `.gitignore` file. Congratulations! You successfully deleted all the work you have put into this project. :-)
 
+![A frightened cat](../images/frightened_cat.png)
+
 
 ## Restoring the content of your project
 
-So how can you get back all the files and folders which you created in hours of work? It is very easy and fast forward. One command will recover them. Please mind the dot following after `git checkout` which points to the current directory.
+So how can you get back all the files and folders which you created in hours of work? It is very easy and fast forward. One command will recover them. Please mind the `.` following after `git checkout` which points to the current directory.
 
 {% highlight sh %}
 $ git checkout .
