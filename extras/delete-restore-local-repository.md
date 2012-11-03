@@ -5,7 +5,7 @@ title: Delete and restore your local repository
 
 ## Preparation
 
-This exercise is similar to the [delete-restore scenario](delete-restore.html) but not quite the same. This time you will give evidence that you trust GitHub. You will be deleting not only all content in your local working directory but also the repository itself. Therefore, it is important that you check for two things. First, you should have committed all work to your local repository. `git status` will tell you about untracked or uncommitted changes. Second, you should have pushed all commits to the remote repository (GitHub in this case).
+This exercise is similar to the [delete-restore scenario](delete-restore.html) but not quite the same. This time you will give evidence that you trust GitHub. You will be deleting not only all content in your local working directory but also the repository itself. Therefore, it is important that you check for two things. First, you should have committed all work to your local repository. `git status` will tell you about untracked files or uncommitted changes. Second, you should have pushed all commits to the remote repository (GitHub in this case).
 
 ### Check the status of the local and the remote repository
 
@@ -31,20 +31,22 @@ Date:   Sat Oct 20 14:50:27 2012 +0200
     Added chapter on Berlin.
 {% endhighlight %}
 
-If the commits deviate from each other as in the above examples you should definitely push your local commits to the remote repository before continuing.
+If the commits deviate from each other as in the above examples you should definitely `push` your local commits to the remote repository before continuing.
 
 ## Delete all content and the repository
 
-When you are save that everything is synchronized and no files are left untracked or have changes you should hazard to delete the repository. We will simply remove the entire folder which contains the `.git/` folder and everything else.
+When you verfied that everything is synchronized and no files are left untracked or have changes you should hazard to delete the repository. We will simply remove the entire folder which contains the `.git/` folder and everything else.
 
 {% highlight sh %}
 $ cd ~
 $ rm -rf myfirstrepo
 {% endhighlight %}
 
+![Relaxed looking cat stating: When I panic I make this face](../images/panic_cat.jpg)
+
 ## Restore the repository
 
-I imagine you are a bit nervous after having deleted all work. Don't worry, there is an easy way to restore everything what you done before. In order to do so you need find out about the address of the remote repository. GitHub shows the address right at the top of the repository listing. You can choose between `HTTP`, `SSH` and `Git Read-only`. The favored transfer method is `SSH`. Copy the address and then run the following command in your home directory.
+I imagine you are a bit nervous after having deleted all work. Don't worry, there is an easy way to restore everything what you've done before. In order to do so you need to find out about the address of the remote repository. GitHub shows the address right at the top of the repository listing. You can choose between `HTTP`, `SSH` and `Git Read-only`. The favored transfer method is `SSH`. Copy the address and then run the following command in your home directory.
 
 {% highlight sh %}
 $ cd
