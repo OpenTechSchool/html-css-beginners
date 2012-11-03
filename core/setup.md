@@ -35,8 +35,8 @@ and associate it with GitHub. Run `ssh-keygen -t rsa` to generate a key. Then co
 You should set your name and email address as well. These will be added to any commits
 you make:
 
-	$ git config user.name "Your Name"
-	$ git config user.email "youremailaddress@example.com"
+	$ git config --global user.name "Your Name"
+	$ git config --global user.email "youremailaddress@example.com"
 
 These configuration parameters will only apply to the current repository. 
 There is also the option to configure the user name and email address for 
@@ -45,4 +45,4 @@ out how it works yourself. If not don't hesitate to ask one of the coaches.
 
 Things get a little prettier if you turn on colors:
 
-	$ git config color.ui auto
+	$ git config --global color.ui auto
