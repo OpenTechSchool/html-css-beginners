@@ -3,47 +3,60 @@ body .container {
     max-width: 800px;
 }
 
+.site_header {
+    padding: 0;
+}
+
+em {
+    font-style: italic;
+}
+
 /* OTS h1 has less emphasis than h2 */
-h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid #eeeeee;
-    text-align: left;
-}
+/* h1 { */
+/*     font-size: 2em; */
+/*     margin-bottom: 1em; */
+/*     border-bottom: 1px solid #eeeeee; */
+/*     text-align: left; */
+/* } */
 
-h2 {
-    text-align: left;
-}
+/* h2 { */
+/*     text-align: left; */
+/* } */
 
-/* OTS doesn't have a suitable <pre> */
+/* /\* OTS doesn't have a suitable <pre> *\/ */
+/* pre { */
+/*   margin-bottom: 1.5em; /\* same as <p> *\/ */
+/*   padding: 8px 15px; */
+/*   background: #e9e9e9; */
+/*   -moz-border-radius: 3px; */
+/*   -webkit-border-radius: 3px; */
+/*   -o-border-radius: 3px; */
+/*   -ms-border-radius: 3px; */
+/*   -khtml-border-radius: 3px; */
+/*   border-radius: 3px; */
+/*   border: 1px solid #c7c7c7; */
+/*   overflow: auto; */
+/*   overflow-y: hidden; */
+/* } */
+
+/* /\* A little extra style for the quotes *\/ */
+/* blockquote { */
+/*     padding: 0 2em 0 2em; */
+/*     border-left: 1px solid #c7c7c7; */
+/* } */
+
+/* /\* Within lists we don't need so much margin *\/ */
+/* li p, li ol, li ul { */
+/*     margin-bottom: 0.5em; */
+/* } */
+
+/* /\* Highlight inline code *\/ */
 pre {
-  margin-bottom: 1.5em; /* same as <p> */
-  padding: 8px 15px;
-  background: #e9e9e9;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #c7c7c7;
-  overflow: auto;
-  overflow-y: hidden;
+    background-color: #e5e5e5;
+    color: #000;
+    overflow: auto;
 }
 
-/* A little extra style for the quotes */
-blockquote {
-    padding: 0 2em 0 2em;
-    border-left: 1px solid #c7c7c7;
-}
-
-/* Within lists we don't need so much margin */
-li p, li ol, li ul {
-    margin-bottom: 0.5em;
-}
-
-/* Highlight inline code */
-p code, li code {
-    background: #e9e9e9;
-    padding: 0 0.2em;
+code {
+    padding: 0;
 }
