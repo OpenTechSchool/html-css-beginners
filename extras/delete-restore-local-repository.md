@@ -14,7 +14,7 @@ A good way to check the status both of the local and the remote repository is to
 {% highlight sh %}
 $ git log -1
 commit ca79e1c5fc081552a96a176275730b5f8cfd3363
-Author: Tobias Preuss <tobias.preuss@opentechschool.org>
+Author: Tobias Preuss <tobias@opentechschool.org>
 Date:   Sat Oct 20 15:06:07 2012 +0200
 
     Added delete-restore scenario.
