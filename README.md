@@ -111,19 +111,15 @@ This is a horizonal rule:
 
 If you want to highlight some ruby code:
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+    def foo
+        puts 'foo'
+    end
 
 Bit of command line:
 
-{% highlight sh %}
-$ holla holla
-get dolla
-$ 
-{% endhighlight %}
+    $ holla holla
+    get dolla
+    $ 
 
-For a more complete list of languages see [Pygments languages](http://pygments.org/docs/lexers/)
+For a more complete list of languages see [highlight.js](http://softwaremaniacs.org/media/soft/highlight/test.html)
 

@@ -1,94 +1,58 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>OpenTechSchool – {{ page.title }}</title>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-  <meta name="description" content="OpenTechSchool is a community initiative to provide programming and other tech-related workshops to women and their friends. We take care of the organizational side of things (venues, press, finding participants) and let our volunteer coaches to create the curriculum according to their vision. Our main goal is to create a friendly and safe learning environment where no one feels shy about asking any question. Everyone, no matter what their gender, skill level or experience, is invited to participate, whether as a coach or a learner">
-  <meta name="author" content="OpenTechSchool">
-  <meta property="og:title" content="OpenTechSchool" />
-  <meta property="og:type" content="school" />
-  <meta property="og:url" content="http://www.opentechschool.org" />
-  <meta property="og:image" content="http://www.opentechschool.org/images/ots_logo_fb.jpg" />
-  <meta property="og:site_name" content="opentechschool.org" />
-  <meta property="og:description" content="OpenTechSchool is a community initiative to provide programming and other tech-related workshops to women and their friends. We take care of the organizational side of things (venues, press, finding participants) and let our volunteer coaches to create the curriculum according to their vision. Our main goal is to create a friendly and safe learning environment where no one feels shy about asking any question. Everyone, no matter what their gender, skill level or experience, is invited to participate, whether as a coach or a learner." />
-  <meta property="fb:admins" content="825782113" />
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/zenburn.min.css">
 
   <link rel="icon" href="/favicon.ico" type="image/png">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+     <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
 
-  <!-- CSS concatenated and minified via ant build script-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="http://www.opentechschool.org/css/ie.css" type="text/css" media="screen" /><![endif]-->
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
 
-  <style>
-    article, aside, dialog, figure, footer, header,
-    hgroup, menu, nav, section { display: block; }
-  </style>
-  <link rel="stylesheet" href="http://www.opentechschool.org/stylesheets/screen.css" media="screen"/>
-  <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/custom.css" media="screen"/>
-  <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <!-- end CSS-->
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+      }
+      
+      .title { text-align: center; }
 
+      pre {
+        border-color: #fff;
+        background-color: #fff;
+      }
+
+      code {
+        font-size: 16px;
+      }
+     </style>
 </head>
 
 <body>
+    <div class="container-narrow">
 
-<header class="site_header">
-  <div class="container">
+      <h1 class="title">{{ page.title }}</h1>
+      {{ content }}
 
-    <h1 class="workshop_title">
-      {{ page.title }}
-    </h1>
-
-  </div>
-</header>
-
-<section class="bg_full">
-
-  <div class="container">
-  {{ content }}
-  </div>
-</section>
-
-  <footer>
-    <div class="container">
-
-      <p>
-        © 2011-2012 by <a href="http://www.opentechschool.org">OpenTechSchool</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
-      </p>
+      <div>© 2011-2012 by <a href="http://www.opentechschool.org">OpenTechSchool</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a></div>
 
     </div>
-  </footer>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="http://www.opentechschool.org/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33344154-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{{site.baseurl}}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
