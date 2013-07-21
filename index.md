@@ -50,23 +50,22 @@ you want to share your source code and contribute to other projects.
 
 * [Setting up](core/setup.html) - Installation instructions for Windows, OSX and Linux.
 * [Your first repository](core/first-repo.html) - Create a git repository on your laptop and share it on GitHub.
-* [Social coding with the Berlin Underground](core/berlin-underground.html) - Contributing to the New (Social) World Order.
+* [Social coding with the Underground](core/underground.html) - Contributing to the New (Social) World Order.
 
 # Extra fun stuff
 
-* [GitHub Explore](extras/github-explore.html)
-* [GitHub Wikis](extras/github-wiki.html)
-* [Code snippets with Gist](extras/github-gist.html) 
-* [Hosting a website](extras/github-pages.html)
+* [GitHub Explore](extras/exploring.html)
+* [GitHub Wikis](extras/wikis.html)
+* [Code snippets with Gist](extras/gists.html)
+* [Hosting a website](extras/pages.html)
 * [Delete and restore all your files](extras/delete-restore.html)
 * [Delete and restore your local repository](extras/delete-restore-local-repository.html)
-* [Push to heroku FTW!](extras/push-to-heroku.html)
+* [Pushing to... Heroku!](extras/heroku.html)
 
 # Reference material
 
 * [Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
-  - Definition of common git terms such as _commit_ and _working
-  tree_.
+  - Definitions of common git terms such as *commit* and *working tree*.
 * The fundamental commands from the [git manual](http://www.kernel.org/pub/software/scm/git/docs/) -
   [init](http://www.kernel.org/pub/software/scm/git/docs/git-init.html),
   [commit](http://www.kernel.org/pub/software/scm/git/docs/git-commit.html),

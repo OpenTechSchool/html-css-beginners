@@ -1,2 +1,35 @@
 permalinks: title
 baseurl: /social-coding
+map:
+ - title: Home
+   path: /
+   caption: Social coding with Github
+ - title: Core
+   caption: The 'mandatory' workshop content
+   subpages:
+     - title: Setting up Git & Github
+       path: /core/setup.html
+       caption: What you need to configure, signup to and install!
+     - title: Your first repository!
+       path: /core/first-repo.html
+       caption: Dip your toes into the slightly revisionist world of git
+     - title: Social coding in the underground
+       path: /core/underground.html
+       caption: Learn to plot with others :>
+ - title: Extras
+   caption: Additional workshop content
+   subpages:
+   - title: Exploring Github
+     path: /extras/exploring.html
+   - title: Project wikis
+     path: /extras/wikis.html
+   - title: Sharing code quickly with gists
+     path: /extras/gists.html
+   - title: Hosting websites with Github!
+     path: /extras/pages.html
+   - title: Losing and finding your files
+     path: /extras/delete-restore.html
+   - title: Delete and restore your entire repo!
+     path: /extras/delete-restore-repo.html
+   - title: Pushing to Heroku like a Hero
+     path: /extras/heroku.html
