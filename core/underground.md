@@ -1,43 +1,43 @@
 ---
 
 layout: ots
-title: Social Coding with the Berlin Underground
+title: Social Coding in the Underground
 
 ---
 
-Welcome to the Berlin Underground! We are a secret organisation
-planning world domination. This involves a lot of planning, which
-means we need to know all the best cafes, bars and restaurants in
-Berlin. After all, nobody wants to take over the world on an empty
-stomach.
+Welcome to the Underground! We are a secret organisation 
+planning world domination. This involves a lot of planning, which 
+means we need to know all the best cafes, bars and restaurants 
+around the globe. After all, nobody wants to take over the world 
+on an empty stomach.
 
-The Berlin Underground is organised like this:
+The Underground is organised like this:
 
-* The Grand Poobah: Steven Farlie. Supreme Leader of the Berlin
-  Underground, devourer of falafel. The Grand Poobah only talks to his
-  trusted Coaches.
+* The Grand Oligarchy: The OTS organisers. Supreme Leaders of the 
+  Underground. The Grand Oligarchs have full control of the 
+  organisational effort.
 * The Coaches. Learned they are in the ways of Social Coding. They
   encourage the efforts of the students, and can communicate directly
-  with the Grand Poobah.
-* The Students. New initiates to the Underground. Yet to fully behold
-  the wonders of social coding.
+  with the Oligarchy.
+* The Students. New initiates to the Underground. Yet to fully immerse 
+  themselves in the wonders of social coding, beholden to their coaches.
 
 # Crisis!
 
-The Berlin Underground is in crisis! The most honourable Grand Poobah
-has declared that we do not have enough cafes, bars or restaurants in
-our repository. Our planning efforts depend heavily on having enough
-food, caffeine and alcohol. Without places to hang out the
-organisation will wither away, as students, coaches and even the Grand
-Poobah himself spend more and more of their time at home, browsing cat
-pictures on the Internet.
+The Underground is in crisis! The most honourable Grand Oligarchs 
+have declared that we do not have enough cafes, bars or restaurants in 
+our repository. Our planning efforts depend heavily on having enough 
+food, caffeine and alcohol. Without places to hang out the 
+organisation will wither away, as students, coaches and even the 
+Oligarchy themselves spend more and more of their time at home, 
+browsing cat pictures on the Internet.
 
-Your mission is to add to our database of Berlin bars, restaurants and
-cafes. The goal is to get your changes into the master repository
-[stevenfarlie/berlin-underground](https://github.com/stevenfarlie/berlin-underground). However,
-the Grand Poobah, Steven Farlie, does not accept changes from just
-anybody. The Grand Poobah will only accept pull requests from one of
-his trusted lieutenants, the Coaches.
+Your mission is to add to our database of bars, restaurants and 
+cafes. The goal is to get your changes into the master repository 
+[OpenTechSchool/underground](https://github.com/OpenTechSchool/underground). 
+However, the Oligarchs do not accept changes from just anybody. 
+The Oligarchs will only accept pull requests from one of 
+their trusted lieutenants, the Coaches.
 
 # Find your coach
 
@@ -45,13 +45,14 @@ To contribute some code, first you'll need to find a coach. There are
 a few ways to do this:
 
 * Sequester one in a non-violent, friendly way, and ask nicely.
-* Check the "Forks" on the `stevenfarlie/berlin-underground`
+* Check the "Forks" on the `OpenTechSchool/underground` 
   repository. There will be coaches on there.
 * Kindly ask one of your friendly co-students for some assistance.
 
-Your coach will have a `berlin-underground` repository of their very
+Your coach will have an `underground` repository of their very
 own. This is the one you'll need to contribute to. Then the coach will
-forward your changes, and the changes of others, to the Grand Poobah.
+forward your changes, and the changes of others, to the Oligarchs' 
+repository.
 
 # Fork this!
 
@@ -70,14 +71,14 @@ only difference in GitHub is that your repository will be shown as
 "forked from" theirs, so people know what the "real" repository is
 (but we all know that yours is so much better).
 
-So what you are going to do is _fork_ the repository of _your
-coach_. *DO NOT FORK THE GRAND POOBAH!* You can click the Fork button
-on the GitHub page for your coach.
+So what you are going to do is _fork_ the repository of _your 
+coach_. *DO NOT FORK THE OPENTECHSCHOOL REPOSITORY DIRECTLY!* 
+You can click the Fork button on the GitHub page for your coach.
 
 # Adding content in Markdown format
 
 To add a new bar, club or restaurant we use a file format called
-Markdown (extension `.md`). Think of it as a simpler version of
+Markdown (extension .md). Think of it as a simpler version of
 HTML. It allows you to write rich text in a simple text file and have
 it be readable in both a text editor and a web browser. In GitHub you
 can use Markdown in pull requests, comments, issues, wiki pages, gists

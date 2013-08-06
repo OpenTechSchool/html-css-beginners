@@ -1,6 +1,8 @@
 ---
+
 layout: ots
 title: Delete and restore your local repository
+
 ---
 
 ## Preparation
