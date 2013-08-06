@@ -102,14 +102,19 @@ In Markdown this is much simpler:
 The main caveat is that you need to put a blank line between
 paragraphs. Otherwise it will just lump all your text together.
 
+# Think Globally, Commit Locally
+
+Because the Underground is a global organisation, there are
+directories in its repository for each city it is active in. Add your
+contributions locally under your city's directory!
+
 # Commit and Push
 
 After you've made your contributions locally, it's time to get them to
 the coach. We'll do this by (1) pushing to _your_ repository on GitHub,
 then (2) submit a _pull request_ to your coach, (3) kindly asking them to
 accept your changes into _their_ GitHub repository. Your coach will
-eventually do the same thing, submitting a _pull request_ to his
-splendiferousness, the Grand Poobah.
+eventually do the same thing, submitting a _pull request_ to the Oligarchy.
 
 Use the same method as before to `add` and `commit` to your local
 repository, then `push` to your repository on GitHub. Now you should
@@ -118,7 +123,7 @@ be able to see your changes on your repositories GitHub page.
 # Pull request!
 
 Time to create a pull request! Open your browser and navigate to
-_your_ `berlin-underground` repository. There you can see the "Pull
+_your_ `underground` repository. There you can see the "Pull
 Request" button up the top. Click it, and GitHub will start the Pull
 Request process:
 
@@ -149,7 +154,7 @@ Add a comment to your pull request using Markdown. The format for
 adding an image is:
 
     ![image alt text](http://example.com/url-to-funny-pic.jpg)
-	
+
 The "image alt text" is the text that is displayed when the image
 fails to load, or if the person is using a screen reader (yes, there
 are blind programmers!). So maybe try to come up with a long-winded
@@ -176,29 +181,30 @@ local repository has one upstream repository, your GitHub
 repository. When you type `git pull`, that's where it pulls from.
 
 In this case you might consider your coach as also being upstream, or
-even the Grand Poobah himself. If they push any changes to their
-repository, then you'll want to be able to pull those changes into
-your repository. For all you know, your coach might have completely
-overwritten all your changes and added a curse for your pets in the
-README file. Let's add another upstream to see what is happening:
+even the oligarchs (aka OTS Organisers) at the top. If they push any
+changes to their repository, then you'll want to be able to pull those
+changes into your repository. For all you know, your coach might have
+completely overwritten all your changes and added a curse for your
+pets in the README file. Let's add another upstream to see what is
+happening:
 
 {% highlight sh %}
-$ git remote add stevenfarlie https://github.com/stevenfarlie/berlin-underground
+$ git remote add upstream https://github.com/OpenTechSchool/underground
 {% endhighlight %}
 
-This adds an upstream repository called `stevenfarlie`. Now we can
-`fetch` directly from the Grand Poobah. This will download the
-`stevenfarlie/berlin-underground` repository and store it under
-`stevenfarlie/`, so it won't interfere with your changes:
+This adds an upstream repository called `upstream`. Now we can
+`fetch` directly from the Oligarchs. This will download the
+`OpenTechSchool/underground` repository and store it under
+the name `upstream`, so it won't interfere with your changes:
 
 {% highlight sh %}
-$ git fetch stevenfarlie
+$ git fetch upstream
 {% endhighlight %}
 
 If you want to bring the changes into your work, use `merge`:
 
 {% highlight sh %}
-$ git merge stevenfarlie/master
+$ git merge upstream/master
 {% endhighlight %}
 
 You might want to have a look at the changes it brought, by typing :
