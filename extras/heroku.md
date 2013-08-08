@@ -20,7 +20,7 @@ Note: this module is written assuming you are programming with Ruby. If you want
 
 Learning to code is a fun, creative endeavour. At some point, you may want to share your creation with the world... and depending on the technology you used, this can become a real thorn in your side. There's enough to do without having to get pulled into the complexities of deploying, maintaining and scaling your webapp on a public-facing server. The skills required are quite specific and go beyond coding your application.
 
-Enter hosting services like Heroku. Hosting providers really try and simplify your life so that you can focus on your app, and not worry about all the piping and infrastructure necessary to make it run. The beauty of Heroku, as we will see, is that it makes deploying your application incredibly easy when you're a Git afficionado. And you are one, right?
+Enter hosting services like Heroku. Hosting providers really try and simplify your life so that you can focus on your app, and not worry about all the piping and infrastructure necessary to make it run. The beauty of Heroku, as we will see, is that it makes deploying your application incredibly easy when you're a Git aficionado. And you are one, right?
 
 # Playing with Heroku
 
@@ -59,7 +59,7 @@ end
 Yep, that's our webapp ^^
 
 ### Some Configuration Necessary
-OK so this is the only bit which can get a bit bothersome, so just take your time. At this point, Heroku knows nothing about your app, so we do need to give it some important information. You didn't think it was going to be THAT easy, did you? Bear in mind that you rarely have to redo any of this, it's mostly a one-off thing.
+Okay, so this is the only bit which can get a bit bothersome, so just take your time. At this point, Heroku knows nothing about your app, so we do need to give it some important information. You didn't think it was going to be *that* easy, did you? Bear in mind that you rarely have to redo any of this, it's mostly a one-off thing.
 
 ### Gemfile
 All your app dependencies (e.g. Ruby gems) should be documented in a `Gemfile`, e.g:
@@ -96,7 +96,7 @@ run Sinatra::Application
 
 {% endhighlight %}
 
-For completeness sake, you should also add a `Procfile.txt` in your root folder with the following instruction:
+For the sake of completeness, you should also add a `Procfile.txt` in your root folder with the following instruction:
 
 {% highlight ruby %}
 web: bundle exec rackup config.ru -p $PORT
@@ -143,6 +143,6 @@ heroku apps:rename newname
 Replacing `newname` with the name you want. And, voila, you can now access your app at `http://newname.herokuapp.com`
 
 # But Where the Real Magic Happens is...
-If you want to delve further into Heroku, let me tell you that if you run a database powered webapp, Heroku will really shine. It makes deployment and maintenance of your DB a much simpler affair. DB development is a whole other topic, but with Heroku you will be surprised by how quickly you'll be able to run your webapp with a DB in the backend. I encourage you to read Heroku's [doc](https://devcenter.heroku.com/categories/heroku-postgres) on the subject to wet your appetite. And while Heroku is very much a PostgreSQL centered service, there are a number of other options available, though not always free (unlike the PostrgeSQL basic plan which is free!)
+If you want to delve further into Heroku, let me tell you that if you run a database powered webapp, Heroku will really shine. It makes deployment and maintenance of your DB a much simpler affair. DB development is a whole other topic, but with Heroku you will be surprised by how quickly you'll be able to run your webapp with a DB in the backend. I encourage you to read Heroku's [doc](https://devcenter.heroku.com/categories/heroku-postgres) on the subject to whet your appetite. And while Heroku is very much a PostgreSQL centered service, there are a number of other options available, though not always free (unlike the PostrgeSQL basic plan which is free!).
 
 If you made it this far, great job! If you are looking for a Hosting provider, I encourage you to shop around. I like Heroku, but there are plenty of solutions out there, and more coming out every 6 months, so find the one that best suits your needs.
