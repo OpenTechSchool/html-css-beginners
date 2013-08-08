@@ -67,5 +67,5 @@ All files and folders should be back.
 
 ## Lessons learned
 
-The interesting aspect learned from this exercise is that the remote repository is an exact copy of the local one. That means whenever you clone your repository to some other location and push the latest changes you are safe to loose your local copy. Sounds weird? No longer, I guess. You also learned how to inspect the remote repository using `git fetch` and `git log`.
+The interesting aspect learned from this exercise is that the remote repository is an exact copy of the local one. That means whenever you clone your repository to some other location and push the latest changes you are safe to lose your local copy. Sounds weird? No longer, I guess. You also learned how to inspect the remote repository using `git fetch` and `git log`.
 
