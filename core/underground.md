@@ -97,9 +97,15 @@ In Markdown this is much simpler:
 
     # This is a large heading
 
-    This is a paragraph with _emphasis_ and *strong* text.
+    This is a paragraph with *emphasis* and **strong** text.
 
-The main caveat is that you need to put a blank line between
+You will end up with:
+
+> # This is a large heading
+> 
+> This is a paragraph with *emphasis* and **strong** text.
+
+One caveat is that you need to put a blank line between 
 paragraphs. Otherwise it will just lump all your text together.
 
 # Think Globally, Commit Locally

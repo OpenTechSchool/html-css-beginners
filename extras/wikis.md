@@ -10,8 +10,8 @@ the most complete wiki platform, but it does make it very easy to
 host documentation without any fuss.
 
 As an example, take a look at the
-[Resque](https://github.com/defunkt/resque) repository, which has a
-very [simple wiki](https://github.com/defunkt/resque/wiki) containing
+[Resque](https://github.com/resque/resque) repository, which has a
+very [simple wiki](https://github.com/resque/resque/wiki) containing
 a few of the things that you usually don't add to the main
 repository. In this case there are a few links to presentations about
 the project, and lists of links to similar projects.
