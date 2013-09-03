@@ -1,78 +1,76 @@
 ---
 
 layout: ots
-title: Social Coding with GitHub
+title: Get started with Html & css
 
 ---
-
-This is the course content for Social Coding with GitHub, which has
-been developed and maintained by OpenTechSchool.
-
 # Welcome
 
-Welcome to social coding with GitHub! This course is intended to introduce
-beginners to the social side of programming. We'll be looking at one of the
-most popular sites for social programming: GitHub.
+Welcome to Html & Css workshop! This course is a simple and comprehensive 
+guide dedicated to helping beginners learn HTML and CSS.
 
-We'll be using Git, a popular tool for storing and sharing source
-code. It's a tool that keeps a copy of your source code, but not just
-one copy. It keeps track of every version of every file in a repository. In addition
-we'll also use GitHub to host your Git repositories online for you.
+**HTML or HyperText Markup Language** is the main markup language for creating
+web pages and other information that can be displayed in a web browser.
+You can write your web application in any programming languages but at the end
+will be always trasformed in Html because that's the languages of the browser.
+Is a hierarchical language.
+
+And **Html5**? What's that?
+This is just the last version of the Html. There is lot of interest about it 
+because it bring big improvemnt to the Html making it easier to write and to use.
+
+**What about css?**
+Css or Cascading Style Sheets is a style sheet language used for describing the 
+look and formatting of a document written in a markup language.
+Is closely connected with Html since it will give a style to html elements.
+In opposition of html, css have no hierarchity and can be written with the 
+order that we prefer.
+**Css3** as a Html5 is the last released version of Css and it also bring big
+improvement liek possibility to animate an element.
+
+For check all our improvement we will use the console in our browser.
+Open any browser and check under 'Tool'. You shoudl find a 'eveloper tool'
+otion. Clicking it, the console will be opened.
+Here is the place where we will monitoring our code and whenever is correct or not.
+Don't worry we will explain better later, for now is important that you know where 
+to find yoru console and how to open it.
 
 ## What we'll do today
 
-There are two parts to the course today. The first is the core content. This is
-to get you up and running with Git and GitHub. We'll create a simple repository
-and show you how to get it on GitHub. The second part are all optional extras.
-There are a few really neat things that you can do with GitHub, so we've
-prepared these extra topics for you to explore and try out if you find them
-interesting. You can do as many or as few of the optional extras as you please.
+Today we will learn how to write a web page with Html and make the style with css.
+Our goal is to create a personal portfolio page with a presentation and contact page.
+
+If you are done with it, we linked for you some interesting link that you can find below 
+the 'Extra' section.
+There, there are some extra curiosity that once you are done with the material
+will help you to keep going coding with Html and css or just keep you update 
+about what's next.
 
 ## A bit of history
 
-Git was created in 2005 by Linus Torvalds (who is also the creator of Linux).
-Linus was looking for an easy way to manage source code for Linux, which has
-thousands of developers all over the world. Frustrated with current tools, he
-wrote the first version of Git during a cross-Atlantic flight. It quickly
-became the defacto tool for storing and sharing source code thanks to its
-quick speed and versatility.
-
-In 2008 GitHub launched. It allowed developers to share their Git repositories
-online free of charge. By September 2012 it was hosting 3.7 million repositories
-and had 2.1 million users. One of the key features of GitHub is the ability to
-"fork" or copy the repositories of other users. After forking, users can make
-changes locally and send a "pull request" to the original owner, allowing them
-to pull the changes back into their repository. This made following and contributing
-to projects significantly easier, and GitHub quickly became the place to be if
-you want to share your source code and contribute to other projects.
 
 # The course
 
-* [Setting up](core/setup.html) - Installation instructions for Windows, OSX and Linux.
-* [Your first repository](core/first-repo.html) - Create a git repository on your laptop and share it on GitHub.
-* [Social coding with the Underground](core/underground.html) - Contributing to the New (Social) World Order.
-
+* [The template structure](core/structure.html) - Create html page from white page to a 'Hello World'.
+* [Your first styled Hello World!](core/style.html) - Understanding css. What is class, Id and selector.
+* [Create your personal Portfolio.](core/portfolio.html) - Html5 elements, float, box model and positioning.
 # Extra fun stuff
 
-* [GitHub Explore](extras/exploring.html)
-* [GitHub Wikis](extras/wikis.html)
-* [Code snippets with Gist](extras/gists.html)
-* [Hosting a website](extras/pages.html)
-* [Delete and restore all your files](extras/delete-restore.html)
-* [Delete and restore your local repository](extras/delete-restore-repo.html)
-* [Pushing to... Heroku!](extras/heroku.html)
+* [Html5, what is new?](extras/html5.html)
+* [Css3 transition and animation](extras/html5.html)
+* [Cross Browsers and usual IE problems](extras/html5.html)
+
 
 # Reference material
 
-* [Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
-  - Definitions of common git terms such as *commit* and *working tree*.
-* The fundamental commands from the [git manual](http://www.kernel.org/pub/software/scm/git/docs/) -
-  [init](http://www.kernel.org/pub/software/scm/git/docs/git-init.html),
-  [commit](http://www.kernel.org/pub/software/scm/git/docs/git-commit.html),
-  [push](http://www.kernel.org/pub/software/scm/git/docs/git-push.html)
-  and
-  [pull](http://www.kernel.org/pub/software/scm/git/docs/git-pull.html).
-* [GitHub Bootcamp](https://help.github.com/categories/54/articles) -
-  A getting started guide for GitHub.
-* [Pro Git](http://git-scm.com/book) - The complete book on Git,
-  available for free online.
+* [Html cheat sheet](#)
+  - Here you can find all the html elements you need for start you project.
+* [Css cheat sheet](#) - here you can find all the css selector and properties 
+for let your creativity goes free.
+ 
+ * [codeacademy](#) - a good hands-on tutorial for keep you learn.
+
+
+
+
+

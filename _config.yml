@@ -1,35 +1,31 @@
 permalinks: title
-baseurl: /social-coding
+baseurl: 
 map:
  - title: Home
-   path: /
-   caption: Social coding with Github
+   path: http://localhost:2000
+   caption: Get started with Html & css
  - title: Core
    caption: The 'mandatory' workshop content
    subpages:
-     - title: Setting up Git & Github
-       path: /core/setup.html
-       caption: What you need to configure, signup to and install!
-     - title: Your first repository!
-       path: /core/first-repo.html
-       caption: Dip your toes into the slightly revisionist world of git
-     - title: Social coding in the underground
-       path: /core/underground.html
-       caption: Learn to plot with others :>
+     - title: The template structure
+       path: /core/structure.html
+       caption: From white page to a 'Hello World'
+     - title: Your first styled Hello World!
+       path: /core/style.html
+       caption: Understanding css. What is class, Id and selector
+     - title: Create your personal Portfolio.
+       path: /core/portfolio.html
+       caption: Html5 elements, float, box model and positioning
  - title: Extras
    caption: Additional workshop content
    subpages:
-   - title: Exploring Github
-     path: /extras/exploring.html
-   - title: Project wikis
-     path: /extras/wikis.html
-   - title: Sharing code quickly with gists
-     path: /extras/gists.html
-   - title: Hosting websites with Github!
-     path: /extras/pages.html
-   - title: Losing and finding your files
-     path: /extras/delete-restore.html
-   - title: Delete and restore your entire repo!
-     path: /extras/delete-restore-repo.html
-   - title: Pushing to Heroku like a Hero
-     path: /extras/heroku.html
+   - title: Html5, what is new?
+     path: /extras/html5.html
+   - title: Css3 transition and animation
+     path: /extras/css3.html
+   - title: Cross Browsers and usual IE problems
+     path: /extras/cross-browsers.html
+   - title: Responsive Design
+     path: /extras/responsive.html
+   - title: How to start with Javascript
+     path: /extras/javascript.html
