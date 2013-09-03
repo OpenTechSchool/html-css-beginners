@@ -3,46 +3,31 @@ layout: ots
 title: README 
 ---
 
-This is a friendly how-to for contributors to the Social Coding with GitHub
-course at OpenTechSchool. First, a quick refresher on the course:
+This is a friendly how-to for contributors to the Html and Css workshop
+at OpenTechSchool. 
+About the course:
 
-> You've written some code, but you might be wondering: where do I go from here? Enter the world of social coding with Git and GitHub. In this course we introduce you to GitHub, a free online service where over 2 million developers from around the world share their code. We'll show you how to share your code, meet like-minded programmers and participate in other projects. You can even host simple websites using GitHub. Whether you just want to share a little script, or contribute to some of the largest and most dynamic software projects in the world, well show you how to get started!
-
-So we are expecting users who have written a little code before but never shared
-it. They may have some JS, Python or Ruby skills, and may have written a bit of
-HTML and CSS. We won't be expecting them to have Git installed when they show
-up.
+An Html and css basic workshop for beginners that never write Html/css before and 
+wnat to know how to start.
 
 # Class format
 
 At OpenTechSchool we tend to go *practical* and *at your own pace*.
 
-Practical meaning that we aren't big on theory, or requiring that people
-understand something completely before using it. We aren't expecting any of the
-students to become computer scientists. Generally programming for our students
-is a way of solving some practical problem. If they want to accomplish it with
-LISP or a spreadsheet is entirely up to them.
-
 At your own pace means that we provide access to the complete course notes at
 the beginning of the session. Then students can progress individually. Some
-students will get through very quickly, others will take some time, and most
+students will get through very quickly, others will take some time, and others
 will finish the core work with time to spare. The core work should be
 completable by everyone. To keep things interesting we supply various
 additional topics which are entirely optional.
 
 A class schedule looks like this:
 
-    1200 - Students still arriving, writing name tags, setting up laptops.
+    1100 - Students still arriving, writing name tags, setting up laptops.
     1230 - Introductions, wifi instructions and location of coursework.
     1235 - Students learn stuff.
-    1545 - Thankyous, maybe demonstrations.
+    1800 - Thankyous, maybe demonstrations.
 
-As you can see, the schedule just has a big chunk of 'learn stuff'. We like to
-keep things open.
-
-For this course, because we are doing social coding, we might shake up the
-format a bit and get students interacting with each other. After all, we are
-trying to be social :)
 
 # Author Guide
 
