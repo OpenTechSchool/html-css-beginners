@@ -60,7 +60,7 @@ In the css style, at the beginning of the file let's write also somehting like t
 
 	* { padding: 0; margin: 0; border: 0; }
 
-That's set all the elements "*", with default padding, margin and border equal to 0px. 
+That's set all the elements "\*", with default padding, margin and border equal to 0px. 
 This is really important to do because everybrowser set a default size for some tags and without 
 set all of them again to 0px will be impossible to calculate the  position of Html elements and to
 positioning them in the space, since every browser will interpeter that in a different way.	
