@@ -1,31 +1,31 @@
 permalinks: title
-baseurl: 
+baseurl: /html-css-beginners/
 map:
  - title: Home
-   path: http://localhost:2000
+   path: 
    caption: Get started with Html & css
  - title: Core
    caption: The 'mandatory' workshop content
    subpages:
      - title: The template structure
-       path: /core/structure.html
+       path: core/structure.html
        caption: From white page to a 'Hello World'
      - title: Your first styled Hello World!
-       path: /core/style.html
+       path: core/style.html
        caption: Understanding css. What is class, Id and selector
      - title: Create your personal Portfolio.
-       path: /core/portfolio.html
+       path: core/portfolio.html
        caption: Html5 elements, float, box model and positioning
  - title: Extras
    caption: Additional workshop content
    subpages:
    - title: Html5, what is new?
-     path: /extras/html5.html
+     path: extras/html5.html
    - title: Css3 transition and animation
-     path: /extras/css3.html
+     path: extras/css3.html
    - title: Cross Browsers and usual IE problems
-     path: /extras/cross-browsers.html
+     path: extras/cross-browsers.html
    - title: Responsive Design
-     path: /extras/responsive.html
+     path: extras/responsive.html
    - title: How to start with Javascript
-     path: /extras/javascript.html
+     path: extras/javascript.html
