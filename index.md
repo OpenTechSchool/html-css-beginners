@@ -53,7 +53,8 @@ about what's next.
 
 * [The template structure](core/structure.html) - Create html page from white page to a 'Hello World'.
 * [Your first styled Hello World!](core/style.html) - Understanding css. What is class, Id and selector.
-* [Create your personal Portfolio.](core/portfolio.html) - Html5 elements, float, box model and positioning.
+* [Create your personal Portfolio - Part 1.](core/portfolio.html) - Html5 elements, float, box model and font-style.
+* [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - positioning, anchor and form elements.
 # Extra fun stuff
 
 * [Html5, what is new?](extras/html5.html)

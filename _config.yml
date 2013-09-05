@@ -13,9 +13,12 @@ map:
      - title: Your first styled Hello World!
        path: core/style.html
        caption: Understanding css. What is class, Id and selector
-     - title: Create your personal Portfolio.
-       path: core/portfolio.html
-       caption: Html5 elements, float, box model and positioning
+     - title: Create your personal Portfolio - Part 1
+       path: /core/portfolio.html
+       caption: Html5 elements, float, box model and text style
+     - title: Create your personal Portfolio - Part 2
+       path: /core/portfolio-2.html
+       caption: Positioning, anchor and form elements
  - title: Extras
    caption: Additional workshop content
    subpages:
@@ -24,8 +27,12 @@ map:
    - title: Css3 transition and animation
      path: extras/css3.html
    - title: Cross Browsers and usual IE problems
-     path: extras/cross-browsers.html
-   - title: Responsive Design
-     path: extras/responsive.html
+     path: /extras/cross-browsers.html
+   - title: Responsive Design and mobile approach
+     path: /extras/responsive.html
+   - title: Sass and Less
+     path: /extras/sass-less.html  
+   - title: Framework Twitter Boostrap
+     path: /extras/framework.html
    - title: How to start with Javascript
      path: extras/javascript.html
