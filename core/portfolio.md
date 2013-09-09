@@ -1,61 +1,60 @@
 ---
 
 layout: ots
-title: Create your personal Portfolio
+title: Create your Personal Portfolio
 
 ---
 
-# HTML5 structure and CSS starter
+# HTML5 structure and starter CSS
 ## Main Content
 
-We will start building the main page, our personal presentation since is the one that will give the 
-main structure to the whole web site design.
+We will start by building the main page of our personal presentation, since this will give the 
+main structure to the whole website design.
 
 
 **GOAL**
-We are going to design a page with the main menu, the content and footer.
-We fill in the content with an image next to some text.
-We are going to do all of this with the HTML5 elements so keep open your HTML cheatsheet.
+We are going to design a page with a main menu, content, and a footer.
+We fill in the content with an image along with some text.
+We are going to do all of this with HTML5 elements so keep your HTML cheatsheet open.
 
-Taken file like the one we just wrote but without any content. (Head with meta-tag, title and 
-style.CSS linked and body but comletely empty.)
+Take a file just like the one we just wrote but without any content. (Head with meta tags, title and 
+style.CSS linked but a completely empty body.)
 
-Let's start wrapping all our page in a div for give a centered design to our page.
- *"Div tag defines a section in an HTML file and is used to group element to format 
- them with CSS, to layout a web page."*
+Let's start by wrapping our page in a div to give a centered design to our page.
+ *"A div tag defines a section in a HTML file and is used to group elements to format 
+ them with CSS in order to lay out a web page."*
 
-Div is a general tag and can be used in many different situation just to wrap up others HTML
-elements and style them. For this reason we need to give to it a name, otherwise we can't style each one 
-in different way.
-There are two way to give a name to a div tag. With a id or with a class.
-Think about at id as a pesonal and UNIC name as your surname/name and about the class is like personal 
-characteristics as color of your hares or your age. 
-Id, the unique one, is used just when need to write specific style valid only for this element. 
-Class are more common and used for group different HTML elements and give them the same style and characteristics.
+Div is a general tag and can be used in many different situations just to wrap together a group of HTML
+elements and style them. For this reason we need to give it a name; otherwise, we can't style each one 
+in a different way.
+There are two ways to give a name to a div tag: with an id or with a class.
+Think about an id as a personal and unique name like your surname/name and think about the class as personal 
+characteristics, such as the color of your hair or your age. 
+Id, the unique one, is used when you need to write a specific style valid only for this element. 
+Classes are more common and used to give different HTML elements the same style and characteristics.
 
-We can now start to write our main page content:
+We can now write our main page content:
 
 	<div id="wrap-centered">
 	</div>
 
-Since we have just one main content we can use id selector.
+Since we have just one main content, we can use the selector id.
 
-In style.CSS we make this div always centered in the middle. 
-In CSS for call the class we need to write "." and the class name just after it. 
-For the Id is the same but with " # " instead if "."
+In style.css we make this div always centered in the middle. 
+To call the class in CSS, we need to write "." and the class name just after it. 
+For the Id it is the same but with " # " instead of "."
 
 	.wrap-centered {
 		width: 100%;
 		margin: 0 auto;
 	}
 
-Defined the width of an element and than give to it "margin: 0 auto" is a common rules for make
-the element centered.
-We use 100% instead of 100px for the easily fact that we wont our page responsive or in other worlds we want 
-that the page resize when the browser windows change dimensions.
-Now everything will stay inside this div will be centered.
+Here we define the width of an element and then give it a "margin: 0 auto," which is a common rule to center
+the element.
+We use 100% instead of 100px because we want our page to be responsive or, in other words, we want the page to resize when the browser windows change dimensions.
+Now everything inside this div will be centered.
 
-In the CSS style, at the beginning of the file let's write also somehting like that:
+At the beginning of the style.css file, let's write something like this:
 
 	* { padding: 0; margin: 0; border: 0; }
 
@@ -64,7 +63,7 @@ That's set all the elements "\*", with default padding, margin and border equal 
 =======
 That's set all the elements " * ", with default padding, margin and border equal to 0px. 
 >>>>>>> Stashed changes
-This is really important to do because everybrowser set a default size for some tags and without 
+This is really important to do because every browser sets a default size for some tags and without 
 set all of them again to 0px will be impossible to calculate the  position of HTML elements and to
 positioning them in the space, since every browser will interpeter that in a different way.	
 
