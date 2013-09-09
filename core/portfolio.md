@@ -5,7 +5,7 @@ title: Create your personal Portfolio
 
 ---
 
-# Html5 structure and Css starter
+# HTML5 structure and CSS starter
 ## Main Content
 
 We will start building the main page, our personal presentation since is the one that will give the 
@@ -15,23 +15,23 @@ main structure to the whole web site design.
 **GOAL**
 We are going to design a page with the main menu, the content and footer.
 We fill in the content with an image next to some text.
-We are going to do all of this with the Html5 elements so keep open your Html cheatsheet.
+We are going to do all of this with the HTML5 elements so keep open your HTML cheatsheet.
 
 Taken file like the one we just wrote but without any content. (Head with meta-tag, title and 
-style.css linked and body but comletely empty.)
+style.CSS linked and body but comletely empty.)
 
 Let's start wrapping all our page in a div for give a centered design to our page.
- *"Div tag defines a section in an Html file and is used to group element to format 
- them with Css, to layout a web page."*
+ *"Div tag defines a section in an HTML file and is used to group element to format 
+ them with CSS, to layout a web page."*
 
-Div is a general tag and can be used in many different situation just to wrap up others html
+Div is a general tag and can be used in many different situation just to wrap up others HTML
 elements and style them. For this reason we need to give to it a name, otherwise we can't style each one 
 in different way.
 There are two way to give a name to a div tag. With a id or with a class.
 Think about at id as a pesonal and UNIC name as your surname/name and about the class is like personal 
 characteristics as color of your hares or your age. 
 Id, the unique one, is used just when need to write specific style valid only for this element. 
-Class are more common and used for group different Html elements and give them the same style and characteristics.
+Class are more common and used for group different HTML elements and give them the same style and characteristics.
 
 We can now start to write our main page content:
 
@@ -40,8 +40,8 @@ We can now start to write our main page content:
 
 Since we have just one main content we can use id selector.
 
-In style.css we make this div always centered in the middle. 
-In css for call the class we need to write "." and the class name just after it. 
+In style.CSS we make this div always centered in the middle. 
+In CSS for call the class we need to write "." and the class name just after it. 
 For the Id is the same but with " # " instead if "."
 
 	.wrap-centered {
@@ -55,7 +55,7 @@ We use 100% instead of 100px for the easily fact that we wont our page responsiv
 that the page resize when the browser windows change dimensions.
 Now everything will stay inside this div will be centered.
 
-In the css style, at the beginning of the file let's write also somehting like that:
+In the CSS style, at the beginning of the file let's write also somehting like that:
 
 	* { padding: 0; margin: 0; border: 0; }
 
@@ -65,12 +65,12 @@ That's set all the elements "\*", with default padding, margin and border equal 
 That's set all the elements " * ", with default padding, margin and border equal to 0px. 
 >>>>>>> Stashed changes
 This is really important to do because everybrowser set a default size for some tags and without 
-set all of them again to 0px will be impossible to calculate the  position of Html elements and to
+set all of them again to 0px will be impossible to calculate the  position of HTML elements and to
 positioning them in the space, since every browser will interpeter that in a different way.	
 
 ## Menu
 Time to write our menu.
-Inside of the div we are going to write our first Html5 element.
+Inside of the div we are going to write our first HTML5 element.
 
 	<nav>
 		<ul>
@@ -84,7 +84,7 @@ that are essential for the navigation in the website.
 Ul is a type of list, unordered. In th list, has the world suggest, we keep elements that usually stay in 
 a list and each element are wrap up in a li tag.
 
-In style.css:
+In style.CSS:
 
 	nav {
 		width: 100%;
@@ -107,14 +107,14 @@ Nav ul is a way to specify that i'm talking about not all the ul in the page but
 Most of the property we write here you already know or you can eaily check on the cheatsheet. 
 We want to talk about one of them, really particular and with big power: float: right.
 
-That's tell to the selector selected to get out from the normal flow of the Html element (usually Html element are block element, that's mean that they are displayed one after the other vertically in the page as a block.) and move to the most 
+That's tell to the selector selected to get out from the normal flow of the HTML element (usually HTML element are block element, that's mean that they are displayed one after the other vertically in the page as a block.) and move to the most 
 right side of the div where is wrap up.
 
 If you check in your browser, the nav ul is displayed on the right. 
-Float can be set on the right or on the left. Always be carefull with that because this will change the flow of all the html
+Float can be set on the right or on the left. Always be carefull with that because this will change the flow of all the HTML
 elements, not just the one that you are going to modify.
 
-We just said that usually the Html element are like a block displayed in a vertical flow. And we can change this flow 
+We just said that usually the HTML element are like a block displayed in a vertical flow. And we can change this flow 
 thanks to float property. Another propery that allow us to change the flow is display: inline. 
 Actually thsi property don't change the flow, rather make an element inline (so will stay on one line instead folling down) 
 instead as a block.
@@ -125,13 +125,13 @@ change it setting float to right.
 
 	<div class="clear"></div>
 
-And in the css file:
+And in the CSS file:
 
 	.clear {
 		clear: both;
 	}	
 
-Here we create a new div with class clear and call this one in css giving clear both. That will clear both value, right
+Here we create a new div with class clear and call this one in CSS giving clear both. That will clear both value, right
 and left. Other two possible values are "right" or "left". 
 When you mess up with floatting element, before starting a new design section is always a good practice put "clear:both"
 to be sure your flow is still the default one.
@@ -147,7 +147,7 @@ The interested tag is:
 	</footer>
 
 Inside the p tag you can write what you prefer. Maybe who made this website or your email.
-In css file:
+In CSS file:
 
 	footer {
 	margin-top: 50px;
@@ -167,9 +167,9 @@ Finally we start to build our content. First of all some structure. We said we a
 design, one coloum is a kind of sidebar and this tag is called aside and the other one, the most important one,
 is a section wrapping up several articles.
 In order to have more control on this two-coloum design, contain all of it in a div.content and give to it some
-basic css, as we already did it for the wrap div.
+basic CSS, as we already did it for the wrap div.
 
-tips: When you are not sure if your css is working in the properly way and you want to check exactly the size,
+tips: When you are not sure if your CSS is working in the properly way and you want to check exactly the size,
 margins or else of your element, give to it a casual background-color, so it display the element is all it's size.
 
 	<div class="content">
@@ -179,7 +179,7 @@ margins or else of your element, give to it a casual background-color, so it dis
 		</section>
 	</div>
 
-In style.css:
+In style.CSS:
 
 	.content {
 	width: 70%;
@@ -252,7 +252,7 @@ padding, and the actual content.
 The box model allows us to place a border around elements and margins and padding around this element too.
 How is the size of the box calculated exactly? Here is a diagram:
 
-<img src="../images/css-box-model.gif" />
+<img src="../images/CSS-box-model.gif" />
 
 What these elements do?
 * Margin: Clears an area around the border. The margin does not have a background color, it is completely transparent
@@ -267,7 +267,7 @@ The size of the box itself is calculated like this:
 
 **Height:** height + padding-top + padding-bottom + border-top + border-bottom
 
-Tips: Remember to set all of this elemnents to "0px" when you start your .css files as we did at the very beginning.
+Tips: Remember to set all of this elemnents to "0px" when you start your .CSS files as we did at the very beginning.
 
 So, now that we know how to calculate the box around our elements, let's play with it around the article, 
 header and h tags.

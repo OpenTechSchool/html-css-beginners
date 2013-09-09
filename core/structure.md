@@ -12,7 +12,7 @@ version of the markup language the page is using.
 
 Open a new file in your editor and write this line as first:
 
-    <!Doctype html>
+    <!Doctype HTML>
     
 The doctype is case-insensitive. 
 DOCtype, doctype, DocType and DoCtYpe are all valid
@@ -20,7 +20,7 @@ DOCtype, doctype, DocType and DoCtYpe are all valid
 
 # What is a tag?
 
-We already have met the most important html elemnt: a tag.
+We already have met the most important HTML elemnt: a tag.
 Is a way to give a structure in an HTML document and a way to organize the 
 content in a hierarchy.
 
@@ -42,15 +42,15 @@ There are also some exception, elements that cannot contain anything else like
 
 But they aren't so many and you could easily learn them writing more code :)
 
-## Html and Head tag
+## HTML and Head tag
 
 Coming back to our file, after the doctype we need to tell to the browser that 
-this is a html file
+this is a HTML file
 
-	<html>
-	</html>
+	<HTML>
+	</HTML>
 
-Inside the html tag we can write all our html elemnts.
+Inside the HTML tag we can write all our HTML elemnts.
 We basically have two block: head and body.
 Head contains the title of the page & meta information about the page.
 Most of the information are not visible to the user, but has many purposes.
@@ -77,7 +77,7 @@ Basically specifies to the browser the character encoding for the HTML document.
 That's mean your browser will be able to read and correctly display all the special character as
 €, $, è and so on.
 
-Head tag is also made for include external files or resource as css or javascript files.
+Head tag is also made for include external files or resource as CSS or javascript files.
 We will see later how to do this.
 
 ## Body tag
@@ -86,7 +86,7 @@ Finally we are at the place where our content goes.
 The body contains the actual content of the page. Everything that is contained in
 the body is visible to the user.
 
-Just after a head tag but still inside the html tag let's add the body.
+Just after a head tag but still inside the HTML tag let's add the body.
 
 	<body>
 	</body>
@@ -95,7 +95,7 @@ Now we can see that everything is written inside this tag will be displayed in
 the browser.
 Try to write plain text and check the file in your browser.
 
-There are differents html elements that we can use to give a default style to 
+There are differents HTML elements that we can use to give a default style to 
 our document like the <p></p> that we already met.
 Let's try to write a title followed by a paragraph.
 
@@ -118,20 +118,20 @@ are a lot.
 
 ******
 
-Html give us a chance to play little bit with the style without needing a css yet.
+HTML give us a chance to play little bit with the style without needing a CSS yet.
 There are some default style like **< b >** for bold text or  **< i >** for italic text.
 
-These tags are intended to wrap the text and stay inside the main html elements which 
+These tags are intended to wrap the text and stay inside the main HTML elements which 
 they will stylize.
 
 	<p><b> I'm a bold text </b></p>
 
-**You can check on your html cheat sheet and try to play around with differents html
+**You can check on your HTML cheat sheet and try to play around with differents HTML
 elements and default style.**
 
 Before move to make your file look nicer, we should introduce another relevant tag,
 the image tag.
-<img> tag place an image in an html page. 
+<img> tag place an image in an HTML page. 
 The image tag not need to be closed because doesn't contain anything. Infact the image
 carried by this tag will be linked thanks to one of the attributes.
 

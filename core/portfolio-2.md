@@ -36,7 +36,7 @@ You can change it setting also hight: 100%. But now you need to be sure that you
 
 After the image, write another header tag within h1 and h2, add a class name to your header so you can style 
 and not be confused with the other one. (I will use header-home as class name)
-In the css we are goint to write that:
+In the CSS we are goint to write that:
 
 	.header-home {
 		position: relative;
@@ -104,7 +104,7 @@ Now we need just one thing to do. Link all your pages togheter.
 For do that there is a special tag. a tag (anchor).
 Taking nav menu, we need to had a tag to our li elements:
 
-	<li><a href="home.html" >Home |</a> </li>
+	<li><a href="home.HTML" >Home |</a> </li>
 
 The most important attribute of the < a > element is the href attribute, which indicates the link’s destination.
 link's destination is the name and the extencion which you gave to your other pages. Be careful to type it right.
@@ -112,7 +112,7 @@ If the page that you are going to link is not in the same root, you need to spec
 found.
 For example if i have the contact page in a contact folder i write:
 
-	<li><a href="contact/contact.html"> Contact </a> </li>
+	<li><a href="contact/contact.HTML"> Contact </a> </li>
 
 Check in the browser and... Done!
 
