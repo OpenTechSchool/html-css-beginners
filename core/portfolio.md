@@ -59,16 +59,16 @@ At the beginning of the style.css file, let's write something like this:
 	* { padding: 0; margin: 0; border: 0; }
 
 <<<<<<< Updated upstream
-That's set all the elements "\*", with default padding, margin and border equal to 0px. 
+That is to set all the elements "\*" with default padding, margin and border to 0px. 
 =======
-That's set all the elements " * ", with default padding, margin and border equal to 0px. 
+That is to set all the elements " * " with default padding, margin and border to 0px. 
 >>>>>>> Stashed changes
 This is really important to do because every browser sets a default size for some tags and without 
-set all of them again to 0px will be impossible to calculate the  position of HTML elements and to
-positioning them in the space, since every browser will interpeter that in a different way.	
+setting all of them again to 0px, it will be impossible to calculate the  position of HTML elements and to
+position them on the page, since every browser will interpret that in a different way.	
 
-## Menu
-Time to write our menu.
+## Navigation Menu
+Time to write our navigation menu.
 Inside of the div we are going to write our first HTML5 element.
 
 	<nav>
@@ -78,12 +78,12 @@ Inside of the div we are going to write our first HTML5 element.
 		</ul>
 	</nav>
 
-Here we have 3 new elements. First the nav tag. That's tag mean navigation and wrap up all the elements
+Here we have 3 new elements. First, the nav tag. That tag means navigation and wraps up all the elements
 that are essential for the navigation in the website.
-Ul is a type of list, unordered. In th list, has the world suggest, we keep elements that usually stay in 
-a list and each element are wrap up in a li tag.
+Ul is a type of list--unordered. In an unordered list, as the word suggests, we have elements that usually stay in 
+a list and each element is wrapped in a li tag.
 
-In style.CSS:
+In style.css:
 
 	nav {
 		width: 100%;
@@ -102,25 +102,28 @@ In style.CSS:
 		color: ##08c;
 	}
 
-Nav ul is a way to specify that i'm talking about not all the ul in the page but just the one that is nav's child.
-Most of the property we write here you already know or you can eaily check on the cheatsheet. 
-We want to talk about one of them, really particular and with big power: float: right.
+Nav ul is a way to specify not all the ul elements on the page but just the one that is nav's child.
+Most of the properties we write here you already know or you can eaily check on the cheatsheet. 
 
-That's tell to the selector selected to get out from the normal flow of the HTML element (usually HTML element are block element, that's mean that they are displayed one after the other vertically in the page as a block.) and move to the most 
-right side of the div where is wrap up.
+Now we want to talk about one of them in particular, because it's very powerful: float: right.
+
+This tells the selected selector to get out from the normal flow of the HTML element (usually HTML elements are block elements, which means that they are displayed one after the other vertically in the page as a block) and move to the
+right-most side of the div in which it is wrapped.
 
 If you check in your browser, the nav ul is displayed on the right. 
-Float can be set on the right or on the left. Always be carefull with that because this will change the flow of all the HTML
-elements, not just the one that you are going to modify.
+Float can be set on the right or on the left. Always be careful with that because this will change the flow of all the HTML
+elements, not just the one that you are modifying.
 
-We just said that usually the HTML element are like a block displayed in a vertical flow. And we can change this flow 
-thanks to float property. Another propery that allow us to change the flow is display: inline. 
-Actually thsi property don't change the flow, rather make an element inline (so will stay on one line instead folling down) 
-instead as a block.
-Check your menu navigation.
+We just said that usually HTML elements are like a block displayed in a vertical flow. We can change this flow 
+thanks to the float property. 
 
-Last thing we need to do before move on is to clear everything in order to restore the normal flow, since we 
-change it setting float to right.
+Another propery that allows us to change the flow is display: inline. 
+Actually, this property doesn't change the flow, rather it displays an element inline (so that it will stay on one line instead dropping down) 
+instead of displaying within a block.
+Check your navigation menu.
+
+Last thing we need to do before moving on is to clear everything in order to restore the normal flow, since we 
+changed the setting float to right.
 
 	<div class="clear"></div>
 
@@ -130,23 +133,24 @@ And in the CSS file:
 		clear: both;
 	}	
 
-Here we create a new div with class clear and call this one in CSS giving clear both. That will clear both value, right
+Here we create a new div with class clear and call this one in our CSS file, giving clear both. That will clear both values, right
 and left. Other two possible values are "right" or "left". 
-When you mess up with floatting element, before starting a new design section is always a good practice put "clear:both"
+When you mess with floating element, before starting a new design section it is always a good practice to put "clear:both"
 to be sure your flow is still the default one.
 
 ## The footer
 
-Footer is called, as the name say, that part of the page that stay at the end of the page and give some general and 
+The footer is, as the name says, that part of the page that stays at the end of the page and gives some general and 
 maybe secondary information, like in a book.
-The interested tag is:
+The tag for that is:
 
 	<footer>
 		<p></p>
 	</footer>
 
-Inside the p tag you can write what you prefer. Maybe who made this website or your email.
-In CSS file:
+Inside the p tag you can write what you want, maybe who made this website or your email.
+
+In the CSS file, write:
 
 	footer {
 	margin-top: 50px;
@@ -156,20 +160,20 @@ In CSS file:
 		text-align: center;
 	}
 
-We don't really need to style the footer but is nice to give to it a space to breath with a margin-top: 50px. 
-Than we just set the alignament of the text in the p tag as center.
-That's all what we need for the footer.
+We don't really need to style the footer but it is nice to give it some space to breathe with a margin-top: 50px. 
+Then we just set the alignament of the text in the p tag as center.
+That's all we need for the footer.
 
 ## Box Model and fonts
 
-Finally we start to build our content. First of all some structure. We said we are going to design two coloum
-design, one coloum is a kind of sidebar and this tag is called aside and the other one, the most important one,
+Finally we start to build our content. First of all some structure. We are going to have a two-column
+design: one column is a kind of sidebar and this tag is called aside and the other one, the most important one,
 is a section wrapping up several articles.
-In order to have more control on this two-coloum design, contain all of it in a div.content and give to it some
+In order to have more control of this two-column design, wrap all of it in a div.content and give it some
 basic CSS, as we already did it for the wrap div.
 
-tips: When you are not sure if your CSS is working in the properly way and you want to check exactly the size,
-margins or else of your element, give to it a casual background-color, so it display the element is all it's size.
+Tips: When you are not sure if your CSS is working in the proper way and you want to check exactly the size,
+margins or something else of your element, give it a casual background color, so that it displays the entire element.
 
 	<div class="content">
 		<aside>
@@ -200,9 +204,9 @@ In style.CSS:
 		margin: 20px 10px;
 	}
 
-First we gave a size to the content and place it in the middle of the page. Than we place the aside tag with some
-margins to breath, a minimum height and a width. We also highi-light the border-right of this element so it display
-a line that divide aside from section.
+First we gave a size to the content and placed it in the middle of the page. Than we place the aside tag with some
+margins to breath, a minimum height and a width. We also highlight the border-right of this element so it displays
+a line that divides aside from section.
 Last we give a float: left in order to make the section (or whatever we will write after the aside) slip next to the
 aside, right on its left.
 Is really important to set display: inline-block for the section
