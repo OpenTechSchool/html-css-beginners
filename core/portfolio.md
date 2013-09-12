@@ -324,16 +324,16 @@ For example:
 
 	h1 {font-size:2.5em;} /* 40px/16=2.5em */
 
-It's hard to tell you what you have to do with them because is hard to tell what you are to achieve 
-in each of your layouts. Layouts are about creativity, and you can't just fix an approach to fit all of them.
-For now we can say that is better to use em for a font in these days since the user has so many different 
-device and screen size that this is the easier way to make the font-size automatical resizeble.
+It's hard to tell you what you have to do with the sizes, because it is hard to tell what you want to achieve 
+in each of your layouts. Layouts are about creativity, and you can't just have one approach for all of them.
+For now we can say that it is better to use em for a font in these days since the user has so many different 
+devices and screen sizes that this is the easiest way to make the font-size automatically resizeable.
 
-A good solution can be also setting a font-size: 100% in the body element and than use em for each different 
+A good solution can also be setting a font-size: 100% in the body element and then use em for each different 
 selector so you start in every browser with the same size.
 
-Ok now is time for you to play, modify and create your font style.
-If you want to try something more you also check your cheatsheet and discover other font- text- property.
+Ok, now it is time for you to play, modify and create your font style.
+If you want to try something more, you can check your cheatsheet and discover other font- text- properties.
 
 
 
