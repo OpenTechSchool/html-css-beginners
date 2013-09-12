@@ -1,38 +1,38 @@
 permalinks: title
-baseurl: /html-css-beginners/
+baseurl: /HTML-CSS-beginners/
 map:
  - title: Home
    path: 
-   caption: Get started with Html & css
+   caption: Get started with HTML & CSS
  - title: Core
    caption: The 'mandatory' workshop content
    subpages:
      - title: The template structure
-       path: core/structure.html
+       path: core/structure.HTML
        caption: From white page to a 'Hello World'
      - title: Your first styled Hello World!
-       path: core/style.html
-       caption: Understanding css. What is class, Id and selector
+       path: core/style.HTML
+       caption: Understanding CSS. What is class, Id and selector
      - title: Create your personal Portfolio - Part 1
-       path: /core/portfolio.html
-       caption: Html5 elements, float, box model and text style
+       path: /core/portfolio.HTML
+       caption: HTML5 elements, float, box model and text style
      - title: Create your personal Portfolio - Part 2
-       path: /core/portfolio-2.html
+       path: /core/portfolio-2.HTML
        caption: Positioning, anchor and form elements
  - title: Extras
    caption: Additional workshop content
    subpages:
-   - title: Html5, what is new?
-     path: extras/html5.html
-   - title: Css3 transition and animation
-     path: extras/css3.html
+   - title: HTML5, what is new?
+     path: extras/HTML5.HTML
+   - title: CSS3 transition and animation
+     path: extras/CSS3.HTML
    - title: Cross Browsers and usual IE problems
-     path: /extras/cross-browsers.html
+     path: /extras/cross-browsers.HTML
    - title: Responsive Design and mobile approach
-     path: /extras/responsive.html
+     path: /extras/responsive.HTML
    - title: Sass and Less
-     path: /extras/sass-less.html  
+     path: /extras/sass-less.HTML  
    - title: Framework Twitter Boostrap
-     path: /extras/framework.html
+     path: /extras/framework.HTML
    - title: How to start with Javascript
-     path: extras/javascript.html
+     path: extras/javascript.HTML
