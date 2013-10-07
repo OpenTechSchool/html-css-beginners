@@ -18,7 +18,7 @@ And **HTML5**? What's that?
 This is just the last version of HTML. There is lot of interest about it,
 because it improves a lot the HTML, making it easier to write and to use.
 
-**What about CSS?**TMLTML
+**What about CSS?**
 CSS or Cascading Style Sheets is a language used for describing the 
 look and formatting of a document written in a markup language.
 It is closely connected with HTML, since it gives a style to HTML elements.
