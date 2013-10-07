@@ -33,6 +33,10 @@ In this way your image will follow the size of the browser window.
 It is possible that when the window is very small or very big, you can see a white space at the bottom of the image.
 You can change it setting the height: 100%. But now you need to be sure that you image isn't stretched.
 
+		.home-imag {
+			height: 100%
+		}
+		
 After the image, write another header tag within h1 and h2, add a class name to your header so you can style it 
 and not be confused with the other one. (I will use header-home as the class name)
 In the CSS we are goint to write this:
