@@ -33,10 +33,10 @@ In this way your image will follow the size of the browser window.
 It is possible that when the window is very small or very big, you can see a white space at the bottom of the image.
 You can change it setting the height: 100%. But now you need to be sure that you image isn't stretched.
 
-		.home-imag {
-			height: 100%
-		}
-		
+	.home-imag {
+		height: 100%
+	}
+
 After the image, write another header tag within h1 and h2, add a class name to your header so you can style it 
 and not be confused with the other one. (I will use header-home as the class name)
 In the CSS we are goint to write this:
@@ -113,7 +113,7 @@ The most important attribute of the < a > element is the href attribute, which i
 Your link's destination is the name and the extension to which you gave your other pages. Be careful to type it right.
 If the page to which you are going to link is not in the same root, you need to specify in which folder it can be
 found.
-For example, if i have the contact page in a contact folder I write:
+For example, if I have the contact page in a contact folder I write:
 
 	<li><a href="contact/contact.HTML"> Contact </a> </li>
 

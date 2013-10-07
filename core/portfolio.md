@@ -38,11 +38,11 @@ We can now write our main page content:
 	<div id="wrap-centered">
 	</div>
 
-Since we have just one main content, we can use the selector id.
+Since we have just one main content, we can use the ID selector.
 
 In style.css we make this div always centered in the middle. 
 To call the class in CSS, we need to write "." and the class name just after it. 
-For the Id it is the same but with " # " instead of "."
+For the ID it is the same but with " # " instead of "."
 
 	.wrap-centered {
 		width: 100%;
@@ -117,7 +117,7 @@ elements, not just the one that you are modifying.
 We just said that usually HTML elements are like a block displayed in a vertical flow. We can change this flow 
 thanks to the float property. 
 
-Another propery that allows us to change the flow is display: inline. 
+Another property that allows us to change the flow is display: inline. 
 Actually, this property doesn't change the flow, rather it displays an element inline (so that it will stay on one line instead dropping down) 
 instead of displaying within a block.
 Check your navigation menu.

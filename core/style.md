@@ -63,7 +63,7 @@ The right sytrax is:
 Refresh your browser and see how the color of your title has changed.
 
 Isn't it nice?
-To give a backgorund color to our paragraph, write
+To give a background color to our paragraph, write
 
 	p {
 		background-color: #ddd;
@@ -74,7 +74,7 @@ To give a backgorund color to our paragraph, write
 Web colors are colors used in designing web pages. 
 Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet).
 Hexadecimal color codes begin with a number sign (#).
-This number sign can be picked from a graphics software or from some nice web tool, such as, [Color picker](http://www.colorpicker.com/), for example.
+This number can be picked from a graphics software or from some nice web tool, such as, [Color picker](http://www.colorpicker.com/), for example.
 When you have chosen your color, copy the number that starts with # and paste that in your CSS file.
 
 Good to know: #000 is black and #fff is white.
