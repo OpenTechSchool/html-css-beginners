@@ -23,7 +23,7 @@ To make the nav menu we can just copy what we have done in the first part.
 Then, take an image that you like. It should be big enough and with good resolution.
 
 Just after the nav tag, include your image and give it a class name.
-Now you need to set the width of just this image as 100%.	
+Now you need to set the width of just this image as full-width, which is 100%.	
 
 	.home-imag {
 		width: 100%
