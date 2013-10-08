@@ -64,13 +64,23 @@ about what's next.
 
 * [HTML5, what is new?](extras/HTML5.html)
 * [Looking extra smart with CSS3](extras/CSS3.html)
-* [Cross-Browser compatibility and the IE problems](extras/compatibility.html)
+* [Cross-Browser compatibility and dealing with IE](extras/compatibility.html)
 
 ## Reference material
 
-* [HTML cheat sheet](#)
-  - Here you can find all the HTML elements you need to start your project.
-* [CSS cheat sheet](#) - Here you can find all the CSS selectors and properties 
-to let your creativity go wild.
- 
- * [codeacademy](#) - A good hands-on tutorial to keep you learning.
+The Mozilla Developer Network (MDN), by the guys who make Firefox, 
+host a great resource:
+
+ * [HTML Portal](https://developer.mozilla.org/en-US/docs/Web/HTML) - 
+   Guides, intros, tutorials, references, elements, attributes...
+ * [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - 
+   Every HTML element listed, find out about them all, and make use of them!
+ * [CSS Portal](https://developer.mozilla.org/en-US/docs/Web/CSS) - 
+   Tutorials for writing effective CSS, demos of CSS3, and much more.
+ * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) - 
+   More CSS properties and classes than you can wave a stick at.
+
+Learning resources:
+
+ * [CodeAcademy](http://www.codecademy.com/tracks/web) - 
+   A good hands-on tutorial to keep you learning.
