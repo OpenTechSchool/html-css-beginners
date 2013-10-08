@@ -1,5 +1,5 @@
 permalinks: title
-baseurl: /HTML-CSS-beginners/
+baseurl: /html-css-beginners/
 map:
  - title: Home
    path: index.html
