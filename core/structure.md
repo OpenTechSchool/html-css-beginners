@@ -14,7 +14,9 @@ Thankfully, HTML5's doctype is extremely simple - it's just `html`.
 
 Open a new file in your editor and write this line first:
 
-    <!DOCTYPE html>
+{% highlight html %}
+<!DOCTYPE html>
+{% endhighlight %}
 
 You're now officially editing a html document!
 
@@ -24,11 +26,13 @@ We have already met the most important HTML element: a tag.
 This gives structure to an HTML document and organizes the 
 content in a hierarchy.
 
-Tags contain characters that indicate the tags' purpose. For example, the <p></p> tags open and close paragraphs and the <li></li> tags wrap around lists.
+Tags contain characters that indicate the tags' purpose. For example, the `<p>` tag open paragraphs and the `</li>` closes a list item.
 Tags mark the beginning & end of an element and wrap the content of this element;
 that's why it is always necessary to open and close our tags as we just saw.
 
-	<p>This is a paragraph.</p>
+{% highlight html %}
+<p>This is a paragraph.</p>
+{% endhighlight %}
 
 Always double-check if you closed all your tags; otherwise, the browser can't understand what
 the code is about and will not display the content correctly.
