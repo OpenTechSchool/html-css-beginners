@@ -1,4 +1,4 @@
 ---
 layout: ots
-title: HTML5 --- what is new?
+title: Effective and Efficient CSS with Sass and Less
 ---

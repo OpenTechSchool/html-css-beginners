@@ -1,4 +1,4 @@
 ---
 layout: ots
-title: HTML5 --- what is new?
+title: Writing CSS Responsively - Being friendly to mobile
 ---
