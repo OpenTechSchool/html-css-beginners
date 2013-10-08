@@ -18,21 +18,21 @@ map:
        caption: HTML5 elements, float, box model and text style
      - title: Create your personal Portfolio - Part 2
        path: core/portfolio-2.html
-       caption: Positioning, anchor and form elements
+       caption: Positioning, anchors and form elements
  - title: Extras
    caption: Additional workshop content
    subpages:
    - title: HTML5, what is new?
      path: extras/HTML5.html
-   - title: CSS3 transition and animation
+   - title: CSS3 styles, transitions and animations
      path: extras/CSS3.html
-   - title: Cross Browsers and usual IE problems
-     path: extras/cross-browsers.html
-   - title: Responsive Design and mobile approach
+   - title: Browser compatibility and dealing with IE
+     path: extras/compatibility.html
+   - title: Responsive Design and coding for mobile
      path: extras/responsive.html
    - title: Sass and Less
      path: extras/sass-less.html
-   - title: Framework Twitter Boostrap
-     path: extras/framework.html
+   - title: Frameworks - Boostrap, Foundation
+     path: extras/frameworks.html
    - title: How to start with Javascript
      path: extras/javascript.html
