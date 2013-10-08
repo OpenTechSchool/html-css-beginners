@@ -65,7 +65,7 @@ audio:not([controls]) {
   display: none;
 }
 
-html {
+HTML {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -134,7 +134,7 @@ input::-moz-focus-inner {
 }
 
 button,
-html input[type="button"],
+HTML input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;

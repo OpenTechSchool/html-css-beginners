@@ -3,11 +3,11 @@ layout: ots
 title: README 
 ---
 
-This is a friendly how-to for contributors to the Html and Css workshop
+This is a friendly how-to for contributors to the HTML and CSS workshop
 at OpenTechSchool. 
 About the course:
 
-An Html and css basic workshop for beginners that never write Html/css before and 
+An HTML and CSS basic workshop for beginners that never write HTML/CSS before and 
 wnat to know how to start.
 
 # Class format
@@ -88,7 +88,7 @@ And made of win.
 
 [links for nerds](http://slashdot.org)
 
-[links for internal stuff](section8.html)
+[links for internal stuff](section8.HTML)
 
 This is a horizonal rule:
 
@@ -106,5 +106,5 @@ Bit of command line:
     get dolla
     $ 
 
-For a more complete list of languages see [highlight.js](http://softwaremaniacs.org/media/soft/highlight/test.html)
+For a more complete list of languages see [highlight.js](http://softwaremaniacs.org/media/soft/highlight/test.HTML)
 

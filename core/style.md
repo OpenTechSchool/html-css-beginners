@@ -4,54 +4,54 @@ layout: ots
 title: Your first styled Hello World!
 
 ---
-## Writing css
+## Writing CSS
 
-There are two ways to write a css for a document.
+There are two ways to write CSS for a document.
 
 An internal CSS code can be typed in the head section of the code.
-The coding is started with the style tag, written just before the closing
+The coding starts with the style tag, written just before the closing
 head tag.
 	
 	<style type="text/css">
 		....
 	</style>
 
-This way is good to use when you not many style. In this case is easier
-to referred and browser not need to load another file.
+This way is good when you do not have many styles. In such a case, it is easier
+to refer to because the browser has no need to load another file.
 
-Or an "external" CSS file. First you need to open a new file in your editor
-and save it with .css extension.
-Than you can associated with an HTML document using the following syntax. 
+The second way to write CSS for a document is with an "external" CSS file. First, you open a new file in your editor
+and save it with a .CSS extension.
+Then, you can link that to a HTML document using the following syntax. 
 Write it just after the meta tag.
 
 	<link href="path/toyour/file.css" rel="stylesheet">
 
-That's the best way if you have a lot of css to write and you want to 
-keep it organize.
+This is the best way if you have a lot of CSS to write and you want to 
+keep it organized.
 
-Once you linked your external css file, open yoout html file in the
-browser, open your console and go in the Network tab.
-You should see the path of your css file and under the STATUS coloum 
+Once you link your external CSS file, open your HTML file in the
+browser, open your console and go to the Network tab.
+You should see the path of your CSS file and under the STATUS column 
 see a *200 OK* response.
-That mean your file is read from your browser and linked at your html 
+That means your file is read from your browser and linked to your HTML document
 in the right way.
 Now we are ready to work with it.
 
-## Let's give some colors!
+## Let's add some colors!
 
 CSS has a simple syntax.
 The file consists of a list of rules. Each rule consists of one or more
-selectors, and a declaration block.
+selectors and a declaration block.
 
-**Selector** are used to declare which part of the markup a style applies to.
-Let's take the h1 title we wrote in our html file and give to it a nice red color.
+**Selectors** are used to declare which part of the markup a style applies to.
+Let's take the h1 title we wrote in our HTML file and give it a nice red color.
 
 	h1 { 
 		color: red;
 	}
 
-h1 is the selector. The html elemnts we want to style.
-*color* is one of the property that we can give to our selector and *red* is the 
+h1 is the selector, the HTML elemnt we want to style.
+*color* is one of the properties that we can give to our selector, and *red* is the 
 value of this property.
 The right sytrax is:
 
@@ -60,10 +60,10 @@ The right sytrax is:
 		property: value;
 	}	
 
-Refresh your browser and see how the color of you title is changed.
+Refresh your browser and see how the color of your title has changed.
 
 Isn't it nice?
-For give a backgorund color to our paragph will write
+To give a background color to our paragraph, write
 
 	p {
 		background-color: #ddd;
@@ -74,30 +74,28 @@ For give a backgorund color to our paragph will write
 Web colors are colors used in designing web pages. 
 Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet).
 Hexadecimal color codes begin with a number sign (#).
-This number sign can be picked from a Graphics software or from some nice web tool.
-For example: [Color picker](http://www.colorpicker.com/)
-Choose the color, copy the number that start with # and than past in your css file.
+This number can be picked from a graphics software or from some nice web tool, such as, [Color picker](http://www.colorpicker.com/), for example.
+When you have chosen your color, copy the number that starts with # and paste that in your CSS file.
 
 Good to know: #000 is black and #fff is white.
 
 ******
 	
 
-Let's try now to give a nicer border to our images.
+Let's try now to give a nice border to our images.
 
 	img {
 		border: 1px solid #000;
 	}	
 
-Here we are givin the style to all the img tags we have, giving 1px thicK,
-solid and black to all the four borders of our images.
-If we would like to give the style just to one of the four border we should write
+Here we are giving the following style to all the img tags we have: a 1-pixel thick, solid black border to all four edges of our images.
+If we want to give the style to just one of the four edges, for example, the top edge, we would write
 
 	img {
 		border-top: 1px solid #000;
 	}
 
-**Look at your css cheat sheet and giev some more style to your images. **
+**Look at your CSS cheat sheet and give some more styles to your images. **
 
 
 

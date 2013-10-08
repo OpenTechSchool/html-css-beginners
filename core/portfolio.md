@@ -1,76 +1,75 @@
 ---
 
 layout: ots
-title: Create your personal Portfolio
+title: Create your Personal Portfolio
 
 ---
 
-# Html5 structure and Css starter
+# HTML5 structure and starter CSS
 ## Main Content
 
-We will start building the main page, our personal presentation since is the one that will give the 
-main structure to the whole web site design.
+We will start by building the main page of our personal presentation, since this will give the 
+main structure to the whole website design.
 
 
 **GOAL**
-We are going to design a page with the main menu, the content and footer.
-We fill in the content with an image next to some text.
-We are going to do all of this with the Html5 elements so keep open your Html cheatsheet.
+We are going to design a page with a main menu, content, and a footer.
+We fill in the content with an image along with some text.
+We are going to do all of this with HTML5 elements so keep your HTML cheatsheet open.
 
-Taken file like the one we just wrote but without any content. (Head with meta-tag, title and 
-style.css linked and body but comletely empty.)
+Take a file just like the one we just wrote but without any content. (Head with meta tags, title and 
+style.CSS linked but a completely empty body.)
 
-Let's start wrapping all our page in a div for give a centered design to our page.
- *"Div tag defines a section in an Html file and is used to group element to format 
- them with Css, to layout a web page."*
+Let's start by wrapping our page in a div to give a centered design to our page.
+ *"A div tag defines a section in a HTML file and is used to group elements to format 
+ them with CSS in order to lay out a web page."*
 
-Div is a general tag and can be used in many different situation just to wrap up others html
-elements and style them. For this reason we need to give to it a name, otherwise we can't style each one 
-in different way.
-There are two way to give a name to a div tag. With a id or with a class.
-Think about at id as a pesonal and UNIC name as your surname/name and about the class is like personal 
-characteristics as color of your hares or your age. 
-Id, the unique one, is used just when need to write specific style valid only for this element. 
-Class are more common and used for group different Html elements and give them the same style and characteristics.
+Div is a general tag and can be used in many different situations just to wrap together a group of HTML
+elements and style them. For this reason we need to give it a name; otherwise, we can't style each one 
+in a different way.
+There are two ways to give a name to a div tag: with an id or with a class.
+Think about an id as a personal and unique name like your surname/name and think about the class as personal 
+characteristics, such as the color of your hair or your age. 
+Id, the unique one, is used when you need to write a specific style valid only for this element. 
+Classes are more common and used to give different HTML elements the same style and characteristics.
 
-We can now start to write our main page content:
+We can now write our main page content:
 
 	<div id="wrap-centered">
 	</div>
 
-Since we have just one main content we can use id selector.
+Since we have just one main content, we can use the ID selector.
 
 In style.css we make this div always centered in the middle. 
-In css for call the class we need to write "." and the class name just after it. 
-For the Id is the same but with " # " instead if "."
+To call the class in CSS, we need to write "." and the class name just after it. 
+For the ID it is the same but with " # " instead of "."
 
 	.wrap-centered {
 		width: 100%;
 		margin: 0 auto;
 	}
 
-Defined the width of an element and than give to it "margin: 0 auto" is a common rules for make
-the element centered.
-We use 100% instead of 100px for the easily fact that we wont our page responsive or in other worlds we want 
-that the page resize when the browser windows change dimensions.
-Now everything will stay inside this div will be centered.
+Here we define the width of an element and then give it a "margin: 0 auto," which is a common rule to center
+the element.
+We use 100% instead of 100px because we want our page to be responsive or, in other words, we want the page to resize when the browser windows change dimensions.
+Now everything inside this div will be centered.
 
-In the css style, at the beginning of the file let's write also somehting like that:
+At the beginning of the style.css file, let's write something like this:
 
 	* { padding: 0; margin: 0; border: 0; }
 
 <<<<<<< Updated upstream
-That's set all the elements "\*", with default padding, margin and border equal to 0px. 
+That is to set all the elements "\*" with default padding, margin and border to 0px. 
 =======
-That's set all the elements " * ", with default padding, margin and border equal to 0px. 
+That is to set all the elements " * " with default padding, margin and border to 0px. 
 >>>>>>> Stashed changes
-This is really important to do because everybrowser set a default size for some tags and without 
-set all of them again to 0px will be impossible to calculate the  position of Html elements and to
-positioning them in the space, since every browser will interpeter that in a different way.	
+This is really important to do because every browser sets a default size for some tags and without 
+setting all of them again to 0px, it will be impossible to calculate the  position of HTML elements and to
+position them on the page, since every browser will interpret that in a different way.	
 
-## Menu
-Time to write our menu.
-Inside of the div we are going to write our first Html5 element.
+## Navigation Menu
+Time to write our navigation menu.
+Inside of the div we are going to write our first HTML5 element.
 
 	<nav>
 		<ul>
@@ -79,10 +78,10 @@ Inside of the div we are going to write our first Html5 element.
 		</ul>
 	</nav>
 
-Here we have 3 new elements. First the nav tag. That's tag mean navigation and wrap up all the elements
+Here we have 3 new elements. First, the nav tag. That tag means navigation and wraps up all the elements
 that are essential for the navigation in the website.
-Ul is a type of list, unordered. In th list, has the world suggest, we keep elements that usually stay in 
-a list and each element are wrap up in a li tag.
+Ul is a type of list--unordered. In an unordered list, as the word suggests, we have elements that usually stay in 
+a list and each element is wrapped in a li tag.
 
 In style.css:
 
@@ -103,51 +102,55 @@ In style.css:
 		color: ##08c;
 	}
 
-Nav ul is a way to specify that i'm talking about not all the ul in the page but just the one that is nav's child.
-Most of the property we write here you already know or you can eaily check on the cheatsheet. 
-We want to talk about one of them, really particular and with big power: float: right.
+Nav ul is a way to specify not all the ul elements on the page but just the one that is nav's child.
+Most of the properties we write here you already know or you can eaily check on the cheatsheet. 
 
-That's tell to the selector selected to get out from the normal flow of the Html element (usually Html element are block element, that's mean that they are displayed one after the other vertically in the page as a block.) and move to the most 
-right side of the div where is wrap up.
+Now we want to talk about one of them in particular, because it's very powerful: float: right.
+
+This tells the selected selector to get out from the normal flow of the HTML element (usually HTML elements are block elements, which means that they are displayed one after the other vertically in the page as a block) and move to the
+right-most side of the div in which it is wrapped.
 
 If you check in your browser, the nav ul is displayed on the right. 
-Float can be set on the right or on the left. Always be carefull with that because this will change the flow of all the html
-elements, not just the one that you are going to modify.
+Float can be set on the right or on the left. Always be careful with that because this will change the flow of all the HTML
+elements, not just the one that you are modifying.
 
-We just said that usually the Html element are like a block displayed in a vertical flow. And we can change this flow 
-thanks to float property. Another propery that allow us to change the flow is display: inline. 
-Actually thsi property don't change the flow, rather make an element inline (so will stay on one line instead folling down) 
-instead as a block.
-Check your menu navigation.
+We just said that usually HTML elements are like a block displayed in a vertical flow. We can change this flow 
+thanks to the float property. 
 
-Last thing we need to do before move on is to clear everything in order to restore the normal flow, since we 
-change it setting float to right.
+Another property that allows us to change the flow is display: inline. 
+Actually, this property doesn't change the flow, rather it displays an element inline (so that it will stay on one line instead dropping down) 
+instead of displaying within a block.
+Check your navigation menu.
+
+Last thing we need to do before moving on is to clear everything in order to restore the normal flow, since we 
+changed the setting float to right.
 
 	<div class="clear"></div>
 
-And in the css file:
+And in the CSS file:
 
 	.clear {
 		clear: both;
 	}	
 
-Here we create a new div with class clear and call this one in css giving clear both. That will clear both value, right
+Here we create a new div with class clear and call this one in our CSS file, giving clear both. That will clear both values, right
 and left. Other two possible values are "right" or "left". 
-When you mess up with floatting element, before starting a new design section is always a good practice put "clear:both"
+When you mess with floating element, before starting a new design section it is always a good practice to put "clear:both"
 to be sure your flow is still the default one.
 
 ## The footer
 
-Footer is called, as the name say, that part of the page that stay at the end of the page and give some general and 
+The footer is, as the name says, that part of the page that stays at the end of the page and gives some general and 
 maybe secondary information, like in a book.
-The interested tag is:
+The tag for that is:
 
 	<footer>
 		<p></p>
 	</footer>
 
-Inside the p tag you can write what you prefer. Maybe who made this website or your email.
-In css file:
+Inside the p tag you can write what you want, maybe who made this website or your email.
+
+In the CSS file, write:
 
 	footer {
 	margin-top: 50px;
@@ -157,20 +160,20 @@ In css file:
 		text-align: center;
 	}
 
-We don't really need to style the footer but is nice to give to it a space to breath with a margin-top: 50px. 
-Than we just set the alignament of the text in the p tag as center.
-That's all what we need for the footer.
+We don't really need to style the footer but it is nice to give it some space to breathe with a margin-top: 50px. 
+Then we just set the alignament of the text in the p tag as center.
+That's all we need for the footer.
 
 ## Box Model and fonts
 
-Finally we start to build our content. First of all some structure. We said we are going to design two coloum
-design, one coloum is a kind of sidebar and this tag is called aside and the other one, the most important one,
+Finally we start to build our content. First of all some structure. We are going to have a two-column
+design: one column is a kind of sidebar and this tag is called aside and the other one, the most important one,
 is a section wrapping up several articles.
-In order to have more control on this two-coloum design, contain all of it in a div.content and give to it some
-basic css, as we already did it for the wrap div.
+In order to have more control of this two-column design, wrap all of it in a div.content and give it some
+basic CSS, as we already did it for the wrap div.
 
-tips: When you are not sure if your css is working in the properly way and you want to check exactly the size,
-margins or else of your element, give to it a casual background-color, so it display the element is all it's size.
+Tips: When you are not sure if your CSS is working in the proper way and you want to check exactly the size,
+margins or something else of your element, give it a casual background color, so that it displays the entire element.
 
 	<div class="content">
 		<aside>
@@ -179,7 +182,7 @@ margins or else of your element, give to it a casual background-color, so it dis
 		</section>
 	</div>
 
-In style.css:
+In style.CSS:
 
 	.content {
 	width: 70%;
@@ -201,12 +204,12 @@ In style.css:
 		margin: 20px 10px;
 	}
 
-First we gave a size to the content and place it in the middle of the page. Than we place the aside tag with some
-margins to breath, a minimum height and a width. We also highi-light the border-right of this element so it display
-a line that divide aside from section.
-Last we give a float: left in order to make the section (or whatever we will write after the aside) slip next to the
+First, we gave a size to the content and placed it in the middle of the page. Then we gave the aside tag some
+margins to allow the content to breathe along with a minimum height and width. We also highlighted the border-right of this element so that it displays
+a line that divides aside from section.
+Last, we gave a float: left in order to make the section (or whatever we will write after the aside) slip next to the
 aside, right on its left.
-Is really important to set display: inline-block for the section
+It is really important to set display: inline-block for the section.
 
 In the aside let's place an image, our personal profile image.
 
@@ -219,10 +222,10 @@ In the aside let's place an image, our personal profile image.
 		margin-top: 10px;
 	}
 
-When you don't know the size of your image, you can place it and than open your console and check from there,
-try to write different width size and see what the best one. 
-Of course the best way to do this work is cut your image before, kwoning the size, with some Graphical Programs
-like Photoshop or gimp but for now that is enough.
+When you don't know the size of your image, you can place it and then open your console and check from there,
+try out different width sizes and see what the best width is. 
+Of course, the best way to do this work is to crop your image before, knowing the size, with some graphic editing rograms
+like Photoshop or GIMP but for now that is enough.
 
 Time to write your personal presentation!
 
@@ -236,16 +239,15 @@ Time to write your personal presentation!
 		</article>	
 	</section>
 
-Here we contain inside the section an article tag. Each article tag is compose from header tag, a tag that is 
-made for wrap up all the h tags. So we place inside of it an h1 and h2 tag. Followed from a p tag where finally
-all our content is written. Write at least some text inside your article, we will need later on.
+Here we put inside the section an article tag. Each article tag is composed of a header tag, a tag that is 
+made for wrapping up all the h tags. So we place inside of it an h1 and h2 tag. Followed by a p tag where finally
+all of our content is written. Write at least some text inside of your article, because we will need it later on.
 
+Before we make our article better looking, we need to know some basics about the box model.
+What is a box model, and why is it so importan?
 
-Before make our article looking better, we need to know some basic knowledge about Box model.
-What is a box model and why is so importan?
-
-Every element in web design is a rectangular box. (Yes, either block and inline element. You can set padding,
-margins and border on both of them.) 
+Every element in web design is a rectangular box. (Yes, both block and inline elements. You can set paddings,
+margins and borders on both of them.) 
 In CSS, the term "box model" is used when talking about design and layout.
 The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, 
 padding, and the actual content.
@@ -254,48 +256,49 @@ How is the size of the box calculated exactly? Here is a diagram:
 
 <img src="../images/css-box-model.gif" />
 
-What these elements do?
-* Margin: Clears an area around the border. The margin does not have a background color, it is completely transparent
-* Borders: A border that goes around the padding and content. The border can have a personal color and thickness
-* Padding: Clears an area around the content. The padding is affected by the background color of the box
-* Content: The content of the box, where text and images, text or others elements appear
+What do these elements do?
+* Margin: Clears an area around the border. The margin does not have a background color; it is completely transparent.
+* Borders: Goes around the padding and content. The border must have a color and thickness.
+* Padding: Clears an area around the content. The padding is affected by the background color of the box.
+* Content: The content of the box, where text, images or other elements appear.
 
-Margin is the unique that doesn't affect the size of the box itself, but it affects other boxes in the page.
+Margin is unique in that it doesn't affect the size of the box itself, but it affects the other boxes on the page.
+
 The size of the box itself is calculated like this:
 
 **Width:** width + padding-left + padding-right + border-left + border-right
 
 **Height:** height + padding-top + padding-bottom + border-top + border-bottom
 
-Tips: Remember to set all of this elemnents to "0px" when you start your .css files as we did at the very beginning.
+Tips: Remember to set all of these elemnents to "0px" when you start your .CSS files as we did at the very beginning.
 
-So, now that we know how to calculate the box around our elements, let's play with it around the article, 
+So, now that we know how to calculate the box around our elements, let's play with the boxes around the article, 
 header and h tags.
 
 **Text style**
 
-The text in the document are still pretty boring, let's style it.
-What we already know so far is how to change a color and how to make the text align on the center.
-As you probably already understood, the others values of text-align are left, right and justified, 
+The text in the document is still pretty boring, so let's style it.
+What we already know so far is how to change a color and how to make the text align to the center.
+As you probably already have understood, the other values of text-align are left, right and justified; 
 by default the value is left.
 When text-align is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers).
-An important decision to take is which font we are going to use for the project?
-You can specify the type of font whit the font-family property.
+An important decision to make is which font we are going to use for the project.
+You can specify the type of font with the font-family property.
 
 There are two types of font family names:
 generic family: a group of font families with a similar look (like "Serif" or "Monospace")
 font family: a specific font family (like "Times New Roman" or "Arial") 
-For choose your font you have to way. 
-Once is use a common family-font (one that with high probablity all of the user have on their machine.) called a
-"web-safe" fonts. Or use a font-face rule. That's a new property that allow a designer to include font-family on
-your server and refered to it. 
-The second one it was a small revolution since gave to the designer the freedom to choose the font they more prefer
-and now we have a huge choose.
+To specify your font you have two ways. 
+One way is to use a common family-font (one with a high probablity that all users have on their machines) called a
+"web-safe" font. Or use a font-face rule. That's a new property that allows a designer to include font-family on
+your server and refer to it. 
+This second way was a small revolution, since it gave the designer the freedom to choose the font they prefer
+and now we have a huge choice.
 
-By the way now we are going to use the "web-safe" font since is easier and fast. 
-Tips: If you try to use a particular font that you download in your computer and it display correctly be carefull
-because on the computer of users probably don't. The correct display doesn't dipends from the browser but from 
-what's in your machine.
+For now we are going to use the "web-safe" font since that is easier and faster. 
+Tips: If you try to use a particular font that you download onto your computer, and it display correctly--be careful
+because on other people's computers, it probably won't. The correct display doesn't come from the browser but from 
+what's on your machine.
 
 	h1, h2 {
 		font-family: Georgia, serif;
@@ -306,31 +309,31 @@ what's in your machine.
 		font-size: 0.9em;
 	}
 
-And here we can already see the other really important property. Font-size. As you already understood that's set 
-the size font of your selector. Browser have a font-size set by default but is important for a good look change these.
-However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+And here we can already see the other really important property: font-size. As you already understood that sets 
+the size of the font of your selector. Browsers have a font-size set by default but it is important for a good look to change these defaults.
+You should not use font size adjustments, however, to make paragraphs look like headings or headings to look like paragraphs.
 The font-size can be set using px, em or %.
 Your screen resolution specifies how many pixels your screen/display is made of. So when you specify: font-size: 
-12px;, you're basically telling the browser that each letter should be 12 pixels high. That's is therefore
+12px;, you're basically telling the browser that each letter should be 12 pixels high. That is therefore
 connected with your screen size.
 Font-size: 50%; sets the font size of your element to 50% of the font size of its parent element and em is the 
-width of the letter 'm' in the selected typeface, basically the same as percentage, except that 1em is 100% 
+width of the letter 'm' in the selected typeface. It's basically the same as percentage, except that 1em is 100% 
 and 1.5em is 150%.
-The size calculated from pixels to em using this formula: pixels/16=em.
-For examples:
+To calculate the size from pixels to em, use this formula: pixels/16=em.
+For example:
 
 	h1 {font-size:2.5em;} /* 40px/16=2.5em */
 
-Fact is, it's hard to tell you what you have to do with them because is hard to tell what you are to achieve 
-in each of your layouts. Layouts are about creativity, and you can't just fix an approach to fit all of them.
-For now we can say that is better to use em for a font in these days since the user has so many different 
-device and screen size that this is the easier way to make the font-size automatical resizeble.
+It's hard to tell you what you have to do with the sizes, because it is hard to tell what you want to achieve 
+in each of your layouts. Layouts are about creativity, and you can't just have one approach for all of them.
+For now we can say that it is better to use em for a font in these days since the user has so many different 
+devices and screen sizes that this is the easiest way to make the font-size automatically resizeable.
 
-A good solution can be also setting a font-size: 100% in the body element and than use em for each different 
+A good solution can also be setting a font-size: 100% in the body element and then use em for each different 
 selector so you start in every browser with the same size.
 
-Ok now is time for you to play, modify and create your font style.
-If you want to try something more you also check your cheatsheet and discover other font- text- property.
+Ok, now it is time for you to play, modify and create your font style.
+If you want to try something more, you can check your cheatsheet and discover other font- text- properties.
 
 
 
