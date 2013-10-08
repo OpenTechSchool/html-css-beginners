@@ -2,37 +2,37 @@ permalinks: title
 baseurl: /HTML-CSS-beginners/
 map:
  - title: Home
-   path: 
+   path: index.html
    caption: Get started with HTML & CSS
  - title: Core
    caption: The 'mandatory' workshop content
    subpages:
      - title: The template structure
-       path: core/structure.HTML
+       path: core/structure.html
        caption: From white page to a 'Hello World'
      - title: Your first styled Hello World!
-       path: core/style.HTML
+       path: core/style.html
        caption: Understanding CSS. What is class, Id and selector
      - title: Create your personal Portfolio - Part 1
-       path: /core/portfolio.HTML
+       path: core/portfolio.html
        caption: HTML5 elements, float, box model and text style
      - title: Create your personal Portfolio - Part 2
-       path: /core/portfolio-2.HTML
+       path: core/portfolio-2.html
        caption: Positioning, anchor and form elements
  - title: Extras
    caption: Additional workshop content
    subpages:
    - title: HTML5, what is new?
-     path: extras/HTML5.HTML
+     path: extras/HTML5.html
    - title: CSS3 transition and animation
-     path: extras/CSS3.HTML
+     path: extras/CSS3.html
    - title: Cross Browsers and usual IE problems
-     path: /extras/cross-browsers.HTML
+     path: extras/cross-browsers.html
    - title: Responsive Design and mobile approach
-     path: /extras/responsive.HTML
+     path: extras/responsive.html
    - title: Sass and Less
-     path: /extras/sass-less.HTML  
+     path: extras/sass-less.html
    - title: Framework Twitter Boostrap
-     path: /extras/framework.HTML
+     path: extras/framework.html
    - title: How to start with Javascript
-     path: extras/javascript.HTML
+     path: extras/javascript.html
