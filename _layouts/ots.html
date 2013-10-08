@@ -11,7 +11,7 @@
   <link rel="icon" href="/favicon.ico" type="image/png">
     <style type="text/CSS">
       body {
-        background: url("{{site.baseurl}}/images/ps_neutral.png") #FFF repeat fixed;
+        background: url("{{site.baseurl}}images/background.png") #FFF repeat fixed;
         font-family: "Open Sans", Helvetica, sans-serif;
       }
 
@@ -39,6 +39,28 @@
         font-family: Monaco, Menlo, Consolas, "DejaVu Sans Mono", Inconsolata, "Courier New", monospace;
       }
 
+      .navbar h1 a, .navbar h1 {
+        color: #f5f5f5;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .navbar h1 a:hover {
+        color: #fff;
+      }
+
+      .navbar-static-top {
+        z-index: 1000;
+        position: relative;
+      }
+
+      .navbar-inner {
+        background: #085987 !important;
+        border-color: #085987 !important;
+      }
+
       .title { text-align: center; margin-bottom: 30px; margin-top: 30px; }
 
       .container-fluid {
@@ -55,19 +77,6 @@
       }
 
       #footer { text-align: center; }
-
-      .navbar h1 a, .navbar h1 {
-        color: #eee;
-        font-size: 18px;
-        line-height: 20px;
-        text-align: center;
-        text-decoration: none;
-      }
-
-      .navbar-static-top {
-        z-index: 1000;
-        position: relative;
-      }
 
     </style>
 </head>
