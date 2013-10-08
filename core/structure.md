@@ -7,16 +7,16 @@ title: The template structure
 
 # Doctype
 
-The ﬁrst thing on a HTML page is the doctype, which tells the browser which 
-version of the markup language the page is using.
+The ﬁrst thing on a HTML page is the doctype, which as you might guess, 
+tells the browser what type of document it's looking at, and how to read it.
+
+Thankfully, HTML5's doctype is extremely simple - it's just `html`.
 
 Open a new file in your editor and write this line first:
 
-    <!Doctype HTML>
-    
-The doctype is case-insensitive. 
-DOCtype, doctype, DocType and DoCtYpe are all valid code.
+    <!DOCTYPE html>
 
+You're now officially editing a html document!
 
 # What is a tag?
 
