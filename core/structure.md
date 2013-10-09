@@ -54,7 +54,7 @@ browser can and will get mixed up trying to understand your HTML document.
 
 There are some specific elements that are exceptions to this rule. 
 When elements cannot contain anything else, then they don't need to be closed. 
-For example, the following elements 'stand on their own':
+For example, the following elements are referred to as 'self-closing':
 
 {% highlight html %}
 <hr>
@@ -81,19 +81,19 @@ or this:
 {% endhighlight %}
 
 You'll notice that HTML doesn't actually care about the whitespace or 
-newlines *between* tags. It would look the same if the above had been fit 
-onto one line.
+newlines *between* tags. It would end up looking the same if the above had 
+been fit onto one line.
 
 In the above example, you can see our first case of an **attribute**. It 
-starts with a lowercase name, and then is almost always following by an 
-`=` and text that's surrounded in double quotes, `"like this"`. An element 
+starts with a lowercase name, and then is almost always followed by an 
+`=` and a 'value' that's surrounded in double quotes, `"like this"`. An element 
 can have many attributes, in which case you separate them by spaces, as you'll 
 see soon. Attributes give information about an element in particular.
 
 In this case, the `<div>` tag (which is used to *divide* groups of elements up)
 has an `id` attribute assigned to `page-title`. That's telling us that this 
 section of the document is designed to hold the page's main title. You will 
-more about specific attributes later :)
+learn more about specific attributes later!
 
 ## Html and Head Elements
 
@@ -110,10 +110,10 @@ outside it! Next, the document is broken up into two important parts:
 The **head** and **body**.
 
 The head contains the title of the page & information **about** the page 
-(*meta* information). Most of meta information are not visible to the user, 
-but has many purposes. For example, meta tags can tell search engines 
+(*meta* information). Most meta information isn't visible to the user, 
+but it has many purposes. For example, meta elements can tell search engines 
 information about your page, such as who created it and a description of 
-your page's content.
+your page's content. Here's an example `head` element:
 
 {% highlight html %}
 <head>
@@ -123,7 +123,8 @@ your page's content.
 </head>
 {% endhighlight %}
 
-First off, there is a charset="utf-8" meta tag. 
+You can see meta tags are one of the self-closing elements! 
+First off, there is a charset meta tag. 
 This is the most important meta tag. Without it your website might not display 
 properly. It is best practice to include it as the first element inside the 
 head element. Basically, it specifies to the browser the character encoding 
@@ -133,7 +134,7 @@ is usually the best general encoding to use.
 
 Here we've also written another type of a meta tag, the description. 
 We define what kind of meta tag it is with the `name` attribute and put our 
-description the text of `content=""`.
+description in the *value* of the content attribute.
 
 Inside our head element, we have lastly written a title of our website. Chuck 
 the above code in your file (inside your `html` element), and change the 
@@ -164,7 +165,7 @@ in your browser.
 
 There are different HTML elements that we can use to indicate different types 
 of content in our document, like the <p></p> tags which we have already met.
-Let's try to write a title, followed by a paragraph.
+Let's try writing a title, followed by a paragraph.
 
 {% highlight html %}
 <body>
@@ -174,7 +175,7 @@ Let's try to write a title, followed by a paragraph.
 {% endhighlight %}
 
 Heading elements are straightforward to understand. They start from h1 with the 
-biggest font going to h6 with the smallest font.
+biggest font and importance, going to h6 with the smallest font.
 
 ******
 
