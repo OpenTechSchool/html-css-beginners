@@ -17,17 +17,19 @@ end it will always be transformed into HTML because that's the language of
 the browser. It is a hierarchical language.
 
 And **HTML5**? What's that?  
-This is just the latest version of HTML. There is lot of interest about it, 
-because it improves a lot HTML's elements, making it easier to write and to use.
+This is just the latest version of HTML. There is a lot of interest 
+about it, because it improves and adds many HTML elements, making it 
+easier to write and to use.
 
 **What about CSS?**  
 CSS or Cascading Style Sheets is a language used for describing the 
 look and formatting of a document written in a markup language. 
 It is closely connected with HTML, since it gives style to HTML elements. 
 In contrast to HTML, CSS has no hierarchy and can be written in the order 
-that we choose.  
-**CSS3** as a HTML5 is the last released version of CSS, and it also 
-improves CSS a lot improvement, for example, the possibility to animate 
+that we choose.
+
+**CSS3** is the last released version of CSS, and it also 
+improves CSS a lot. For example, it gives the possibility to animate 
 an element.
 
 To check all our code, we will use the console in our browser. 
@@ -69,7 +71,7 @@ about what's next.
 ## Reference material
 
 The Mozilla Developer Network (MDN), by the guys who make Firefox, 
-host a great resource:
+host some great resources:
 
  * [HTML Portal](https://developer.mozilla.org/en-US/docs/Web/HTML) - 
    Guides, intros, tutorials, references, elements, attributes...
@@ -78,7 +80,7 @@ host a great resource:
  * [CSS Portal](https://developer.mozilla.org/en-US/docs/Web/CSS) - 
    Tutorials for writing effective CSS, demos of CSS3, and much more.
  * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) - 
-   More CSS properties and classes than you can wave a stick at.
+   More CSS properties and classes than you can shake a stick at.
 
 Learning resources:
 
