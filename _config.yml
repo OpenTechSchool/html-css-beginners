@@ -1,5 +1,6 @@
 permalinks: title
 baseurl: /html-css-beginners/
+markdown: redcarpet
 map:
  - title: Home
    path: index.html
