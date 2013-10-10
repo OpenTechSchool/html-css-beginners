@@ -13,7 +13,7 @@ a code editor like Sublime Text, Gedit, or Textmate instead.
 
 A HTML file always uses the extension **.html** to indicate its filetype.
 
-# Doctype
+## Doctype
 
 The ﬁrst thing on a HTML page is the **doctype**, which as you might guess, 
 tells the browser what type of document it's looking at, and how to read it.
@@ -28,7 +28,7 @@ Open a new file in your editor and write this line first:
 
 You're now officially editing a html document!
 
-# Elements and Tags
+## Elements and Tags
 
 These are the basic building blocks of HTML.
 
