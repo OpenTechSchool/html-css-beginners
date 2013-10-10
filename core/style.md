@@ -11,10 +11,12 @@ There are two ways to write CSS for a document.
 An internal CSS code can be typed in the head section of the code.
 The coding starts with the style tag, written just before the closing
 head tag.
-	
-	<style type="text/css">
-		....
-	</style>
+
+``` css
+<style type="text/css">
+	....
+</style>
+```
 
 This way is good when you do not have many styles. In such a case, it is easier
 to refer to because the browser has no need to load another file.
@@ -46,9 +48,11 @@ selectors and a declaration block.
 **Selectors** are used to declare which part of the markup a style applies to.
 Let's take the h1 title we wrote in our HTML file and give it a nice red color.
 
-	h1 { 
-		color: red;
-	}
+```
+h1 { 
+	color: red;
+}
+```
 
 h1 is the selector, the HTML elemnt we want to style.
 *color* is one of the properties that we can give to our selector, and *red* is the 
