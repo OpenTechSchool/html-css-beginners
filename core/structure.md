@@ -117,7 +117,7 @@ your page's content. Here's an example `head` element:
 
 {% highlight html %}
 <head>
-    <meta charset="utf-8"> 
+    <meta charset="UTF-8"> 
     <meta name="description" content="Free Web tutorials">
     <title>My first Portfolio</title>
 </head>
@@ -196,7 +196,7 @@ So far, our entire document might look like this:
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"> 
+        <meta charset="UTF-8"> 
         <meta name="description" content="Free Web tutorials">
         <title>My first Portfolio</title>
     </head>
