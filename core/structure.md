@@ -22,9 +22,7 @@ Thankfully, HTML5's doctype is extremely simple - it's just `html`.
 
 Open a new file in your editor and write this line first:
 
-{% highlight html %}
-<!DOCTYPE html>
-{% endhighlight %}
+    <!DOCTYPE html>
 
 You're now officially editing a html document!
 
@@ -42,9 +40,7 @@ represents a 'list item'. You'll notice they're always surrounded by angle
 backets. *Opening* and *Closing* tags mark the beginning and end of an 
 element and wrap its content, like so:
 
-{% highlight html %}
-<p>This is a paragraph.</p>
-{% endhighlight %}
+    <p>This is a paragraph.</p>
 
 You can see the closing tag includes a `/` before its name; otherwise it would 
 be another opening tag!
@@ -56,11 +52,9 @@ There are some specific elements that are exceptions to this rule.
 When elements cannot contain anything else, then they don't need to be closed. 
 For example, the following elements are referred to as 'self-closing':
 
-{% highlight html %}
-<hr>
-<input>
-<img>
-{% endhighlight %}
+    <hr>
+    <input>
+    <img>
 
 There aren't so many of such elements, and you should easily pick up which are 
 which by writing some more code :)
@@ -68,17 +62,13 @@ which by writing some more code :)
 Lastly, *nesting* elements isn't so hard, and is fundamental to how HTML works. 
 It looks just like this:
 
-{% highlight html %}
-<p>This is a sentence, with a <span>span</span> element inside it.</p>
-{% endhighlight %}
+    <p>This is a sentence, with a <span>span</span> element inside it.</p>
 
 or this:
 
-{% highlight html %}
-<div id="page-title">
-    <h1>The h1 tags indicates the primary header of the document</h1>
-</div>
-{% endhighlight %}
+    <div id="page-title">
+        <h1>The h1 tags indicates the primary header of the document</h1>
+    </div>
 
 You'll notice that HTML doesn't actually care about the whitespace or 
 newlines *between* tags. It would end up looking the same if the above had 
@@ -100,10 +90,8 @@ learn more about specific attributes later!
 Coming back to our file (hope you're coding along!), after the doctype we 
 begin our document with a root `html` element, just like so:
 
-{% highlight html %}
-<html>
-</html>
-{% endhighlight %}
+    <html>
+    </html>
 
 It encompasses every other element in our HTML document, nothing should go 
 outside it! Next, the document is broken up into two important parts: 
@@ -115,13 +103,11 @@ but it has many purposes. For example, meta elements can tell search engines
 information about your page, such as who created it and a description of 
 your page's content. Here's an example `head` element:
 
-{% highlight html %}
-<head>
-    <meta charset="UTF-8"> 
-    <meta name="description" content="Free Web tutorials">
-    <title>My first Portfolio</title>
-</head>
-{% endhighlight %}
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="description" content="Free Web tutorials">
+        <title>My first Portfolio</title>
+    </head>
 
 You can see meta tags are one of the self-closing elements! 
 First off, there is a charset meta tag. 
@@ -154,10 +140,8 @@ contained in the body is visible to the user.
 Just after the closing head tag but still inside the html element, 
 let's add the body tags.
 
-{% highlight html %}
-<body>
-</body>
-{% endhighlight %}
+    <body>
+    </body>
 
 Everything that is written inside this tag will be displayed to the user.
 Try to write some plain text between the body tags and check the file 
@@ -167,12 +151,10 @@ There are different HTML elements that we can use to indicate different types
 of content in our document, like the <p></p> tags which we have already met.
 Let's try writing a title, followed by a paragraph.
 
-{% highlight html %}
-<body>
-    <h1>I'm the title.</h1>
-    <p>And I'm a paragraph!</p>
-</body>
-{% endhighlight %}
+    <body>
+        <h1>I'm the title.</h1>
+        <p>And I'm a paragraph!</p>
+    </body>
 
 Heading elements are straightforward to understand. They start from h1 with the 
 biggest font and importance, going to h6 with the smallest font.
@@ -192,22 +174,20 @@ the heircharcical nature of HTML pretty well.
 
 So far, our entire document might look like this:
 
-{% highlight html %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"> 
-        <meta name="description" content="Free Web tutorials">
-        <title>My first Portfolio</title>
-    </head>
-    <body>
-        <h1>I'm the title.</h1>
-        <p>And I'm a paragraph!</p>
-        <h3>This is a sub-heading...</h3>
-        <p>Well now we're just blathering on.</p>
-    </body>
-</html>
-{% endhighlight %}
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"> 
+            <meta name="description" content="Free Web tutorials">
+            <title>My first Portfolio</title>
+        </head>
+        <body>
+            <h1>I'm the title.</h1>
+            <p>And I'm a paragraph!</p>
+            <h3>This is a sub-heading...</h3>
+            <p>Well now we're just blathering on.</p>
+        </body>
+    </html>
 
 
 Hopefully the document in your file looks similar, but not exactly the same. 

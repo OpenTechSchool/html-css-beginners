@@ -4,6 +4,7 @@ layout: ots
 title: Your first styled Hello World!
 
 ---
+
 ## Writing CSS
 
 There are two ways to write CSS for a document.
@@ -12,11 +13,9 @@ An internal CSS code can be typed in the head section of the code.
 The coding starts with the style tag, written just before the closing
 head tag.
 
-``` css
-<style type="text/css">
-	....
-</style>
-```
+    <style type="text/css">
+        ....
+    </style>
 
 This way is good when you do not have many styles. In such a case, it is easier
 to refer to because the browser has no need to load another file.
@@ -26,7 +25,7 @@ and save it with a .CSS extension.
 Then, you can link that to a HTML document using the following syntax. 
 Write it just after the meta tag.
 
-	<link href="path/toyour/file.css" rel="stylesheet">
+    <link href="path/toyour/file.css" rel="stylesheet">
 
 This is the best way if you have a lot of CSS to write and you want to 
 keep it organized.
@@ -48,30 +47,28 @@ selectors and a declaration block.
 **Selectors** are used to declare which part of the markup a style applies to.
 Let's take the h1 title we wrote in our HTML file and give it a nice red color.
 
-```
-h1 { 
-	color: red;
-}
-```
+    h1 {
+        color: red;
+    }
 
 h1 is the selector, the HTML elemnt we want to style.
 *color* is one of the properties that we can give to our selector, and *red* is the 
 value of this property.
 The right sytrax is:
 
-	selector {
-		property: value; ** remember always to write a ; after your value **
-		property: value;
-	}	
+    selector {
+        property: value; ** remember always to write a ; after your value **
+        property: value;
+    }
 
 Refresh your browser and see how the color of your title has changed.
 
 Isn't it nice?
 To give a background color to our paragraph, write
 
-	p {
-		background-color: #ddd;
-	} 	
+    p {
+        background-color: #ddd;
+    }
 
 ******
 
@@ -84,20 +81,19 @@ When you have chosen your color, copy the number that starts with # and paste th
 Good to know: #000 is black and #fff is white.
 
 ******
-	
 
 Let's try now to give a nice border to our images.
 
-	img {
-		border: 1px solid #000;
-	}	
+    img {
+        border: 1px solid #000;
+    }
 
 Here we are giving the following style to all the img tags we have: a 1-pixel thick, solid black border to all four edges of our images.
 If we want to give the style to just one of the four edges, for example, the top edge, we would write
 
-	img {
-		border-top: 1px solid #000;
-	}
+    img {
+        border-top: 1px solid #000;
+    }
 
 **Look at your CSS cheat sheet and give some more styles to your images. **
 

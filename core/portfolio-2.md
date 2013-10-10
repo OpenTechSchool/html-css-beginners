@@ -8,7 +8,7 @@ title: Create your Personal Portfolio
 So far we built the core of our website. Now we need a home page and a contact page.
 Here we explain some basic concepts but after that you have the freedom to experiment.
 
-# Home page and positioning
+## Home page and positioning
 Let's start from the home page.
 
 **Goal**
@@ -23,28 +23,28 @@ To make the nav menu we can just copy what we have done in the first part.
 Then, take an image that you like. It should be big enough and with good resolution.
 
 Just after the nav tag, include your image and give it a class name.
-Now you need to set the width of just this image as full-width, which is 100%.	
+Now you need to set the width of just this image as full-width, which is 100%.  
 
-	.home-imag {
-		width: 100%
-	}
+    .home-imag {
+        width: 100%
+    }
 
 In this way your image will follow the size of the browser window.
 It is possible that when the window is very small or very big, you can see a white space at the bottom of the image.
 You can change it setting the height: 100%. But now you need to be sure that you image isn't stretched.
 
-	.home-imag {
-		height: 100%
-	}
+    .home-imag {
+        height: 100%
+    }
 
 After the image, write another header tag within h1 and h2, add a class name to your header so you can style it 
 and not be confused with the other one. (I will use header-home as the class name)
 In the CSS we are goint to write this:
 
-	.header-home {
-		position: relative;
-		top: -300px;
-	}
+    .header-home {
+        position: relative;
+        top: -300px;
+    }
 Here we are changing the position of this element by bringing it outside of the normal flow. Its position is 
 now relative to its parent element (in our case the div#wrap-centered). Now you can move your element where
 you prefer in the page using the properties top, right, bottom and left.
@@ -83,7 +83,7 @@ What make it possible is: z-index: n°pixel.
 
 Knowing all that, create your own home page!
 
-# Form elements
+## Form elements
 Time to create the contact page!
 
 **Goal**
@@ -100,22 +100,22 @@ part 1.
 
 (FORM ELEMENTS)
 
-# a tag
+## a tag
 
 Good! Our portfolio is almost ready.
 Now we need just one more thing: to link all your pages together.
 To do that there is a special tag: a tag (anchor).
 In our nav menu, we need to add an a tag to our li elements:
 
-	<li><a href="home.HTML" >Home |</a> </li>
+    <li><a href="home.html" >Home |</a> </li>
 
-The most important attribute of the < a > element is the href attribute, which indicates the link’s destination.
+The most important attribute of the `<a>` element is the href attribute, which indicates the link's destination.
 Your link's destination is the name and the extension to which you gave your other pages. Be careful to type it right.
 If the page to which you are going to link is not in the same root, you need to specify in which folder it can be
 found.
 For example, if I have the contact page in a contact folder I write:
 
-	<li><a href="contact/contact.HTML"> Contact </a> </li>
+    <li><a href="contact/contact.html"> Contact </a> </li>
 
 Check in the browser and... Done!
 
@@ -129,10 +129,6 @@ You can change the style and the color by selecting the a tag.
 ** :hover**
 To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the :hover selector.
 
-	a:hover {
-		color: red;
-	}
-
-	
-
-
+    a:hover {
+        color: red;
+    }
