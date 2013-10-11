@@ -67,6 +67,10 @@ about what's next.
 * [HTML5, what is new?](extras/HTML5.html)
 * [Looking extra smart with CSS3](extras/CSS3.html)
 * [Cross-Browser compatibility and dealing with IE](extras/compatibility.html)
+* [Responsive Design](extras/responsive.html)
+* [Frameworks and Boilerplates](extras/frameworks.html)
+* [Getting Sassy more or Less](extras/sass-less.html)
+* [Introducing Javscript](extras/javascript.html)
 
 ## Reference material
 

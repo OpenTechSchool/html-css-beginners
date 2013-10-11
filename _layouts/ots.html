@@ -7,12 +7,12 @@
   <title>OpenTechSchool – {{ page.title }}</title>
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
   <link href="{{site.baseurl}}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="{{site.baseurl}}css/zenburn.min.css" rel="stylesheet" media="screen">
+  <link href="{{site.baseurl}}/css/zenburn.min.css" rel="stylesheet" media="screen">
 
-  <link rel="icon" href="{{site.baseurl}}favicon.ico" type="image/png">
+  <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/png">
     <style type="text/CSS">
       body {
-        background: url("{{site.baseurl}}images/background.png") #FFF repeat fixed;
+        background: url("{{site.baseurl}}/images/background.png") #FFF repeat fixed;
         font-family: "Open Sans", Helvetica, sans-serif;
       }
 
@@ -22,7 +22,8 @@
 
       code {
         font-size: 15px;
-        font-family: Monaco, Menlo, Consolas, "DejaVu Sans Mono", Inconsolata, "Courier New", monospace;
+        font-family: Monaco, Menlo, Consolas, "DejaVu Sans Mono", Inconsolata,
+        "Courier New", monospace;
       }
 
       .navbar h1 a, .navbar h1 {
@@ -90,6 +91,7 @@
     </div>
 
     <div class="row-fluid">
+
       <div class="span3 well sidebar-nav">
         <ul class="nav nav-list">
           {% for p in site.map %}
@@ -110,14 +112,15 @@
       <div id="main-content" class="span9">
         {{ content }}
       </div>
-      <div id="footer" class="offset3 span9">© 2011-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/HTML-CSS-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+
+      <div id="footer" class="offset3 span9">© 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
       </div>
 
     </div>
 
   </div>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="{{site.baseurl}}bootstrap/js/bootstrap.min.js"></script>
+  <script src="{{site.baseurl}}/bootstrap/js/bootstrap.min.js"></script>
   <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </body>
