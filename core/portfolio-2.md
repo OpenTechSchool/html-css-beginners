@@ -14,9 +14,10 @@ Let's start from the home page.
 **Goal**
 
 The home page is made by: 
-- navigation menu
-- big centered and resizable image
-- two sentence intro text (on the top of the image)
+
+* navigation menu
+* big centered and resizable image
+* two sentence intro text (on the top of the image)
 
 So let's open a new file and set the basic structure. 
 To make the nav menu we can just copy what we have done in the first part.
@@ -89,9 +90,10 @@ Time to create the contact page!
 **Goal**
 
 Create a page with:
-- navigation menu
-- contact form as main content
-- footer
+
+* navigation menu
+* contact form as main content
+* footer
 
 Your contact form will have the following fields: name, surname, gender, age, email, comment field, agree button and send button.
 
@@ -126,7 +128,7 @@ By default the a tag is styled like this:
 
 You can change the style and the color by selecting the a tag.
 
-** :hover**
+**:hover**
 To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the :hover selector.
 
     a:hover {
