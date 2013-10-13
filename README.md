@@ -1,14 +1,14 @@
 ---
 layout: ots
-title: README 
+title: README
 ---
 
 This is a friendly how-to for contributors to the HTML and CSS workshop
-at OpenTechSchool. 
+at OpenTechSchool.
 About the course:
 
-An HTML and CSS basic workshop for beginners that never write HTML/CSS before and 
-wnat to know how to start.
+An HTML and CSS basic workshop for beginners that never write HTML/CSS before and
+want to know how to start.
 
 # Class format
 
@@ -23,10 +23,10 @@ additional topics which are entirely optional.
 
 A class schedule looks like this:
 
-    1100 - Students still arriving, writing name tags, setting up laptops.
-    1230 - Introductions, wifi instructions and location of coursework.
-    1235 - Students learn stuff.
-    1800 - Thankyous, maybe demonstrations.
+    11:00 - Students still arriving, writing name tags, setting up laptops.
+    12:30 - Introductions, wifi instructions and location of coursework.
+    12:35 - Students learn stuff.
+    18:00 - Thankyous, maybe demonstrations.
 
 
 # Author Guide
@@ -104,7 +104,7 @@ Bit of command line:
 
     $ holla holla
     get dolla
-    $ 
+    $
 
 For a more complete list of languages see [highlight.js](http://softwaremaniacs.org/media/soft/highlight/test.HTML)
 

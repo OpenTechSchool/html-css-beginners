@@ -22,17 +22,17 @@ to refer to because the browser has no need to load another file.
 
 The second way to write CSS for a document is with an "external" CSS file. First, you open a new file in your editor
 and save it with a .CSS extension.
-Then, you can link that to a HTML document using the following syntax. 
+Then, you can link that to a HTML document using the following syntax.
 Write it just after the meta tag.
 
     <link href="path/toyour/file.css" rel="stylesheet">
 
-This is the best way if you have a lot of CSS to write and you want to 
+This is the best way if you have a lot of CSS to write and you want to
 keep it organized.
 
 Once you link your external CSS file, open your HTML file in the
 browser, open your console and go to the Network tab.
-You should see the path of your CSS file and under the STATUS column 
+You should see the path of your CSS file and under the STATUS column
 see a *200 OK* response.
 That means your file is read from your browser and linked to your HTML document
 in the right way.
@@ -52,7 +52,7 @@ Let's take the h1 title we wrote in our HTML file and give it a nice red color.
     }
 
 h1 is the selector, the HTML elemnt we want to style.
-*color* is one of the properties that we can give to our selector, and *red* is the 
+*color* is one of the properties that we can give to our selector, and *red* is the
 value of this property.
 The right sytrax is:
 
@@ -72,7 +72,7 @@ To give a background color to our paragraph, write
 
 ******
 
-Web colors are colors used in designing web pages. 
+Web colors are colors used in designing web pages.
 Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet).
 Hexadecimal color codes begin with a number sign (#).
 This number can be picked from a graphics software or from some nice web tool, such as, [Color picker](http://www.colorpicker.com/), for example.

@@ -13,17 +13,17 @@ Let's start from the home page.
 
 **Goal**
 
-The home page is made by: 
+The home page is made by:
 - navigation menu
 - big centered and resizable image
 - two sentence intro text (on the top of the image)
 
-So let's open a new file and set the basic structure. 
+So let's open a new file and set the basic structure.
 To make the nav menu we can just copy what we have done in the first part.
 Then, take an image that you like. It should be big enough and with good resolution.
 
 Just after the nav tag, include your image and give it a class name.
-Now you need to set the width of just this image as full-width, which is 100%.  
+Now you need to set the width of just this image as full-width, which is 100%.
 
     .home-imag {
         width: 100%
@@ -37,7 +37,7 @@ You can change it setting the height: 100%. But now you need to be sure that you
         height: 100%
     }
 
-After the image, write another header tag within h1 and h2, add a class name to your header so you can style it 
+After the image, write another header tag within h1 and h2, add a class name to your header so you can style it
 and not be confused with the other one. (I will use header-home as the class name)
 In the CSS we are goint to write this:
 
@@ -45,13 +45,13 @@ In the CSS we are goint to write this:
         position: relative;
         top: -300px;
     }
-Here we are changing the position of this element by bringing it outside of the normal flow. Its position is 
+Here we are changing the position of this element by bringing it outside of the normal flow. Its position is
 now relative to its parent element (in our case the div#wrap-centered). Now you can move your element where
 you prefer in the page using the properties top, right, bottom and left.
 
 So, what is positioning?
-When a box is taken out of the normal flow, all the content that is still within normal flow will ignore it 
-completely and not make space for it. Elements can be positioned using the top, bottom, left, and right 
+When a box is taken out of the normal flow, all the content that is still within normal flow will ignore it
+completely and not make space for it. Elements can be positioned using the top, bottom, left, and right
 properties. These properties will not work, however, unless the position property is set first. They also work
 differently depending on the positioning method.
 
@@ -62,24 +62,24 @@ A statically positioned box is one that is in normal flow, from top to bottom.
 
 **Fixed Positioning**
 An element with fixed position is positioned relative to the browser window.
-What makes it possible is: position: fixed. 
+What makes it possible is: position: fixed.
 After setting this, you can play with changing the position, adding a different pixel value to top, bottom, left or right positioning.
 
 **Relative Positioning**
 A relatively positioned element is positioned relative to its normal position. Elements that come after a relatively-positioned element behave as if the relatively-positioned element was still in its ‘normal flow’ position - leaving a gap for it.
-What makes it possible is: position: relative. 
+What makes it possible is: position: relative.
 After setting this, you can play with changing the position, adding a different pixel value to top, bottom, left or right positioning.
 
 **Absolute Positioning**
 
 An absolutely positioned box is moved out of the normal flow entirely.
-What makes it possible is: position: absolute. 
+What makes it possible is: position: absolute.
 After setting this, you can play with changing the position, adding a different pixel value to top, bottom, left or right positioning.
 
 **Overlapping Elements: z-index property**
 
 When elements are positioned outside of the normal flow, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
-What make it possible is: z-index: n°pixel. 
+What make it possible is: z-index: n°pixel.
 
 Knowing all that, create your own home page!
 
