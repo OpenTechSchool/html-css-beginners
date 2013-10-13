@@ -62,31 +62,31 @@ about what's next.
 * [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - 
   Positioning, anchor and form elements.
 
-## Extra fun stuff
+## Cheat Sheet
 
-* [HTML5, what is new?](extras/HTML5.html)
-* [Looking extra smart with CSS3](extras/CSS3.html)
-* [Cross-Browser compatibility and dealing with IE](extras/compatibility.html)
-* [Responsive Design](extras/responsive.html)
-* [Frameworks and Boilerplates](extras/frameworks.html)
-* [Getting Sassy more or Less](extras/sass-less.html)
-* [Introducing Javscript](extras/javascript.html)
+* <a href="http://media.smashingmagazine.com/wp-content/uploads/images/html5-cheat-sheet/html5-cheat-sheet.pdf" target= "_blank" > 
+  Html5 </a> - Use this sheet for try out new HTML tag.
+
+* <a href="http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf" target= "_blank" >
+  Css3</a> - Use this sheet for try out new CSS selectors.
+
 
 ## Reference material
 
 The Mozilla Developer Network (MDN), by the guys who make Firefox, 
 host some great resources:
 
- * [HTML Portal](https://developer.mozilla.org/en-US/docs/Web/HTML) - 
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target= "_blank" >
+   HTML Portal</a> - 
    Guides, intros, tutorials, references, elements, attributes...
- * [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - 
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML Reference</a> - 
    Every HTML element listed, find out about them all, and make use of them!
- * [CSS Portal](https://developer.mozilla.org/en-US/docs/Web/CSS) - 
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Portal</a> - 
    Tutorials for writing effective CSS, demos of CSS3, and much more.
- * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) - 
+ * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a> - 
    More CSS properties and classes than you can shake a stick at.
 
 Learning resources:
 
- * [CodeAcademy](http://www.codecademy.com/tracks/web) - 
+ * <a href="http://www.codecademy.com/tracks/web" target="_blank">CodeAcademy</a> - 
    A good hands-on tutorial to keep you learning.
