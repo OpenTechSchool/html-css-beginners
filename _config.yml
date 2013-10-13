@@ -20,20 +20,3 @@ map:
      - title: Create your personal Portfolio - Part 2
        path: /core/portfolio-2.html
        caption: Positioning, anchors and form elements
- - title: Extras
-   caption: Additional workshop content
-   subpages:
-   - title: HTML5, what is new?
-     path: /extras/HTML5.html
-   - title: CSS3 styles, transitions and animations
-     path: /extras/CSS3.html
-   - title: Browser compatibility and dealing with IE
-     path: /extras/compatibility.html
-   - title: Responsive Design and coding for mobile
-     path: /extras/responsive.html
-   - title: Frameworks - Boostrap, Foundation
-     path: /extras/frameworks.html
-   - title: Sass and Less
-     path: /extras/sass-less.html
-   - title: How to start with Javascript
-     path: /extras/javascript.html
