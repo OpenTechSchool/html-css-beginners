@@ -44,7 +44,7 @@ In styles.css we make this div always centered in the middle.
 To call the class in CSS, we need to write `.` and the class name just after it. 
 For the ID it is the same but with `#` instead of `.`.
 
-    .wrap-centered {
+    #wrap-centered {
         width: 100%;
         margin: 0 auto;
     }
