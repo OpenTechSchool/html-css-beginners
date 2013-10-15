@@ -98,12 +98,17 @@ Create a page with:
 * some nice links to contact you
 
 The contact page will have the same structure as the page you created before. So just copy the file and rename it to `contact.html` or something like that.
+
 Then you remove everything inside the `#wrap-centered` div container because that's where you want to display the contact page now.
 
 Next let's add a paragraph to tell the user who you are. You can do that using the `<p> </p>` tag.
+
 Inside that tag you can write some text that will be displayed to the user.
+
 For example: `<p>Hi I am Mr. Smith. Feel free to contact me.</p>`
+
 You also can add a linebreak after the first sentence with a `<br>` tag and maybe you want to highlight your name by making it italic: `<i>Mr. Smith</i>`.
+
 If you want to add more styling to the paragraph you should do that in the CSS file. Just add a class to the paragraph `<p class="contact-intro">` and over in the CSS file add some styling to the text:
 
     .contact-intro {
@@ -113,10 +118,15 @@ If you want to add more styling to the paragraph you should do that in the CSS f
     }
 
 That's it for the short introduction. Now let's get to the links where visitors of your site can actually contact you.
+
 Just create a list for the different contact options using the `<ul> </ul>` tag (ul for unordered list) and also add a class to the list so you can style it later on: `<ul class="contact-links">`.
+
 For now we want to add links to Mail, Twitter, Facebook and Github. So you have to create four list items with `<li> </li>` tags.
+
 Inside each item you add a link tag so the user of your site can click on something. You can do that using an `<a href="#"> </a>` tag. You can ignore the `href` attribute for now. We will cover that later to make the links actually work. 
+
 In general you can use everything as a link. A button element, an image or just plain text. But let's create a stylish icon using CSS here. 
+
 For doing so add the first letter of the name of each link in the link tag and add some classes to the links so you can style them. Add one class `contact-link` to each link to apply styles to all links and add a unique class for each link (`mail`, `twitter`, `facebook`, `github`). The hole list should look like the following:
 
     <ul class="contact-links">
@@ -127,7 +137,9 @@ For doing so add the first letter of the name of each link in the link tag and a
     </ul>
 
 Now you can style the links using CSS.
+
 You can change the font, create a box for each link in a different colour and position the letter pixel perfect for each link individually.
+
 Here is some simple styling. Have a look at it and adjust it to your needs:
 
     .contact-links {
