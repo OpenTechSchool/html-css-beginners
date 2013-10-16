@@ -42,13 +42,13 @@ und wie man sie öffnet.
 
 ## Was wir heute machen
 
-Heute werden wir lernen wie man eine Webseite mit HTML erstellt und CSS gestaltet.
-Unser Ziel ist ein persönliche Seite mit einem Portfolio, einer Seite mit Informationen
-über dich und einer Kontakt Addresse.
+Heute werden wir lernen wie man eine Webseite mit HTML aufbaut und CSS gestaltet.
+Wir wollen ein persönliches Portfolio erstellen, das eine Seite mit Informationen über dich
+sowie ein Kontaktformular beinhaltet.
 
-Wenn du mit deinem persönlichen Portfolio fertig bist, kannst du dir einige
-weiterführende Links unter der Rubrik 'Extra' anschauen. Diese Ressourcen können
-dir bestimmt weiterhelfen falls gerne mehr lernen möchtest über HTML und CSS.
+Wenn dein persönliches Portfolio fertig ist und deine Neugier geweckt ist, findest du unter der
+Rubrik 'Extras' eine Vielzahl interessanter Links. Dort kannst du erfahren was dich als Nächstes
+erwartet oder weitere HTML- und CSS-Techniken lernen.
 
 ## Der Kurs
 
