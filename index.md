@@ -65,10 +65,9 @@ about what's next.
 ## Cheat Sheet
 
 * <a href="http://media.smashingmagazine.com/wp-content/uploads/images/html5-cheat-sheet/html5-cheat-sheet.pdf" target= "_blank" > 
-  Html5 </a> - Use this sheet for try out new HTML tag.
-
+  HTML5 </a> - Use this sheet for try out new HTML tag.
 * <a href="http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf" target= "_blank" >
-  Css3</a> - Use this sheet for try out new CSS selectors.
+  CSS3</a> - Use this sheet for try out new CSS selectors.
 
 
 ## Reference material
@@ -76,17 +75,17 @@ about what's next.
 The Mozilla Developer Network (MDN), by the guys who make Firefox, 
 host some great resources:
 
- * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target= "_blank" >
-   HTML Portal</a> - 
-   Guides, intros, tutorials, references, elements, attributes...
- * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML Reference</a> - 
-   Every HTML element listed, find out about them all, and make use of them!
- * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Portal</a> - 
-   Tutorials for writing effective CSS, demos of CSS3, and much more.
- * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a> - 
-   More CSS properties and classes than you can shake a stick at.
+* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target= "_blank" >
+  HTML Portal</a> - 
+  Guides, intros, tutorials, references, elements, attributes...
+* <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML Reference</a> - 
+  Every HTML element listed, find out about them all, and make use of them!
+* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Portal</a> - 
+  Tutorials for writing effective CSS, demos of CSS3, and much more.
+* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a> - 
+  More CSS properties and classes than you can shake a stick at.
 
-Learning resources:
+## Learning resources
 
- * <a href="http://www.codecademy.com/tracks/web" target="_blank">CodeAcademy</a> - 
+* <a href="http://www.codecademy.com/tracks/web" target="_blank">CodeAcademy</a> - 
    A good hands-on tutorial to keep you learning.
