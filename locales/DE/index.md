@@ -53,15 +53,15 @@ erwartet oder weitere HTML- und CSS-Techniken lernen.
 ## Der Kurs
 
   * [Die Seiten Vorlage](core/structure.html) -
-    Verwende HTML und kreiere ein 'Hallo Welt' auf einer weißen Seite
+    HMTL nutzen – Verwandle eine weiße Seite in ein 'Hallo Welt'.
   * [Dein erstes gestyltes Hello World!](core/style.html) -
-    Verstehe CSS. Was ist eine Klasse, eine ID und ein Selektor.
+    CSS verstehen – Was ist eine Klasse, eine ID und ein Selektor?
   * [Erstelle dein persönliches Portfolio - Teil 1](core/portfolio.html) -
-    HTML5 Elemente, Ausrichtung, Box-Model und Schrift-Stil
+    HTML5-Elemente, Ausrichtung, das Box-Modell und Schriftstile.
   * [Erstelle dein persönliches Portfolio - Teil 2](core/portfolio-2.html) -
-    Positionierung, Verlinkung und Formulare
+    Positionierung, Verlinkung und Formulare.
 
-## Zusatz Material
+## Zusatzmaterial
 
   * [HTML5, Was ist neu ?](extra/HTML5.html)
   * [Besonders Aussehen mit CSS3](extras/CSS3.html)
@@ -71,21 +71,21 @@ erwartet oder weitere HTML- und CSS-Techniken lernen.
   * [Pre-Compiler, SASS und Less](extras/sass-less.html)
   * [Einführung in JavaScript](extras/javascript.html)
 
-## Referenz Material
+## Referenzmaterial
 
 Das Mozilla Developer Network (MDN), von den Jungs hinter Firefox,
 stellen einige großartige Seiten bereit:
 
   * [HTML Portal](https://developer.mozilla.org/en-US/docs/Web/HTML) -
-    Anleitungen, Beispiele, Elemente, Attribute...
+    Anleitungen, Beispiele, Elemente, Attribute…
   * [HTML Verweise](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) -
-    Eine Liste aller HTML - finde heraus welches es gibt und nutze sie!
+    Eine Liste aller HTML-Elemente – finde heraus welches es gibt und nutze sie!
   * [CSS Portal](https://developer.mozilla.org/en-US/docs/Web/CSS) -
-    Anleitungen fürs effiziente schreiben von CSS, Demos mit CSS3 und mehr
+    Anleitungen fürs effiziente Schreiben von CSS, Demos mit CSS3 und mehr.
   * [CSS Verweise](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) -
-    Noch mehr Informationen über die CSS Eigenschaften und Klassen
+    Mehr Informationen über die CSS-Eigenschaften und Klassen als du dir vorstellen kannst.
 
-## Lern Materialien
+## Lernmaterialien
 
 * [CodeAcademy](http://www.codecademy.com/tracks/web) -
-  Eine gute Anleitung, welche dich beim Lernen unterstütz
+  Gute und praktische Anleitungen, die dich beim Lernen unterstützen.
