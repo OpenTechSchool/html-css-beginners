@@ -16,6 +16,15 @@ You can write your web application in any programming languages, but in the
 end it will always be transformed into HTML because that's the language of 
 the browser. It is a hierarchical language.
 
+**A short bit of history**
+HTML was developed at the CERN in Switzerland. Its inventor is called Tim
+Berners-Lee. In 1980 he wrote his first hypertext system for personal
+use - the predecessor of HTML. With the first browser and server software
+the very young internet and HTML made their way to conquer the world.
+In 1992 two copies of a free web browser where downloaded from a computer
+at CERN to a computer in the USA. 1995 the first Internet Explorer was
+published.
+
 And **HTML5**? What's that?  
 This is just the latest version of HTML. There is a lot of interest 
 about it, because it improves and adds many HTML elements, making it 
@@ -53,13 +62,13 @@ about what's next.
 
 ## The course
 
-* [The template structure](core/structure.html) - 
+* [The template structure](core/structure.md) - 
   Using HTML, transform a white page to a 'Hello World'.
-* [Your first styled Hello World!](core/style.html) - 
+* [Your first styled Hello World!](core/style.md) - 
   Understanding CSS. What is class, ID and selector.
-* [Create your personal Portfolio - Part 1.](core/portfolio.html) - 
+* [Create your personal Portfolio - Part 1.](core/portfolio.md) - 
   HTML5 elements, float, box model and font-style.
-* [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - 
+* [Create your personal Portfolio - Part 2.](core/portfolio-2.md) - 
   Positioning, anchor and form elements.
 
 ## Cheat Sheet
