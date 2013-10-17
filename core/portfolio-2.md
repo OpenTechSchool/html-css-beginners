@@ -127,7 +127,7 @@ Inside each item you add a link tag so the user of your site can click on someth
 
 In general you can use everything as a link. A button element, an image or just plain text. But let's create a stylish icon using CSS here. 
 
-For doing so add the first letter of the name of each link in the link tag and add some classes to the links so you can style them. Add one class `contact-link` to each link to apply styles to all links and add a unique class for each link (`mail`, `twitter`, `facebook`, `github`). The hole list should look like the following:
+For doing so add the first letter of the name of each link in the link tag and add some classes to the links so you can style them. Add one class `contact-link` to each link to apply styles to all links and add a unique class for each link (`mail`, `twitter`, `facebook`, `github`). The whole list should look like the following:
 
     <ul class="contact-links">
         <li><a href="#" class="contact-link mail">m</a></li>
@@ -136,7 +136,9 @@ For doing so add the first letter of the name of each link in the link tag and a
         <li><a href="#" class="contact-link github">g</a></li>
     </ul>
 
-Now you can style the links using CSS.
+If you like you can replace each # above with the URL to your respective social network account. 
+
+And now you can style the links using CSS.
 
 You can change the font, create a box for each link in a different colour and position the letter pixel perfect for each link individually.
 
@@ -144,10 +146,7 @@ Here is some simple styling. Have a look at it and adjust it to your needs:
 
     .contact-links {
         padding: 0;
-    }
-
-    .contact-links li {
-        list-style: none;
+				list-style-type: none;
     }
 
     .contact-link {
