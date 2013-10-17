@@ -84,23 +84,114 @@ What make it possible is: z-index: n°pixel.
 
 Knowing all that, create your own home page!
 
-## Form elements
+
+
+
+## Contact page
 Time to create the contact page!
 
 **Goal**
 
 Create a page with:
 
-* navigation menu
-* contact form as main content
-* footer
+* a small paragraph about yourself
+* some nice links to contact you
 
-Your contact form will have the following fields: name, surname, gender, age, email, comment field, agree button and send button.
+The contact page will have the same structure as the page you created before. So just copy the file and rename it to `contact.html` or something like that.
 
-As we already did before, let's open a new page, copy all the structure, the nav menu, and the footer from
-part 1.
+Then you remove everything inside the `#wrap-centered` div container because that's where you want to display the contact page now.
 
-(FORM ELEMENTS)
+Next let's add a paragraph to tell the user who you are. You can do that using the `<p> </p>` tag.
+
+Inside that tag you can write some text that will be displayed to the user.
+
+For example: `<p>Hi I am Mr. Smith. Feel free to contact me.</p>`
+
+You also can add a linebreak after the first sentence with a `<br>` tag and maybe you want to highlight your name by making it italic: `<i>Mr. Smith</i>`.
+
+If you want to add more styling to the paragraph you should do that in the CSS file. Just add a class to the paragraph `<p class="contact-intro">` and over in the CSS file add some styling to the text:
+
+    .contact-intro {
+        font-size: 20px;
+        font-family: Arial;
+        margin: 10px;
+    }
+
+That's it for the short introduction. Now let's get to the links where visitors of your site can actually contact you.
+
+Just create a list for the different contact options using the `<ul> </ul>` tag (ul for unordered list) and also add a class to the list so you can style it later on: `<ul class="contact-links">`.
+
+For now we want to add links to Mail, Twitter, Facebook and Github. So you have to create four list items with `<li> </li>` tags.
+
+Inside each item you add a link tag so the user of your site can click on something. You can do that using an `<a href="#"> </a>` tag. You can ignore the `href` attribute for now. We will cover that later to make the links actually work. 
+
+In general you can use everything as a link. A button element, an image or just plain text. But let's create a stylish icon using CSS here. 
+
+For doing so add the first letter of the name of each link in the link tag and add some classes to the links so you can style them. Add one class `contact-link` to each link to apply styles to all links and add a unique class for each link (`mail`, `twitter`, `facebook`, `github`). The whole list should look like the following:
+
+    <ul class="contact-links">
+        <li><a href="#" class="contact-link mail">m</a></li>
+        <li><a href="#" class="contact-link twitter">t</a></li>
+        <li><a href="#" class="contact-link facebook">f</a></li>
+        <li><a href="#" class="contact-link github">g</a></li>
+    </ul>
+
+If you like you can replace each # above with the URL to your respective social network account. 
+
+And now you can style the links using CSS.
+
+You can change the font, create a box for each link in a different colour and position the letter pixel perfect for each link individually.
+
+Here is some simple styling. Have a look at it and adjust it to your needs:
+
+    .contact-links {
+        padding: 0;
+				list-style-type: none;
+    }
+
+    .contact-link {
+        display: block;
+        float: left;
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Arial;
+        font-weight: 900;
+        font-size: 35px;
+    }
+
+    .mail {
+        background: #dd1812;
+        width: 39px;
+        height: 45px;
+        padding: 1px 0 0 9px;
+    }
+
+    .twitter {
+        background: #00acee;
+        width: 30px;
+        height: 42px;
+        padding: 4px 0 0 18px;
+    }
+
+    .facebook {
+        background: #3B5998;
+        width: 30px;
+        height: 42px;
+        padding: 4px 0 0 18px;
+    }
+
+    .github {
+        background: #171515;
+        width: 35px;
+        height: 46px;
+        padding: 0 0 0 13px;
+    }
+
+That's it for this section. Feel free to extend and customize the contact page in every way you can imagine.
+
+
+
 
 ## a tag
 
