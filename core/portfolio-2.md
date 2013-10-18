@@ -197,27 +197,52 @@ That's it for this section. Feel free to extend and customize the contact page i
 
 Good! Our portfolio is almost ready.
 Now we need just one more thing: to link all your pages together.
-To do that there is a special tag: a tag (anchor).
+To do that there is a special tag: a tag (anchor) that defines a hyperlink.
+The most important attribute of the < a > element is the href attribute, which indicates the link’s destination.
+So the HTML syntrax for a link look like this: 
+
+    <a href="yourUrl">Link text</a>
+
+There are different types of links.
+You can create an **external link**, a link that go to another web site. This
+link is absolute and basically need all the line that usually you see or type
+in the Url bar of your browser.
+If we want to link our web site to the OTS site, it look like this:
+
+     <a href="http://opentechschool.org">OpenTechSchool</a>
+
+Also very important is the Internal link or rather a link that point on your
+own web site, point just to another page of the same website.
+And that one is also the one we need right now, so let's proceed with our
+portfolio. 
 In our nav menu, we need to add an a tag to our li elements:
 
     <li><a href="home.html" >Home |</a> </li>
 
-The most important attribute of the `<a>` element is the href attribute, which indicates the link's destination.
-Your link's destination is the name and the extension to which you gave your other pages. Be careful to type it right.
-If the page to which you are going to link is not in the same root, you need to specify in which folder it can be
+
+Be careful to type the url right.
+If the page to which you are going to link is not in the same root, in the same folder of your file, you need to specify in which one it can be
 found.
 For example, if I have the contact page in a contact folder I write:
 
     <li><a href="contact/contact.html"> Contact </a> </li>
 
 Check in the browser and... Done!
+Now you can do the same for the rest of your nav menu and for your social buttons links.
 
 By default the a tag is styled like this:
-- An unvisited link is underlined and blue
-- A visited link is underlined and purple
-- An active link is underlined and red
+
+* An unvisited link is underlined and blue
+* A visited link is underlined and purple
+* An active link is underlined and red
 
 You can change the style and the color by selecting the a tag.
+
+There still at least one important link to explain. The mailto link.
+Write mailto: myemail@google.com tell to the browser to open the default
+email programm on the user machine with the email destinatary field already fill in. Nice, isn't it?
+So go ahead and write the mailto link with your personal email instead of # 
+in your contact list and try it out.
 
 **:hover**
 To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the :hover selector.
@@ -225,3 +250,10 @@ To get the nice effect of changing the color of a link when the mouse moves over
     a:hover {
         color: red;
     }
+
+
+Great! We are done but if you still have a time keep going to play with your potrfolio, make it nicer, change colors, fonts, add images or whatever you like most and be ready for present it at the end of the workshop.
+We want to see your amazing personal website!
+
+Don't hesitated to ask to our coaches if you have any question.
+
