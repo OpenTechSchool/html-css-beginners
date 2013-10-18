@@ -17,12 +17,12 @@ end it will always be transformed into HTML because that's the language of
 the browser. It is a hierarchical language.
 
 **A short bit of history**
-HTML was developed at the CERN in Switzerland. Its inventor is called Tim
+HTML was developed at the CERN in Switzerland. Its inventor is Tim
 Berners-Lee. In 1980 he wrote his first hypertext system for personal
 use - the predecessor of HTML. With the first browser and server software
 the very young internet and HTML made their way to conquer the world.
-In 1992 two copies of a free web browser where downloaded from a computer
-at CERN to a computer in the USA. 1995 the first Internet Explorer was
+In 1992 two copies of a free web browser were downloaded from a computer
+at CERN to a computer in the USA. In 1995 the first Internet Explorer was
 published.
 
 And **HTML5**? What's that?  
@@ -62,13 +62,13 @@ about what's next.
 
 ## The course
 
-* [The template structure](core/structure.md) - 
+* [The template structure](core/structure.html) - 
   Using HTML, transform a white page to a 'Hello World'.
-* [Your first styled Hello World!](core/style.md) - 
+* [Your first styled Hello World!](core/style.html) - 
   Understanding CSS. What is class, ID and selector.
-* [Create your personal Portfolio - Part 1.](core/portfolio.md) - 
+* [Create your personal Portfolio - Part 1.](core/portfolio.html) - 
   HTML5 elements, float, box model and font-style.
-* [Create your personal Portfolio - Part 2.](core/portfolio-2.md) - 
+* [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - 
   Positioning, anchor and form elements.
 
 ## Cheat Sheet
