@@ -7,13 +7,13 @@ title: Get started with HTML & CSS
 
 # Welcome
 
-Welcome to Open Tech School's HTML & CSS workshop! This course is a simple 
+Welcome to Open Tech School’s HTML & CSS workshop! This course is a simple 
 and comprehensive guide dedicated to helping beginners learn HTML and CSS.
 
 **HTML or HyperText Markup Language** is the main markup language for creating 
 web pages and other information that can be displayed in a web browser. 
 You can write your web application in any programming languages, but in the 
-end it will always be transformed into HTML because that's the language of 
+end it will always be transformed into HTML because that’s the language of 
 the browser. It is a hierarchical language.
 
 **A short bit of history**
@@ -25,7 +25,7 @@ In 1992 two copies of a free web browser were downloaded from a computer
 at CERN to a computer in the USA. In 1995 the first Internet Explorer was
 published.
 
-And **HTML5**? What's that?  
+And **HTML5**? What’s that?  
 This is just the latest version of HTML. There is a lot of interest 
 about it, because it improves and adds many HTML elements, making it 
 easier to write and to use.
@@ -42,23 +42,23 @@ improves CSS a lot. For example, it gives the possibility to animate
 an element.
 
 To check all our code, we will use the console in our browser. 
-Open any browser and check under 'Tools'. You should find a 'Developer tools' 
-or similar option. Click it, and the toolbox will be opened. 
+Open any browser and check under “Tools”. You should find “Developer Tools’ 
+or a similar option. Click it, and the toolbox will open. 
 Here is the place where we can monitor our code and see whether it works 
-or not. Don't worry! We will explain this better later; for now it is 
+or not. Don’t worry! We will explain this better later; for now it is 
 important that you know where to find your console and how to open it.
 
-## What we'll do today
+## What we’ll do today
 
 Today we will learn how to write a web page with HTML and style it with CSS. 
 Our goal is to create a personal portfolio page with a 
 presentation and contact page.
 
 Once you are done with your personal portfolio, you can explore some 
-interesting links that you can find below the 'Extra' section. 
-If you're extra curious once you are done with the portfolio, these resources 
+interesting links that you can find below the “Extra” section. 
+If you’re extra curious once you are done with the portfolio, these resources 
 will help you to keep coding with HTML and CSS or just keep you updated 
-about what's next.
+about what’s next.
 
 ## The course
 
