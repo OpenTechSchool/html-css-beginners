@@ -98,7 +98,7 @@ In styles.css:
 
     nav li {
         display: inline;
-        flist-style-type: none;
+        list-style-type: none;
         color: ##08c;
     }
 
