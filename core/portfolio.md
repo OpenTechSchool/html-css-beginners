@@ -91,14 +91,14 @@ In styles.css:
     }
 
     nav ul {
-        font-decoration: none;
+        list-style-type: none;
         float: right;
         margin-right: 20px;
     }
 
     nav li {
         display: inline;
-        font-decoration: none;
+        flist-style-type: none;
         color: ##08c;
     }
 
