@@ -77,6 +77,8 @@ about what’s next.
   HTML5 </a> - Use this sheet for try out new HTML tag.
 * <a href="http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/" target= "_blank" >
   CSS3</a> - Use this sheet for try out new CSS selectors.
+* <a href="http://csslint.net/" target= "_blank" > 
+  CSS LINT</a> - Use this site to let your CSS be checked automatically for mistakes.
 
 
 ## Reference material
@@ -93,6 +95,8 @@ host some great resources:
   Tutorials for writing effective CSS, demos of CSS3, and much more.
 * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS Reference</a> - 
   More CSS properties and classes than you can shake a stick at.
+* <a href="http://www.google.com/fonts" target= "_blank" >Google Fonts</a> - 
+  Here you can play around with Font and apply it to your project without downloading it.
 
 ## Learning resources
 
