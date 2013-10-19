@@ -73,7 +73,8 @@ Inside of the div we are going to write our first HTML5 element.
 
     <nav>
         <ul>
-            <li>Home |</li>
+            <li>Home</li>
+            <li>|</li>
             <li>Contact</li>
         </ul>
     </nav>
@@ -98,7 +99,6 @@ In styles.css:
 
     nav li {
         display: inline;
-        list-style-type: none;
         color: ##08c;
     }
 
