@@ -73,9 +73,9 @@ about what's next.
 
 ## Cheat Sheet
 
-* <a href="http://media.smashingmagazine.com/wp-content/uploads/images/html5-cheat-sheet/html5-cheat-sheet.pdf" target= "_blank" > 
+* <a href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/" target= "_blank" > 
   HTML5 </a> - Use this sheet for try out new HTML tag.
-* <a href="http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf" target= "_blank" >
+* <a href="http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/" target= "_blank" >
   CSS3</a> - Use this sheet for try out new CSS selectors.
 
 
