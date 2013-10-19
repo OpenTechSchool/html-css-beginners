@@ -14,10 +14,12 @@
       body {
         background: url("{{site.baseurl}}/images/background.png") #FFF repeat fixed;
         font-family: "Open Sans", Helvetica, sans-serif;
+        line-height: 1.6;
       }
 
       h1, h2, h3, h4, h5, h6 {
         font-family: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        margin: 1em 0 .5em 0;
       }
 
       code {
@@ -44,7 +46,7 @@
       }
 
       .navbar-inner {
-        background: #085987 !important;
+        background-color: #085987 !important;
         border-color: #085987 !important;
       }
 
@@ -67,7 +69,15 @@
         font-size: 15px;
       }
 
-      #footer { text-align: center; }
+      #footer {
+        text-align: center;
+        background-color: #085987;
+        clear: both;
+        margin-top: 6em;
+        padding: 1em 0;
+        width: 100%;
+        color: #FFF;
+      }
 
     </style>
 </head>
@@ -113,12 +123,16 @@
         {{ content }}
       </div>
 
-      <div id="footer" class="offset3 span9">© 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
-      </div>
-
     </div>
 
   </div>
+  
+  <div id="footer">
+    <p>
+      © 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+    </p>
+  </div>
+
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="{{site.baseurl}}/bootstrap/js/bootstrap.min.js"></script>
   <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
