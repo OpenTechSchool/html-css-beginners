@@ -63,7 +63,7 @@ about what’s next.
 ## The course
 
 * [The template structure](core/structure.html) - 
-  Using HTML, transform a white page to a ˝2Hello World'.
+  Using HTML, transform a white page to a 'Hello World'.
 * [Your first styled Hello World!](core/style.html) - 
   Understanding CSS. What is class, ID and selector.
 * [Create your personal Portfolio - Part 1.](core/portfolio.html) - 
