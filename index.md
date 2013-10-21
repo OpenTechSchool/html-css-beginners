@@ -41,13 +41,6 @@ that we choose.
 improves CSS a lot. For example, it gives the possibility to animate 
 an element.
 
-To check all our code, we will use the console in our browser. 
-Open any browser and check under “Tools”. You should find “Developer Tools’ 
-or a similar option. Click it, and the toolbox will open. 
-Here is the place where we can monitor our code and see whether it works 
-or not. Don’t worry! We will explain this better later; for now it is 
-important that you know where to find your console and how to open it.
-
 ## What we’ll do today
 
 Today we will learn how to write a web page with HTML and style it with CSS. 
