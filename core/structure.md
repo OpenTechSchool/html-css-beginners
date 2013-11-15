@@ -193,19 +193,9 @@ So far, our entire document might look like this:
 Hopefully the document in your file looks similar, but not exactly the same. 
 You might have changed some of the text... does it all work in your browser?
 
-There are two questions you might be asking, which we intend to answer:
+## Why not use Word?
 
-1. Right now I can basically write paragraphs and headers. What are some other 
-   HTML elements and how can I use them? How would I get a picture?
-
-2. Ok, so I have some content, but this looks utterly bland. How do I spice it 
-   up a little?
-
-Read on to find out!
-
-******
-
-lastly, you might also wonder why you're writing all these elements by hand, 
+You might wonder why you're writing all these elements by hand, 
 when you could make up the same stuff in a Word document.
 
 Well, think about some of the cooler websites around that you've seen on the 
@@ -213,3 +203,16 @@ web, and their complex layouts. Do you think you could replicate them
 using Word? How long might it take? That's the power of manual control that 
 HTML (and CSS, and Javascript) gives to the web and web developers. You can 
 learn it too!
+
+## What's next?
+
+There are two other questions you might be asking, which we intend to answer:
+
+1. Right now I can basically write paragraphs and headers. What are some other 
+   HTML elements and how can I use them? How would I get a picture?
+
+2. Ok, so I have some content, but this looks utterly bland. How do I spice it 
+   up a little?
+
+Read on to answer these questions in the next section, 
+[your first styled Hello World!](style.html).
