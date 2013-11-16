@@ -11,7 +11,7 @@ There are two ways to write CSS for a document.
 
 An internal CSS code can be typed in the head section of the code.
 The coding starts with the style tag, written just before the closing
-head tag.
+`</head>` tag.
 
     <style type="text/css">
         ....
@@ -20,15 +20,25 @@ head tag.
 This way is good when you do not have many styles. In such a case, it is easier
 to refer to because the browser has no need to load another file.
 
-The second way to write CSS for a document is with an "external" CSS file. First, you open a new file in your editor
-and save it with a .CSS extension.
-Then, you can link that to a HTML document using the following syntax. 
-Write it just after the meta tag.
+The second way to write CSS for a document is with an "external" CSS  file. 
 
-    <link href="path/toyour/file.css" rel="stylesheet">
+Open a new file in your editor and save it with a .CSS extension in the same
+directory as your HTML file (give it a name like `styles.css` for now.)
+
+Then you can link that to an HTML document using the following syntax. 
+Write it just after the meta tag, before the closing `</head>` tag.
+
+    <link href="styles.css" rel="stylesheet">
 
 This is the best way if you have a lot of CSS to write and you want to 
 keep it organized.
+
+**TIP:** The link reference ("href") to `"styles.css"` is a path relative 
+to the HTML document. So in this case `styles.css` is located in the same 
+directory, but you could use a name like `"styles/mystyle.css"` if you 
+put the CSS file into a subdirectory. You can even use full URLs like 
+`"http://myawesomesite.com/styles/mystyle.css"`, but it's best to avoid 
+this if you can use a relative path instead.
 
 Once you link your external CSS file, open your HTML file in the
 browser, open your console and go to the Network tab.
