@@ -143,9 +143,14 @@ let's add the body tags.
     <body>
     </body>
 
-Everything that is written inside this tag will be displayed to the user.
-Try to write some plain text between the body tags and check the file 
-in your browser.
+Everything that is written inside this tag will be displayed to the user. 
+Add a `<body>` to your existing HTML document and then write some 
+plain text between the body tags and view it in your browser.
+
+**TIP**: To reload the same HTML document in the browser, use the Reload 
+Current Page function (Ctrl-R or F5)
+
+## Types of content
 
 There are different HTML elements that we can use to indicate different types 
 of content in our document, like the <p></p> tags which we have already met.
@@ -159,7 +164,7 @@ Let's try writing a title, followed by a paragraph.
 Heading elements are straightforward to understand. They start from h1 with the 
 biggest font and importance, going to h6 with the smallest font.
 
-******
+## Indentation
 
 Are you wondering why we wrote the h1 and p tags *indented* inside 
 the body tags?
