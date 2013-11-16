@@ -20,9 +20,13 @@ and keep it handy.
 We will start by building the main page of our personal presentation, since this will give the 
 main structure to the whole website design.
 
-Take a file just like the one we just wrote but without any content. (Head with meta tags, title and 
-`styles.css` linked but a completely empty body.) The best way to do this is to copy the original files 
-to a new directory and then delete all the the body content.
+## Project Structure
+
+Start a new directory for this project, alongside the *example1*  directory you've been using so far. Call the new directory something  like *portfolio*. Copy the files from *example1* into the *portfolio*  directory to use them as a basis for your new project.
+
+After you have the files copied into *portfolio*, edit the HTML page  there and remove all of the body content (everything inside the body  tags, so you have an empty page with just the meta tags, title, and  the CSS link tag.) We can use this as the basis for a new page.
+
+## Creating the page
 
 Let's start by wrapping our page in a div to give a centered design to our page.
  *"A div tag defines a section in a HTML file and is used to group elements to format 

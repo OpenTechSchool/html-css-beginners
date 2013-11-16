@@ -59,6 +59,24 @@ Open a new file in your editor and write this line first:
 Then save it with the file extension `.html`. You're now officially editing 
 an html document!
 
+## Structuring your project
+
+You can create your HTML files anywhere you like, but we recommend you use 
+directories to organise things so they're easy to find later.
+
+* Create a directory somewhere (your home folder, or your desktop) for this 
+  workshop. Name it something like *OTS_HTML_Workshop*.
+
+* Create another directory inside that one for this first exercise. Name it 
+  something like *exercise1*.
+
+* From inside your editor, save your first HTML file inside the *exercise1*
+  directory. Name it something like *page.html*.
+
+As time goes by, we will be adding more files to this directory and eventually
+adding whole new directories alongside exercise1 for new projects.
+
+
 ## Elements and Tags
 
 These are the basic building blocks of HTML.
