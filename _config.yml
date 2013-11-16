@@ -22,3 +22,9 @@ map:
      - title: Create your personal Portfolio - Part 2
        path: /core/portfolio-2.html
        caption: Positioning, anchors and form elements
+ - title: Extras
+   caption: Interesting or useful extras
+   subpages:
+     - title: Browser Developer Tools
+       path: /extras/developertools.html
+       caption: Some helpful tools for HTML/CSS creation, included in your web browser.
