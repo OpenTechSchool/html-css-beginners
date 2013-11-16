@@ -66,7 +66,7 @@ It looks just like this:
 
 or this:
 
-    <div id="page-title">
+    <div id="first-heading">
         <h1>The h1 tags indicates the primary header of the document</h1>
     </div>
 
@@ -81,9 +81,9 @@ can have many attributes, in which case you separate them by spaces, as you'll
 see soon. Attributes give information about an element in particular.
 
 In this case, the `<div>` tag (which is used to *divide* groups of elements up)
-has an `id` attribute assigned to `page-title`. That's telling us that this 
-section of the document is designed to hold the page's main title. You will 
-learn more about specific attributes later!
+has an `id` attribute assigned to `first-heading`. That's telling us that this 
+section of the document is designed to hold the  first heading shown on the 
+page. You will learn more about specific attributes later!
 
 ## Html and Head Elements
 
