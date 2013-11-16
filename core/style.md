@@ -11,7 +11,7 @@ There are two ways to write CSS for a document.
 
 An internal CSS code can be typed in the head section of the code.
 The coding starts with the style tag, written just before the closing
-head tag.
+`</head>` tag.
 
     <style type="text/css">
         ....
@@ -20,23 +20,22 @@ head tag.
 This way is good when you do not have many styles. In such a case, it is easier
 to refer to because the browser has no need to load another file.
 
-The second way to write CSS for a document is with an "external" CSS file. First, you open a new file in your editor
-and save it with a .CSS extension.
-Then, you can link that to a HTML document using the following syntax. 
-Write it just after the meta tag.
+The second way to write CSS for a document is with an "external" CSS  file. 
 
-    <link href="path/toyour/file.css" rel="stylesheet">
+Open a new file in your editor and save it with a .CSS extension in the same
+directory as your HTML file (give it a name like `styles.css` for now.)
+
+Then you can link that to an HTML document using the following syntax. 
+Write it just after the meta tag, before the closing `</head>` tag.
+
+    <link href="styles.css" rel="stylesheet">
 
 This is the best way if you have a lot of CSS to write and you want to 
 keep it organized.
 
-Once you link your external CSS file, open your HTML file in the
-browser, open your console and go to the Network tab.
-You should see the path of your CSS file and under the STATUS column 
-see a *200 OK* response.
-That means your file is read from your browser and linked to your HTML document
-in the right way.
-Now we are ready to work with it.
+**TIP:** The link reference ("href") to `"styles.css"` is a path relative 
+to the HTML document, same as the "src" for the `<img>` tag in the previous 
+chapter.
 
 ## Let's add some colors!
 
@@ -70,6 +69,14 @@ To give a background color to our paragraph, write
         background-color: #ddd;
     }
 
+## Troubleshooting
+
+Did the title text color not change when you refreshed?
+
+Double check the name of the CSS file in the `<link>` tag, and also 
+double check that the CSS file is in the same directory as the HTML 
+file.
+
 ******
 
 Web colors are colors used in designing web pages. 
@@ -82,7 +89,7 @@ Good to know: #000 is black and #fff is white.
 
 ******
 
-Let's try now to give a nice border to our images.
+Let's try now to give a nice border to our image, that we added to our page in the [first chapter](structure.md).
 
     img {
         border: 1px solid #000;
@@ -95,7 +102,7 @@ If we want to give the style to just one of the four edges, for example, the top
         border-top: 1px solid #000;
     }
 
-**Look at your CSS cheat sheet and give some more styles to your images.**
+**Look at the [CSS cheat sheet](http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) and give some more styles to your images.**
 
 
 
