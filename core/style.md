@@ -34,11 +34,8 @@ This is the best way if you have a lot of CSS to write and you want to
 keep it organized.
 
 **TIP:** The link reference ("href") to `"styles.css"` is a path relative 
-to the HTML document. So in this case `styles.css` is located in the same 
-directory, but you could use a name like `"styles/mystyle.css"` if you 
-put the CSS file into a subdirectory. You can even use full URLs like 
-`"http://myawesomesite.com/styles/mystyle.css"`, but it's best to avoid 
-this if you can use a relative path instead.
+to the HTML document, same as the "src" for the `<img>` tag in the previous 
+chapter.
 
 Once you link your external CSS file, open your HTML file in the
 browser, open your console and go to the Network tab.
@@ -92,7 +89,7 @@ Good to know: #000 is black and #fff is white.
 
 ******
 
-Let's try now to give a nice border to our images.
+Let's try now to give a nice border to our image, that we added to our page in the [first chapter](structure.md).
 
     img {
         border: 1px solid #000;

@@ -199,6 +199,49 @@ If you reload the page in your browser, you'll notice the heading has vanished.
 Remove the comment tags (so the heading appears again) before moving on to the 
 next section.
 
+## Images
+
+Headings and paragraphs give you the basics of text. What about images?
+
+Images have to kept in separate image files, outside the HTML file. Find a 
+favourite image on the web and save it in the same directory as your HTML 
+file (right-click the image in your browser and "Save Image...").
+
+If you don't have a picture in mind then
+[here's a page with a photo of some kittens that you can use](http://www.flickr.com/photos/nengard/67501122/sizes/z/)
+(Cute cats on the internet? Egad!)
+
+After you have your image, you can include it in your HTML page by using an 
+`<img>` tag.
+
+    <img src="kittens.jpg">
+
+Add the `<img>` tag anywhere inside the "body" of your HTML document where 
+you'd like the image to appear.
+
+Notice that `<img>` is one of the tags that doesn't need a sepaate closing 
+tag. You could put `</img>` after the tag if you like, it doesn't change 
+the way the browser views the page.
+
+**TIP:** The image source name ("src") of `kittens.jpg` is a path relative 
+to the HTML document. So in this case `kittens.jpg` is located in the same 
+directory, but you could use a name like `"images/kittens.jpg"` if you 
+put the image file into a subdirectory. You can even use full URLs like 
+`"http://myawesomesite.com/pictures/kittens.jpg"`, but it's best to avoid 
+this if you can use a relative path instead.
+
+### Alt Text
+
+A good habit to get into is using "alt text" to describe the contents of 
+an image:
+
+    <img src="kittens.jpg" alt="Some kittens">
+
+The alt text is a textual description of what's in the image. This is important 
+for anyone who can't see the images (for instance vision impaired people using 
+a screenreader.) Any image that isn't purely decorative should have a description 
+set with the "alt=" attribute.
+
 ## Putting it all together
 
 So far, our entire document might look like this:
@@ -212,7 +255,9 @@ So far, our entire document might look like this:
         </head>
         <body>
             <h1>I'm the title.</h1>
-            <p>And I'm a paragraph!</p>
+            <p>And I'm a paragraph! With some kittens:
+            <img src="kittens.jpg" alt="All the kittens are shown here">
+            </p>
             <h3>This is a sub-heading...</h3>
             <p>Well now we're just blathering on.</p>
         </body>
@@ -235,13 +280,8 @@ learn it too!
 
 ## What's next?
 
-There are two other questions you might be asking, which we intend to answer:
+You may be thinking at this stage that your HTML page looks pretty bland. 
+How do I spice it up a little?
 
-1. Right now I can basically write paragraphs and headers. What are some other 
-   HTML elements and how can I use them? How would I get a picture?
-
-2. Ok, so I have some content, but this looks utterly bland. How do I spice it 
-   up a little?
-
-Read on to answer these questions in the next section, 
+Read on to find out in the next section, 
 [your first styled Hello World!](style.html).
