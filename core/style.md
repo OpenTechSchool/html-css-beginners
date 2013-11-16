@@ -102,7 +102,7 @@ If we want to give the style to just one of the four edges, for example, the top
         border-top: 1px solid #000;
     }
 
-**Look at your CSS cheat sheet and give some more styles to your images.**
+**Look at the [CSS cheat sheet](http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) and give some more styles to your images.**
 
 
 
