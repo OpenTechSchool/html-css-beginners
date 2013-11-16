@@ -115,7 +115,7 @@ This is the most important meta tag. Without it your website might not display
 properly. It is best practice to include it as the first element inside the 
 head element. Basically, it specifies to the browser the character encoding 
 for the HTML document. That means your browser will be able to read and 
-correctly display all the special characters such as €, $, è and so on. `uft-8` 
+correctly display all the special characters such as €, $, è and so on. `UTF-8` 
 is usually the best general encoding to use.
 
 Here we've also written another type of a meta tag, the description. 
