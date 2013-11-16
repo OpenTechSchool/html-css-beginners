@@ -6,19 +6,23 @@ title: Create your Personal Portfolio
 ---
 
 # HTML5 structure and starter CSS
+
+## Goal
+We are going to design a personal portfolio page with a main menu, content, and a footer. 
+We fill in the content with an image along with some text.
+
+We are going to do all of this with HTML5 elements so 
+[open up an HTML5 cheatsheet](http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/) 
+and keep it handy.
+
 ## Main Content
 
 We will start by building the main page of our personal presentation, since this will give the 
 main structure to the whole website design.
 
-
-**GOAL**
-We are going to design a page with a main menu, content, and a footer.
-We fill in the content with an image along with some text.
-We are going to do all of this with HTML5 elements so keep your HTML cheatsheet open.
-
 Take a file just like the one we just wrote but without any content. (Head with meta tags, title and 
-`styles.css` linked but a completely empty body.)
+`styles.css` linked but a completely empty body.) The best way to do this is to copy the original files 
+to a new directory and then delete all the the body content.
 
 Let's start by wrapping our page in a div to give a centered design to our page.
  *"A div tag defines a section in a HTML file and is used to group elements to format 
