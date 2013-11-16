@@ -38,10 +38,12 @@ to the HTML document, same as the "src" for the `<img>` tag in the previous
 chapter.
 
 Once you link your external CSS file, open your HTML file in the
-browser, open your console and go to the Network tab.
-You should see the path of your CSS file and under the STATUS column 
-see a *200 OK* response.
-That means your file is read from your browser and linked to your HTML document
+browser, open your console (see Browser Console in the previous chapter) then 
+click on the Network tab. When you reload the page, the Network tab will show 
+all the files that were loaded as part of your page. You should see the path of 
+your CSS file and under the STATUS column see a *200 OK* response.
+
+That means your file is read from your browser and linked to your HTML document 
 in the right way.
 Now we are ready to work with it.
 
