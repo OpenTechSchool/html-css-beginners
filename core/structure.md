@@ -170,7 +170,36 @@ in order to have a more clear document and still be able to work with it
 even after a long time or when there is a lot of lines of code. It also shows 
 the heircharcical nature of HTML pretty well.
 
-******
+## Comments
+
+It is also possible to put "comments" in your HTML. Comments in HTML are there 
+to remind you (or other people editing the HTML file) without changing the way 
+the page displays in a browser.
+
+Like other HTML elements, comments are written by using a tag. Although comment 
+tags look a little different:
+
+    <!-- I am a comment -->
+
+The "start comment" tag is `<!--` and the "end comment" tag is `-->`.
+
+Comments can also enclose other HTML elements, to "comment them out". This is a 
+useful technique when you're experimenting with a page to see how it looks when 
+you change things around.
+
+For example, try commenting out the `h1` heading in your current page:
+
+    <body>
+        <!-- <h1>I'm the title.</h1> -->
+        <p>And I'm a paragraph!</p>
+    </body>
+
+If you reload the page in your browser, you'll notice the heading has vanished.
+
+Remove the comment tags (so the heading appears again) before moving on to the 
+next section.
+
+## Putting it all together
 
 So far, our entire document might look like this:
 
