@@ -15,25 +15,24 @@ You will need a plain text editor in order to edit HTML files.
 
 You can also get fully graphical WYSIWYG (What You See Is What You Get) 
 HTML editors, that let you edit the web page graphically with a similar 
-interface to programs like Word. These can be useful, but for this workshop 
-we want plain text.
+interface to programs like Word. These can be useful, but many people 
+working with HTML & CSS prefer a plain text editor and that's what we'll 
+be using today.
 
 If you already have a plain text editor installed (perhaps from a previous 
 OTS workshop) then you'll be fine. Otherwise here are some suggestions:
 
 ### Windows
 
-Microsoft Notepad will work, but you probably want an editor with a few more 
-features. [Notepad++](http://www.notepad-plus-plus.org/) is free and suitable, 
+[Notepad++](http://www.notepad-plus-plus.org/) is free and suitable, 
 or you could try [Sublime Text](http://www.sublimetext.com/).
 
 ### OS X
 
-OS X's built-in TextEdit is not a great choice for creating HTML pages, because 
-it displays HTML graphically (WYSIWYG) by default. It is 
-[possible to use it if you follow these steps](https://support.apple.com/kb/TA20406). 
-However much better choices exist, including 
-[Sublime Text](http://www.sublimetext.com/) or [Text Mate](http://macromates.com/).
+[TextWrangler](http://www.barebones.com/products/textwrangler/) is free 
+and suitable. Other good choices (with a few more advanced features you can 
+grow into) include [Sublime Text](http://www.sublimetext.com/) or 
+[Text Mate](http://macromates.com/).
 
 ### Linux
 
