@@ -66,7 +66,7 @@ It looks just like this:
 
 or this:
 
-    <div id="page-title">
+    <div id="first-heading">
         <h1>The h1 tags indicates the primary header of the document</h1>
     </div>
 
@@ -81,9 +81,9 @@ can have many attributes, in which case you separate them by spaces, as you'll
 see soon. Attributes give information about an element in particular.
 
 In this case, the `<div>` tag (which is used to *divide* groups of elements up)
-has an `id` attribute assigned to `page-title`. That's telling us that this 
-section of the document is designed to hold the page's main title. You will 
-learn more about specific attributes later!
+has an `id` attribute assigned to `first-heading`. That's telling us that this 
+section of the document is designed to hold the  first heading shown on the 
+page. You will learn more about specific attributes later!
 
 ## Html and Head Elements
 
@@ -115,7 +115,7 @@ This is the most important meta tag. Without it your website might not display
 properly. It is best practice to include it as the first element inside the 
 head element. Basically, it specifies to the browser the character encoding 
 for the HTML document. That means your browser will be able to read and 
-correctly display all the special characters such as €, $, è and so on. `uft-8` 
+correctly display all the special characters such as €, $, è and so on. `UTF-8` 
 is usually the best general encoding to use.
 
 Here we've also written another type of a meta tag, the description. 
@@ -143,9 +143,14 @@ let's add the body tags.
     <body>
     </body>
 
-Everything that is written inside this tag will be displayed to the user.
-Try to write some plain text between the body tags and check the file 
-in your browser.
+Everything that is written inside this tag will be displayed to the user. 
+Add a `<body>` to your existing HTML document and then write some 
+plain text between the body tags and view it in your browser.
+
+**TIP**: To reload the same HTML document in the browser, use the Reload 
+Current Page function (Ctrl-R or F5)
+
+## Types of content
 
 There are different HTML elements that we can use to indicate different types 
 of content in our document, like the <p></p> tags which we have already met.
@@ -159,7 +164,7 @@ Let's try writing a title, followed by a paragraph.
 Heading elements are straightforward to understand. They start from h1 with the 
 biggest font and importance, going to h6 with the smallest font.
 
-******
+## Indentation
 
 Are you wondering why we wrote the h1 and p tags *indented* inside 
 the body tags?
@@ -170,7 +175,79 @@ in order to have a more clear document and still be able to work with it
 even after a long time or when there is a lot of lines of code. It also shows 
 the heircharcical nature of HTML pretty well.
 
-******
+## Comments
+
+It is also possible to put "comments" in your HTML. Comments in HTML are there 
+to remind you (or other people editing the HTML file) without changing the way 
+the page displays in a browser.
+
+Like other HTML elements, comments are written by using a tag. Although comment 
+tags look a little different:
+
+    <!-- I am a comment -->
+
+The "start comment" tag is `<!--` and the "end comment" tag is `-->`.
+
+Comments can also enclose other HTML elements, to "comment them out". This is a 
+useful technique when you're experimenting with a page to see how it looks when 
+you change things around.
+
+For example, try commenting out the `h1` heading in your current page:
+
+    <body>
+        <!-- <h1>I'm the title.</h1> -->
+        <p>And I'm a paragraph!</p>
+    </body>
+
+If you reload the page in your browser, you'll notice the heading has vanished.
+
+Remove the comment tags (so the heading appears again) before moving on to the 
+next section.
+
+## Images
+
+Headings and paragraphs give you the basics of text. What about images?
+
+Images have to kept in separate image files, outside the HTML file. Find a 
+favourite image on the web and save it in the same directory as your HTML 
+file (right-click the image in your browser and "Save Image...").
+
+If you don't have a picture in mind then
+[here's a page with a photo of some kittens that you can use](http://www.flickr.com/photos/nengard/67501122/sizes/s/)
+(Cute cats on the internet? Egad!)
+
+After you have your image, you can include it in your HTML page by using an 
+`<img>` tag.
+
+    <img src="kittens.jpg">
+
+Add the `<img>` tag anywhere inside the "body" of your HTML document where 
+you'd like the image to appear.
+
+Notice that `<img>` is one of the tags that doesn't need a sepaate closing 
+tag. You could put `</img>` after the tag if you like, it doesn't change 
+the way the browser views the page.
+
+**TIP:** The image source name ("src") of `kittens.jpg` is a path relative 
+to the HTML document. So in this case `kittens.jpg` is located in the same 
+directory, but you could use a name like `"images/kittens.jpg"` if you 
+put the image file into a subdirectory. You can even use full URLs like 
+`"http://myawesomesite.com/pictures/kittens.jpg"`, but it's best to avoid 
+this if you can use a relative path instead.
+
+### Alt Text
+
+A good habit to get into is using "alt text" to describe the contents of 
+an image:
+
+    <img src="kittens.jpg" alt="Some kittens">
+
+The alt text is a textual description of what's in the image. This is important 
+for anyone who can't see the images (for instance vision impaired people using 
+a screenreader.) Any image that isn't purely decorative should have a description 
+set with the "alt=" attribute.
+
+## Putting it all together
 
 So far, our entire document might look like this:
 
@@ -184,28 +261,24 @@ So far, our entire document might look like this:
         <body>
             <h1>I'm the title.</h1>
             <p>And I'm a paragraph!</p>
+            <p>
+                 <img src="kittens.jpg" alt="All the kittens are shown here">
+            </p>
             <h3>This is a sub-heading...</h3>
             <p>Well now we're just blathering on.</p>
         </body>
     </html>
 
 
+Notice that the kitten image is part of it's own paragraph here, so it is
+shown by itself in the browser.
+
 Hopefully the document in your file looks similar, but not exactly the same. 
 You might have changed some of the text... does it all work in your browser?
 
-There are two questions you might be asking, which we intend to answer:
+## Why not use Word?
 
-1. Right now I can basically write paragraphs and headers. What are some other 
-   HTML elements and how can I use them? How would I get a picture?
-
-2. Ok, so I have some content, but this looks utterly bland. How do I spice it 
-   up a little?
-
-Read on to find out!
-
-******
-
-lastly, you might also wonder why you're writing all these elements by hand, 
+You might wonder why you're writing all these elements by hand, 
 when you could make up the same stuff in a Word document.
 
 Well, think about some of the cooler websites around that you've seen on the 
@@ -213,3 +286,11 @@ web, and their complex layouts. Do you think you could replicate them
 using Word? How long might it take? That's the power of manual control that 
 HTML (and CSS, and Javascript) gives to the web and web developers. You can 
 learn it too!
+
+## What's next?
+
+You may be thinking at this stage that your HTML page looks pretty bland. 
+How can you spice it up a little?
+
+Read on to find out in the next section, 
+[your first styled Hello World!](style.html).
