@@ -272,7 +272,8 @@ After you have your image, you can include it in your HTML page by using an
     <img src="kittens.jpg">
 
 Add the `<img>` tag anywhere inside the "body" of your HTML document where 
-you'd like the image to appear.
+you'd like the image to appear. Replace "kittens.jpg" with the file name 
+of the image that you saved in the same directory as the HTML file.
 
 Notice that `<img>` is one of the tags that doesn't need a sepaate closing 
 tag. You could put `</img>` after the tag if you like, it doesn't change 
@@ -281,9 +282,9 @@ the way the browser views the page.
 **TIP:** The image source name ("src") of `kittens.jpg` is a path relative 
 to the HTML document. So in this case `kittens.jpg` is located in the same 
 directory, but you could use a name like `"images/kittens.jpg"` if you 
-put the image file into a subdirectory. You can even use full URLs like 
-`"http://myawesomesite.com/pictures/kittens.jpg"`, but it's best to avoid 
-this if you can use a relative path instead.
+put the image file into a subdirectory called "images". You can even 
+use full URLs like  `"http://myawesomesite.com/pictures/kittens.jpg"`, 
+but it's best to avoid this if you can use a relative path instead.
 
 ### Alt Text
 
