@@ -5,17 +5,48 @@ title: The template structure
 
 ---
 
-### Preamble: How to write a HTML document
+## Preamble: How to write a HTML document
 
-This is actually pretty simple: HTML is written in just a plain text document. 
-Even Microsoft Notepad can write one just fine, although you might wish to use 
-a code editor like Sublime Text, Gedit, or Textmate instead. 
-
+This is actually pretty simple: HTML is written as a plain text document.
 A HTML file always uses the extension **.html** to indicate its filetype.
+
+## Text editor
+You will need a plain text editor in order to edit HTML files.
+
+You can also get fully graphical WYSIWYG (What You See Is What You Get) 
+HTML editors, that let you edit the web page graphically with a similar 
+interface to programs like Word. These can be useful, but many people 
+working with HTML & CSS prefer a plain text editor and that's what we'll 
+be using today.
+
+If you already have a plain text editor installed (perhaps from a previous 
+OTS workshop) then you'll be fine. Otherwise here are some suggestions:
+
+### Windows
+
+[Notepad++](http://www.notepad-plus-plus.org/) is free and suitable, 
+or you could try [Sublime Text](http://www.sublimetext.com/).
+
+### OS X
+
+[TextWrangler](http://www.barebones.com/products/textwrangler/) is free 
+and suitable. Other good choices (with a few more advanced features you can 
+grow into) include [Sublime Text](http://www.sublimetext.com/) or 
+[Text Mate](http://macromates.com/).
+
+### Linux
+
+GEdit comes pre-installed on many Linux distributions. Otherwise you might want
+to try [Sublime Text](http://www.sublimetext.com/) or one of the dozens of
+other text editors available on Linux.
+
+********
+
+**Text editor up and running? Great, time to create an HTML document!**
 
 ## Doctype
 
-The ﬁrst thing on a HTML page is the **doctype**, which as you might guess, 
+The ﬁrst thing on an HTML page is the **doctype**, which as you might guess, 
 tells the browser what type of document it's looking at, and how to read it.
 
 Thankfully, HTML5's doctype is extremely simple - it's just `html`.
@@ -24,7 +55,26 @@ Open a new file in your editor and write this line first:
 
     <!DOCTYPE html>
 
-You're now officially editing a html document!
+Then save it with the file extension `.html`. You're now officially editing 
+an html document!
+
+## Structuring your project
+
+You can create your HTML files anywhere you like, but we recommend you use 
+directories to organise things so they're easy to find later.
+
+* Create a directory somewhere (your home folder, or your desktop) for this 
+  workshop. Name it something like *OTS_HTML_Workshop*.
+
+* Create another directory inside that one for this first exercise. Name it 
+  something like *exercise1*.
+
+* From inside your editor, save your first HTML file inside the *exercise1*
+  directory. Name it something like *page.html*.
+
+As time goes by, we will be adding more files to this directory and eventually
+adding whole new directories alongside exercise1 for new projects.
+
 
 ## Elements and Tags
 

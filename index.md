@@ -66,6 +66,10 @@ about what’s next.
 
 ## Cheat Sheet
 
+Cheat sheets are an invaluable resource when learning HTML and CSS. 
+We suggest opening the PDF cheat sheets at these links and keeping 
+them around to refer to as you work through the workshop.
+
 * <a href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/" target= "_blank" > 
   HTML5 </a> - Use this sheet for try out new HTML tag.
 * <a href="http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/" target= "_blank" >
