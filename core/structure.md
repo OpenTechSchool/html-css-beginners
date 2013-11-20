@@ -321,8 +321,8 @@ So far, our entire document might look like this:
     </html>
 
 
-Notice that the kitten image is part of it's own paragraph here, so it is
-shown by itself in the browser.
+Notice that the kitten image is part of its own paragraph here, so it is
+shown on a new line in the browser.
 
 Hopefully the document in your file looks similar, but not exactly the same. 
 You might have changed some of the text... does it all work in your browser?
