@@ -6,6 +6,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   core/structure
+   core/style
+   core/portfolio
+   core/portfolio-2
+   extras/developertools
+
 Welcome to Open Tech School’s HTML & CSS workshop! This course is a
 simple and comprehensive guide dedicated to helping beginners learn HTML
 and CSS.
