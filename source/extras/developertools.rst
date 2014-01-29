@@ -1,8 +1,5 @@
---------------
-
-layout: ots title: Browser Developer Tools
-
---------------
+Helpful tools for HTML/CSS creation
+===================================
 
 Browser Consoles
 ----------------

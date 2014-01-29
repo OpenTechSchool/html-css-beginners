@@ -1,9 +1,3 @@
---------------
-
-layout: ots title: Create your Personal Portfolio
-
---------------
-
 HTML5 structure and starter CSS
 ===============================
 

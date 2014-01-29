@@ -1,8 +1,5 @@
---------------
-
-layout: ots title: Your first styled Hello World!
-
---------------
+Your first styled Hello World!
+==============================
 
 Writing CSS
 -----------

@@ -1,8 +1,5 @@
---------------
-
-layout: ots title: Create your Personal Portfolio
-
---------------
+Position, anchors and form elements
+===================================
 
 So far we built the core of our website. Now we need a home page and a
 contact page. Here we explain some basic concepts but after that you

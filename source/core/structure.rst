@@ -1,8 +1,5 @@
---------------
-
-layout: ots title: The template structure
-
---------------
+The template structure
+======================
 
 Preamble: How to write a HTML document
 --------------------------------------
