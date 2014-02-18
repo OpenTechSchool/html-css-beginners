@@ -107,7 +107,7 @@ In styles.css:
 
     nav li {
         display: inline;
-        color: ##08c;
+        color: #08c;
     }
 
 Nav ul is a way to specify not all the ul elements on the page but just the one that is nav's child.
