@@ -251,6 +251,12 @@ Here we put inside the section an article tag. Each article tag is composed of a
 made for wrapping up all the h tags. So we place inside of it an h1 and h2 tag. Followed by a p tag where finally
 all of our content is written. Write at least some text inside of your article, because we will need it later on.
 
+As we have again changed the flow of the page using a float: left in the CSS defining aside then we should add another div with class clear to put the flow of the page back to normal for the footer.
+
+In the html file add the following div just above the <nav> tag
+
+    <div class="clear"></div>
+
 Before we make our article better looking, we need to know some basics about the box model.
 What is a box model, and why is it so importan?
 
