@@ -1,139 +1,155 @@
 ---
 
 layout: ots
-title: The template structure
+title: Die Template Struktur
 
 ---
 
-## Preamble: How to write a HTML document
+## Preamble: Wie man ein HTML Dokument schreibt
 
-This is actually pretty simple: HTML is written as a plain text document.
-A HTML file always uses the extension **.html** to indicate its filetype.
+Das ist eignetlich recht einfach: HTML wird als eine einfache Text Datei 
+geschrieben. Eine HTML Datei nutzt immer die Dateierweiterung **.html** um die 
+Art der Datei anzuzeigen.
 
 ## Text editor
 You will need a plain text editor in order to edit HTML files.
 
-You can also get fully graphical WYSIWYG (What You See Is What You Get) 
-HTML editors, that let you edit the web page graphically with a similar 
-interface to programs like Word. These can be useful, but many people 
-working with HTML & CSS prefer a plain text editor and that's what we'll 
-be using today.
+## Text Editor
+Um HTML Dateien zu editieren, wirst du einen reinen Texteditor benötigen.
 
-If you already have a plain text editor installed (perhaps from a previous 
-OTS workshop) then you'll be fine. Otherwise here are some suggestions:
+Du kannst ausserdem komplett grafische WYSIWYG 
+(What You See Is What You Get) HTML Editoren finden, die dich eine Webpage 
+grafisch editieren lassen. Vergleichbar mit einer Oberfläche wie von Word.
+
+Das kann nuetzlich sein, aber viele Leute, die mit HTML & CSS arbeiten, 
+bevorzugen einen reinen Text Editor. Genau so einen nutzen wir heute.
+
+Wenn du bereits einen Texteditor installiert hast (vielleicht von einem vorherigen
+OTS Workshop) dann kannst du diesen nutzen. Andernfalls sind hier einige Vorschläge:
 
 ### Windows
 
-[Notepad++](http://www.notepad-plus-plus.org/) is free and suitable, 
-or you could try [Sublime Text](http://www.sublimetext.com/).
+[Notepad++](http://www.notepad-plus-plus.org/) ist kostenlos und nützlich. 
+Du kannst aber auch [Sublime Text](http://www.sublimetext.com/) ausprobieren.
+
 
 ### OS X
 
-[TextWrangler](http://www.barebones.com/products/textwrangler/) is free 
-and suitable. Other good choices (with a few more advanced features you can 
-grow into) include [Sublime Text](http://www.sublimetext.com/) or 
+[TextWrangler](http://www.barebones.com/products/textwrangler/) ist kostenlos und 
+nützlich. Weitere gute Optionen (mit einigen fortgeschrittenen Funktionen,
+in die du hineinwachsen kannst) sind [Sublime Text](http://www.sublimetext.com/) or 
 [Text Mate](http://macromates.com/).
 
 ### Linux
 
-GEdit comes pre-installed on many Linux distributions. Otherwise you might want
-to try [Sublime Text](http://www.sublimetext.com/) or one of the dozens of
-other text editors available on Linux.
+GEdit ist auf den meisten Linux Distributionen vorinstalliert. 
+Andernfalls kannst du es auch mit [Sublime Text](http://www.sublimetext.com/) 
+oder einem der zahlreichen anderen Linux Text Editoren versuchen.
 
 ********
 
-**Text editor up and running? Great, time to create an HTML document!**
+**Text Editor installiert und geöffnet? Gtossartig! Zeit für das erste HTML Dokument!**
 
 ## Doctype
 
-The ﬁrst thing on an HTML page is the **doctype**, which as you might guess, 
-tells the browser what type of document it's looking at, and how to read it.
+Das erste Element einer HTML Seite ist der **doctype**, welcher wie du dir 
+vielleicht denken kannst, dem Browser den Typ des Dokuments anzeigt. 
+Das ist wichtig damit der browser weiss wie er das HTML Dokument anzeigen und lesen soll.
 
-Thankfully, HTML5's doctype is extremely simple - it's just `html`.
+Gluecklicher Weise ist der HTML5 Doctype extrem simpel - er ist einfach `html`.
 
-Open a new file in your editor and write this line first:
+Oeffne eine neue Datei in mit deinem Text Editor und schreibe dies in die erste 
+Zeile:
 
     <!DOCTYPE html>
 
-Then save it with the file extension `.html`. You're now officially editing 
-an html document!
+Dann speicher die Text-Datei mit der Datei-Erweiterung `.html`. Du editierst nun
+ganz offiziell ein HTML Dokument.
 
-## Structuring your project
+## Strukturiere dein Projekt
 
-You can create your HTML files anywhere you like, but we recommend you use 
-directories to organise things so they're easy to find later.
+Du kannst überall wo du willst HTML dateien anlegen. Jedoch empfehlen wir dir,
+dass du verzeichnisse nutzt um deine Dateien zu organisieren. So sind sie später
+einfacher wieder zu finden.
 
-* Create a directory somewhere (your home folder, or your desktop) for this 
-  workshop. Name it something like *OTS_HTML_Workshop*.
+* Erstelle an beliebiger Stelle eine Verzeichnis für diesen Workshop. Zum 
+  Beispiel auf dem Desktop oder in deinem Benutzer-Verzeichnis. 
+  Nenne das Verzeichnis *OTS_HTML_Workshop* oder ähnlich.
 
-* Create another directory inside that one for this first exercise. Name it 
-  something like *exercise1*.
+* Erstelle ein Verzeichnis innerhalb des deines Workshop Verzeichnis. 
+  Nenne es **exercise1** oder ähnlich.
 
-* From inside your editor, save your first HTML file inside the *exercise1*
-  directory. Name it something like *page.html*.
+* Vom Text-Editor aus, speichere dein erstes HTML Dokument in 
+  dem *exercise1* Verzeichnis. Nenne die HTML Datei *page.html* oder ähnlich.
 
-As time goes by, we will be adding more files to this directory and eventually
-adding whole new directories alongside exercise1 for new projects.
+Mit der Zeit werden wir noch weitere Dateien zu diesem Verzeichnis hinzufügen.
+Vielleicht sogar ganz neue Verzeichnisse, parallel zu exercise1 anlegen.
 
+## Elemente und Tags
 
-## Elements and Tags
+Das sind die grundlegenden Bausteine von HTML.
 
-These are the basic building blocks of HTML.
+**Elemente** *sind das*, was ein HTML Dokument ausmacht. Weil man keine, 
+eines oder mehr Elemente ineinander schachteln kann, entsteht eine 
+*hierachische* Struktur im HTML Dokument. Ein Element kann drei 
+Dinge beinhalten: ein Tag, ein Attribut und Inhalt.
 
-**Elements** *are* what makes up a HTML document. Because you can have zero, 
-one or more elements inside another, this is what makes HTML *heirarchical*. 
-An element can include three things: a tag, attributes, and content.
-
-A **Tag** is the thing that indicates an element's purpose. For example, 
-the `<p>` tag indicates a paragraph of text is in that element, and the `<li>` 
-represents a 'list item'. You'll notice they're always surrounded by angle 
-backets. *Opening* and *Closing* tags mark the beginning and end of an 
-element and wrap its content, like so:
+Ein **Tag** ist etwas, dass den Nutzen eines Elements angibt. Das `<p>` Tag zum
+Beispiel gibt an, dass es sich, bei dem Element um einen 
+Paragraphen-Text handelt. Das `<li>` Tag gibt an, dass hier ein Listen-Eintrag 
+stehen soll. Du wirst bereits festgestellt haben, dass Tags immer von spitzen
+Klammern eingefasst sind. **Öffnende** und **schliessende** tags markiegen den
+Anfang und das Ende eines Elements. Ausserdem umschliessen sie dessen Inhalt:
 
     <p>This is a paragraph.</p>
 
-You can see the closing tag includes a `/` before its name; otherwise it would 
-be another opening tag!
+Wie du siehst, beinhaltet das schließende Tag ein `/` vor dem Namen. Andernfalls
+wäre es ein weiteres öffnendes Tag!
 
-**Always** double-check that you've closed all your elements; otherwise, a 
-browser can and will get mixed up trying to understand your HTML document.
+Prüfe bitte **immer** doppelt, dass du alle deine öffnenden Elemente wieder 
+geschlossen hast. Andernfalls wird der Browser, beim anzeigen deines 
+HTML Dokuments, seltsame Dinge machen.
 
-There are some specific elements that are exceptions to this rule. 
-When elements cannot contain anything else, then they don't need to be closed. 
-For example, the following elements are referred to as 'self-closing':
+Es gibt eine Hand voll spezieller Elemente, die eine Auznahme zur Regel 
+darstellen. Wenn Elemente nichts anderes als den Tag-Namen beinhalten können, 
+brauchen sie auch nicht geschlossen werden. Zum Beispiel die folgenden Elemente 
+sind sogenannte 'selbst schliessende' Elemente:
 
     <hr>
     <input>
     <img>
 
-There aren't so many of such elements, and you should easily pick up which are 
-which by writing some more code :)
+Es gibt nicht viele dieser Elemente und du wirst schnell heraus finden, welche
+Elemente selbst schliessend sind, indem du ein wenig mehr Code schreibst. :)
 
-Lastly, *nesting* elements isn't so hard, and is fundamental to how HTML works. 
-It looks just like this:
+Zu guter letzt, Elemente **verschachteln**. Das ist gar nicht so schwer, aber 
+fundamental für die Funktionsweise von HTML. Verschachteln sieht wie folgt aus:
 
     <p>This is a sentence, with a <span>span</span> element inside it.</p>
 
-or this:
+oder so:
 
     <div id="first-heading">
         <h1>The h1 tags indicates the primary header of the document</h1>
     </div>
 
-You'll notice that HTML doesn't actually care about the whitespace or 
-newlines *between* tags. It would end up looking the same if the above had 
-been fit onto one line.
+Du wirst festgestellt haben, dass HTML sich um Leerzeichen oder Zeilenumbrüche 
+**zwischen** Tags nicht kümmert. Wenn das obige Beispiel in eine einzige Zeile 
+zusammen gerückt würde, käme im Browser das gleiche Ergebnis heraus.
 
-In the above example, you can see our first case of an **attribute**. It 
-starts with a lowercase name, and then is almost always followed by an 
-`=` and a 'value' that's surrounded in double quotes, `"like this"`. An element 
-can have many attributes, in which case you separate them by spaces, as you'll 
-see soon. Attributes give information about an element in particular.
+Im Beispiel, findest du zum ersten mal ein **attribut**. Ein Attribut beginnt 
+mit einem Namen in Kleinbuchstaben und wird dann nahezu immer 
+mit `=` und einem 'Wert' weiter geführt. Der Wert ist von doppelten 
+Anführungszeichen umschlossen. In etwa wie `"das hier"`. Ein Element kann viele
+Attribute haben. In so einem Fall werden die Attribute mit einem Leerzeichen von
+einander getrennt. Dazu gleich mehr. Attribute geben bestimmte Informationen über
+Elemente.
 
-In this case, the `<div>` tag (which is used to *divide* groups of elements up)
-has an `id` attribute assigned to `first-heading`. That's telling us that this 
-section of the document is designed to hold the  first heading shown on the 
-page. You will learn more about specific attributes later!
+In diesem Fall, hat das `<div>` Tag, welches genutzt wird um Elemente 
+zu gruppieren, ein `id` Attribut mit dem Wert `first-heading`. Das sagt uns, 
+dass diese Sektion des HTML Dokuments bestimmt wurde, um die erste Überschrift
+der Website zu beinhalten. Du wirst später mehr über spezielle Attribute lernen.
+
 
 ## Html and Head Elements
 
