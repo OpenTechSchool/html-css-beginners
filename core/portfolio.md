@@ -1,68 +1,58 @@
 ---
 
 layout: ots
-title: Create your Personal Portfolio
+title: Erstellt euer eigenes Portfolio
 
 ---
 
-# HTML5 structure and starter CSS
+# HTML5-Struktur und CSS
 
-## Goal
-We are going to design a personal portfolio page with a main menu, content, and a footer. 
-We fill in the content with an image along with some text.
+## Das Ziel
+Wir werden eine persönliche Webseite mit einem Hauptmenü, dem Inhaltsbereich und einer Fußzeile erstellen.
+Den Inhalt werden wir mit einem Bild und etwas Text füllen.
 
-We are going to do all of this with HTML5 elements so 
-[open up an HTML5 cheatsheet](http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/) 
-and keep it handy.
+In diesem Abschnitt arbeiten wir speziell mit HTML5-Elementen, die ihr in diesem 
+[HTML5 cheat sheet](http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/) finden könnt.
 
-## Main Content
+## Hauptinhalt
 
-We will start by building the main page of our personal presentation, since this will give the 
-main structure to the whole website design.
+Wir werden mit der Hauptseite unserer Webseite beginnen, da diese überwiegend das Design un den Aufbau der gesamten Webseite vorgibt.
 
-## Project Structure
+## Projektaufbau
 
-Start a new directory for this project, alongside the *example1*  directory you've been using so far. Call the new directory something  like *portfolio*. Copy the files from *example1* into the *portfolio*  directory to use them as a basis for your new project.
+Erstellt ein neues Verzeichnis (z.B. namens *portfolio*) für eure Webseite und kopiert alle Dateien aus dem Verzeichnis *example1* hinein. Somit müsst ihr nicht komplett von vorn anfangen und habe eine Basis, auf der ihr aufbauen könnt.
 
-After you have the files copied into *portfolio*, edit the HTML page  there and remove all of the body content (everything inside the body  tags, so you have an empty page with just the meta tags, title, and  the CSS link tag.) We can use this as the basis for a new page.
+Nachdem ihr die Dateien in *portfolio* kopiert habt könnt ihr mit dem Bearbeiten der HTML-Datei beginnen. Bitte entfernt alle Inhalte des `<body>`-Tags, um eine leere Seite zu erhalten. Die Meta-Informationen und der Link zur CSS-Datei bleiben hierbei erhalten.
 
-## Creating the page
+## Erstellen der Seite
 
-Let's start by wrapping our page in a div to give a centered design to our page.
- *"A div tag defines a section in a HTML file and is used to group elements to format 
- them with CSS in order to lay out a web page."*
+Fangen wir damit an, den Inhalt unserer Seite mit einem `<div>`-Tag zu umgeben, um den Inhalt zentriert darstellen zu können.
+ *"Ein `<div>`-Tag definiert einen Abschnitt innerhalb eines HTML-Dokuments und wird verwendet, um Elemente zu gruppieren und gemeinsam mit CSS zu formatieren, um eine Webseite zu gestalten."*
 
-Div is a general tag and can be used in many different situations just to wrap together a group of HTML
-elements and style them. For this reason we need to give it a name; otherwise, we can't style each one 
-in a different way.
-There are two ways to give a name to a div tag: with an id or with a class.
-Think about an id as a personal and unique name like your surname/name and think about the class as personal 
-characteristics, such as the color of your hair or your age. 
-Id, the unique one, is used when you need to write a specific style valid only for this element. 
-Classes are more common and used to give different HTML elements the same style and characteristics.
+Um `<div>`-Elemente sinnvoll zur Gruppierung verwenden zu können, müssen wir diesen einen Namen geben, da wir diese sonst nicht einzeln ansprechen können. 
+Es gibt zwei Möglichkeiten, ihnen einen Namen zu geben: Anhand einer ID (id) oder einer Klasse (class).
+Unter der ID ist dabei etwas einzigartiges zu verstehen, das nur ein Mal verwendet wird. Eine ID wird somit nur verwendet, wenn man ihr ein einzigartiges Design, das nur für dieses eine Element gültig ist, geben möchte. 
+Klassen hingegen werden verwendet, um gleichartige Dinge zu gruppieren, die immer wieder auftreten können.
 
-We can now write our main page content:
+Wir können nun mit dem Inhalt unserer Seite anfangen:
 
     <div id="wrap-centered">
     </div>
 
-Since we have just one main content, we can use the ID selector.
+Dieses Element soll den Hauptinhalt unserer Seite beinhalten. Da wir nur einen Hauptinhalt haben, arbeiten wir mit dem ID-Selektor.
 
-In styles.css we make this div always centered in the middle. 
-To call the class in CSS, we need to write `.` and the class name just after it. 
-For the ID it is the same but with `#` instead of `.`.
+In der Datei styles.css können wir nun festlegen, dass der Inhalt dieses Div-Elements immer zentriert dargestellt wird. 
+Um eine Klasse via CSS aufzurufen, wird diese mit einem vorangestellten Punkt (.Klassenname) aufgerufen. IDs hingegen werden mit einer vorangestellten Raute (#) aufgerufen.
 
     #wrap-centered {
         width: 100%;
         margin: 0 auto;
     }
 
-Here we define the width of an element and then give it a `margin: 0 auto,` which is a common rule to center
-the element.
-We use 100% instead of 100px because we want our page to be responsive or, in other words, we want the page to resize when the browser windows change dimensions.
-Now everything inside this div will be centered.
+Hier legen wir fest, dass das Element eine Breite von 100% hat und mit dem Abstand (margin) wird festgelegt, dass das Element zentriert ist.
+Wir verwenden Prozentangaben bei der Breite, damit die Webseite sich bei niedrigeren oder höheren Bildschirmauflösungen oder bei der Größenänderung des Browser-Fensters anpasst.
 
-At the beginning of the `styles.css` file, let's write something like this:
+Am Anfang der `styles.css` fügen wir nun eine Beschreibung für alle Elemente (*) ein:
 
     * {
         padding: 0;
@@ -70,29 +60,25 @@ At the beginning of the `styles.css` file, let's write something like this:
         border: 0;
     }
 
-That is to set all the elements `*` with default padding, margin and border to 0px. 
-This is really important to do because every browser sets a default size for some tags and without 
-setting all of them again to 0px, it will be impossible to calculate the  position of HTML elements and to
-position them on the page, since every browser will interpret that in a different way.	
+Damit wird für alle Elemente kein Innen- und Außenabstand, sowie kein Rahmen vorgegeben. 
+Das setzen dieser Ausgangswerte ist besonders wichtig, da jeder Browser für verschiedene Elemente andere Ausgangswerte verwendet und die Positionierung von Elementen somit unwahrscheinlich schwierig werden kann.
 
-## Navigation Menu
-Time to write our navigation menu.
-Inside of the div we are going to write our first HTML5 element.
+## Navigationsmenü
+Nun wird es zeit für unsere Navigation.
+Innerhalb unseres div-Elements erstellen wir nun unser erstes HTML5-Element.
 
     <nav>
         <ul>
             <li>Home</li>
             <li>|</li>
-            <li>Contact</li>
+            <li>Kontakt</li>
         </ul>
     </nav>
 
-Here we have 3 new elements. First, the nav tag. That tag means navigation and wraps up all the elements
-that are essential for the navigation in the website.
-Ul is a type of list--unordered. In an unordered list, as the word suggests, we have elements that usually stay in 
-a list and each element is wrapped in a li tag.
+Hier haben wir 3 neue Elemente: Zu allererst haben wir das `<nav>`-Tag, welches die Hauptnavigation einer Website beinhaltet.
+das `<ul>`-Tag beinhaltet eine Auflistung und jeder Eintrag, der mit `<li>` gekennzeichnet ist, wird in dieser Liste dargestellt. `<ul>` steht im übrigen für "unordered list", was für eine unsortierte Liste steht. 
 
-In styles.css:
+Eure styles.css:
 
     nav {
         width: 100%;
@@ -110,55 +96,46 @@ In styles.css:
         color: #08c;
     }
 
-Nav ul is a way to specify not all the ul elements on the page but just the one that is nav's child.
-Most of the properties we write here you already know or you can eaily check on the cheatsheet. 
+Nav ul ist eine Methode, um nicht alle unsortieren Listen zu beschreiben, sondern nur die, die sich innerhalb des `<nav>`-Elements befinden.
+Die meisten hier verwendeten Elemente kennt ihr entweder bereits oder könnt sie einfach nachschlagen. 
 
-Now we want to talk about one of them in particular, because it's very powerful: float: right.
+Jetzt möchten wir um über eine bestimmte Eigenschaft reden, welche sehr mächtig ist: float: right.
 
-This tells the selected selector to get out from the normal flow of the HTML element (usually HTML elements are block elements, which means that they are displayed one after the other vertically in the page as a block) and move to the
-right-most side of the div in which it is wrapped.
+Diese Eigenschaft sorgt dafür, dass das Element sich nicht nach dem üblichen Textfluss der Seite richtet (normalerweise sind HTML-Elemente Block-Elemente, welche nacheinander vertikal dargestellt werden). Stattdessen wird es zum weitestgehend rechten Rand des `<div>`-Tags, in dem es sich befindet, gesetzt.
 
-If you check in your browser, the nav ul is displayed on the right. 
-Float can be set on the right or on the left. Always be careful with that because this will change the flow of all the HTML
-elements, not just the one that you are modifying.
+Wenn ihr euch das in eurem Browser anseht, ist das nav ul auf der rechten Seite platziert. 
+Float kann die Werte left oder right haben. Man sollte bei der Verwendung von float immer bedenken, dass es die Orientierung aller (nachfolgender) HTML-Elemente ändert und nicht nur des Elements, in dem man es setzt.
 
-We just said that usually HTML elements are like a block displayed in a vertical flow. We can change this flow 
-thanks to the float property. 
+Durch float kann somit der vorgegebene vertikale Text- und Objektfluss von HTML verändert werden. 
 
-Another property that allows us to change the flow is display: inline. 
-Actually, this property doesn't change the flow, rather it displays an element inline (so that it will stay on one line instead dropping down) 
-instead of displaying within a block.
-Check your navigation menu.
-
-Last thing we need to do before moving on is to clear everything in order to restore the normal flow, since we 
-changed the setting float to right.
+Eine weitere Eigenschaft, die den Textfluss verändert ist: display: inline. 
+Tatsächlich handelt es sich hier um keine Änderung des gesamten Textflusses, sondern sorgt lediglich dafür, dass dieses Element in der gleichen Zeile mit anderen inline-Elementen angezeigt werden kann.
+Schaut es euch in eurem Hauptmenü einmal an.
+Da mit float auch das Verhalten der nachfolgenden Elemente verändert wird, müssen wir dies für die kommenden Elemente wieder zurücksetzen. Dafür erstellen wir im HTML-Quelltext einen neuen Abschnitt.
 
     <div class="clear"></div>
 
-And in the CSS file:
+Und in der CSS-Datei legen wir folgendes an:
 
     .clear {
         clear: both;
     }
 
-Here we create a new div with class clear and call this one in our CSS file, giving clear both. That will clear both values, right
-and left. Other two possible values are `right` or `left`. 
-When you mess with floating element, before starting a new design section it is always a good practice to put `clear: both;`
-to be sure your flow is still the default one.
+Hiermit entfernen wir die float-Eigenschaften sowohl für float: right als auch für float: left. (Es kann auch nur eine Eigenschaft mit `clear: left` oder `clear: right` zurückgesetzt werden.
+Wenn man mit float experimentiert empfiehlt und Probleme mit nachfolgenden Elementen hat empfiehlt es sich immer, zu Testzwecken `clear: both;` in den entsprechenden Abschnitt einzufügen, um sicher zu gehen, dass es nicht am float liegt.
 
-## The footer
+## Die Fußzeile (footer)
 
-The footer is, as the name says, that part of the page that stays at the end of the page and gives some general and 
-maybe secondary information, like in a book.
-The tag for that is:
+Der footer befindet sich immer ganz am Ende einer Seite und enthält zusätzliche Informationen.
+Einen footer legt man wie folgt an:
 
     <footer>
         <p></p>
     </footer>
 
-Inside the p tag you can write what you want, maybe who made this website or your email.
+Innerhalb des `<p>`-Tags könnt ihr schreiben was immer ihr mögt, zum Beispiel wer diese Webseite erstellt hat oder eure E-Mail-Adresse.
 
-In the CSS file, write:
+In der CSS-Datei legt ihr dann folgendes an:
 
     footer {
         margin-top: 50px;
@@ -168,20 +145,15 @@ In the CSS file, write:
         text-align: center;
     }
 
-We don't really need to style the footer but it is nice to give it some space to breathe with a margin-top: 50px. 
-Then we just set the alignament of the text in the p tag as center.
-That's all we need for the footer.
+Man muss natürlich nicht zwingend ein Design für den footer angeben, aber um es optisch ein wenig vom Rest der Seite zu trennen empfiehlt sich ein Abstand zu Elementen darüber via: margin-top: 50px. 
+Abschließend zentrieren wir den Text im footer noch via text-align: center. Mehr gibt es hier nicht zu tun.
 
-## Box Model and fonts
+## Box Model und Schriftarten
 
-Finally we start to build our content. First of all some structure. We are going to have a two-column
-design: one column is a kind of sidebar and this tag is called aside and the other one, the most important one,
-is a section wrapping up several articles.
-In order to have more control of this two-column design, wrap all of it in a div.content and give it some
-basic CSS, as we already did it for the wrap div.
+Jetzt können wir endlich mit dem eigentlichen Inhalt unserer Seite beginnen. Zu allererst legen wir eine Struktur fest. Es soll ein 2-Spalten-Design werden: Eine Spalte ist schmaler (auch sidebar genannt) und wird durch das `<aside>`-Tag beschrieben. Die andere Spalte beinhaltet unseren Hauptinhalt, welche durch das `<section>`-Tag umfasst wird. Innerhalb der section lässt sich der Inhalt noch in verschiedene Einträge/Beiträge, sogenannte articles, unterscheiden. 
+Um über den eigentlichen Inhalt unserer Seite mehr Kontrolle zu haben, schachteln wir diesen ebenfalls in ein weiteres div-Element namens "content".
 
-Tips: When you are not sure if your CSS is working in the proper way and you want to check exactly the size,
-margins or something else of your element, give it a casual background color, so that it displays the entire element.
+Tipp: Wenn ihr euch bei der Größe oder genauen Anordnung eurer Elemente nicht sicher seid, so ändert einfach mal die Hintergrundfarbe, damit ihr besser sehen könnt, wo das Element anfängt und wo es aufhört.
 
     <div class="content">
         <aside>
@@ -190,7 +162,7 @@ margins or something else of your element, give it a casual background color, so
         </section>
     </div>
 
-In styles.css:
+Und in der styles.css:
 
     .content {
         width: 70%;
@@ -212,14 +184,11 @@ In styles.css:
         margin: 20px 10px;
     }
 
-First, we gave a size to the content and placed it in the middle of the page. Then we gave the aside tag some
-margins to allow the content to breathe along with a minimum height and width. We also highlighted the border-right of this element so that it displays
-a line that divides aside from section.
-Last, we gave a float: left in order to make the section (or whatever we will write after the aside) slip next to the
-aside, right on its left.
-It is really important to set display: inline-block for the section.
+Zuerst haben wir dem Inhalt der Seite eine relative Breite gegeben und es in de rMitte der Seite platziert. Anschließend haben wir dem aside-Block eine Minimalgröße und Abstand zu anderen Elementen gegeben. Zusätzlich haben wir den Rand zur rechten durch einen dünnen Rahmen hervorgehoben.
+Zu guter letzt haben wir den Textfluss wie float: left geändert, um den Hauptinhalt der Seite direkt rechts von der sidebar anzuzeigen.
+Es ist wichtig, dass auch display: inline-block für die `<section>` gesetzt wird.
 
-In the aside let's place an image, our personal profile image.
+Im aside-Block fügen wir nun ein Profilbild von uns ein, um die Seite persönlicher zu gestalten.
 
     <aside>
         <img src="me.jpg"/>
@@ -230,83 +199,67 @@ In the aside let's place an image, our personal profile image.
         margin-top: 10px;
     }
 
-When you don't know the size of your image, you can place it and then open your console and check from there,
-try out different width sizes and see what the best width is. 
-Of course, the best way to do this work is to crop your image before, knowing the size, with some graphic editing rograms
-like Photoshop or GIMP but for now that is enough.
+Wenn ihr die Größe des Bildes nicht kennt, schaut am besten in den Dateieigenschaften nach der Größe und passt die Bildgröße im Code entsprechend an.
 
-Time to write your personal presentation!
+Jetzt wird es Zeit für eure persönliche Vorstellung!
 
     <section>
         <article>
             <header>
-                <h1>Title</h1>
-                <h2>Second title</h2>
-                <p>Hello hello hello</p>
+                <h1>Titel</h1>
+                <h2>Untertitel</h2>
+                <p>Hallo hallo hallo</p>
             </header>
         </article>  
     </section>
 
-Here we put inside the section an article tag. Each article tag is composed of a header tag, a tag that is 
-made for wrapping up all the h tags. So we place inside of it an h1 and h2 tag. Followed by a p tag where finally
-all of our content is written. Write at least some text inside of your article, because we will need it later on.
+In diesem Beispiel haben wir innerhalb der section noch einen article eingeschoben. Jeder article hat eine Überschrift und einen Untertitel. Danach folgt der eigentliche Inhalt im `<p>`-Tag. Füllt die Einträge bitte mit etwas Inhalt, da wir hiermit noch weiterarbeiten werden.
 
-Before we make our article better looking, we need to know some basics about the box model.
-What is a box model, and why is it so importan?
+Bevor wir das Design anpassen, gilt es etwas über das Box Model zu lernen.
 
-Every element in web design is a rectangular box. (Yes, both block and inline elements. You can set paddings,
-margins and borders on both of them.) 
-In CSS, the term "box model" is used when talking about design and layout.
-The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, 
-padding, and the actual content.
-The box model allows us to place a border around elements and margins and padding around this element too.
-How is the size of the box calculated exactly? Here is a diagram:
+Warum ist das Box Model eigentlich so wichtig?
+
+Jedes Element im Webdesign ist eine rechteckige Box. Man kann sie mit Innen- und Außenabständen versehen.
+In CSS wird der Begriff "Box Model" verwendet, wenn wir von Layout und Design sprechen.
+Das CSS Box Model umschließt HTML-Elemente, fasst sie zusammen und beschreibt sie mit Eigenschaften wie Abständen und Rändern.
+Wie setzt sich die Größe einer Box eigentlich zusammen? Eine graphische Darstellung seht ihr hier:
 
 <img src="../images/css-box-model.gif" />
 
-What do these elements do?
-* Margin: Clears an area around the border. The margin does not have a background color; it is completely transparent.
-* Borders: Goes around the padding and content. The border must have a color and thickness.
-* Padding: Clears an area around the content. The padding is affected by the background color of the box.
-* Content: The content of the box, where text, images or other elements appear.
+Was genau machen diese Elemente?
+* Margin: Außenabstand außerhalb des Rahmens. Eine Hintergrundfarbe kann nicht angegeben werden. Der Abstand ist immer transparent.
+* Borders: Der Rahmen wird außerhalb des Innenabstandes (padding) gezeichnet. Ein Rahmen wird meist mit einer Farbe und der Rahmenstärke beschrieben.
+* Padding: Dies ist der Innenabstand vom Inhalt der Box zum Rahmen. Der Innenabstand hat immer die Hintergrundfarbe des Boxinhaltes selbst.
+* Content: Dies ist der Inhalt der Box, inklusive Texten, Bildern, etc.
 
-Margin is unique in that it doesn't affect the size of the box itself, but it affects the other boxes on the page.
+Margin beeinflusst nicht die Größe der Box selbst, aber ggf. die Größe anderer Boxen auf der Seite.
 
-The size of the box itself is calculated like this:
+Die größe einer Box berechnet sich wie folgt:
 
-**Width:** width + padding-left + padding-right + border-left + border-right
+**Breite:** width + padding-left + padding-right + border-left + border-right
 
-**Height:** height + padding-top + padding-bottom + border-top + border-bottom
+**Höhe:** height + padding-top + padding-bottom + border-top + border-bottom
 
-Tips: Remember to set all of these elemnents to `0px` when you start your .CSS files as we did at the very beginning.
+Tipp: Wie bereits erwähnt sollte man alle Abstände zu Beginn des Stylesheets auf 0px setzen.
 
-So, now that we know how to calculate the box around our elements, let's play with the boxes around the article, 
-header and h tags.
+Da wir jetzt wissen, wie man die Boxgröße berechnet, sollten wir mit der Box um unseren article arbeiten.
 
-**Text style**
 
-The text in the document is still pretty boring, so let's style it.
-What we already know so far is how to change a color and how to make the text align to the center.
-As you probably already have understood, the other values of text-align are left, right and justified; 
-by default the value is left.
-When text-align is set to `justify`, each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers).
-An important decision to make is which font we are going to use for the project.
-You can specify the type of font with the font-family property.
+**Textdarstellung**
 
-There are two types of font family names:
-generic family: a group of font families with a similar look (like `Serif` or `Monospace`)
-font family: a specific font family (like `Times New Roman` or `Arial`) 
-To specify your font you have two ways. 
-One way is to use a common family-font (one with a high probablity that all users have on their machines) called a
-"web-safe" font. Or use a font-face rule. That's a new property that allows a designer to include font-family on
-your server and refer to it. 
-This second way was a small revolution, since it gave the designer the freedom to choose the font they prefer
-and now we have a huge choice.
+Da unser Text noch ziemlich langwielig aussieht, sollten wir diesen etwas aufstylen.
+Bisher haben wir nur mit der Textfarbe und Textausrichtung gearbeitet.
+Andere Werte für die Textausrichtung (text-align) sind left, right and justified (Blocksatz). Der Standardwert für die Textausrichtung ist left.
 
-For now we are going to use the "web-safe" font since that is easier and faster. 
-Tips: If you try to use a particular font that you download onto your computer, and it display correctly--be careful
-because on other people's computers, it probably won't. The correct display doesn't come from the browser but from 
-what's on your machine.
+Blocksatz bietet sich an, damit der Text ein wenig aufgeräumter aussieht und die Zeilen komplett ausfüllt - wie in Tageszeitungen und Zeitschriften. Eine weitere wichtige Frage ist die nach dem Schrifttyp. Mittels der Eigenschaft font-family legt man die Schriftart fest.
+
+Es gibt zwei Typen von Schriftarten:
+generic family: Hierbei handelt es sich nicht um eine genaue Schriftart, sondern um eine Gruppe von Schriftarten (z.B. `Serif` oder `Monospace`, wobei es sich um Serifen-Schriftarten oder Schriftarten mit gleichbleibender Buchstabenbreite handelt)
+font family: Hierbei handelt es sich um eine konkrete Schriftart (wie z.B. `Times New Roman` oder `Arial`) 
+
+Eine Möglichkeit ist es, eine häufige font-family zu wählen (damit die meisten Browser diese ähnlich darstellen können). Diese nennt man "web-safe".
+
+Tipp: Falls ihr eigene Schriftarten herunterladet und diese verwendet, bedeutet das nicht, dass andere Besucher der Webseite diese auch zur Verfügung haben. Daher empfiehlt es sich, auf Standard-Schriftarten zurückzugreifen.
 
     h1, h2 {
         font-family: Georgia, serif;
@@ -317,33 +270,25 @@ what's on your machine.
         font-size: 0.9em;
     }
 
-And here we can already see the other really important property: font-size. As you already understood that sets 
-the size of the font of your selector. Browsers have a font-size set by default but it is important for a good look to change these defaults.
-You should not use font size adjustments, however, to make paragraphs look like headings or headings to look like paragraphs.
-The font-size can be set using px, em or %.
-Your screen resolution specifies how many pixels your screen/display is made of. So when you specify: font-size: 
-12px;, you're basically telling the browser that each letter should be 12 pixels high. That is therefore
-connected with your screen size.
-Font-size: 50%; sets the font size of your element to 50% of the font size of its parent element and em is the 
-width of the letter 'm' in the selected typeface. It's basically the same as percentage, except that 1em is 100% 
-and 1.5em is 150%.
-To calculate the size from pixels to em, use this formula: pixels/16=em.
-For example:
+Hier sehen wir direkt eine sehr wichtige Eigenschaft: font-size (die Schriftgröße). Wie ihr bereits wisst bezieht sich die Schriftgröße ebenfalls auf den gesamten Selektor. Jeder Browser verwendet eine Standard-Schriftgröße, aber um ein möglichst gutes Aussehen zu erreichen, solltet ihr diese selbst setzen.
+Man sollte allerdings niemals Schriftgrößen verwenden, um Texte wie Überschriften aussehen zu lassen oder umgekehrt. Verwendet hierfür immer die dafür vorgesehenen Tags.
+
+Die Schriftgröße kann in px, em oder % angegeben werden.
+Eure Bildschirmauflösung legt fest, wie viele Pixel ihr auf eurem Bildschirm seht. Ihr könnt also eine Schriftgröße von 12 Pixeln (font-size: 12px;) festlegen. Hierbei hat die Schrift dann eine Höhe von 12 Pixeln.
+Mit font-size: 50%; setzen wir die Schriftgröße auf 50% der Schriftgröße des übergeordneten Elements. em ist ebenfalls eine relative Größenangabe, wobei es sich um die relative Größe des Buchstabens 'm' in Relation zum übergeordneten Element handelt. Es handelt sich auch um Prozentangaben, allerdings werden diese anders angegeben. 150% wären hierbei 1.5em.
+
+Um von der Schriftgröße in Pixeln zu em umzurechnen, rechnet man: Pixel / 16 = em.
+
+Zum Beispiel:
 
     h1 {
-        font-size:2.5em;  /* 40px/16=2.5em */
+        font-size: 2.5em;  /* 40px / 16 = 2.5em */
     }
 
-It's hard to tell you what you have to do with the sizes, because it is hard to tell what you want to achieve 
-in each of your layouts. Layouts are about creativity, and you can't just have one approach for all of them.
-For now we can say that it is better to use em for a font in these days since the user has so many different 
-devices and screen sizes that this is the easiest way to make the font-size automatically resizeable.
+Es ist schwierig zu sagen, wie man Größen wählen sollte, da dies sehr stark abhängig vom allgemeinen Design der Webseite abhängig ist.
+Derzeit lässt sich sagen, dass die Schriftgrößenangabe in em am praktischsten ist. Die meisten Anwender haben verschiedenste Endgeräte mit mehreren Auflösungen, Pixeldichte und Formaten. Hierbei sind relative Größenangaben am besten und am leichtesten anpassbar.
 
-A good solution can also be setting a font-size: 100% in the body element and then use em for each different 
-selector so you start in every browser with the same size.
+Eine gute Lösung kann auch sein, die Schriftgröße im body-Element auf 100% zu setzen (font-size: 100%) und in jedem weiteren Selektor mit em zu arbeiten.
 
-Ok, now it is time for you to play, modify and create your font style.
-If you want to try something more, you can check your cheatsheet and discover other font- text- properties.
-
-
-
+So, jetzt ist es Zeit, die Seite nach euren Vorlieben anzupassen und zu experimentieren.
+Wenn ihr mehr als die angesprochenen Eigenschaften ausprobieren wollt, könnt ihr auf den verlinkten Seiten nachschauen oder uns ansprechen.
