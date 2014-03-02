@@ -1,115 +1,130 @@
 ---
 
 layout: ots
-title: Create your Personal Portfolio
+title: Erstelle Dein persönliches Portfolio
 
 ---
 
-So far we built the core of our website. Now we need a home page and a contact page.
-Here we explain some basic concepts but after that you have the freedom to experiment.
+Bisher haben wir die Grundstruktur unserer Webseite erstellt.
+Es fehlt eine Startseite (Homepage) und eine Kontaktseite.
+Folgend ein paar Grundlagen, danach kannst Du Deiner Kreativität ausdruck
+verleihen und selbst Experimentieren.
 
-## Home page and positioning
-Let's start from the home page.
+## Homepage und Positionierung
+Wir beginnen mit der Startseite.
 
-**Goal**
+**Das Ziel**
 
-The home page is made by: 
+Die Startseite besteht aus:
 
-* navigation menu
-* big centered and resizable image
-* two sentence intro text (on the top of the image)
+* Navigationsmenü
+* einem großen zentrierten und in der größe anpassbarem Bild
+* zwei Einleitungssätze (auf dem Bild)
 
-So let's open a new file and set the basic structure. 
-To make the nav menu we can just copy what we have done in the first part.
-Then, take an image that you like. It should be big enough and with good resolution.
+Erstelle eine neue Datei und beschreibe die Grundstruktur.
+Um ein Navigationsmenü zu erstellen kopiere einfach deine Ergebnisse des ersten
+Teils.
+Suche Dir ein Bild aus das Du magst. Es sollte groß genug sein und mit einer guten
+Auflösung.
 
-Just after the nav tag, include your image and give it a class name.
-Now you need to set the width of just this image as full-width, which is 100%.  
+Füge das Bild direkt nach dem **nav** Tag ein und gib diesem einen Klassennamen
+(class). Setze die Breite (width) des Bildes auf die volle Seitenbreite, also 100%.
 
-    .home-imag {
+    .home-image {
         width: 100%
     }
 
-In this way your image will follow the size of the browser window.
-It is possible that when the window is very small or very big, you can see a white space at the bottom of the image.
-You can change it setting the height: 100%. But now you need to be sure that you image isn't stretched.
+Auf diese weise passt sich das Bild an die Breite des Browserfensters an.
+Es kann sein, das weisse Ränder an der Unterseite des Bildes entstehen. Das kann
+darurch verhindert das man die Höhe (height) auch auf 100% setzt. Jetzt musst Du
+aber sicherstellen das dass Bild nicht gestreckt wird.
 
-    .home-imag {
+    .home-image {
         height: 100%
     }
 
-After the image, write another header tag within h1 and h2, add a class name to your header so you can style it 
-and not be confused with the other one. (I will use header-home as the class name)
-In the CSS we are goint to write this:
+Dem Bild muss jetzt ein weiterer header tag folgen gefüllt mit einem h1 und h2.
+Dem header solltest Du noch eine Klasse geben, damit Du ihn gestalten kannst.
+Verwechsle ihn nicht mit dem für das Bild. Wir benutzen hier "header-home".
+In der CSS Datei fügen wir danach dies hinzu:
 
     .header-home {
         position: relative;
         top: -300px;
     }
-Here we are changing the position of this element by bringing it outside of the normal flow. Its position is 
-now relative to its parent element (in our case the div#wrap-centered). Now you can move your element where
-you prefer in the page using the properties top, right, bottom and left.
 
-So, what is positioning?
-When a box is taken out of the normal flow, all the content that is still within normal flow will ignore it 
-completely and not make space for it. Elements can be positioned using the top, bottom, left, and right 
-properties. These properties will not work, however, unless the position property is set first. They also work
-differently depending on the positioning method.
+Das ändert die Position des Elements dadurch, das es aus dem normalen Fluss (flow) genommen wird.
+Seine Position ist orientiert sich jetzt am Elternelement. (In Deinem Fall div#wrap-centered).
+Jetzt kannst Du das Element dort positionieren wo Du möchtest mittels der Eigenschaften
+top (Position von Oben), right (Position von Rechts), bottom (Position von Unten)
+und left (Position von Links).
 
-There are four different positioning methods.
+**Was bedeutet diese Positionierung?**
 
-**Static positioning**
-A statically positioned box is one that is in normal flow, from top to bottom.
+Wenn ein Element aus dem normalen Fluss genommen wird, ignoriert jeder andere Inhalt der
+weiterhin im normalen Fluss ist dieses Elment komplett und macht keinen Platz für dafür.
+Wie bereits angedeutet kann das Elmenent mittels top, bottom, left und right positioniert werden.
+Damit diese Eigenschaften wirken muss jedoch zuerst die Positionseigenschaft (position)
+gesetzt werden. Die Wirkung dieser Eigenschaften ist verschieden, je nachdem welche
+Positionierungsart gewählt wurde.
 
-**Fixed Positioning**
-An element with fixed position is positioned relative to the browser window.
-What makes it possible is: position: fixed. 
-After setting this, you can play with changing the position, adding a different pixel value to top, bottom, left or right positioning.
+Es gibt insgesamt vier verschiedene Positionierungsarten.
 
-**Relative Positioning**
-A relatively positioned element is positioned relative to its normal position. Elements that come after a relatively-positioned element behave as if the relatively-positioned element was still in its ‘normal flow’ position - leaving a gap for it.
-What makes it possible is: position: relative. 
-After setting this, you can play with changing the position, adding a different pixel value to top, bottom, left or right positioning.
+**Statisch (position:static)**
+Ein statisch positioniertes Element ist eines das im normalen Fluss liegt, von oben nach unten.
 
-**Absolute Positioning**
+**Fixiert (position:fixed)**
+Ein fixiertes Element wird relativ zum Browserfenster positioniert.
+Nachdem Du diese gesetzt hast, kannst Du mit der Position etwas herumspielen.
+Versuche verschiedene Pixelwerte für top, bottom, left oder right zu setzen.
 
-An absolutely positioned box is moved out of the normal flow entirely.
-What makes it possible is: position: absolute. 
-After setting this, you can play with changing the position, adding a different pixel value to top, bottom, left or right positioning.
+**Relativ (position:relative)**
+Ein realativ positioniertes Element wird wie es der name vermuten lässt relativ zu der
+Positon verschoben an der es normalerweise stehen würde.
+Elemente die danach folgen verhalten sich als wäre das Element weiterhin an der ursprünglichen
+Stelle. Es wird also Platz dafür freigehalten.
+Versuche auch hier mit den top, bottom, left und right zu experimentieren.
 
-**Overlapping Elements: z-index property**
+**Absolut (position:absolute)**
+Ein absolut positioniertes Element wird komplett aus dem normalen Fluss entfernt.
+Es ist aber abhängig ist von Elternelementen die entweder auch absolut oder relativ positioniert sind.  
 
-When elements are positioned outside of the normal flow, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
-What make it possible is: z-index: n°pixel. 
+**Überlappende Elemente (z-index Eigenschaft)**
 
-Knowing all that, create your own home page!
+Wenn Elemente ausserhalb des normalen Flusses liegen, können diese unter Umständen überlappen.
+Der z-index (Quasi die Position auf einer gedachten z-Achse) definierte die Stapelreihenfolge
+eines Elements. (Welche Element liegt vor oder hinter anderen).
 
+Mit diesem Wissen kannst Du Deine Startseite vollenden.
 
+## Kontaktseite
+Zeit die Kontaktseite anzugehen.
 
+**Das Ziel**
 
-## Contact page
-Time to create the contact page!
+Erstelle eine Seite mit:
+* einem kleinen Absatz über Dich selbst
+* Einige Links über die Du erreicht werden kannst
 
-**Goal**
+Die Kontaktseite wird die gleich Struktur haben wie die Seite zuvor.
+Kopiere einfach die Datei und bennene sie in `kontakt.html` um.
 
-Create a page with:
+Entferne dann alles aus dem `#wrap-centered` *div* tag, denn dort sollen jetzt die
+Inhalte der der Kontaktseite stehen.
 
-* a small paragraph about yourself
-* some nice links to contact you
+Füge einen Absatz hinzu und erzählen dem Besucher wer Du bist. Dafür eignet sich der
+`<p></p>`tag.
 
-The contact page will have the same structure as the page you created before. So just copy the file and rename it to `contact.html` or something like that.
+Innerhalb dieses tags kannst Du den Text hinzufügen, der sichtbar sein soll.
 
-Then you remove everything inside the `#wrap-centered` div container because that's where you want to display the contact page now.
+Zum Beispiel: `<p>Hallo ich bin Doctor Who. Ich freue mich von Dir zu hören.</p>`
 
-Next let's add a paragraph to tell the user who you are. You can do that using the `<p> </p>` tag.
+Um einen Zeilenumbruch nach dem ersten Satz zu erzwingen kannst Du `<br/>` verwenden.
+Vielleicht möchtest Du Deinen namen auch noch *kursiv* darstellen: `<i>Doctor Who</i>`.
 
-Inside that tag you can write some text that will be displayed to the user.
-
-For example: `<p>Hi I am Mr. Smith. Feel free to contact me.</p>`
-
-You also can add a linebreak after the first sentence with a `<br>` tag and maybe you want to highlight your name by making it italic: `<i>Mr. Smith</i>`.
-
-If you want to add more styling to the paragraph you should do that in the CSS file. Just add a class to the paragraph `<p class="contact-intro">` and over in the CSS file add some styling to the text:
+Wenn Du den Absatz noch weiter gestalten willst, solltest Du dies über die CSS Datei tun.
+Mittels einer Klasse am Abasatz `<p class="contact-info">` kannst Du in der CSS Datei
+die Textgestaltung anpassen:
 
     .contact-intro {
         font-size: 20px;
@@ -117,32 +132,37 @@ If you want to add more styling to the paragraph you should do that in the CSS f
         margin: 10px;
     }
 
-That's it for the short introduction. Now let's get to the links where visitors of your site can actually contact you.
+Das reicht vorerst als kurze Vorstellung. Es geht weiter mit den Links über die Besucher
+Deiner Seite dich erreichen können.
 
-Just create a list for the different contact options using the `<ul> </ul>` tag (ul for unordered list) and also add a class to the list so you can style it later on: `<ul class="contact-links">`.
+Füge eine Liste für die verschiedenen Kontaktwege ein mit dem `<ul> </ul>` tag (ul steht für ungeordnete Liste) und versehe auch diese mit einer Klasse `<ul class="contact-links">` um eine spätere Gestaltung zu ermöglichen.
 
-For now we want to add links to Mail, Twitter, Facebook and Github. So you have to create four list items with `<li> </li>` tags.
+Sagen wir also es sollen Links zu eMail, Twitter, Facebook und Github erscheinen.
+Hierzu füge vier Listenelemente, also `<li></li>` tags zwischen den ul tag ein.
 
-Inside each item you add a link tag so the user of your site can click on something. You can do that using an `<a href="#"> </a>` tag. You can ignore the `href` attribute for now. We will cover that later to make the links actually work. 
+Schreibe in jedes dieser Elemente einen Link Tag ein auf den der Besucher klicken kann.
+Diese sollten in etwa so aussehen `<a href="#"> </a>`. Das `href` Attribut kannst Du vorerst so belassen. Wir sorgen später dafür das diese Links auch funktionieren.
 
-In general you can use everything as a link. A button element, an image or just plain text. But let's create a stylish icon using CSS here. 
+Prinzipiell kannst Du alles als Link benutzen. Ein Button, ein Bild, oder normalen Text.
 
-For doing so add the first letter of the name of each link in the link tag and add some classes to the links so you can style them. Add one class `contact-link` to each link to apply styles to all links and add a unique class for each link (`mail`, `twitter`, `facebook`, `github`). The whole list should look like the following:
+Lass uns die Links vorerst etwas aufpeppen indem wir diese um den ersten Buchstaben des Textes setzen und jedem Link ein paar Klassen vergeben.
+`contact-link` für die Eigenschaften die alle Links gemeinsam haben und für die anderen einzigartige (`email`, `twitter`, `facebook`, `github`).
+Dadurch solltest Du zu folgendem Ergebnis gelangen:
 
     <ul class="contact-links">
-        <li><a href="#" class="contact-link mail">m</a></li>
-        <li><a href="#" class="contact-link twitter">t</a></li>
-        <li><a href="#" class="contact-link facebook">f</a></li>
-        <li><a href="#" class="contact-link github">g</a></li>
+        <li><a href="#" class="contact-link email">e</a>mail</li>
+        <li><a href="#" class="contact-link twitter">t</a>witter</li>
+        <li><a href="#" class="contact-link facebook">f</a>acebook</li>
+        <li><a href="#" class="contact-link github">g</a>ithub</li>
     </ul>
 
-If you like you can replace each # above with the URL to your respective social network account. 
+Wenn Du möchtest kannst Du das `#` Zeichen oben bereits durch die URL Deines Kontos ersetzen.
 
-And now you can style the links using CSS.
+**Zeit die Links mit CSS zu gestalten:**
 
-You can change the font, create a box for each link in a different colour and position the letter pixel perfect for each link individually.
+Du kannst die Schriftart ändern, einen Rahmen um jeden Link in verschiedenen Farben und die Position für jeden ersten Buchstabens perfekt bestimmen.
 
-Here is some simple styling. Have a look at it and adjust it to your needs:
+Hier hier einmal ein einfaches Layout.
 
     .contact-links {
         padding: 0;
@@ -160,7 +180,7 @@ Here is some simple styling. Have a look at it and adjust it to your needs:
         font-size: 35px;
     }
 
-    .mail {
+    .email {
         background: #dd1812;
         width: 39px;
         height: 45px;
@@ -188,72 +208,63 @@ Here is some simple styling. Have a look at it and adjust it to your needs:
         padding: 0 0 0 13px;
     }
 
-That's it for this section. Feel free to extend and customize the contact page in every way you can imagine.
-
-
-
+Das war es bereits für diesen Bereich.
+Probiere es aus und passe es dann an Deine Wünsche an.
 
 ## a tag
 
-Good! Our portfolio is almost ready.
-Now we need just one more thing: to link all your pages together.
-To do that there is a special tag: a tag (anchor) that defines a hyperlink.
-The most important attribute of the < a > element is the href attribute, which indicates the link’s destination.
-So the HTML syntrax for a link look like this: 
+Sehr gut. Dein Portfolio ist so gut wie fertig.
+Die einzelnen Seiten sollten miteinander verlinkt sein.
+Dafür verwenden wir den *a* tag (Anker) der einen Hyperlink beschreibt.
+Das wichtigste Attribut eines *a* elements ist dessen *href* (hypertext referenz) Attribut.
+Es definiert das Ziel des Links.
 
-    <a href="yourUrl">Link text</a>
+Die HTML Syntax für einen Link sieht vollständig dann so aus:
 
-There are different types of links.
-You can create an **external link**, a link that go to another web site. This
-link is absolute and basically need all the line that usually you see or type
-in the Url bar of your browser.
-If we want to link our web site to the OTS site, it look like this:
+    <a href="irgendeineUrl">Der Linktext</a>
 
-     <a href="http://opentechschool.org">OpenTechSchool</a>
+Es gibt verschiedene Typen von Links. Es gibt **externe Links** die auf andere Webseiten zeigen.
+Dieser Link ist absolut und entspricht dem was Du in der Adresszeile des Browsers siehst.
+Ein Link auf die OpenTechSchool in Dortmund würde so aussehen:
 
-Also very important is the Internal link or rather a link that point on your
-own web site, point just to another page of the same website.
-And that one is also the one we need right now, so let's proceed with our
-portfolio. 
-In our nav menu, we need to add an a tag to our li elements:
+     <a href="http://opentechschool.org/dortmund">OpenTechSchool Dortmund</a>
 
-    <li><a href="home.html" >Home |</a> </li>
+Auch sehr wichtig sind *interne Links* die auf andere Unterseiten Deiner eigenen Webseite zeigen.
+Das wollen wir als nächstes tun indem Du Dein Portfolio im Navigationsmenü um einen *a* tag innerhalb der *li* elemente erweiterst:
 
+    <li><a href="startseite.html" >Startseite |</a> </li>
 
-Be careful to type the url right.
-If the page to which you are going to link is not in the same root, in the same folder of your file, you need to specify in which one it can be
-found.
-For example, if I have the contact page in a contact folder I write:
+Achte darauf die URL korrekt zu schreiben, ansonsten führt diese ins nichts.
+Wenn die Seite auf die Du verlinken möchtest nicht ebenfalls am gleichen Ort wie die aktuelle Seite liegt, musst Du eventuelle Unterverzeichnisse ebenfalls miteinbeziehen.
+Wenn die Kontaktseite z.b. in einem extra Kontaktverzeichnis liegen würde sähe dies so aus:
 
-    <li><a href="contact/contact.html"> Contact </a> </li>
+    <li><a href="kontakt/kontakt.html"> Kontakt </a> </li>
 
-Check in the browser and... Done!
-Now you can do the same for the rest of your nav menu and for your social buttons links.
+Prüfe es im Browser uuuuuuuuund.... Tadaaaaaaa ein Link von der Startseite zur Kontaktseite.
 
-By default the a tag is styled like this:
+Erweitere den Rest des Navigationsmenüs und alle Kontaktlinks auf die gleiche Weise.
 
-* An unvisited link is underlined and blue
-* A visited link is underlined and purple
-* An active link is underlined and red
+Standardmäßig wird ein Tag vom Browser folgendermaßen dargestellt:
 
-You can change the style and the color by selecting the a tag.
+* Ein unbesuchter Link ist unterstrichen und blau
+* Ein besuchter Link ist unterstrichen aber lila
+* Ein aktiver Link (also die aktuelle Seite) ist unterstrichen und rot
 
-There still at least one important link to explain. The mailto link.
-Write mailto: myemail@google.com tell to the browser to open the default
-email programm on the user machine with the email destinatary field already fill in. Nice, isn't it?
-So go ahead and write the mailto link with your personal email instead of # 
-in your contact list and try it out.
+Das kannst Du ebenfalls anpassen.
+
+Eine kleine Erklärung auch noch zum mailto link.
+Schreibe mailto:ich@google.com um dem Browser zu sagen er soll das Emailprogramm des Benutzers öffnen und eine neue Email an die angegebene Adresse zu schreiben.
+Praktisch oder?
+Bei Deinem Email link füge also statt # also einen mailto mit Deiner Emailadresse ein.
 
 **:hover**
-To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the :hover selector.
+Es ist auch möglich die Darstellung eines Links zu verändern, sobald die Maus sich darüber bewegt.
+Dafür benötigst Du den `:hover` (hover=schweben/im Bereich) selector.
 
     a:hover {
         color: red;
     }
 
+Super! Du bist ferig. Jetzt liegt es an Dir noch weitere Änderungen vorzunehmen. Mach die Seite hübscher und individueller. Verändere Farben, Schriftarten oder füge Bilder hinzu. Was immer Du möchtest und bereite es vor es am Ende des Workshops zu präsentieren.
 
-Great! We are done but if you still have a time keep going to play with your potrfolio, make it nicer, change colors, fonts, add images or whatever you like most and be ready for present it at the end of the workshop.
-We want to see your amazing personal website!
-
-Don't hesitated to ask to our coaches if you have any question.
-
+Wir freuen uns auf Deine persönliche Webseite!
