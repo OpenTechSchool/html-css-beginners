@@ -8,7 +8,7 @@ title: Erstellt euer eigenes Portfolio
 # HTML5-Struktur und CSS
 
 ## Das Ziel
-Wir werden eine persönliche Webseite mit einem Hauptmenü, dem Inhaltsbereich und einer Fußzeile erstellen.
+Wir werden eine persönliche Website mit einem Hauptmenü, dem Inhaltsbereich und einer Fußzeile erstellen.
 Den Inhalt werden wir mit einem Bild und etwas Text füllen.
 
 In diesem Abschnitt arbeiten wir speziell mit HTML5-Elementen, die ihr in diesem 
@@ -16,18 +16,18 @@ In diesem Abschnitt arbeiten wir speziell mit HTML5-Elementen, die ihr in diesem
 
 ## Hauptinhalt
 
-Wir werden mit der Hauptseite unserer Webseite beginnen, da diese überwiegend das Design un den Aufbau der gesamten Webseite vorgibt.
+Wir werden mit der Hauptseite unserer Website beginnen, da diese überwiegend das Design un den Aufbau der gesamten Website vorgibt.
 
 ## Projektaufbau
 
-Erstellt ein neues Verzeichnis (z.B. namens *portfolio*) für eure Webseite und kopiert alle Dateien aus dem Verzeichnis *example1* hinein. Somit müsst ihr nicht komplett von vorn anfangen und habe eine Basis, auf der ihr aufbauen könnt.
+Erstellt ein neues Verzeichnis (z.B. namens *portfolio*) für eure Website und kopiert alle Dateien aus dem Verzeichnis *example1* hinein. Somit müsst ihr nicht komplett von vorn anfangen und habe eine Basis, auf der ihr aufbauen könnt.
 
 Nachdem ihr die Dateien in *portfolio* kopiert habt könnt ihr mit dem Bearbeiten der HTML-Datei beginnen. Bitte entfernt alle Inhalte des `<body>`-Tags, um eine leere Seite zu erhalten. Die Meta-Informationen und der Link zur CSS-Datei bleiben hierbei erhalten.
 
 ## Erstellen der Seite
 
 Fangen wir damit an, den Inhalt unserer Seite mit einem `<div>`-Tag zu umgeben, um den Inhalt zentriert darstellen zu können.
- *"Ein `<div>`-Tag definiert einen Abschnitt innerhalb eines HTML-Dokuments und wird verwendet, um Elemente zu gruppieren und gemeinsam mit CSS zu formatieren, um eine Webseite zu gestalten."*
+ *"Ein `<div>`-Tag definiert einen Abschnitt innerhalb eines HTML-Dokuments und wird verwendet, um Elemente zu gruppieren und gemeinsam mit CSS zu formatieren, um eine Website zu gestalten."*
 
 Um `<div>`-Elemente sinnvoll zur Gruppierung verwenden zu können, müssen wir diesen einen Namen geben, da wir diese sonst nicht einzeln ansprechen können. 
 Es gibt zwei Möglichkeiten, ihnen einen Namen zu geben: Anhand einer ID (id) oder einer Klasse (class).
@@ -50,7 +50,7 @@ Um eine Klasse via CSS aufzurufen, wird diese mit einem vorangestellten Punkt (.
     }
 
 Hier legen wir fest, dass das Element eine Breite von 100% hat und mit dem Abstand (margin) wird festgelegt, dass das Element zentriert ist.
-Wir verwenden Prozentangaben bei der Breite, damit die Webseite sich bei niedrigeren oder höheren Bildschirmauflösungen oder bei der Größenänderung des Browser-Fensters anpasst.
+Wir verwenden Prozentangaben bei der Breite, damit die Website sich bei niedrigeren oder höheren Bildschirmauflösungen oder bei der Größenänderung des Browser-Fensters anpasst.
 
 Am Anfang der `styles.css` fügen wir nun eine Beschreibung für alle Elemente (*) ein:
 
@@ -71,7 +71,7 @@ Innerhalb unseres div-Elements erstellen wir nun unser erstes HTML5-Element.
         <ul>
             <li>Home</li>
             <li>|</li>
-            <li>Kontakt</li>
+            <li>Contact</li>
         </ul>
     </nav>
 
@@ -133,7 +133,7 @@ Einen footer legt man wie folgt an:
         <p></p>
     </footer>
 
-Innerhalb des `<p>`-Tags könnt ihr schreiben was immer ihr mögt, zum Beispiel wer diese Webseite erstellt hat oder eure E-Mail-Adresse.
+Innerhalb des `<p>`-Tags könnt ihr schreiben was immer ihr mögt, zum Beispiel wer diese Website erstellt hat oder eure E-Mail-Adresse.
 
 In der CSS-Datei legt ihr dann folgendes an:
 
@@ -206,9 +206,9 @@ Jetzt wird es Zeit für eure persönliche Vorstellung!
     <section>
         <article>
             <header>
-                <h1>Titel</h1>
-                <h2>Untertitel</h2>
-                <p>Hallo hallo hallo</p>
+                <h1>Title</h1>
+                <h2>Second title</h2>
+                <p>Hello hello hello</p>
             </header>
         </article>  
     </section>
@@ -259,7 +259,7 @@ font family: Hierbei handelt es sich um eine konkrete Schriftart (wie z.B. `Time
 
 Eine Möglichkeit ist es, eine häufige font-family zu wählen (damit die meisten Browser diese ähnlich darstellen können). Diese nennt man "web-safe".
 
-Tipp: Falls ihr eigene Schriftarten herunterladet und diese verwendet, bedeutet das nicht, dass andere Besucher der Webseite diese auch zur Verfügung haben. Daher empfiehlt es sich, auf Standard-Schriftarten zurückzugreifen.
+Tipp: Falls ihr eigene Schriftarten herunterladet und diese verwendet, bedeutet das nicht, dass andere Besucher der Website diese auch zur Verfügung haben. Daher empfiehlt es sich, auf Standard-Schriftarten zurückzugreifen.
 
     h1, h2 {
         font-family: Georgia, serif;
@@ -285,7 +285,7 @@ Zum Beispiel:
         font-size: 2.5em;  /* 40px / 16 = 2.5em */
     }
 
-Es ist schwierig zu sagen, wie man Größen wählen sollte, da dies sehr stark abhängig vom allgemeinen Design der Webseite abhängig ist.
+Es ist schwierig zu sagen, wie man Größen wählen sollte, da dies sehr stark abhängig vom allgemeinen Design der Website abhängig ist.
 Derzeit lässt sich sagen, dass die Schriftgrößenangabe in em am praktischsten ist. Die meisten Anwender haben verschiedenste Endgeräte mit mehreren Auflösungen, Pixeldichte und Formaten. Hierbei sind relative Größenangaben am besten und am leichtesten anpassbar.
 
 Eine gute Lösung kann auch sein, die Schriftgröße im body-Element auf 100% zu setzen (font-size: 100%) und in jedem weiteren Selektor mit em zu arbeiten.
