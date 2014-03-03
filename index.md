@@ -80,7 +80,7 @@ them around to refer to as you work through the workshop.
 
 ## Reference material
 
-The Mozilla Developer Network (MDN), by the guys who make Firefox, 
+The Mozilla Developer Network (MDN), by the people who make Firefox, 
 host some great resources:
 
 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target= "_blank" >
