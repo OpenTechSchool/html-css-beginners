@@ -329,14 +329,27 @@ You might have changed some of the text... does it all work in your browser?
 
 ## Why not use Word?
 
-You might wonder why you're writing all these elements by hand, 
-when you could make up the same stuff in a Word document.
+### Why not use a visual editor?
+Visual editors exist, and some people use them. This is sometimes referred to
+a "what you see is what you get" editing, or WYSIWYG. In the long run, it can
+be limiting to use a visual editor because there are ways of changing text that
+are faster and easier to specify manually. It also limits your ability to
+understand what's happening on the page if you only use generated code from a
+visual editor.
 
-Well, think about some of the cooler websites around that you've seen on the 
-web, and their complex layouts. Do you think you could replicate them 
-using Word? How long might it take? That's the power of manual control that 
-HTML (and CSS, and Javascript) gives to the web and web developers. You can 
-learn it too!
+### Why not use MS Word as a text editor?
+MS Word has a lot of formatting information that can't be understood by the web.
+The way Word knows where to put a paragraph (or bigger font sizes, or a picture,
+or anything) is totally different from how HTML and CSS work. For code of all
+kinds, including HTML and CSS, it's important to use a text editor to keep your
+code clean. 
+
+In addition, text editors provide some hints about what pieces of code you have
+where. This is called syntax highlighting. <span style="color:red">It</span> 
+<span style="color:blue">is</span> like <span style="color:blue">showing</span>
+<span style="color:red">nouns</span> in <span style="color:red">red</span> and
+<span style="color:blue">showing</span> the <span style="color:red">verbs</span>
+in <span style="color:red">blue</span> in a <span style="color:red">sentence</span>.
 
 ## What's next?
 
