@@ -1,7 +1,7 @@
 ---
 
 layout: ots
-title: Dein erster Hello World Entwuf!
+title: Dein erster 'Hello World'-Entwuf!
 
 ---
 
@@ -67,7 +67,7 @@ Prüft den Dateinamen im `<link>`-Tag und schaut nach, ob die CSS-Datei auch wir
 
 ******
 
-Die sogenannten Web-Farben sind Farben, die beim Gestalten von Webseiten verwendet werden.
+Die sogenannten Web-Farben sind Farben, die beim Gestalten von Websites verwendet werden.
 Farben können entweder im 3-stelligen RGB-Format definiert werden (256 Werte für jeden Wert, also rot, grün und blau) oder als hexadezimaler Wert (z.B. #ddd).
 Hexadezimale Farbwerte beginnen mit einer Raute (#).
 Diese Farben können der Einfachheit halber mit einem Werkzeug wie dem [Color picker](http://www.colorpicker.com/), gewählt werden.
