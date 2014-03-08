@@ -1,10 +1,10 @@
 Definitions
 ===========
 
-Here are some terms to get familiar with before we dive into HTML/CSS?
+Here are some terms to get familiar with, before we dive into making a website.
 
-HTML or HyperText Markup Language
----------------------------------
+HTML - HyperText Markup Language
+--------------------------------
 
 HTML is the main markup language for creating web pages and other
 information that can be displayed in a web browser. You can write your
@@ -23,15 +23,15 @@ the world. In 1992 two copies of a free web browser were downloaded
 from a computer at CERN to a computer in the USA. In 1995 the first
 Internet Explorer was published.
 
-How abour **HTML5**? What’s that?
----------------------------------
+How about HTML5? What’s that?
+-----------------------------
 
 This is just the latest version of HTML. There is a lot of interest
 about it, because it improves and adds many HTML elements, making it
 easier to write and to use.
 
-CSS or Cascading Style Sheets
------------------------------
+CSS - Cascading Style Sheets
+----------------------------
 
 CSS is a language used for describing the look and formatting of a
 document written in a markup language. It is closely connected with

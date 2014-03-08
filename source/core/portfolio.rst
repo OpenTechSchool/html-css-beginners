@@ -304,7 +304,7 @@ Time to write your personal presentation!
                 <h2>Second title</h2>
                 <p>Hello hello hello</p>
             </header>
-        </article>  
+        </article>
     </section>
 
 Here we put inside the section an article tag. Each article tag is
@@ -324,6 +324,8 @@ HTML elements, and it consists of: margins, borders, padding, and the
 actual content. The box model allows us to place a border around
 elements and margins and padding around this element too. How is the
 size of the box calculated exactly? Here is a diagram:
+
+.. image:: images/css-box-model.gif
 
 What do these elements do? \* Margin: Clears an area around the border.
 The margin does not have a background color; it is completely

@@ -25,10 +25,8 @@ your page and choose "*Inspect Element*\ ":
 The console that pops should look like this (this is FireFox, Chrome is
 different but similar):
 
-.. figure:: ../images/webconsole.png
-   :alt: Example of the FireFox Web Console
+.. image:: images/webconsole.png
 
-   Example of the FireFox Web Console
 You can also click the little triangle arrows next to elements in the
 web console to look inside the structure of the HTML page, and click on
 other HTML elements to see them highlighted in the browser view.
