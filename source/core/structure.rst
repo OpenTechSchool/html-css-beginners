@@ -1,6 +1,8 @@
 The template structure
 ======================
 
+.. highlight:: html
+
 Preamble: How to write a HTML document
 --------------------------------------
 
@@ -183,7 +185,7 @@ description of your page's content. Here's an example ``head`` element:
 ::
 
     <head>
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8">
         <meta name="description" content="Free Web tutorials">
         <title>My first Portfolio</title>
     </head>
@@ -239,9 +241,9 @@ Types of content
 There are different HTML elements that we can use to indicate different
 types of content in our document, like the
 
-.. raw:: html
+::
 
-   <p></p> 
+   <p></p>
 
 tags which we have already met. Let's try writing a title, followed by a
 paragraph.

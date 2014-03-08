@@ -120,6 +120,6 @@ top edge, we would write
         border-top: 1px solid #000;
     }
 
-**Look at the `CSS cheat
+Look at the `CSS cheat
 sheet <http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/>`__
-and give some more styles to your images.**
+and give some more styles to your images.
