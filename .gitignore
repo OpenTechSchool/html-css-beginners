@@ -1,4 +1,3 @@
+build
 *.swp
-_site/
 *~
-.ruby-version
