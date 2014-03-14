@@ -351,16 +351,34 @@ Hoffentlich schaut das Dokument in deiner Datei vergleichbar aber nicht
 identisch aus. Vermutlich unterscheiden sich einige der Texte. Funktioniert 
 alles in deinem Browser?
 
+## Warum sollte man kein grafischen Editoren nutzen?
+
+Grafische existieren und einige Leute benutzen diese auch. Man spricht hierbei
+oft von einem "What You See Is What You Get" editor oder auch einfach WYSIWYG.
+Auf lange Sicht hin betrachtet, kann ein grafischer HTML Editor sehr
+einschränken. Denn oftmals gibt es bessere und schnellere Wege Texte zu ändern.
+Außerdem Schränken WYSIWYG Editoren deine Möglichkeiten ein, wenn es darum geht
+zu verstehen, was wirklich auf deiner HTML Seite passiert, da du nur automatisch
+generierten Code nutzt.
+
 ## Warum sollte man kein Word nutzen?
 
-Du magst dich wundern, warum wir alle diese Elemente händisch schreiben,
-wenn wir genauso gut Programme wie Word dafür nutzen könnten.
+MS Word nutzt eine Menge Format-Informationen, die man im Web nicht versteht.
+Die Art und Weise, wie HTML Paragraphen (oder grosse Schriften, Bilder und mehr)
+positioniertunterscheidet sich total von wie HTML und CSS funktionieren. Für
+Code jeder Art, HTML und CSS eingeschlossen, ist es sehr wichtig, einen
+Text-Editor zu nutzen, damit dein Code sauber bleibt.
 
-Nunja, denke mal an die coolen Websites im Internet und die komplexen Layouts,
-die sie haben. Denkst du, du kannst diese mit einem Programm wie Word nachbauen?
-Wie lang würde das wohl dauern? Das ist nur durch die manuelle Kontrolle von
-HTML (und CSS und JavaScript) möglich, die Entwicklern durch Webtechnologie 
-in die Hände gelegt wird. Das kannst *du* auch lernen!
+Zusätzlich haben Text-Editoren oftmals den Vorteil, dass sie Hinweise zu deinem
+Code anzeigen. Man nennt sowas Syntax Highlighting.
+ 
+It is like showing nouns in red and showing the verbs in blue in a sentence.
+
+Das ist als so ähnlich als <span style="color:blue;">hebe</span> man die 
+<span style="color:red">Nomen</span> eines
+<span style="color:red;">Satzes</span> <span style="color:blue;">rot</span>
+und die <span style="color:red;">Verben</span> 
+<span style="color:blue;">blau</span> hervor.
 
 ## Wie geht es weiter?
 
