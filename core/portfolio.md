@@ -131,7 +131,7 @@ instead of displaying within a block.
 Check your navigation menu.
 
 Last thing we need to do before moving on is to clear everything in order to restore the normal flow, since we 
-changed the setting float to right.
+changed the setting float to right. Place this div after the `nav` element.
 
     <div class="clear"></div>
 
