@@ -82,8 +82,8 @@ After setting this, you can play with changing the position, adding a different 
 When elements are positioned outside of the normal flow, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
 What make it possible is: z-index: n°pixel. 
 
-Knowing all that, create your own home page!
-
+Knowing all that, create your own home page!  
+If you want to learn more about positioning, [check this demo out](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
 
 
 
