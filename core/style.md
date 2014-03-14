@@ -56,7 +56,7 @@ value of this property.
 The right sytrax is:
 
     selector {
-        property: value; /* remember always to write a ; after your value */
+        property: value; /* remember always to write a semicolon (;) after your value */
         property: value;
     }
 
