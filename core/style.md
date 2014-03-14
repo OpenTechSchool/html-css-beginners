@@ -128,6 +128,6 @@ So we have two rules here. The first says the text color in paragraphs should be
 ## What's next?
 
 Now you have the basic building blocks to start working on
-[your portfolio](portfolio.md)
+[your portfolio](portfolio.html)
 
 
