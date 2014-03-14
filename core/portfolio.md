@@ -348,5 +348,6 @@ selector so you start in every browser with the same size.
 Ok, now it is time for you to play, modify and create your font style.
 If you want to try something more, you can check your cheatsheet and discover other font- text- properties.
 
-
-
+##What's next?
+Lern about CSS positioning and extend your portfolio with a big resizable image and a contact page.  
+[pimp your portfolio](portfolio-2.html)
