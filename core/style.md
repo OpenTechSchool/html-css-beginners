@@ -114,20 +114,16 @@ As you learned in [the structure section](structure.html) in HTML you can nest y
         <h1>The h1 tags indicates the primary <div>header</div> of the document</h1>
     </div>
 
-In CSS you can **not** nest rules inside of other rules, but you can still apply hierachical styling.
-    
-    /* This does NOT work: */
-    div {
-        h1 {
-            color: red;
-        }
+In CSS you can apply hierachical styling like this:
+
+    p {
+        color: black;
     }
-    /* This works: */
-    div h1 {
+    div p {
         color: red;
     }
 
-So what we did here is make a *specific* CSS rule that styles our h1 headings, but only those that are inside of a div tag. Try to avoid this for now, but be aware that the nesting does not work.
+So we have two rules here. The first says the text color in paragraphs should be black. The second rule is more *specific* - it says the text in paragraphs should be red, but only if those paragraphs are inside of a div tag. A more specific rule always beats a less specific rule.
 
 ## What's next?
 
