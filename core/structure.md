@@ -81,7 +81,7 @@ adding whole new directories alongside exercise1 for new projects.
 These are the basic building blocks of HTML.
 
 **Elements** *are* what makes up a HTML document. Because you can have zero, 
-one or more elements inside another, this is what makes HTML *heirarchical*. 
+one or more elements inside another, this is what makes HTML *hierarchical*. 
 An element can include three things: a tag, attributes, and content.
 
 A **Tag** is the thing that indicates an element's purpose. For example, 

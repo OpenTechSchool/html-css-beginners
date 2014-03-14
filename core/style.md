@@ -50,7 +50,7 @@ Let's take the h1 title we wrote in our HTML file and give it a nice red color.
         color: red;
     }
 
-h1 is the selector, the HTML elemnt we want to style.
+h1 is the selector, the HTML element we want to style.
 *color* is one of the properties that we can give to our selector, and *red* is the 
 value of this property.
 The right sytrax is:
