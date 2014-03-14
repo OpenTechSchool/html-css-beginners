@@ -1,157 +1,171 @@
 ---
 
 layout: ots
-title: The template structure
+title: Die Template-Struktur
 
 ---
 
-## Preamble: How to write a HTML document
+## Preamble: Wie man ein HTML-Dokument schreibt
 
-This is actually pretty simple: HTML is written as a plain text document.
-A HTML file always uses the extension **.html** to indicate its filetype.
+Das ist eigentlich recht einfach: HTML wird als eine einfache Textdatei 
+geschrieben. Eine HTML-Datei nutzt immer die Dateierweiterung **.html**, um die 
+Art der Datei anzuzeigen.
 
-## Text editor
-You will need a plain text editor in order to edit HTML files.
+## Texteditor
+Um HTML-Dateien zu editieren, wirst du einen reinen Texteditor benötigen.
 
-You can also get fully graphical WYSIWYG (What You See Is What You Get) 
-HTML editors, that let you edit the web page graphically with a similar 
-interface to programs like Word. These can be useful, but many people 
-working with HTML & CSS prefer a plain text editor and that's what we'll 
-be using today.
+Du kannst ausserdem komplett grafische WYSIWYG 
+(What You See Is What You Get) HTML-Editoren finden, die dich eine Website 
+grafisch editieren lassen. Dies ist vergleichbar mit einer Oberfläche wie von Word.
 
-If you already have a plain text editor installed (perhaps from a previous 
-OTS workshop) then you'll be fine. Otherwise here are some suggestions:
+Solche Software kann nuetzlich sein, aber viele, die mit HTML & CSS arbeiten, 
+bevorzugen einen reinen Texteditor. Genau so einen nutzen wir heute.
+
+Wenn du bereits einen Texteditor installiert hast (vielleicht von einem vorherigen
+OTS Workshop) dann kannst du diesen nutzen. Andernfalls sind hier einige Vorschläge:
 
 ### Windows
 
-[Notepad++](http://www.notepad-plus-plus.org/) is free and suitable, 
-or you could try [Sublime Text](http://www.sublimetext.com/).
+[Notepad++](http://www.notepad-plus-plus.org/) ist kostenlos und nützlich. 
+Du kannst aber auch [Sublime Text](http://www.sublimetext.com/) ausprobieren.
+
 
 ### OS X
 
-[TextWrangler](http://www.barebones.com/products/textwrangler/) is free 
-and suitable. Other good choices (with a few more advanced features you can 
-grow into) include [Sublime Text](http://www.sublimetext.com/) or 
+[TextWrangler](http://www.barebones.com/products/textwrangler/) ist kostenlos und 
+nützlich. Weitere gute Optionen (mit einigen fortgeschrittenen Funktionen,
+in die du hineinwachsen kannst) sind [Sublime Text](http://www.sublimetext.com/) or 
 [Text Mate](http://macromates.com/).
 
 ### Linux
 
-GEdit comes pre-installed on many Linux distributions. Otherwise you might want
-to try [Sublime Text](http://www.sublimetext.com/) or one of the dozens of
-other text editors available on Linux.
+GEdit ist auf den meisten Linux Distributionen vorinstalliert. 
+Andernfalls kannst du es auch mit [Sublime Text](http://www.sublimetext.com/) 
+oder einem der zahlreichen anderen Linux Texteditoren versuchen.
 
 ********
 
-**Text editor up and running? Great, time to create an HTML document!**
+**Texteditor installiert und geöffnet? Grossartig! Zeit für das erste HTML-Dokument!**
 
 ## Doctype
 
-The ﬁrst thing on an HTML page is the **doctype**, which as you might guess, 
-tells the browser what type of document it's looking at, and how to read it.
+Das erste Element einer HTML-Seite ist der **doctype**, welcher wie du dir 
+vielleicht denken kannst, dem Browser den Typ des Dokuments anzeigt. 
+Dies ist wichtig, damit der Browser weiss, wie er das HTML-Dokument anzeigen und lesen soll.
 
-Thankfully, HTML5's doctype is extremely simple - it's just `html`.
+Glücklicherweise ist der HTML5-Doctype extrem simpel - er ist einfach `html`.
 
-Open a new file in your editor and write this line first:
+Öffne eine neue Datei mit deinem Texteditor und schreibe dies in die erste 
+Zeile:
 
     <!DOCTYPE html>
 
-Then save it with the file extension `.html`. You're now officially editing 
-an html document!
+Dann speichere die Textdatei mit der Datei-Erweiterung `.html`. Du editierst nun
+ganz offiziell ein HTML Dokument.
 
-## Structuring your project
+## Strukturiere dein Projekt
 
-You can create your HTML files anywhere you like, but we recommend you use 
-directories to organise things so they're easy to find later.
+Du kannst überall wo du möchtest HTML-Dateien anlegen. Jedoch empfehlen wir dir,
+dass du Verzeichnisse nutzt, um deine Dateien zu organisieren. So sind sie später
+einfacher wiederzufinden.
 
-* Create a directory somewhere (your home folder, or your desktop) for this 
-  workshop. Name it something like *OTS_HTML_Workshop*.
+* Erstelle an beliebiger Stelle ein Verzeichnis für diesen Workshop. Zum 
+  Beispiel auf dem Desktop oder in deinem Benutzer-Verzeichnis. 
+  Nenne das Verzeichnis *OTS_HTML_Workshop* oder ähnlich.
 
-* Create another directory inside that one for this first exercise. Name it 
-  something like *exercise1*.
+* Erstelle ein Verzeichnis innerhalb des Workshop-Verzeichnisses. 
+  Nenne es **exercise1** oder ähnlich.
 
-* From inside your editor, save your first HTML file inside the *exercise1*
-  directory. Name it something like *page.html*.
+* Vom Texteditor aus, speichere dein erstes HTML-Dokument in 
+  dem *exercise1*-Verzeichnis. Nenne die HTML Datei *page.html* oder ähnlich.
 
-As time goes by, we will be adding more files to this directory and eventually
-adding whole new directories alongside exercise1 for new projects.
+Mit der Zeit werden wir noch weitere Dateien zu diesem Verzeichnis hinzufügen, vielleicht sogar ganz neue Verzeichnisse, parallel zu exercise1 anlegen.
 
+## Elemente und Tags
 
-## Elements and Tags
+Das sind die grundlegenden Bausteine von HTML.
 
-These are the basic building blocks of HTML.
+**Elemente** *sind das*, was ein HTML-Dokument ausmacht. Weil man keine, 
+eines oder mehr Elemente ineinander verschachteln kann, entsteht eine 
+*hierachische* Struktur im HTML-Dokument. Ein Element kann drei 
+Dinge beinhalten: ein Tag, ein Attribut und Inhalt.
 
-**Elements** *are* what makes up a HTML document. Because you can have zero, 
-one or more elements inside another, this is what makes HTML *heirarchical*. 
-An element can include three things: a tag, attributes, and content.
-
-A **Tag** is the thing that indicates an element's purpose. For example, 
-the `<p>` tag indicates a paragraph of text is in that element, and the `<li>` 
-represents a 'list item'. You'll notice they're always surrounded by angle 
-backets. *Opening* and *Closing* tags mark the beginning and end of an 
-element and wrap its content, like so:
+Ein **Tag** ist etwas, das den Nutzen eines Elements angibt. Das `<p>` Tag zum
+Beispiel gibt an, dass es sich bei dem Element um einen 
+Paragraphen-Text handelt. Das `<li>` Tag gibt an, dass hier ein Listen-Eintrag 
+stehen soll. Du wirst bereits festgestellt haben, dass Tags immer von spitzen
+Klammern eingefasst sind. **Öffnende** und **schliessende** tags markiegen den
+Anfang und das Ende eines Elements. Ausserdem umschliessen sie dessen Inhalt:
 
     <p>This is a paragraph.</p>
 
-You can see the closing tag includes a `/` before its name; otherwise it would 
-be another opening tag!
+Wie du siehst, beinhaltet das schließende Tag ein `/` vor dem Namen. Andernfalls
+wäre es ein weiteres öffnendes Tag!
 
-**Always** double-check that you've closed all your elements; otherwise, a 
-browser can and will get mixed up trying to understand your HTML document.
+Prüfe bitte **immer** doppelt, dass du alle deine öffnenden Elemente wieder 
+geschlossen hast. Andernfalls wird der Browser beim Anzeigen deines 
+HTML-Dokuments seltsame Dinge machen.
 
-There are some specific elements that are exceptions to this rule. 
-When elements cannot contain anything else, then they don't need to be closed. 
-For example, the following elements are referred to as 'self-closing':
+Es gibt eine Hand voll spezieller Elemente, die eine Auznahme zur Regel 
+darstellen. Wenn Elemente nichts anderes als den Tag-Namen beinhalten können, 
+brauchen sie auch nicht geschlossen werden. Zum Beispiel die folgenden Elemente 
+sind sogenannte 'selbst schliessende' Elemente:
 
     <hr>
     <input>
     <img>
 
-There aren't so many of such elements, and you should easily pick up which are 
-which by writing some more code :)
+Es gibt nicht viele dieser Elemente und du wirst schnell herausfinden, welche
+Elemente selbstschliessend sind, indem du ein wenig mehr Code schreibst. :)
 
-Lastly, *nesting* elements isn't so hard, and is fundamental to how HTML works. 
-It looks just like this:
+Zu guter letzt, Elemente **verschachteln**. Das ist gar nicht so schwer, aber 
+fundamental für die Funktionsweise von HTML. Verschachteln sieht wie folgt aus:
 
     <p>This is a sentence, with a <span>span</span> element inside it.</p>
 
-or this:
+oder so:
 
     <div id="first-heading">
         <h1>The h1 tags indicates the primary header of the document</h1>
     </div>
 
-You'll notice that HTML doesn't actually care about the whitespace or 
-newlines *between* tags. It would end up looking the same if the above had 
-been fit onto one line.
+Du wirst festgestellt haben, dass HTML sich um Leerzeichen oder Zeilenumbrüche 
+**zwischen** Tags nicht kümmert. Wenn das obige Beispiel in eine einzige Zeile 
+zusammen gerückt würde, käme im Browser das gleiche Ergebnis heraus.
 
-In the above example, you can see our first case of an **attribute**. It 
-starts with a lowercase name, and then is almost always followed by an 
-`=` and a 'value' that's surrounded in double quotes, `"like this"`. An element 
-can have many attributes, in which case you separate them by spaces, as you'll 
-see soon. Attributes give information about an element in particular.
+Im Beispiel findest du zum ersten Mal ein **Attribut**. Ein Attribut beginnt 
+mit einem Namen in Kleinbuchstaben und wird dann nahezu immer 
+mit `=` und einem 'Wert' weiter geführt. Der Wert ist von doppelten 
+Anführungszeichen umschlossen. In etwa wie `"das hier"`. Ein Element kann viele
+Attribute haben. In so einem Fall werden die Attribute mit einem Leerzeichen von
+einander getrennt. Dazu gleich mehr. Attribute geben bestimmte Informationen über
+Elemente.
 
-In this case, the `<div>` tag (which is used to *divide* groups of elements up)
-has an `id` attribute assigned to `first-heading`. That's telling us that this 
-section of the document is designed to hold the  first heading shown on the 
-page. You will learn more about specific attributes later!
+In diesem Fall, hat das `<div>`-Tag, welches genutzt wird um Elemente 
+zu gruppieren, ein `id`-Attribut mit dem Wert `first-heading`. Das sagt uns, 
+dass diese Sektion des HTML-Dokuments bestimmt wurde, um die erste Überschrift
+der Website zu beinhalten. Du wirst später mehr über spezielle Attribute lernen.
 
-## Html and Head Elements
 
-Coming back to our file (hope you're coding along!), after the doctype we 
-begin our document with a root `html` element, just like so:
+## Html und Head-Elemente
+
+Zurück zu unserer Datei (hoffentlich programmiert ihr bereits nebenher mit!).
+Nach dem Doctype beginnen wir das HTML-Dokument, mit einem `html` Element:
 
     <html>
     </html>
 
-It encompasses every other element in our HTML document, nothing should go 
-outside it! Next, the document is broken up into two important parts: 
-The **head** and **body**.
+Es umschliesst jedes weitere Element in unserem HTML-Dokument. Kein Element darf
+ausserhalb des Elements `html` stehen. Als nächstes trennen wir jedes Dokument
+in zwei wichtige Teile: einen **head** und einen **body**. Stellvertretend für 
+Dokumenten-Kopf und Dokumenten-Körper.
 
-The head contains the title of the page & information **about** the page 
-(*meta* information). Most meta information isn't visible to the user, 
-but it has many purposes. For example, meta elements can tell search engines 
-information about your page, such as who created it and a description of 
-your page's content. Here's an example `head` element:
+Der Kopf beinhaltet den Titel der Seite und Informationen **über** das Dokument.
+Man nennt diese Informationen auf **meta** Informationen. Die meisten 
+Meta-Informationen sind für den Benutzer nicht sichtbar und haben dennoch 
+eine Menge Sinn. Zum Beispiel können Meta-Informationen den Suchmaschinen 
+mitteilen, wer der Autor einer Website und was in etwa der Inhalt der Seite 
+ist. Hier ist ein Beispiel:
 
     <head>
         <meta charset="UTF-8"> 
@@ -159,148 +173,157 @@ your page's content. Here's an example `head` element:
         <title>My first Portfolio</title>
     </head>
 
-You can see meta tags are one of the self-closing elements! 
-First off, there is a charset meta tag. 
-This is the most important meta tag. Without it your website might not display 
-properly. It is best practice to include it as the first element inside the 
-head element. Basically, it specifies to the browser the character encoding 
-for the HTML document. That means your browser will be able to read and 
-correctly display all the special characters such as €, $, è and so on. `UTF-8` 
-is usually the best general encoding to use.
+Wie du siehst ist das Meta-Tag ein selbstschliessendes Element! Als erstes
+steht dort ein `charset` Meta-Tag. Das ist das wichtigste Meta-Tag. Ohne dieses
+könnte es sein, dass deine Website nicht korrekt angezeigt wird. Es wird als 
+empfohlene Vorgehensweise angesehen, dass es als erstes Folge-Element des 
+`head`-Elements eingesetzt wird. Es spezifiziert den Zeichensatz deines 
+HTML-Dokuments. Das bedeutet, dass der Browser in der Lage sein wird, 
+Sonderzeichen wie ä, ö, ü, €, è und so weiter, auch auf Systemen anderer
+Sprache korrekt anzuzeigen. `UTF-8` ist üblicherweise das gängigste Zeichensatz-Encoding, das im Web eingesetzt wird.
 
-Here we've also written another type of a meta tag, the description. 
-We define what kind of meta tag it is with the `name` attribute and put our 
-description in the *value* of the content attribute.
+Hier haben wir ausserdem ein weiteres Meta-Tag genutzt: die `description` 
+(Beschreibung). Wir definieren dieses Meta-Tag mit dem Attribut `name` und
+setzen `description` als Wert zwischen die doppelten Anführungszeichen.
 
-Inside our head element, we have lastly written a title of our website. Chuck 
-the above code in your file (inside your `html` element), and change the 
-content of the `<title>`. Then you can check your document by opening your 
-file in a browser and looking at what is written in your browser toolbar. 
-That also provides a title for the page when it is added to favorites.
+Innerhalb unseres `head`-Elements, haben wir als letztes Element den Titel
+unserer Website. Schreibe den oberen HTML Code aus dem Beispiel in dein eigenes
+HTML-Dokument im Editor. Dann ändere den Inhalt zwischen dem `<title>`-Element.
+Jetzt kannst du dein Dokument im Browser öffnen und schau dir mal an, was im Titel
+des Browserfensters steht. Das ist ebenfalls der Titel, der genutzt wird, wenn
+du eine Website als Lesezeichen hinzufügst.
 
-Head tags can also include external files or resources, such as CSS or 
-JavaScript files. We will see later how to do this.
+Tags im `head`-Bereich können ebenfalls externe Resourcen wie CSS- oder JavaScript-Dateien beinhalten. Wir werden uns damit später noch beschäftigen.
 
-## The Body
+## Der HTML-Body
 
-Finally, we are at the place where our content goes. 
-The body contains the actual content of the page. Everything that is 
-contained in the body is visible to the user.
+Endlich kommen wir an die Stelle, wo unser Inhalt hinkommt.
+Der `body` beinhaltet den eigentlichen Inhalt einer Seite. Alles innerhalb der 
+öffnenden und schließenden `body`-Tags ist für den Besucher der Website sichtbar.
 
-Just after the closing head tag but still inside the html element, 
-let's add the body tags.
+Direkt nach dem schließendem `head`-Tag, aber noch innerhalb des `html`-Elements
+fügen wir die `body`-Tags hinzu:
 
     <body>
     </body>
 
-Everything that is written inside this tag will be displayed to the user. 
-Add a `<body>` to your existing HTML document and then write some 
-plain text between the body tags and view it in your browser.
+Alles innerhalb des `body`-Tags wird dem Besucher angezeigt werden.
+Schreibe etwas einfachen Text zwischen die `body`-Tags und schau dir das Ergebnis
+im Browser an.
 
-**TIP**: To reload the same HTML document in the browser, use the Reload 
-Current Page function (Ctrl-R or F5)
+**TIPP**: Benutze die "Seite aktualisieren"-Funktion (STRG+R oder F5), um das 
+gleiche HTML-Dokument im Browser neu zu laden.
 
-## Types of content
+## Inhalts-Typen
 
-There are different HTML elements that we can use to indicate different types 
-of content in our document, like the <p></p> tags which we have already met.
-Let's try writing a title, followed by a paragraph.
+Es gibt verschiedene HTML-Elemente, die wir einsetzen können, um unterschiedliche
+Inhaltes-Typen anzugeben. Beispielsweise das `p` Tag, das wir bereits kennen 
+gelernt haben. Versuchen wir zunächst eine Überschrift gefolgt von einem 
+Paragraphen:
 
     <body>
         <h1>I'm the title.</h1>
         <p>And I'm a paragraph!</p>
     </body>
 
-Heading elements are straightforward to understand. They start from h1 with the 
-biggest font and importance, going to h6 with the smallest font.
+Überschrifts-Elemente sind ziemlich einfach zu verstehen. Sie beginnen mit `h1` 
+stellvertretend für die größte Schrift und Wichtigkeit, bis hin zu `h6` mit der 
+kleinsten Schrift.
 
-## Indentation
+## Einrückung
 
-Are you wondering why we wrote the h1 and p tags *indented* inside 
-the body tags?
+Wunderst du dich, warum wir die `h1` und `p`-Tags innerhalb des `body`-Tags *eingerückt* haben?
 
-That will not change at all how the browser reads or interpretates the 
-document, but it is a good practice among developers to write code like that 
-in order to have a more clear document and still be able to work with it 
-even after a long time or when there is a lot of lines of code. It also shows 
-the heircharcical nature of HTML pretty well.
+Das wird in keinster Weise die Interpretation und Darstellung durch den Browser 
+beeinflussen, aber es gilt als guter Stil unter Programmierern, dass man Code
+so formatiert. Damit soll gewährleistet bleiben, dass ein Dokument sauber 
+strukturiert und verständlich bleibt. Selbst wenn die Anzahl an Code-Zeilen wächst oder 
+man lange nichts mehr an dem Dokument gemacht hat. Ausserdem unterstreicht diese
+Art der Formatierung sehr gut die hierachische Natur von HTML.
 
-## Comments
+## Kommentare
 
-It is also possible to put "comments" in your HTML. Comments in HTML are there 
-to remind you (or other people editing the HTML file) without changing the way 
-the page displays in a browser.
+Es ist ausserdem möglich "Kommentare" in dein HTML zu setzen. Kommentare in HTML
+sind dazu da, dich oder andere Leute auf bestimmte Dinge zu hinzuweisen, ohne die 
+Darstellung deiner Website im Browser zu verändern.
 
-Like other HTML elements, comments are written by using a tag. Although comment 
-tags look a little different:
+Wie andere HTML-Elemente werden auch Kommentare als ein Tag geschrieben. Mit 
+dem einzigen Unterschied, dass ein Kommentar ein wenig anders aussieht:
 
     <!-- I am a comment -->
 
-The "start comment" tag is `<!--` and the "end comment" tag is `-->`.
+Das "Kommentar Start"-Tag ist `<!--` und das "Kommentar Ende"-Tag ist `-->`.
 
-Comments can also enclose other HTML elements, to "comment them out". This is a 
-useful technique when you're experimenting with a page to see how it looks when 
-you change things around.
+Kommentare können andere HTML-Elemente umschließen, um sie 
+"aus zu kommentieren". Das ist eine nützliche Vorgehensweise, wenn du mit einer
+Website experimentieren möchtest um zu sehen, wie sich Dinge im Browser 
+verändern werden.
 
-For example, try commenting out the `h1` heading in your current page:
+Versuche zum Beispiel mal die Überschrift `h1`, im `body` Teil des HTML Dokuments,
+aus zu kommentieren.
 
     <body>
         <!-- <h1>I'm the title.</h1> -->
         <p>And I'm a paragraph!</p>
     </body>
 
-If you reload the page in your browser, you'll notice the heading has vanished.
+Wenn du die Seite im Browser neu lädst, wirst du feststellen, dass die Überschrift
+verschwunden ist.
 
-Remove the comment tags (so the heading appears again) before moving on to the 
-next section.
+Entferne die Kommentar-Tags (damit die Überschrift wieder erscheint) bevor du
+zur nächsten Sektion übergehst.
 
-## Images
+## Bilder
 
-Headings and paragraphs give you the basics of text. What about images?
+Überschriften und Paragraphen geben dir die grundlegenden Elemente zur Textformatierung. Doch was ist mit Bildern?
 
-Images have to kept in separate image files, outside the HTML file. Find a 
-favourite image on the web and save it in the same directory as your HTML 
-file (right-click the image in your browser and "Save Image...").
+Bilder werden in separaten Bild-Dateien ausserhalb des HTML Dokuments 
+gespeichert. Suche dir ein Lieblings-Bild aus dem Web und speichere es in das 
+gleiche Verzeichnis, wo auch deine HTML-Datei bereits liegt. Klicke dazu mit der
+rechten Maustaste auf das entsprechende Bild und wähle "Bild speichern" 
+(oder ähnliches) aus dem Menü.
 
-If you don't have a picture in mind then
-[here's a page with a photo of some kittens that you can use](http://www.flickr.com/photos/nengard/67501122/sizes/s/)
-(Cute cats on the internet? Egad!)
+Falls dir spontan kein Bild einfällt, dann 
+[ist hier eine Website mit Fotos von Katzen](http://www.flickr.com/photos/nengard/67501122/sizes/s/), die du nutzen kannst. ()
+(Süße Katzen im Internet? Bei Gott!)
 
-After you have your image, you can include it in your HTML page by using an 
-`<img>` tag.
+Nachdem du dir ein Bild ausgesucht hast, kannst du es in dein HTML-Dokument 
+einbauen, indem du das `img` Tag nutzt.
 
     <img src="kittens.jpg">
 
-Add the `<img>` tag anywhere inside the "body" of your HTML document where 
-you'd like the image to appear. Replace "kittens.jpg" with the file name 
-of the image that you saved in the same directory as the HTML file.
+Füge das `img`-Tag irgendwo innerhalb des `body`-Tags hinzu. Am besten dort, wo 
+du es gerne anzeigen lassen würdest. Ersetze "kittens.jpg" mit dem Dateinamen
+des Bildes, dass du in das gleiche Verzeichnis wie dein HTML-Dokument gespeichert
+hast.
 
-Notice that `<img>` is one of the tags that doesn't need a sepaate closing 
-tag. You could put `</img>` after the tag if you like, it doesn't change 
-the way the browser views the page.
+Beachte bitte, dass `img`-Tag ist eines der Tags, die kein separates, 
+schliessendes Tag benötigen. Du kannst zwar ein schliessendes "</img>"-Tag direkt 
+nach dem öffnendem "<img>"-Tag setzen, jedoch wird das nichts daran ändern, wie
+der Browser die Website anzeigen wird.
 
-**TIP:** The image source name ("src") of `kittens.jpg` is a path relative 
-to the HTML document. So in this case `kittens.jpg` is located in the same 
-directory, but you could use a name like `"images/kittens.jpg"` if you 
-put the image file into a subdirectory called "images". You can even 
-use full URLs like  `"http://myawesomesite.com/pictures/kittens.jpg"`, 
-but it's best to avoid this if you can use a relative path instead.
+**TIPP:** Die Bildquelle ("src") von `kittens.jpg` ist ein Pfad, relativ zur
+HTML-Datei. In diesem Fall befindet sich `kittens.jpg` im selben Verzeichnis.
+Du könntest ebenso eine Bildquelle wie `images/kittens.jpg` nutzen, solange du
+das Bild in ein Unterverzeichnis namens "images" legst. Du kannst sogar komplette
+URLs wie `http://myawesomesite.com/pictures/kittens.jpg` nutzen, aber es ist 
+(wenn möglich) besser sowas zu gunsten eines relativen Pfads zu vermeiden.
 
-### Alt Text
+### Alternativer Text 
 
-A good habit to get into is using "alt text" to describe the contents of 
-an image:
+Es ist eine gute Angewohnheit, sogenannten "alt text" zur textuellen 
+Beschreibung des Bild-Inhalts zu nutzen.
 
     <img src="kittens.jpg" alt="Some kittens">
 
-The alt text is a textual description of what's in the image. This is important 
-for anyone who can't see the images (for instance vision impaired people using 
-a screenreader.) Any image that isn't purely decorative should have a description 
-set with the "alt=" attribute.
+Das ist wichtig für jeden Besucher, der keine Bilder anzeigen oder sehen kann. Zum Beispiel 
+sehbehinderte Menschen, die einen Screenreader nutzen (auch Braile-Zeile genannt).
+Jedes Bild, das nicht aus dekorativen Gründen im HTML eingebettet wird, sollte
+eine Bild-Beschreibung über das "alt=" Attribut bekommen.
 
-## Putting it all together
+## Nochmal alles zusammen
 
-So far, our entire document might look like this:
+Bis hierhin sollte unser gesamtes HTML-Dokument in etwa wie folgt aussehen:
 
     <!DOCTYPE html>
     <html>
@@ -321,27 +344,28 @@ So far, our entire document might look like this:
     </html>
 
 
-Notice that the kitten image is part of its own paragraph here, so it is
-shown on a new line in the browser.
+Bitte beachte, dass das Katzen-Bild hier in einem eigenen Paragraphen steht,
+so dass es im Browser in einer eigenen neuen Zeile dargestellt wird.
 
-Hopefully the document in your file looks similar, but not exactly the same. 
-You might have changed some of the text... does it all work in your browser?
+Hoffentlich schaut das Dokument in deiner Datei vergleichbar aber nicht
+identisch aus. Vermutlich unterscheiden sich einige der Texte. Funktioniert 
+alles in deinem Browser?
 
-## Why not use Word?
+## Warum sollte man kein Word nutzen?
 
-You might wonder why you're writing all these elements by hand, 
-when you could make up the same stuff in a Word document.
+Du magst dich wundern, warum wir alle diese Elemente händisch schreiben,
+wenn wir genauso gut Programme wie Word dafür nutzen könnten.
 
-Well, think about some of the cooler websites around that you've seen on the 
-web, and their complex layouts. Do you think you could replicate them 
-using Word? How long might it take? That's the power of manual control that 
-HTML (and CSS, and Javascript) gives to the web and web developers. You can 
-learn it too!
+Nunja, denke mal an die coolen Websites im Internet und die komplexen Layouts,
+die sie haben. Denkst du, du kannst diese mit einem Programm wie Word nachbauen?
+Wie lang würde das wohl dauern? Das ist nur durch die manuelle Kontrolle von
+HTML (und CSS und JavaScript) möglich, die Entwicklern durch Webtechnologie 
+in die Hände gelegt wird. Das kannst *du* auch lernen!
 
-## What's next?
+## Wie geht es weiter?
 
-You may be thinking at this stage that your HTML page looks pretty bland. 
-How can you spice it up a little?
+Du magst deine HTML-Seite in diesem Stadium etwas farblos und fade finden.
+Wie kann man sie ein bisschen mehr aufpeppen?
 
-Read on to find out in the next section, 
+Lese in der folgenden Sektion weiter, 
 [your first styled Hello World!](style.html).

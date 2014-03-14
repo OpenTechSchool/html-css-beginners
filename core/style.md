@@ -1,108 +1,96 @@
 ---
 
 layout: ots
-title: Your first styled Hello World!
+title: Dein erster 'Hello World'-Entwuf!
 
 ---
 
-## Writing CSS
+## Wie man CSS schreibt
 
-There are two ways to write CSS for a document.
+Es gibt zwei Wege, um CSS in einem Dokument einzubauen.
 
-An internal CSS code can be typed in the head section of the code.
-The coding starts with the style tag, written just before the closing
-`</head>` tag.
+CSS kann direkt in den head des Codes eingebunden werden, indem es vom style-Tag umschlossen wird. Es sollte direkt vorm Ende des `</head>`-Tags eingebunden werden.
 
     <style type="text/css">
         ....
     </style>
 
-This way is good when you do not have many styles. In such a case, it is easier
-to refer to because the browser has no need to load another file.
+Diese Möglichkeit bietet sich an, wenn es nur wenig Inhalt im `<style>`-Tag gibt. In diesem Fall muss auf keine andere Datei verlinkt werden und der Browser muss keine Dateien nachladen.
 
-The second way to write CSS for a document is with an "external" CSS  file. 
+In der zweiten Möglichkeit wird der CSS style in eine externe Datei ausgelagert.
 
-Open a new file in your editor and save it with a .CSS extension in the same
-directory as your HTML file (give it a name like `styles.css` for now.)
+Erstellt ein externes Stylesheet, indem ihr in eurem Editor eine neue Datei mit der Endung ".css" im gleichen Verzeichnis eures HTML-Dokuments anlegt. (Nennt es z.B. `styles.css`.)
 
-Then you can link that to an HTML document using the following syntax. 
-Write it just after the meta tag, before the closing `</head>` tag.
+Danach kann die Datei im HTML-Dokument mit folgender Syntax (wieder vorm Ende des `</head>`-Tags) eingebunden werden: 
 
     <link href="styles.css" rel="stylesheet">
 
-This is the best way if you have a lot of CSS to write and you want to 
-keep it organized.
+Dies ist der beste Weg für mehr als bloß ein paar Zeilen und schafft ebenfalls eine bessere Übersicht.
 
-**TIP:** The link reference ("href") to `"styles.css"` is a path relative 
-to the HTML document, same as the "src" for the `<img>` tag in the previous 
-chapter.
+**TIPP:** Der Verweis ("href") zu `"styles.css"` erwartet einen relativen Pfad vom HTML-Dokument ausgehend, ebenso wie "src" es für das `<img>`-Tag erwartet.
 
-## Let's add some colors!
+## Machen wir's bunt!
 
-CSS has a simple syntax.
-The file consists of a list of rules. Each rule consists of one or more
-selectors and a declaration block.
+CSS hat eine sehr einfache Syntax.
+Die Datei besteht aus einer Liste von Regeln. Jede Regel besteht aus einem oder mehreren Selektoren und dem Beschreibungsblock.
 
-**Selectors** are used to declare which part of the markup a style applies to.
-Let's take the h1 title we wrote in our HTML file and give it a nice red color.
+**Selektoren** werden verwendet um festzulegen, auf welche Teile des HTML-Codes sich der Style bezieht.
+Um dies direkt für unseren erstellten Quelltext anzuwenden, ändern wir über das Überschrifts-Tag `<h1>` die Schriftfarbe auf rot.
 
     h1 {
         color: red;
     }
 
-h1 is the selector, the HTML elemnt we want to style.
-*color* is one of the properties that we can give to our selector, and *red* is the 
-value of this property.
-The right sytrax is:
+h1 ist hierbei der Selektor, also der Elementtyp aus unserem HTML-Quelltext, den wir verändern möchten.
+*color* ist die Eigenschaft, die wir verändern möchten and *red* ist der vergebene Eigenschaftswert.
+Die Syntax ist somit:
 
-    selector {
-        property: value; /* remember always to write a ; after your value */
-        property: value;
+    Selektor {
+        Eigenschaft: Wert; /* Bitte denkt daran, dass immer ein abschließendes ; hinter den Wert gehört */
+        Eigenschaft: Wert;
     }
 
-Refresh your browser and see how the color of your title has changed.
+Ladet nun eure Seite neu und ihr seht, dass sich die Farbe der Überschrift geändert hat.
 
-Isn't it nice?
-To give a background color to our paragraph, write
+War das nicht leicht?
+Um unserem Paragraphen eine Hintergrundfarbe zu geben, fügen wir nun folgendes hinzu:
 
     p {
         background-color: #ddd;
     }
 
-## Troubleshooting
+## Fehlersuche
 
-Did the title text color not change when you refreshed?
+Hat sich die Farbe der Überschrift nicht verändert, nachdem die Seite neu geladen wurde?
 
-Double check the name of the CSS file in the `<link>` tag, and also 
-double check that the CSS file is in the same directory as the HTML 
-file.
+Prüft den Dateinamen im `<link>`-Tag und schaut nach, ob die CSS-Datei auch wirklich im gleichen Ordner wie die HTML-Datei liegt.
 
 ******
 
-Web colors are colors used in designing web pages. 
-Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet).
-Hexadecimal color codes begin with a number sign (#).
-This number can be picked from a graphics software or from some nice web tool, such as, [Color picker](http://www.colorpicker.com/), for example.
-When you have chosen your color, copy the number that starts with # and paste that in your CSS file.
+Die sogenannten Web-Farben sind Farben, die beim Gestalten von Websites verwendet werden.
+Farben können entweder im 3-stelligen RGB-Format definiert werden (256 Werte für jeden Wert, also rot, grün und blau) oder als hexadezimaler Wert (z.B. #ddd).
+Hexadezimale Farbwerte beginnen mit einer Raute (#).
+Diese Farben können der Einfachheit halber mit einem Werkzeug wie dem [Color picker](http://www.colorpicker.com/), gewählt werden.
+Sobald die gewünschte Farbe ausgesucht ist, kopiert diese einfach in eure CSS-Datei und vergesst die führende # nicht.
 
-Good to know: #000 is black and #fff is white.
+Gut zu wissen: #000 ist schwarz und #fff ist weiß.
 
 ******
 
-Let's try now to give a nice border to our image, that we added to our page in the [first chapter](structure.md).
+Lasst uns nun für unser im [ersten Kapitel](structure.md) eingebundenes Bild einen Rahmen erstellen.
 
     img {
         border: 1px solid #000;
     }
 
-Here we are giving the following style to all the img tags we have: a 1-pixel thick, solid black border to all four edges of our images.
-If we want to give the style to just one of the four edges, for example, the top edge, we would write
+Somit haben wir für alle eingebundenen Bilder die folgenden Werte des Rahmens vergeben: 1-pixel Dicke, durchgängiger Strich (solid) in Schwarz. Dieser Rahmen wird um alle vier Ränder des Bildes gezogen.
+Wenn wir den Rahmen nur an einem der 4 Ränder haben möchten, so könnten wir das wie nachfolgend angegeben z.B. für den oberen Rand erstellen:
 
     img {
         border-top: 1px solid #000;
     }
 
-**Look at the [CSS cheat sheet](http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) and give some more styles to your images.**
+**Zusätzlich hilft auch ein [CSS cheat sheet](http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) für eine Eigenschaftsübersicht weiter.**
 
 
 
