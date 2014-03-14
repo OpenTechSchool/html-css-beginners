@@ -77,6 +77,8 @@ Double check the name of the CSS file in the `<link>` tag, and also
 double check that the CSS file is in the same directory as the HTML 
 file.
 
+Also make sure that all rules end with a ; and are placed inside of the curly brackets of the selector you want to style.
+
 ******
 
 Web colors are colors used in designing web pages. 
@@ -104,9 +106,32 @@ If we want to give the style to just one of the four edges, for example, the top
 
 **Look at the [CSS cheat sheet](http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) and give some more styles to your images.**
 
+## A short note on hierarchy
 
+As you learned in [the structure section](structure.html) in HTML you can nest your tags inside of one another like so:
 
+    <div id="first-heading">
+        <h1>The h1 tags indicates the primary <div>header</div> of the document</h1>
+    </div>
 
+In CSS you can **not** nest rules inside of other rules, but you can still apply hierachical styling.
+    
+    /* This does NOT work: */
+    div {
+        h1 {
+            color: red;
+        }
+    }
+    /* This works: */
+    div h1 {
+        color: red;
+    }
 
+So what we did here is make a *specific* CSS rule that styles our h1 headings, but only those that are inside of a div tag. Try to avoid this for now, but be aware that the nesting does not work.
+
+## What's next?
+
+Now you have the basic building blocks to start working on
+[your portfolio](portfolio.md)
 
 
