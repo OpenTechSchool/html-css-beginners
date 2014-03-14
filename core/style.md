@@ -50,7 +50,7 @@ Let's take the h1 title we wrote in our HTML file and give it a nice red color.
         color: red;
     }
 
-h1 is the selector, the HTML elemnt we want to style.
+h1 is the selector, the HTML element we want to style.
 *color* is one of the properties that we can give to our selector, and *red* is the 
 value of this property.
 The right sytrax is:
@@ -76,6 +76,8 @@ Did the title text color not change when you refreshed?
 Double check the name of the CSS file in the `<link>` tag, and also 
 double check that the CSS file is in the same directory as the HTML 
 file.
+
+Also make sure that all rules end with a ; and are placed inside of the curly brackets of the selector you want to style.
 
 ******
 
@@ -104,9 +106,28 @@ If we want to give the style to just one of the four edges, for example, the top
 
 **Look at the [CSS cheat sheet](http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/) and give some more styles to your images.**
 
+## A short note on hierarchy
 
+As you learned in [the structure section](structure.html) in HTML you can nest your tags inside of one another like so:
 
+    <div id="first-heading">
+        <h1>The h1 tags indicates the primary <div>header</div> of the document</h1>
+    </div>
 
+In CSS you can apply hierachical styling like this:
 
+    p {
+        color: black;
+    }
+    div p {
+        color: red;
+    }
+
+So we have two rules here. The first says the text color in paragraphs should be black. The second rule is more *specific* - it says the text in paragraphs should be red, but only if those paragraphs are inside of a div tag. A more specific rule always beats a less specific rule.
+
+## What's next?
+
+Now you have the basic building blocks to start working on
+[your portfolio](portfolio.md)
 
 
