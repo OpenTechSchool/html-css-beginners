@@ -280,7 +280,7 @@ The size of the box itself is calculated like this:
 
 **Height:** height + padding-top + padding-bottom + border-top + border-bottom
 
-Tips: Remember to set all of these elemnents to `0` when you start your .CSS files as we did at the very beginning.
+Tips: Remember to set all of these elemnents to `0` when you start your CSS files as we did at the very beginning.
 
 So, now that we know how to calculate the box around our elements, let's play with the boxes around the article, 
 header and h tags.
