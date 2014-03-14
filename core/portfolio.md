@@ -65,14 +65,15 @@ Now everything inside this div will be centered.
 At the beginning of the `styles.css` file, let's write something like this:
 
     * {
-        padding: 0;
+        /* don't use '0px' or any other unit, if you're set the value to zero */
+        padding: 0; 
         margin: 0;
         border: 0;
     }
 
-That is to set all the elements `*` with default padding, margin and border to 0px. 
+That is to set all the elements `*` with default `padding`, `margin` and `border` to `0`. 
 This is really important to do because every browser sets a default size for some tags and without 
-setting all of them again to 0px, it will be impossible to calculate the  position of HTML elements and to
+setting all of them again to 0, it will be impossible to calculate the  position of HTML elements and to
 position them on the page, since every browser will interpret that in a different way.	
 
 ## Navigation Menu
@@ -259,12 +260,13 @@ margins and borders on both of them.)
 In CSS, the term "box model" is used when talking about design and layout.
 The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, 
 padding, and the actual content.
-The box model allows us to place a border around elements and margins and padding around this element too.
+The box model allows us to place a border around elements and margins and padding around this element too.  
 How is the size of the box calculated exactly? Here is a diagram:
 
 <img src="../images/css-box-model.gif" />
 
 What do these elements do?
+
 * Margin: Clears an area around the border. The margin does not have a background color; it is completely transparent.
 * Borders: Goes around the padding and content. The border must have a color and thickness.
 * Padding: Clears an area around the content. The padding is affected by the background color of the box.
@@ -278,7 +280,7 @@ The size of the box itself is calculated like this:
 
 **Height:** height + padding-top + padding-bottom + border-top + border-bottom
 
-Tips: Remember to set all of these elemnents to `0px` when you start your .CSS files as we did at the very beginning.
+Tips: Remember to set all of these elemnents to `0` when you start your .CSS files as we did at the very beginning.
 
 So, now that we know how to calculate the box around our elements, let's play with the boxes around the article, 
 header and h tags.
