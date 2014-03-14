@@ -177,7 +177,7 @@ That's all we need for the footer.
 Finally we start to build our content. First of all some structure. We are going to have a two-column
 design: one column is a kind of sidebar and this tag is called aside and the other one, the most important one,
 is a section wrapping up several articles.
-In order to have more control of this two-column design, wrap all of it in a div.content and give it some
+In order to have more control of this two-column design, wrap all of it in a div element with a **content** class and give it some
 basic CSS, as we already did it for the wrap div.
 
 Tips: When you are not sure if your CSS is working in the proper way and you want to check exactly the size,
