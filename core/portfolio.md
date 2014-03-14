@@ -184,11 +184,13 @@ basic CSS, as we already did it for the wrap div.
 Tips: When you are not sure if your CSS is working in the proper way and you want to check exactly the size,
 margins or something else of your element, give it a casual background color, so that it displays the entire element.
 
-    <div class="content">
-        <aside>
-        </aside>
-        <section>
-        </section>
+    <div id="wrap-centered">
+        <div class="content">
+            <aside>
+            </aside>
+            <section>
+            </section>
+        </div>
     </div>
 
 In styles.css:
