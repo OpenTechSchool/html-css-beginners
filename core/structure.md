@@ -112,7 +112,7 @@ which by writing some more code :)
 Lastly, *nesting* elements isn't so hard, and is fundamental to how HTML works. 
 It looks just like this:
 
-    <p>This is a sentence, with a <span>span</span> element inside it.</p>
+    <p>This is a sentence, with a <em>em</em> element ("emphasize") inside it.</p>
 
 or this:
 
