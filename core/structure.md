@@ -125,8 +125,8 @@ newlines *between* tags. It would end up looking the same if the above had
 been fit onto one line.
 
 In the above example, you can see our first case of an **attribute**. It 
-starts with a lowercase name, and then is almost always followed by an 
-`=` and a 'value' that's surrounded in double quotes, `"like this"`. An element 
+starts with a lowercase *name*, and then is almost always followed by an 
+`=` and a *value* that's surrounded in double quotes, `"like this"`. An element 
 can have many attributes, in which case you separate them by spaces, as you'll 
 see soon. Attributes give information about an element in particular.
 
@@ -149,7 +149,7 @@ The **head** and **body**.
 
 The head contains the title of the page & information **about** the page 
 (*meta* information). Most meta information isn't visible to the user, 
-but it has many purposes. For example, meta elements can tell search engines 
+but it has many purposes. For example, `meta` elements can tell search engines 
 information about your page, such as who created it and a description of 
 your page's content. Here's an example `head` element:
 
@@ -170,7 +170,7 @@ is usually the best general encoding to use.
 
 Here we've also written another type of a meta tag, the description. 
 We define what kind of meta tag it is with the `name` attribute and put our 
-description in the *value* of the content attribute.
+description in the *value* of the `content` attribute.
 
 Inside our head element, we have lastly written a title of our website. Chuck 
 the above code in your file (inside your `html` element), and change the 

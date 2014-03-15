@@ -82,8 +82,8 @@ After setting this, you can play with changing the position, adding a different 
 When elements are positioned outside of the normal flow, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
 What make it possible is: z-index: n°pixel. 
 
-Knowing all that, create your own home page!
-
+Knowing all that, create your own home page!  
+If you want to learn more about positioning, [check this demo out](http://www.barelyfitz.com/screencast/html-training/css/positioning/)
 
 
 
@@ -238,14 +238,14 @@ By default the a tag is styled like this:
 
 You can change the style and the color by selecting the a tag.
 
-There still at least one important link to explain. The mailto link.
-Write mailto: myemail@google.com tell to the browser to open the default
+There still at least one important link to explain. The **mailto** link.
+Write `href="mailto: myemail@google.com"` tell to the browser to open the default
 email programm on the user machine with the email destinatary field already fill in. Nice, isn't it?
 So go ahead and write the mailto link with your personal email instead of # 
 in your contact list and try it out.
 
-**:hover**
-To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the :hover selector.
+
+To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the `:hover` selector. Because we don't need to set the class manually, but rather the browser does it automatically, it's called **pseudo class**.
 
     a:hover {
         color: red;

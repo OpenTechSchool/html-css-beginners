@@ -57,7 +57,7 @@ For the ID it is the same but with `#` instead of `.`.
         margin: 0 auto;
     }
 
-Here we define the width of an element and then give it a `margin: 0 auto,` which is a common rule to center
+Here we define the width of an element and then give it a `margin: 0 auto` which is a common rule to center
 the element.
 We use 100% instead of 100px because we want our page to be responsive or, in other words, we want the page to resize when the browser windows change dimensions.
 Now everything inside this div will be centered.
@@ -65,14 +65,15 @@ Now everything inside this div will be centered.
 At the beginning of the `styles.css` file, let's write something like this:
 
     * {
-        padding: 0;
+        /* don't use '0px' or any other unit, if you're set the value to zero */
+        padding: 0; 
         margin: 0;
         border: 0;
     }
 
-That is to set all the elements `*` with default padding, margin and border to 0px. 
+That is to set all the elements `*` with default `padding`, `margin` and `border` to `0`. 
 This is really important to do because every browser sets a default size for some tags and without 
-setting all of them again to 0px, it will be impossible to calculate the  position of HTML elements and to
+setting all of them again to 0, it will be impossible to calculate the  position of HTML elements and to
 position them on the page, since every browser will interpret that in a different way.	
 
 ## Navigation Menu
@@ -89,7 +90,7 @@ Inside of the div we are going to write our first HTML5 element.
 
 Here we have 3 new elements. First, the nav tag. That tag means navigation and wraps up all the elements
 that are essential for the navigation in the website.
-Ul is a type of list--unordered. In an unordered list, as the word suggests, we have elements that usually stay in 
+Ul is a type of list--unordered. In an **unordered list**, as the word suggests, we have elements that usually stay in 
 a list and each element is wrapped in a li tag.
 
 In styles.css:
@@ -113,7 +114,7 @@ In styles.css:
 Nav ul is a way to specify not all the ul elements on the page but just the one that is nav's child.
 Most of the properties we write here you already know or you can eaily check on the cheatsheet. 
 
-Now we want to talk about one of them in particular, because it's very powerful: float: right.
+Now we want to talk about one of them in particular, because it's very powerful: `float: right`.
 
 This tells the selected selector to get out from the normal flow of the HTML element (usually HTML elements are block elements, which means that they are displayed one after the other vertically in the page as a block) and move to the
 right-most side of the div in which it is wrapped.
@@ -125,13 +126,13 @@ elements, not just the one that you are modifying.
 We just said that usually HTML elements are like a block displayed in a vertical flow. We can change this flow 
 thanks to the float property. 
 
-Another property that allows us to change the flow is display: inline. 
+Another property that allows us to change the flow is `display: inline`. 
 Actually, this property doesn't change the flow, rather it displays an element inline (so that it will stay on one line instead dropping down) 
 instead of displaying within a block.
 Check your navigation menu.
 
 Last thing we need to do before moving on is to clear everything in order to restore the normal flow, since we 
-changed the setting float to right.
+changed the setting float to right. Place this div after the `nav` element.
 
     <div class="clear"></div>
 
@@ -168,7 +169,7 @@ In the CSS file, write:
         text-align: center;
     }
 
-We don't really need to style the footer but it is nice to give it some space to breathe with a margin-top: 50px. 
+We don't really need to style the footer but it is nice to give it some space to breathe with a `margin-top: 50px`. 
 Then we just set the alignament of the text in the p tag as center.
 That's all we need for the footer.
 
@@ -177,17 +178,19 @@ That's all we need for the footer.
 Finally we start to build our content. First of all some structure. We are going to have a two-column
 design: one column is a kind of sidebar and this tag is called aside and the other one, the most important one,
 is a section wrapping up several articles.
-In order to have more control of this two-column design, wrap all of it in a div.content and give it some
+In order to have more control of this two-column design, wrap all of it in a div element with a **content** class and give it some
 basic CSS, as we already did it for the wrap div.
 
 Tips: When you are not sure if your CSS is working in the proper way and you want to check exactly the size,
 margins or something else of your element, give it a casual background color, so that it displays the entire element.
 
-    <div class="content">
-        <aside>
-        </aside>
-        <section>
-        </section>
+    <div id="wrap-centered">
+        <div class="content">
+            <aside>
+            </aside>
+            <section>
+            </section>
+        </div>
     </div>
 
 In styles.css:
@@ -213,11 +216,11 @@ In styles.css:
     }
 
 First, we gave a size to the content and placed it in the middle of the page. Then we gave the aside tag some
-margins to allow the content to breathe along with a minimum height and width. We also highlighted the border-right of this element so that it displays
+margins to allow the content to breathe along with a minimum height and width. We also highlighted the `border-right` of this element so that it displays
 a line that divides aside from section.
-Last, we gave a float: left in order to make the section (or whatever we will write after the aside) slip next to the
+Last, we gave a `float: left` in order to make the section (or whatever we will write after the aside) slip next to the
 aside, right on its left.
-It is really important to set display: inline-block for the section.
+It is really important to set `display: inline-block` for the section.
 
 In the aside let's place an image, our personal profile image.
 
@@ -259,12 +262,13 @@ margins and borders on both of them.)
 In CSS, the term "box model" is used when talking about design and layout.
 The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, 
 padding, and the actual content.
-The box model allows us to place a border around elements and margins and padding around this element too.
+The box model allows us to place a border around elements and margins and padding around this element too.  
 How is the size of the box calculated exactly? Here is a diagram:
 
 <img src="../images/css-box-model.gif" />
 
 What do these elements do?
+
 * Margin: Clears an area around the border. The margin does not have a background color; it is completely transparent.
 * Borders: Goes around the padding and content. The border must have a color and thickness.
 * Padding: Clears an area around the content. The padding is affected by the background color of the box.
@@ -278,7 +282,7 @@ The size of the box itself is calculated like this:
 
 **Height:** height + padding-top + padding-bottom + border-top + border-bottom
 
-Tips: Remember to set all of these elemnents to `0px` when you start your .CSS files as we did at the very beginning.
+Tips: Remember to set all of these elemnents to `0` when you start your CSS files as we did at the very beginning.
 
 So, now that we know how to calculate the box around our elements, let's play with the boxes around the article, 
 header and h tags.
@@ -291,7 +295,7 @@ As you probably already have understood, the other values of text-align are left
 by default the value is left.
 When text-align is set to `justify`, each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers).
 An important decision to make is which font we are going to use for the project.
-You can specify the type of font with the font-family property.
+You can specify the type of font with the `font-family` property.
 
 There are two types of font family names:
 generic family: a group of font families with a similar look (like `Serif` or `Monospace`)
@@ -317,17 +321,18 @@ what's on your machine.
         font-size: 0.9em;
     }
 
-And here we can already see the other really important property: font-size. As you already understood that sets 
+And here we can already see the other really important property: `font-size`. As you already understood that sets 
 the size of the font of your selector. Browsers have a font-size set by default but it is important for a good look to change these defaults.
 You should not use font size adjustments, however, to make paragraphs look like headings or headings to look like paragraphs.
-The font-size can be set using px, em or %.
-Your screen resolution specifies how many pixels your screen/display is made of. So when you specify: font-size: 
-12px;, you're basically telling the browser that each letter should be 12 pixels high. That is therefore
+
+The font-size can be set using **px**, **em** or **%**.  
+Your screen resolution specifies how many pixels your screen/display is made of. So when you specify: `font-size: 12px`, you're basically telling the browser that each letter should be 12 pixels high. That is therefore
 connected with your screen size.
-Font-size: 50%; sets the font size of your element to 50% of the font size of its parent element and em is the 
+`font-size: 50%` sets the font size of your element to 50% of the font size of its parent element and em is the 
 width of the letter 'm' in the selected typeface. It's basically the same as percentage, except that 1em is 100% 
 and 1.5em is 150%.
-To calculate the size from pixels to em, use this formula: pixels/16=em.
+
+To calculate the size from pixels to em, use this formula: `pixels/16=em`.
 For example:
 
     h1 {
@@ -345,5 +350,6 @@ selector so you start in every browser with the same size.
 Ok, now it is time for you to play, modify and create your font style.
 If you want to try something more, you can check your cheatsheet and discover other font- text- properties.
 
-
-
+##What's next?
+Lern about CSS positioning and extend your portfolio with a big resizable image and a contact page.  
+[pimp your portfolio](portfolio-2.html)
