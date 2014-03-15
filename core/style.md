@@ -110,8 +110,9 @@ If we want to give the style to just one of the four edges, for example, the top
 
 As you learned in [the structure section](structure.html) in HTML you can nest your tags inside of one another like so:
 
-    <div id="first-heading">
-        <h1>The h1 tags indicates the primary <div>header</div> of the document</h1>
+    <div id="main-content">
+        <h1>The h1 tag indicates the primary header of the document.</h1>
+        <p>Some text.</p>
     </div>
 
 In CSS you can apply hierachical styling like this:
