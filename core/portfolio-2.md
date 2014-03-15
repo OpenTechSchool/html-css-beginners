@@ -244,8 +244,8 @@ email programm on the user machine with the email destinatary field already fill
 So go ahead and write the mailto link with your personal email instead of # 
 in your contact list and try it out.
 
-**:hover**
-To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the `:hover` selector. Because we don't need to set the class manually, but rather the browser does it automatically, it's call **pseudeo class*.
+
+To get the nice effect of changing the color of a link when the mouse moves over it, you need to use the `:hover` selector. Because we don't need to set the class manually, but rather the browser does it automatically, it's call **pseudeo class**.
 
     a:hover {
         color: red;
