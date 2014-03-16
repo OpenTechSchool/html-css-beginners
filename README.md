@@ -1,7 +1,4 @@
----
-layout: ots
-title: README 
----
+# OpenTechSchool HTML & CSS Introduction
 
 This is a friendly how-to for contributors to the HTML and CSS workshop
 at OpenTechSchool. 
@@ -10,7 +7,7 @@ About the course:
 A HTML and CSS basic workshop for beginners that have never written HTML/CSS
 before and want to know how to start.
 
-# Class format
+## Class format
 
 At OpenTechSchool we tend to go *practical* and *at your own pace*.
 
@@ -29,6 +26,6 @@ A class schedule looks like this:
     1800 - Thankyous, maybe demonstrations.
 
 
-# Author Guide
+## Author Guide
 
 This branch is in the process of being converted from Jekyll to Sphinx.
