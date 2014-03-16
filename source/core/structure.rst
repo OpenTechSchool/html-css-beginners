@@ -141,6 +141,7 @@ or this:
     <div id="main-content">
         <h1>The h1 tag indicates the primary header of the document.</h1>
         <p>Some text.</p>
+    </div>
 
 You'll notice that HTML doesn't actually care about the whitespace or
 newlines *between* tags. It would end up looking the same if the above
