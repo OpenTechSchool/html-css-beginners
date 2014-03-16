@@ -22,7 +22,7 @@ what’s next.
 Course Content:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    core/definitions
    core/resources
