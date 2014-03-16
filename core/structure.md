@@ -112,12 +112,13 @@ which by writing some more code :)
 Lastly, *nesting* elements isn't so hard, and is fundamental to how HTML works. 
 It looks just like this:
 
-    <p>This is a sentence, with a <span>span</span> element inside it.</p>
+    <p>This is a sentence, with a <em>em</em> element ("emphasize") inside it.</p>
 
 or this:
 
-    <div id="first-heading">
-        <h1>The h1 tags indicates the primary header of the document</h1>
+    <div id="main-content">
+        <h1>The h1 tag indicates the primary header of the document.</h1>
+        <p>Some text.</p>
     </div>
 
 You'll notice that HTML doesn't actually care about the whitespace or 
@@ -131,9 +132,10 @@ can have many attributes, in which case you separate them by spaces, as you'll
 see soon. Attributes give information about an element in particular.
 
 In this case, the `<div>` tag (which is used to *divide* groups of elements up)
-has an `id` attribute assigned to `first-heading`. That's telling us that this 
-section of the document is designed to hold the  first heading shown on the 
-page. You will learn more about specific attributes later!
+has an `id` attribute with the value `main-content`. That's telling us that
+this section of the document is designed to hold the main content on the page
+opposed to e.g. a sidebar or navigation. You will learn more about specific
+attributes later!
 
 ## Html and Head Elements
 
