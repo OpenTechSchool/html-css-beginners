@@ -58,7 +58,7 @@ goint to write this:
 
 Here we are changing the position of this element by bringing it outside
 of the normal flow. Its position is now relative to its parent element
-(in our case the div#wrap-centered). Now you can move your element where
+(in our case the ``div#wrap-centered``). Now you can move your element where
 you prefer in the page using the properties top, right, bottom and left.
 
 So, what is positioning? When a box is taken out of the normal flow, all
@@ -70,38 +70,42 @@ differently depending on the positioning method.
 
 There are four different positioning methods.
 
-**Static positioning** A statically positioned box is one that is in
-normal flow, from top to bottom.
+Static positioning
+    A statically positioned box is one that is in
+    normal flow, from top to bottom.
 
-**Fixed Positioning** An element with fixed position is positioned
-relative to the browser window. What makes it possible is: position:
-fixed. After setting this, you can play with changing the position,
-adding a different pixel value to top, bottom, left or right
-positioning.
+Fixed Positioning
+    An element with fixed position is positioned
+    relative to the browser window. What makes it possible is: position:
+    fixed. After setting this, you can play with changing the position,
+    adding a different pixel value to top, bottom, left or right
+    positioning.
 
-**Relative Positioning** A relatively positioned element is positioned
-relative to its normal position. Elements that come after a
-relatively-positioned element behave as if the relatively-positioned
-element was still in its ‘normal flow’ position - leaving a gap for it.
-What makes it possible is: position: relative. After setting this, you
-can play with changing the position, adding a different pixel value to
-top, bottom, left or right positioning.
+Relative Positioning
+    A relatively positioned element is positioned
+    relative to its normal position. Elements that come after a
+    relatively-positioned element behave as if the relatively-positioned
+    element was still in its ‘normal flow’ position - leaving a gap for it.
+    What makes it possible is: position: relative. After setting this, you
+    can play with changing the position, adding a different pixel value to
+    top, bottom, left or right positioning.
 
-**Absolute Positioning**
+Absolute Positioning
+    An absolutely positioned box is moved out of the normal flow entirely.
+    What makes it possible is: position: absolute. After setting this, you
+    can play with changing the position, adding a different pixel value to
+    top, bottom, left or right positioning.
 
-An absolutely positioned box is moved out of the normal flow entirely.
-What makes it possible is: position: absolute. After setting this, you
-can play with changing the position, adding a different pixel value to
-top, bottom, left or right positioning.
-
-**Overlapping Elements: z-index property**
-
-When elements are positioned outside of the normal flow, they can
-overlap other elements. The z-index property specifies the stack order
-of an element (which element should be placed in front of, or behind,
-the others). What make it possible is: z-index: n°pixel.
+Overlapping Elements: z-index property
+    When elements are positioned outside of the normal flow, they can
+    overlap other elements. The z-index property specifies the stack order
+    of an element (which element should be placed in front of, or behind,
+    the others). What make it possible is: z-index: n°pixel.
 
 Knowing all that, create your own home page!
+
+If you want to learn more about positioning,
+`check this demo out <http://www.barelyfitz.com/screencast/html-training/css/positioning/>`_
 
 Contact page
 ------------
@@ -240,8 +244,8 @@ needs:
 That's it for this section. Feel free to extend and customize the
 contact page in every way you can imagine.
 
-a tag
------
+<a> tag
+-------
 
 Good! Our portfolio is almost ready. Now we need just one more thing: to
 link all your pages together. To do that there is a special tag: a tag
@@ -266,11 +270,11 @@ this:
 Also very important is the Internal link or rather a link that point on
 your own web site, point just to another page of the same website. And
 that one is also the one we need right now, so let's proceed with our
-portfolio. In our nav menu, we need to add an a tag to our li elements:
+portfolio. In our nav menu, we need to add an ``<a>`` tag to our li elements:
 
 ::
 
-    <li><a href="home.html" >Home |</a> </li>
+    <li><a href="home.html" >Home |</a></li>
 
 Be careful to type the url right. If the page to which you are going to
 link is not in the same root, in the same folder of your file, you need
@@ -279,28 +283,30 @@ contact page in a contact folder I write:
 
 ::
 
-    <li><a href="contact/contact.html"> Contact </a> </li>
+    <li><a href="contact/contact.html">Contact</a></li>
 
 Check in the browser and... Done! Now you can do the same for the rest
 of your nav menu and for your social buttons links.
 
-By default the a tag is styled like this:
+By default the ``<a>`` tag is styled like this:
 
--  An unvisited link is underlined and blue
--  A visited link is underlined and purple
--  An active link is underlined and red
+- An unvisited link is underlined and blue
+- A visited link is underlined and purple
+- An active link is underlined and red
 
-You can change the style and the color by selecting the a tag.
+You can change the style and the colour by selecting the ``<a>`` tag.
 
-There still at least one important link to explain. The mailto link.
-Write mailto: myemail@google.com tell to the browser to open the default
-email programm on the user machine with the email destinatary field
+There is still at least one important link to explain. The **mailto** link.
+Write ``href="mailto:myemail@google.com"`` tell to the browser to open the
+default email program on the user machine with the email destination field
 already fill in. Nice, isn't it? So go ahead and write the mailto link
 with your personal email instead of # in your contact list and try it
 out.
 
-**:hover** To get the nice effect of changing the color of a link when
-the mouse moves over it, you need to use the :hover selector.
+To get the nice effect of changing the color of a link when the mouse
+moves over it, you need to use the ``:hover`` selector.
+Because we don't need to set the class manually,
+but rather the browser does it automatically, it's called **pseudo class**.
 
 ::
 
@@ -309,7 +315,7 @@ the mouse moves over it, you need to use the :hover selector.
     }
 
 Great! We are done but if you still have a time keep going to play with
-your potrfolio, make it nicer, change colors, fonts, add images or
+your portfolio, make it nicer, change colors, fonts, add images or
 whatever you like most and be ready for present it at the end of the
 workshop. We want to see your amazing personal website!
 

@@ -14,3 +14,7 @@ div.highlight pre {
 a.headerlink {
   padding: 10px;
 }
+
+.container dd {
+  padding-left: 20px;
+}

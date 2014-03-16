@@ -1,7 +1,7 @@
 Welcome
 =======
 
-Welcome to Open Tech School’s HTML & CSS workshop! This course is a
+Welcome to OpenTechSchool's HTML & CSS workshop! This course is a
 simple and comprehensive guide dedicated to helping beginners learn HTML
 and CSS.
 
