@@ -236,11 +236,13 @@ entire element.
 
 ::
 
-    <div class="content">
-        <aside>
-        </aside>
-        <section>
-        </section>
+    <div id="wrap-centered">
+        <div class="content">
+            <aside>
+            </aside>
+            <section>
+            </section>
+        </div>
     </div>
 
 In ``styles.css``:
