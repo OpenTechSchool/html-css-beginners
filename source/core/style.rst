@@ -135,8 +135,9 @@ nest your tags inside of one another like so:
 
 ::
 
-    <div id="first-heading">
-        <h1>The h1 tags indicates the primary <div>header</div> of the document</h1>
+    <div id="main-content">
+        <h1>The h1 tag indicates the primary header of the document.</h1>
+        <p>Some text.</p>
     </div>
 
 In CSS you can apply hierarchical styling like this:
