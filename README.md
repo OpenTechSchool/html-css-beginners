@@ -7,8 +7,8 @@ This is a friendly how-to for contributors to the HTML and CSS workshop
 at OpenTechSchool. 
 About the course:
 
-An HTML and CSS basic workshop for beginners that never write HTML/CSS before and 
-wnat to know how to start.
+A HTML and CSS basic workshop for beginners that have never written HTML/CSS
+before and want to know how to start.
 
 # Class format
 

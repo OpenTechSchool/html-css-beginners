@@ -22,7 +22,7 @@ easier to refer to because the browser has no need to load another file.
 The second way to write CSS for a document is with an "external" CSS
 file.
 
-Open a new file in your editor and save it with a .CSS extension in the
+Open a new file in your editor and save it with a ``.css`` extension in the
 same directory as your HTML file (give it a name like ``styles.css`` for
 now.)
 
@@ -37,7 +37,7 @@ This is the best way if you have a lot of CSS to write and you want to
 keep it organized.
 
 **TIP:** The link reference ("href") to ``"styles.css"`` is a path
-relative to the HTML document, same as the "src" for the ``<img>`` tag
+relative to the HTML document, same as the ``src`` for the ``<img>`` tag
 in the previous chapter.
 
 Let's add some colors!
@@ -56,9 +56,9 @@ it a nice red color.
         color: red;
     }
 
-h1 is the selector, the HTML elemnt we want to style. *color* is one of
-the properties that we can give to our selector, and *red* is the value
-of this property. The right sytrax is:
+``h1`` is the selector, the HTML element we want to style. ``color`` is one of
+the properties that we can give to our selector, and ``red`` is the value
+of this property. The right syntax is:
 
 ::
 
@@ -67,9 +67,9 @@ of this property. The right sytrax is:
         property: value;
     }
 
-Refresh your browser and see how the color of your title has changed.
+Refresh your browser and see how the colour of your title has changed.
 
-Isn't it nice? To give a background color to our paragraph, write
+Isn't it nice? To give a background colour to our paragraph, write
 
 ::
 
@@ -80,28 +80,31 @@ Isn't it nice? To give a background color to our paragraph, write
 Troubleshooting
 ---------------
 
-Did the title text color not change when you refreshed?
+Did the title text colour not change when you refreshed?
 
 Double check the name of the CSS file in the ``<link>`` tag, and also
 double check that the CSS file is in the same directory as the HTML
 file.
 
+Also make sure that all rules end with a ``;`` and are placed inside of the
+curly brackets of the selector you want to style.
+
 --------------
 
-Web colors are colors used in designing web pages. Colors may be
+Web colours are colours used in designing web pages. Colours may be
 specified as an RGB triplet or in hexadecimal format (a hex triplet).
 Hexadecimal color codes begin with a number sign (#). This number can be
 picked from a graphics software or from some nice web tool, such as,
-`Color picker <http://www.colorpicker.com/>`__, for example. When you
+`Color picker <http://www.colorpicker.com/>`_, for example. When you
 have chosen your color, copy the number that starts with # and paste
 that in your CSS file.
 
-Good to know: #000 is black and #fff is white.
+Good to know: ``#000`` is black and ``#fff`` is white.
 
 --------------
 
 Let's try now to give a nice border to our image, that we added to our
-page in the `first chapter <structure.md>`__.
+page in the :doc:`first chapter <structure>`.
 
 ::
 
@@ -121,5 +124,33 @@ top edge, we would write
     }
 
 Look at the `CSS cheat
-sheet <http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/>`__
+sheet <http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/>`_
 and give some more styles to your images.
+
+A short note on hierarchy
+-------------------------
+
+As you learned in the :doc:`structure section <structure>` in HTML you can
+nest your tags inside of one another like so:
+
+::
+
+    <div id="first-heading">
+        <h1>The h1 tags indicates the primary <div>header</div> of the document</h1>
+    </div>
+
+In CSS you can apply hierarchical styling like this:
+
+::
+
+    p {
+        color: black;
+    }
+    div p {
+        color: red;
+    }
+
+So we have two rules here. The first says the text colour in paragraphs
+should be black. The second rule is more *specific* - it says the text in
+paragraphs should be red, but only if those paragraphs are inside of a
+div tag. A more specific rule always beats a less specific rule.

@@ -18,7 +18,7 @@ around to refer to as you work through the workshop.
 Reference material
 ------------------
 
-The Mozilla Developer Network (MDN), by the guys who make Firefox, host
+The Mozilla Developer Network (MDN), by the people who make Firefox, host
 some great resources:
 
 - HTML Portal - Guides, intros, tutorials, references, elements,
