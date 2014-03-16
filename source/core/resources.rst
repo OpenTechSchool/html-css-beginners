@@ -10,10 +10,14 @@ Cheat sheets are an invaluable resource when learning HTML and CSS. We
 suggest opening the PDF cheat sheets at these links and keeping them
 around to refer to as you work through the workshop.
 
-- HTML5 - Use this sheet for try out new HTML tag.
-- CSS3 - Use this sheet for try out new CSS selectors.
-- CSS LINT - Use this site to let your CSS be checked automatically
+- `HTML5`_ - Use this sheet for try out new HTML tag.
+- `CSS3`_ - Use this sheet for try out new CSS selectors.
+- `CSS Lint`_ - Use this site to let your CSS be checked automatically
   for mistakes.
+
+.. _HTML5: http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/
+.. _CSS3: http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/
+.. _CSS Lint: http://csslint.net/
 
 Reference material
 ------------------
@@ -21,18 +25,26 @@ Reference material
 The Mozilla Developer Network (MDN), by the people who make Firefox, host
 some great resources:
 
-- HTML Portal - Guides, intros, tutorials, references, elements,
+- `HTML Portal`_ - Guides, intros, tutorials, references, elements,
   attributes...
-- HTML Reference - Every HTML element listed, find out about them all,
+- `HTML Reference`_ - Every HTML element listed, find out about them all,
   and make use of them!
-- CSS Portal - Tutorials for writing effective CSS, demos of CSS3, and
+- `CSS Portal`_ - Tutorials for writing effective CSS, demos of CSS3, and
   much more.
-- CSS Reference - More CSS properties and classes than you can shake a
+- `CSS Reference`_ - More CSS properties and classes than you can shake a
   stick at.
-- Google Fonts - Here you can play around with Font and apply it to
+- `Google Fonts`_ - Here you can play around with Font and apply it to
   your project without downloading it.
+
+.. _HTML Portal: https://developer.mozilla.org/en-US/docs/Web/HTML
+.. _HTML Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+.. _CSS Portal: https://developer.mozilla.org/en-US/docs/Web/CSS
+.. _CSS Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+.. _Google Fonts: http://www.google.com/fonts
 
 Learning resources
 ------------------
 
-- CodeAcademy - A good hands-on tutorial to keep you learning.
+- `CodeAcademy`_ - A good hands-on tutorial to keep you learning.
+
+.. _CodeAcademy: http://www.codecademy.com/tracks/web
