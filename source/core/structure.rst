@@ -132,7 +132,7 @@ Lastly, having elements inside of each other ("nesting") looks just like this:
 
 ::
 
-    <p>This is a sentence, with a <span>span</span> element inside it.</p>
+    <p>This is a sentence, with a <em>em</em> element ("emphasize") inside it.</p>
 
 or this:
 
