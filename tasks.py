@@ -1,5 +1,13 @@
-from os import path
+import sys
+from os import path, chdir
 from invoke import run, task
+
+if sys.version_info[0] < 3:
+    import SimpleHTTPServer as httpserver
+    import SocketServer as socketserver
+else:
+    import http.server as httpserver
+    import socketserver
 
 languages = ['en', 'de']
 
@@ -10,20 +18,24 @@ LOCALE_DIR = path.join(SOURCE_DIR, 'locale',
                        '%s', 'LC_MESSAGES')
 LANGUAGES = set(['en', 'de'])
 MAIN_TARGET = 'html'
-REPOSITORY = 'git@github.com:OpenTechSchool/python-beginners.git'
+REPOSITORY = 'git@github.com:OpenTechSchool/html-css-beginners.git'
 SERVE_PORT = 8000
 
 
 @task
-def clean(language=None):
-    if language is None:
-        langs = languages
-    elif language in languages:
-        langs = [language]
+def clean(language=None, target=MAIN_TARGET):
+    if language is not None:
+        run('rm -rf %s' % path.join(BUILD_DIR, target, language))
     else:
-        exit('Invalid language %s' % language)
-    for l in langs:
-        run("rm -rf %s" % path.join('build', l))
+        run('rm -rf %s' % path.join(BUILD_DIR, target))
+
+
+@task('clean')
+def setup():
+    target_dir = path.join(BUILD_DIR, MAIN_TARGET)
+    run('mkdir -p %s' % target_dir)
+    run('git clone %s -b %s --single-branch %s' %
+        (REPOSITORY, 'gh-pages', target_dir))
 
 
 @task
@@ -48,3 +60,15 @@ def build(language=None, target=MAIN_TARGET):
         static_files = path.join(BASE_DIR, '_static', '*')
         target_dir = path.join(BUILD_DIR, target)
         run('cp %s %s' % (static_files, target_dir))
+
+
+def serve(port=SERVE_PORT, serve_dir=None):
+    """Run a web server to serve the built project"""
+    if serve_dir is None:
+        serve_dir = path.join(BUILD_DIR, MAIN_TARGET)
+    port = int(port)
+    chdir(serve_dir)
+    handler = httpserver.SimpleHTTPRequestHandler
+    httpd = socketserver.TCPServer(("", port), handler)
+    print("serving on http://%s:%s" % httpd.server_address)
+    httpd.serve_forever()
