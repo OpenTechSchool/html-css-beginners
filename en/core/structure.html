@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The template structure &mdash; Basic Web Site Construction 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:400italic,400,700" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Basic Web Site Construction 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Your first styled Hello World!" href="style.html" />
+    <link rel="prev" title="Resources" href="resources.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Basic Web Site Construction</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">The template structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Your first styled Hello World!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio.html">HTML5 structure and starter CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio-2.html">Position, anchors and form elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extras/developertools.html">Helpful tools for HTML/CSS creation</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">The template structure</a><ul>
+<li><a class="reference internal" href="#preamble-how-to-write-a-html-document">Preamble: How to write a HTML document</a></li>
+<li><a class="reference internal" href="#text-editor">Text editor</a><ul>
+<li><a class="reference internal" href="#windows">Windows</a></li>
+<li><a class="reference internal" href="#os-x">OS X</a></li>
+<li><a class="reference internal" href="#linux">Linux</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#doctype">Doctype</a></li>
+<li><a class="reference internal" href="#structuring-your-project">Structuring your project</a></li>
+<li><a class="reference internal" href="#elements-and-tags">Elements and Tags</a></li>
+<li><a class="reference internal" href="#html-and-head-elements">Html and Head Elements</a></li>
+<li><a class="reference internal" href="#the-body">The Body</a></li>
+<li><a class="reference internal" href="#types-of-content">Types of content</a></li>
+<li><a class="reference internal" href="#indentation">Indentation</a></li>
+<li><a class="reference internal" href="#comments">Comments</a></li>
+<li><a class="reference internal" href="#images">Images</a><ul>
+<li><a class="reference internal" href="#alt-text">Alt Text</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#putting-it-all-together">Putting it all together</a></li>
+<li><a class="reference internal" href="#why-not-use-a-visual-editor">Why not use a visual editor?</a></li>
+<li><a class="reference internal" href="#why-not-use-ms-word-as-a-text-editor">Why not use MS Word as a text editor?</a></li>
+<li><a class="reference internal" href="#what-s-next">What&#8217;s next?</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="resources.html" title="Previous Chapter: Resources"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Resources</span>
+    </a>
+  </li>
+  <li>
+    <a href="style.html" title="Next Chapter: Your first styled Hello World!"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Your first style... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/core/structure.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="the-template-structure">
+<h1>The template structure<a class="headerlink" href="#the-template-structure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="preamble-how-to-write-a-html-document">
+<h2>Preamble: How to write a HTML document<a class="headerlink" href="#preamble-how-to-write-a-html-document" title="Permalink to this headline">¶</a></h2>
+<p>This is actually pretty simple: HTML is written as a plain text
+document. A HTML file always uses the extension <strong>.html</strong> to indicate
+its filetype.</p>
+</div>
+<div class="section" id="text-editor">
+<h2>Text editor<a class="headerlink" href="#text-editor" title="Permalink to this headline">¶</a></h2>
+<p>You will need a plain text editor in order to edit HTML files.</p>
+<p>You can also get fully graphical WYSIWYG (What You See Is What You Get)
+HTML editors, that let you edit the web page graphically with a similar
+interface to programs like Word. These can be useful, but many people
+working with HTML &amp; CSS prefer a plain text editor and that&#8217;s what we&#8217;ll
+be using today.</p>
+<p>If you already have a plain text editor installed (perhaps from a
+previous OTS workshop) then you&#8217;ll be fine. Otherwise here are some
+suggestions:</p>
+<div class="section" id="windows">
+<h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.notepad-plus-plus.org/">Notepad++</a> is free and suitable,
+or you could try <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a>.</p>
+</div>
+<div class="section" id="os-x">
+<h3>OS X<a class="headerlink" href="#os-x" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> is
+free and suitable. Other good choices (with a few more advanced features
+you can grow into) include <a class="reference external" href="http://www.sublimetext.com/">Sublime
+Text</a> or <a class="reference external" href="http://macromates.com/">Text
+Mate</a>.</p>
+</div>
+<div class="section" id="linux">
+<h3>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h3>
+<p>GEdit comes pre-installed on many Linux distributions. Otherwise you
+might want to try <a class="reference external" href="http://www.sublimetext.com/">Sublime Text</a> or one
+of the dozens of other text editors available on Linux.</p>
+<hr class="docutils" />
+<p><strong>Text editor up and running? Great, time to create an HTML document!</strong></p>
+</div>
+</div>
+<div class="section" id="doctype">
+<h2>Doctype<a class="headerlink" href="#doctype" title="Permalink to this headline">¶</a></h2>
+<p>The ﬁrst thing on an HTML page is the <strong>doctype</strong>, which as you might
+guess, tells the browser what type of document it&#8217;s looking at, and how
+to read it.</p>
+<p>Thankfully, HTML5&#8217;s doctype is extremely simple - it&#8217;s just <tt class="docutils literal"><span class="pre">html</span></tt>.</p>
+<p>Open a new file in your editor and write this line first:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</pre></div>
+</div>
+<p>Then save it with the file extension <tt class="docutils literal"><span class="pre">.html</span></tt>. You&#8217;re now officially
+editing an html document!</p>
+</div>
+<div class="section" id="structuring-your-project">
+<h2>Structuring your project<a class="headerlink" href="#structuring-your-project" title="Permalink to this headline">¶</a></h2>
+<p>You can create your HTML files anywhere you like, but we recommend you
+use directories to organise things so they&#8217;re easy to find later.</p>
+<ul class="simple">
+<li>Create a directory somewhere (your home folder, or your desktop) for
+this workshop. Name it something like <em>OTS_HTML_Workshop</em>.</li>
+<li>Create another directory inside that one for this first exercise.
+Name it something like <em>exercise1</em>.</li>
+<li>From inside your editor, save your first HTML file inside the
+<em>exercise1</em> directory. Name it something like <em>page.html</em>.</li>
+</ul>
+<p>As time goes by, we will be adding more files to this directory and
+eventually adding whole new directories alongside exercise1 for new
+projects.</p>
+</div>
+<div class="section" id="elements-and-tags">
+<h2>Elements and Tags<a class="headerlink" href="#elements-and-tags" title="Permalink to this headline">¶</a></h2>
+<p>These are the basic building blocks of HTML.</p>
+<p><strong>Elements</strong> <em>are</em> what makes up a HTML document. You can put elements
+inside of other elements. An element can include three things: a tag,
+attributes, and content.</p>
+<p>A <strong>Tag</strong> is the thing that indicates an element&#8217;s purpose. For example,
+the <tt class="docutils literal"><span class="pre">&lt;p&gt;</span></tt> tag indicates a paragraph of text is in that element, and
+the <tt class="docutils literal"><span class="pre">&lt;li&gt;</span></tt> represents a &#8216;list item&#8217;. You&#8217;ll notice they&#8217;re always
+surrounded by angle backets. <em>Opening</em> and <em>Closing</em> tags mark the
+beginning and end of an element and wrap its content, like so:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;p&gt;</span>This is a paragraph.<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+</div>
+<p>You can see the closing tag includes a <tt class="docutils literal"><span class="pre">/</span></tt> before its name; otherwise
+it would be another opening tag!</p>
+<p><strong>Always</strong> double-check that you&#8217;ve closed all your elements; otherwise,
+a browser can and will get mixed up trying to understand your HTML
+document.</p>
+<p>There are some specific elements that are exceptions to this rule. When
+elements cannot contain anything else, then they don&#8217;t need to be
+closed. For example, the following elements are referred to as
+&#8216;self-closing&#8217;:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;hr&gt;</span>
+<span class="nt">&lt;input&gt;</span>
+<span class="nt">&lt;img&gt;</span>
+</pre></div>
+</div>
+<p>There aren&#8217;t so many of such elements, and you should easily pick up
+which are which by writing some more code :)</p>
+<p>Lastly, having elements inside of each other (&#8220;nesting&#8221;) looks just like this:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;p&gt;</span>This is a sentence, with a <span class="nt">&lt;em&gt;</span>em<span class="nt">&lt;/em&gt;</span> element (&quot;emphasize&quot;) inside it.<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+</div>
+<p>or this:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;main-content&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>The h1 tag indicates the primary header of the document.<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Some text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</div>
+<p>You&#8217;ll notice that HTML doesn&#8217;t actually care about the whitespace or
+newlines <em>between</em> tags. It would end up looking the same if the above
+had been fit onto one line.</p>
+<p>In the above example, you can see our first case of an <strong>attribute</strong>. It
+starts with a lowercase name, and then is almost always followed by an
+<tt class="docutils literal"><span class="pre">=</span></tt> and a &#8216;value&#8217; that&#8217;s surrounded in double quotes, <tt class="docutils literal"><span class="pre">&quot;like</span> <span class="pre">this&quot;</span></tt>.
+An element can have many attributes, in which case you separate them by
+spaces, as you&#8217;ll see soon. Attributes give information about an element
+in particular.</p>
+<p>In this case, the <tt class="docutils literal"><span class="pre">&lt;div&gt;</span></tt> tag (which is used to <em>divide</em> groups of
+elements up) has an <tt class="docutils literal"><span class="pre">id</span></tt> attribute with the value <tt class="docutils literal"><span class="pre">main-content</span></tt>.
+That&#8217;s telling us that this section of the document is designed to hold the
+main content on the page opposed to e.g. a sidebar or navigation.
+You will learn more about specific attributes later!</p>
+</div>
+<div class="section" id="html-and-head-elements">
+<h2>Html and Head Elements<a class="headerlink" href="#html-and-head-elements" title="Permalink to this headline">¶</a></h2>
+<p>Coming back to our file (hope you&#8217;re coding along!), after the doctype
+we begin our document with a root <tt class="docutils literal"><span class="pre">html</span></tt> element, just like so:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<p>It encompasses every other element in our HTML document, nothing should
+go outside it! Next, the document is broken up into two important parts:
+The <strong>head</strong> and <strong>body</strong>.</p>
+<p>The head contains the title of the page &amp; information <strong>about</strong> the page
+(<em>meta</em> information). Most meta information isn&#8217;t visible to the user,
+but it has many purposes. For example, meta elements can tell search
+engines information about your page, such as who created it and a
+description of your page&#8217;s content. Here&#8217;s an example <tt class="docutils literal"><span class="pre">head</span></tt> element:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;Free Web tutorials&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My first Portfolio<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</pre></div>
+</div>
+<p>You can see meta tags are one of the self-closing elements! First off,
+there is a charset meta tag. This is the most important meta tag.
+Without it your website might not display properly. It is best practice
+to include it as the first element inside the head element. Basically,
+it specifies to the browser the character encoding for the HTML
+document. That means your browser will be able to read and correctly
+display all the special characters such as €, $, è and so on. <tt class="docutils literal"><span class="pre">UTF-8</span></tt>
+is usually the best general encoding to use.</p>
+<p>Here we&#8217;ve also written another type of a meta tag, the description. We
+define what kind of meta tag it is with the <tt class="docutils literal"><span class="pre">name</span></tt> attribute and put
+our description in the <em>value</em> of the content attribute.</p>
+<p>Inside our head element, we have lastly written a title of our website.
+Chuck the above code in your file (inside your <tt class="docutils literal"><span class="pre">html</span></tt> element), and
+change the content of the <tt class="docutils literal"><span class="pre">&lt;title&gt;</span></tt>. Then you can check your document
+by opening your file in a browser and looking at what is written in your
+browser toolbar. That also provides a title for the page when it is
+added to favorites.</p>
+<p>Head tags can also include external files or resources, such as CSS or
+JavaScript files. We will see later how to do this.</p>
+</div>
+<div class="section" id="the-body">
+<h2>The Body<a class="headerlink" href="#the-body" title="Permalink to this headline">¶</a></h2>
+<p>Finally, we are at the place where our content goes. The body contains
+the actual content of the page. Everything that is contained in the body
+is visible to the user.</p>
+<p>Just after the closing head tag but still inside the html element, let&#8217;s
+add the body tags.</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+</div>
+<p>Everything that is written inside this tag will be displayed to the
+user. Add a <tt class="docutils literal"><span class="pre">&lt;body&gt;</span></tt> to your existing HTML document and then write
+some plain text between the body tags and view it in your browser.</p>
+<p><strong>TIP</strong>: To reload the same HTML document in the browser, use the Reload
+Current Page function (Ctrl-R or F5)</p>
+</div>
+<div class="section" id="types-of-content">
+<h2>Types of content<a class="headerlink" href="#types-of-content" title="Permalink to this headline">¶</a></h2>
+<p>There are different HTML elements that we can use to indicate different
+types of content in our document, like the</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+</pre></div>
+</div>
+<p>tags which we have already met. Let&#8217;s try writing a title, followed by a
+paragraph.</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>I&#39;m the title.<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>And I&#39;m a paragraph!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+</div>
+<p>Heading elements are straightforward to understand. They start from h1
+with the biggest font and importance, going to h6 with the smallest
+font.</p>
+</div>
+<div class="section" id="indentation">
+<h2>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h2>
+<p>Are you wondering why we wrote the h1 and p tags <em>indented</em> inside the
+body tags?</p>
+<p>That will not change at all how the browser reads or interpretates the
+document, but it is a good practice among developers to write code like
+that in order to have a more clear document and still be able to work
+with it even after a long time or when there is a lot of lines of code.
+It also shows the heircharcical nature of HTML pretty well.</p>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p>It is also possible to put &#8220;comments&#8221; in your HTML. Comments in HTML are
+there to remind you (or other people editing the HTML file) without
+changing the way the page displays in a browser.</p>
+<p>Like other HTML elements, comments are written by using a tag. Although
+comment tags look a little different:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="c">&lt;!-- I am a comment --&gt;</span>
+</pre></div>
+</div>
+<p>The &#8220;start comment&#8221; tag is <tt class="docutils literal"><span class="pre">&lt;!--</span></tt> and the &#8220;end comment&#8221; tag is
+<tt class="docutils literal"><span class="pre">--&gt;</span></tt>.</p>
+<p>Comments can also enclose other HTML elements, to &#8220;comment them out&#8221;.
+This is a useful technique when you&#8217;re experimenting with a page to see
+how it looks when you change things around.</p>
+<p>For example, try commenting out the <tt class="docutils literal"><span class="pre">h1</span></tt> heading in your current page:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- &lt;h1&gt;I&#39;m the title.&lt;/h1&gt; --&gt;</span>
+    <span class="nt">&lt;p&gt;</span>And I&#39;m a paragraph!<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></div>
+</div>
+<p>If you reload the page in your browser, you&#8217;ll notice the heading has
+vanished.</p>
+<p>Remove the comment tags (so the heading appears again) before moving on
+to the next section.</p>
+</div>
+<div class="section" id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p>Headings and paragraphs give you the basics of text. What about images?</p>
+<p>Images have to kept in separate image files, outside the HTML file. Find
+a favourite image on the web and save it in the same directory as your
+HTML file (right-click the image in your browser and &#8220;Save Image...&#8221;).</p>
+<p>If you don&#8217;t have a picture in mind then <a class="reference external" href="http://www.flickr.com/photos/nengard/67501122/sizes/s/">here&#8217;s a page with a photo of
+some kittens that you can
+use</a> (Cute
+cats on the internet? Egad!)</p>
+<p>After you have your image, you can include it in your HTML page by using
+an <tt class="docutils literal"><span class="pre">&lt;img&gt;</span></tt> tag.</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;kittens.jpg&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</div>
+<p>Add the <tt class="docutils literal"><span class="pre">&lt;img&gt;</span></tt> tag anywhere inside the &#8220;body&#8221; of your HTML document
+where you&#8217;d like the image to appear. Replace &#8220;kittens.jpg&#8221; with the
+file name of the image that you saved in the same directory as the HTML
+file.</p>
+<p>Notice that <tt class="docutils literal"><span class="pre">&lt;img&gt;</span></tt> is one of the tags that doesn&#8217;t need a sepaate
+closing tag. You could put <tt class="docutils literal"><span class="pre">&lt;/img&gt;</span></tt> after the tag if you like, it
+doesn&#8217;t change the way the browser views the page.</p>
+<p><strong>TIP:</strong> The image source name (&#8220;src&#8221;) of <tt class="docutils literal"><span class="pre">kittens.jpg</span></tt> is a path
+relative to the HTML document. So in this case <tt class="docutils literal"><span class="pre">kittens.jpg</span></tt> is
+located in the same directory, but you could use a name like
+<tt class="docutils literal"><span class="pre">&quot;images/kittens.jpg&quot;</span></tt> if you put the image file into a subdirectory
+called &#8220;images&#8221;. You can even use full URLs like
+<tt class="docutils literal"><span class="pre">&quot;http://myawesomesite.com/pictures/kittens.jpg&quot;</span></tt>, but it&#8217;s best to
+avoid this if you can use a relative path instead.</p>
+<div class="section" id="alt-text">
+<h3>Alt Text<a class="headerlink" href="#alt-text" title="Permalink to this headline">¶</a></h3>
+<p>A good habit to get into is using &#8220;alt text&#8221; to describe the contents of
+an image:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;kittens.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Some kittens&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</div>
+<p>The alt text is a textual description of what&#8217;s in the image. This is
+important for anyone who can&#8217;t see the images (for instance vision
+impaired people using a screenreader.) Any image that isn&#8217;t purely
+decorative should have a description set with the &#8220;alt=&#8221; attribute.</p>
+</div>
+</div>
+<div class="section" id="putting-it-all-together">
+<h2>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h2>
+<p>So far, our entire document might look like this:</p>
+<div class="highlight-html"><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;Free Web tutorials&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>My first Portfolio<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>I&#39;m the title.<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>And I&#39;m a paragraph!<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+             <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;kittens.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;All the kittens are shown here&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;h3&gt;</span>This is a sub-heading...<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Well now we&#39;re just blathering on.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<p>Notice that the kitten image is part of its own paragraph here, so it is
+shown on a new line in the browser.</p>
+<p>Hopefully the document in your file looks similar, but not exactly the
+same. You might have changed some of the text... does it all work in
+your browser?</p>
+</div>
+<div class="section" id="why-not-use-a-visual-editor">
+<h2>Why not use a visual editor?<a class="headerlink" href="#why-not-use-a-visual-editor" title="Permalink to this headline">¶</a></h2>
+<p>Visual editors exist, and some people use them. This is sometimes referred to
+a &#8220;what you see is what you get&#8221; editing, or WYSIWYG. In the long run, it can
+be limiting to use a visual editor because there are ways of changing text that
+are faster and easier to specify manually. It also limits your ability to
+understand what&#8217;s happening on the page if you only use generated code from a
+visual editor.</p>
+</div>
+<div class="section" id="why-not-use-ms-word-as-a-text-editor">
+<h2>Why not use MS Word as a text editor?<a class="headerlink" href="#why-not-use-ms-word-as-a-text-editor" title="Permalink to this headline">¶</a></h2>
+<p>MS Word has a lot of formatting information that can&#8217;t be understood by the web.
+The way Word knows where to put a paragraph (or bigger font sizes, or a picture,
+or anything) is totally different from how HTML and CSS work. For code of all
+kinds, including HTML and CSS, it&#8217;s important to use a text editor to keep your
+code clean.</p>
+<p>In addition, text editors provide some hints about what pieces of code you have
+where. This is called syntax highlighting. &lt;span style=&#8221;color:red&#8221;&gt;It&lt;/span&gt;
+&lt;span style=&#8221;color:blue&#8221;&gt;is&lt;/span&gt; like &lt;span style=&#8221;color:blue&#8221;&gt;showing&lt;/span&gt;
+&lt;span style=&#8221;color:red&#8221;&gt;nouns&lt;/span&gt; in &lt;span style=&#8221;color:red&#8221;&gt;red&lt;/span&gt; and
+&lt;span style=&#8221;color:blue&#8221;&gt;showing&lt;/span&gt; the &lt;span style=&#8221;color:red&#8221;&gt;verbs&lt;/span&gt;
+in &lt;span style=&#8221;color:red&#8221;&gt;blue&lt;/span&gt; in a &lt;span style=&#8221;color:red&#8221;&gt;sentence&lt;/span&gt;.</p>
+</div>
+<div class="section" id="what-s-next">
+<h2>What&#8217;s next?<a class="headerlink" href="#what-s-next" title="Permalink to this headline">¶</a></h2>
+<p>You may be thinking at this stage that your HTML page looks pretty
+bland. How can you spice it up a little?</p>
+<p>Read on to find out in the next section, <a class="reference external" href="style.html">your first styled Hello
+World!</a>.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, OpenTechSchool.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
