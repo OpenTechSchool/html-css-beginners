@@ -80,9 +80,9 @@ adding whole new directories alongside exercise1 for new projects.
 
 These are the basic building blocks of HTML.
 
-**Elements** *are* what makes up a HTML document. Because you can have zero, 
-one or more elements inside another, this is what makes HTML *hierarchical*. 
-An element can include three things: a tag, attributes, and content.
+**Elements** *are* what makes up a HTML document. You can put elements
+inside of other elements. An element can include three things: a tag,
+attributes, and content.
 
 A **Tag** is the thing that indicates an element's purpose. For example, 
 the `<p>` tag indicates a paragraph of text is in that element, and the `<li>` 
@@ -109,8 +109,7 @@ For example, the following elements are referred to as 'self-closing':
 There aren't so many of such elements, and you should easily pick up which are 
 which by writing some more code :)
 
-Lastly, *nesting* elements isn't so hard, and is fundamental to how HTML works. 
-It looks just like this:
+Lastly, having elements inside of each other ("nesting") looks just like this:
 
     <p>This is a sentence, with a <em>em</em> element ("emphasize") inside it.</p>
 
