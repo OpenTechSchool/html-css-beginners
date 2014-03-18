@@ -28,4 +28,31 @@ A class schedule looks like this:
 
 ## Author Guide
 
-This branch is in the process of being converted from Jekyll to Sphinx.
+This material is built with the help of [Sphinx][sphinx], [Invoke][invoke],
+and translated with [Transifex][transifex].
+
+To get started, you should have the python packages needed. To do this, use
+[pip][pip] like so:
+
+    pip install -r requirements.txt
+
+You can then use the invoke task runner to run things. E.g, build the docs:
+
+    invoke build -l en
+
+(builds them in English). To serve the built files on your localhost,
+you can run:
+
+    invoke serve
+
+And visit the url that your console prints to read the result.
+
+The `setup` invoke task should git checkout the gh-pages correctly should
+you wish to push to that branch to publish a new version of the workshop.
+
+Translation should be coming soon.
+
+[sphinx]: https://pypi.python.org/pypi/Sphinx/
+[invoke]: https://pypi.python.org/pypi/invoke/0.7.0
+[transifex]: http://transifex.com/
+[pip]: https://pypi.python.org/pypi/pip/
