@@ -80,7 +80,7 @@ so soll der Menüpunkt hervorgehoben werden. Dazu bietet sich der sogenannte Pse
 "Hover" zu deutsch "schweben" wird immer dann auf Element angewendet, wenn die Maus sich gerade über dem Element
 befindet.
 
-In der Webseite setzen wir dazu einen Effekt auf die <li> Elemente des Menü:
+In der Webseite setzen wir dazu einen Effekt auf die `<li>` Elemente des Menü:
 
     nav li:hover {
         border: 1px solid green;

@@ -26,7 +26,7 @@ map:
        path: /core/portfolio-2.html
        caption: Positionierung, Anker and Formelemente
      - title: Effekte und Formulare 
-       path: /core/effekte.html
+       path: /core/effects.html
        caption: Schatten, Runde ecken, Hover, Formulare
 - title: Extras
    caption: Interesting or useful extras
