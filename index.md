@@ -63,6 +63,10 @@ dir diese Resourcen dabei helfen.
   HTML5-Elemente, float, Box Modell und Schrift-Gestaltung.
 * [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - 
   Positionierung, Web-Links und Formular-Elemente.
+* [Create your personal Portfolio - Part 3.](core/portfolio-3.html) - 
+  Tabellen und Listen 
+* [Effekte und Formular](core/effects.html) - 
+  Effekte und Formulare
 
 ## Cheat Sheet
 

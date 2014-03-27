@@ -22,7 +22,13 @@ map:
      - title: Erstelle Dein persönliches Portfolio - Teil 2 
        path: /core/portfolio-2.html
        caption: Positionierung, Anker and Formelemente
- - title: Extras
+     - title: Erstelle Dein persönliches Portfolio - Teil 2 
+       path: /core/portfolio-2.html
+       caption: Positionierung, Anker and Formelemente
+     - title: Effekte und Formulare 
+       path: /core/effekte.html
+       caption: Schatten, Runde ecken, Hover, Formulare
+- title: Extras
    caption: Interesting or useful extras
    subpages:
      - title: Browser Developer Tools
