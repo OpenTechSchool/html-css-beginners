@@ -59,11 +59,11 @@ dir diese Resourcen dabei helfen.
   Benutzt HTML um aus einer blanken Seite ein 'Hello World'-Beispiel zu machen.
 * [Your first styled Hello World!](core/style.html) - 
   CSS Verständnis. Was ist eine Klasse, eine ID und ein Selektor.
-* [Create your personal Portfolio - Part 1.](core/portfolio.html) - 
+* [Erstelle Dein perönliches Portfolio - Part 1.](core/portfolio.html) - 
   HTML5-Elemente, float, Box Modell und Schrift-Gestaltung.
-* [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - 
+* [Erstelle Dein perönliches Portfolio - Part 2.](core/portfolio-2.html) - 
   Positionierung, Web-Links und Formular-Elemente.
-* [Create your personal Portfolio - Part 3.](core/portfolio-3.html) - 
+* [Erstelle Dein perönliches Portfolio - Part 3.](core/portfolio-3.html) - 
   Tabellen und Listen 
 * [Effekte und Formular](core/effects.html) - 
   Effekte und Formulare
