@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HTML5 structure and starter CSS &mdash; Basic Web Site Construction 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:400italic,400,700" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Basic Web Site Construction 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Position, anchors and form elements" href="portfolio-2.html" />
+    <link rel="prev" title="Your first styled Hello World!" href="style.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Basic Web Site Construction</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">The template structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Your first styled Hello World!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">HTML5 structure and starter CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio-2.html">Position, anchors and form elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extras/developertools.html">Helpful tools for HTML/CSS creation</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">HTML5 structure and starter CSS</a><ul>
+<li><a class="reference internal" href="#goal">Goal</a></li>
+<li><a class="reference internal" href="#main-content">Main Content</a></li>
+<li><a class="reference internal" href="#project-structure">Project Structure</a></li>
+<li><a class="reference internal" href="#creating-the-page">Creating the page</a></li>
+<li><a class="reference internal" href="#navigation-menu">Navigation Menu</a></li>
+<li><a class="reference internal" href="#the-footer">The footer</a></li>
+<li><a class="reference internal" href="#box-model-and-fonts">Box Model and fonts</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="style.html" title="Previous Chapter: Your first styled Hello World!"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Your first style...</span>
+    </a>
+  </li>
+  <li>
+    <a href="portfolio-2.html" title="Next Chapter: Position, anchors and form elements"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Position, anchor... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/core/portfolio.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="html5-structure-and-starter-css">
+<h1>HTML5 structure and starter CSS<a class="headerlink" href="#html5-structure-and-starter-css" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="goal">
+<h2>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<p>We are going to design a personal portfolio page with a main menu,
+content, and a footer. We fill in the content with an image along with
+some text.</p>
+<p>We are going to do all of this with HTML5 elements so <a class="reference external" href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/">open up a HTML5
+cheatsheet</a>
+and keep it handy.</p>
+</div>
+<div class="section" id="main-content">
+<h2>Main Content<a class="headerlink" href="#main-content" title="Permalink to this headline">¶</a></h2>
+<p>We will start by building the main page of our personal presentation,
+since this will give the main structure to the whole website design.</p>
+</div>
+<div class="section" id="project-structure">
+<h2>Project Structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
+<p>Start a new directory for this project, alongside the <em>example1</em>
+directory you&#8217;ve been using so far. Call the new directory something
+like <em>portfolio</em>. Copy the files from <em>example1</em> into the <em>portfolio</em>
+directory to use them as a basis for your new project.</p>
+<p>After you have the files copied into <em>portfolio</em>, edit the HTML page
+there and remove all of the body content (everything inside the body
+tags, so you have an empty page with just the meta tags, title, and the
+CSS link tag.) We can use this as the basis for a new page.</p>
+</div>
+<div class="section" id="creating-the-page">
+<h2>Creating the page<a class="headerlink" href="#creating-the-page" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s start by wrapping our page in a div to give a centered design to
+our page. <em>&#8220;A div tag defines a section in a HTML file and is used to
+group elements to format them with CSS in order to lay out a web page.&#8221;</em></p>
+<p>Div is a general tag and can be used in many different situations just
+to wrap together a group of HTML elements and style them. For this
+reason we need to give it a name; otherwise, we can&#8217;t style each one in
+a different way. There are two ways to give a name to a div tag: with an
+id or with a class. Think about an id as a personal and unique name like
+your surname/name and think about the class as personal characteristics,
+such as the color of your hair or your age. Id, the unique one, is used
+when you need to write a specific style valid only for this element.
+Classes are more common and used to give different HTML elements the
+same style and characteristics.</p>
+<p>We can now write our main page content:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;wrap-centered&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Since we have just one main content, we can use the ID selector.</p>
+<p>In styles.css we make this div always centered in the middle. To call
+the class in CSS, we need to write <tt class="docutils literal"><span class="pre">.</span></tt> and the class name just after
+it. For the ID it is the same but with <tt class="docutils literal"><span class="pre">#</span></tt> instead of <tt class="docutils literal"><span class="pre">.</span></tt>.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nf">#wrap-centered</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Here we define the width of an element and then give it a
+<tt class="docutils literal"><span class="pre">margin:</span> <span class="pre">0</span> <span class="pre">auto</span></tt> which is a common rule to center the element. We use
+100% instead of 100px because we want our page to be responsive or, in
+other words, we want the page to resize when the browser windows change
+dimensions. Now everything inside this div will be centered.</p>
+<p>At the beginning of the <tt class="docutils literal"><span class="pre">styles.css</span></tt> file, let&#8217;s write something like
+this:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">*</span> <span class="p">{</span>
+    <span class="c">/* don&#39;t use &#39;0px&#39; or any other unit, if you set the value to zero */</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>That is to set all the elements <tt class="docutils literal"><span class="pre">*</span></tt> with default <tt class="docutils literal"><span class="pre">padding</span></tt>, <tt class="docutils literal"><span class="pre">margin</span></tt> and
+<tt class="docutils literal"><span class="pre">border</span></tt> to 0. This can be really useful to do because every browser sets
+a default size for some tags, and without setting all of them again to
+0 it will be impossible to calculate the position of HTML elements
+and to position them on the page, since every browser will interpret
+that in a different way.</p>
+</div>
+<div class="section" id="navigation-menu">
+<h2>Navigation Menu<a class="headerlink" href="#navigation-menu" title="Permalink to this headline">¶</a></h2>
+<p>Time to write our navigation menu. Inside of the div we are going to
+write our first HTML5 element.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">nav</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">ul</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Home</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;|&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;</span><span class="nt">Contact</span><span class="o">&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">ul</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">nav</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Here we have 3 new elements. First, the nav tag. That tag means
+navigation and wraps up all the elements that are essential for the
+navigation in the website. <tt class="docutils literal"><span class="pre">&lt;ul&gt;</span></tt> is a type of list - unordered. In an
+<strong>Unordered List</strong>, as the word suggests, we have elements that usually stay in
+a list and each element is wrapped in a <tt class="docutils literal"><span class="pre">&lt;li&gt;</span></tt> tag (short for <em>list item</em>).</p>
+<p>In styles.css:</p>
+<div class="highlight-css"><div class="highlight"><pre>nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    color: ##08c;
+}
+</pre></div>
+</div>
+<p>Nav ul is a way to specify not all the ul elements on the page but just
+the one that is nav&#8217;s child. Most of the properties we write here you
+already know or you can easily check on the cheatsheet.</p>
+<p>Now we want to talk about one of them in particular, because it&#8217;s very
+powerful: <tt class="docutils literal"><span class="pre">float:</span> <span class="pre">right</span></tt>.</p>
+<p>This tells the selected selector to get out from the normal flow of the
+HTML element (usually HTML elements are block elements, which means that
+they are displayed one after the other vertically in the page as a
+block) and move to the right-most side of the div in which it is
+wrapped.</p>
+<p>If you check in your browser, the nav ul is displayed on the right.
+Float can be set on the right or on the left. Always be careful with
+that because this will change the flow of all the HTML elements, not
+just the one that you are modifying.</p>
+<p>We just said that usually HTML elements are like a block displayed in a
+vertical flow. We can change this flow thanks to the float property.</p>
+<p>Another property that allows us to change the flow is <tt class="docutils literal"><span class="pre">display:</span> <span class="pre">inline</span></tt>.
+Actually, this property doesn&#8217;t change the flow, rather it displays an
+element inline (so that it will stay on one line instead dropping down)
+instead of displaying within a block. Check your navigation menu.</p>
+<p>Last thing we need to do before moving on is to clear everything in
+order to restore the normal flow, since we changed the setting float to
+right. Place this div after the <tt class="docutils literal"><span class="pre">nav</span></tt> element:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;clear&quot;</span><span class="o">&gt;&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>And in the CSS file:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.clear</span> <span class="p">{</span>
+    <span class="k">clear</span><span class="o">:</span> <span class="k">both</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Here we create a new div with class clear and call this one in our CSS
+file, giving clear both. That will clear both values, right and left.
+Other two possible values are <tt class="docutils literal"><span class="pre">right</span></tt> or <tt class="docutils literal"><span class="pre">left</span></tt>. When you mess with
+floating element, before starting a new design section it is always a
+good practice to put <tt class="docutils literal"><span class="pre">clear:</span> <span class="pre">both;</span></tt> to be sure your flow is still the
+default one.</p>
+</div>
+<div class="section" id="the-footer">
+<h2>The footer<a class="headerlink" href="#the-footer" title="Permalink to this headline">¶</a></h2>
+<p>The footer is, as the name says, that part of the page that stays at the
+end of the page and gives some general and maybe secondary information,
+like in a book. The tag for that is:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">footer</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">footer</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Inside the p tag you can write what you want, maybe who made this
+website or your email.</p>
+<p>In the CSS file, write:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">footer</span> <span class="p">{</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">footer</span> <span class="nt">p</span> <span class="p">{</span>
+    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>We don&#8217;t really need to style the footer but it is nice to give it some
+space to breathe with a <tt class="docutils literal"><span class="pre">margin-top:</span> <span class="pre">50px</span></tt>. Then we just set the
+alignment of the text in the p tag as center. That&#8217;s all we need for
+the footer.</p>
+</div>
+<div class="section" id="box-model-and-fonts">
+<h2>Box Model and fonts<a class="headerlink" href="#box-model-and-fonts" title="Permalink to this headline">¶</a></h2>
+<p>Finally we start to build our content. First of all some structure. We
+are going to have a two-column design: one column is a kind of sidebar
+and this tag is called aside and the other one, the most important one,
+is a section wrapping up several articles. In order to have more control
+of this two-column design, wrap all of it in a div element with a
+<tt class="docutils literal"><span class="pre">content</span></tt> class and give it some basic CSS, as we already
+did for the wrap div.</p>
+<p>Tips: When you are not sure if your CSS is working in the proper way and
+you want to check exactly the size, margins or something else of your
+element, give it a casual background color, so that it displays the
+entire element.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;wrap-centered&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;content&quot;</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">aside</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nt">aside</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">section</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nt">section</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>In <tt class="docutils literal"><span class="pre">styles.css</span></tt>:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.content</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">70</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span><span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">aside</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">35</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">border-right</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+    <span class="k">min-height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">section</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">55</span><span class="o">%</span><span class="p">;</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">20px</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>First, we gave a size to the content and placed it in the middle of the
+page. Then we gave the aside tag some margins to allow the content to
+breathe along with a minimum height and width. We also highlighted the
+<tt class="docutils literal"><span class="pre">border-right</span></tt> of this element so that it displays a line that divides
+aside from section. Last, we gave a <tt class="docutils literal"><span class="pre">float:</span> <span class="pre">left;</span></tt> in order to make the
+section (or whatever we will write after the aside) slip next to the
+aside, right on its left. It is really important to set
+<tt class="docutils literal"><span class="pre">display:</span> <span class="pre">inline-block;</span></tt> for the section.</p>
+<p>In the aside let&#8217;s place an image, our personal profile image.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">aside</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s2">&quot;me.jpg&quot;</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">aside</span><span class="o">&gt;</span>
+
+<span class="nt">img</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">272px</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>When you don&#8217;t know the size of your image, you can place it and then
+open your console and check from there, try out different width sizes
+and see what the best width is. Of course, the best way to do this work
+is to crop your image before, knowing the size, with some graphic
+editing programs like Photoshop or GIMP but for now that is enough.</p>
+<p>Time to write your personal presentation!</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">section</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">article</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">header</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nt">h1</span><span class="o">&gt;</span><span class="nt">Title</span><span class="o">&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nt">h2</span><span class="o">&gt;</span><span class="nt">Second</span> <span class="nt">title</span><span class="o">&lt;/</span><span class="nt">h2</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Hello</span> <span class="nt">hello</span> <span class="nt">hello</span><span class="o">&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nt">header</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">article</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">section</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Here we put inside the section an article tag. Each article tag is
+composed of a header tag, a tag that is made for wrapping up all the h
+tags. So we place inside of it an h1 and h2 tag. Followed by a p tag
+where finally all of our content is written. Write at least some text
+inside of your article, because we will need it later on.</p>
+<p>Before we make our article better looking, we need to know some basics
+about the box model. What is a box model, and why is it so important?</p>
+<p>Every element in web design is a rectangular box. (Yes, both block and
+inline elements. You can set paddings, margins and borders on both of
+them.) In CSS, the term &#8220;box model&#8221; is used when talking about design
+and layout. The CSS box model is essentially a box that wraps around
+HTML elements, and it consists of: margins, borders, padding, and the
+actual content. The box model allows us to place a border around
+elements and margins and padding around this element too. How is the
+size of the box calculated exactly? Here is a diagram:</p>
+<img alt="../_images/css-box-model.gif" src="../_images/css-box-model.gif" />
+<p>What do these elements do?</p>
+<dl class="docutils">
+<dt>Margin:</dt>
+<dd>Clears an area around the border.
+The margin does not have a background color; it is completely
+transparent.</dd>
+<dt>Borders:</dt>
+<dd>Goes around the padding and content. The border
+must have a color and thickness.</dd>
+<dt>Padding:</dt>
+<dd>Clears an area around the content. The padding is affected by
+the background color of the box.</dd>
+<dt>Content:</dt>
+<dd>The content of the box, where text, images or other elements appear.</dd>
+</dl>
+<p>Margin is unique in that it doesn&#8217;t affect the size of the box itself,
+but it affects the other boxes on the page.</p>
+<p>The size of the box itself is calculated like this:</p>
+<p><strong>Width:</strong> width + padding-left + padding-right + border-left +
+border-right</p>
+<p><strong>Height:</strong> height + padding-top + padding-bottom + border-top +
+border-bottom</p>
+<p>Tips: Remember to set all of these elements to <tt class="docutils literal"><span class="pre">0</span></tt> when you start
+your .CSS files as we did at the very beginning.</p>
+<p>So, now that we know how to calculate the box around our elements, let&#8217;s
+play with the boxes around the article, header and h tags.</p>
+<p><strong>Text style</strong></p>
+<p>The text in the document is still pretty boring, so let&#8217;s style it. What
+we already know so far is how to change a color and how to make the text
+align to the center. As you probably already have understood, the other
+values of text-align are left, right and justified; by default the value
+is left. When text-align is set to <tt class="docutils literal"><span class="pre">justify</span></tt>, each line is stretched
+so that every line has equal width, and the left and right margins are
+straight (like in magazines and newspapers). An important decision to
+make is which font we are going to use for the project. You can specify
+the type of font with the <tt class="docutils literal"><span class="pre">font-family</span></tt> property.</p>
+<p>There are two types of font family names: generic family: a group of
+font families with a similar look (like <tt class="docutils literal"><span class="pre">Serif</span></tt> or <tt class="docutils literal"><span class="pre">Monospace</span></tt>) font
+family: a specific font family (like <tt class="docutils literal"><span class="pre">Times</span> <span class="pre">New</span> <span class="pre">Roman</span></tt> or <tt class="docutils literal"><span class="pre">Arial</span></tt>)
+To specify your font you have two ways. One way is to use a common
+family-font (one with a high probability that all users have on their
+machines) called a &#8220;web-safe&#8221; font. Or use a font-face rule. That&#8217;s a
+new property that allows a designer to include font-family on your
+server and refer to it. This second way was a small revolution, since it
+gave the designer the freedom to choose the font they prefer and now we
+have a huge choice.</p>
+<p>For now we are going to use the &#8220;web-safe&#8221; font since that is easier and
+faster. Tips: If you try to use a particular font that you download onto
+your computer, and it display correctly&#8211;be careful because on other
+people&#8217;s computers, it probably won&#8217;t. The correct display doesn&#8217;t come
+from the browser but from what&#8217;s on your machine.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Georgia</span><span class="o">,</span> <span class="k">serif</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="s2">&quot;Trebuchet MS&quot;</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">0.9em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>And here we can already see the other really important property:
+<tt class="docutils literal"><span class="pre">font-size.</span></tt> As you already understood that sets the size of the font of
+your selector. Browsers have a font-size set by default but it is
+important for a good look to change these defaults. You should not use
+font size adjustments, however, to make paragraphs look like headings or
+headings to look like paragraphs. The font-size can be set using <strong>px</strong>, <strong>em</strong>
+or <strong>%</strong>. Your screen resolution specifies how many pixels your
+screen/display is made of. So when you specify: <tt class="docutils literal"><span class="pre">font-size:</span> <span class="pre">12px;</span></tt>, you&#8217;re
+basically telling the browser that each letter should be 12 pixels high.
+That is therefore connected with your screen size. Font-size: 50%; sets
+the font size of your element to 50% of the font size of its parent
+element and em is the width of the letter &#8216;m&#8217; in the selected typeface.
+It&#8217;s basically the same as percentage, except that 1em is 100% and 1.5em
+is 150%. To calculate the size from pixels to em, use this formula:
+<em>pixels/16=em</em>. For example:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span><span class="m">2.5em</span><span class="p">;</span>  <span class="c">/* 40px/16=2.5em */</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>It&#8217;s hard to tell you what you have to do with the sizes, because it is
+hard to tell what you want to achieve in each of your layouts. Layouts
+are about creativity, and you can&#8217;t just have one approach for all of
+them. For now we can say that it is better to use em for a font in these
+days since the user has so many different devices and screen sizes that
+this is the easiest way to make the font-size automatically resize-able.</p>
+<p>A good solution can also be setting a font-size: 100% in the body
+element and then use em for each different selector so you start in
+every browser with the same size.</p>
+<p>Ok, now it is time for you to play, modify and create your font style.
+If you want to try something more, you can check your cheat-sheet and
+discover other <tt class="docutils literal"><span class="pre">font-</span></tt> <tt class="docutils literal"><span class="pre">text-</span></tt> properties.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, OpenTechSchool.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

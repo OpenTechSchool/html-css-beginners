@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>OpenTechSchool – Dein erster 'Hello World'-Entwuf!</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
+  <link href="/html-css-beginners/de/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/zenburn.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/styles.css" rel="stylesheet" media="screen">
+
+  <link rel="icon" href="/html-css-beginners/de/favicon.ico" type="image/png">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3"><a href="http://www.opentechschool.org/" target="_blank"><h1>OpenTechSchool</a></h1></div>
+          <div class="span6"><h1><a href="/html-css-beginners/de/"></a></h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="container-fluid">
+
+    <div class="row-fluid">
+      <h1 class="title">Dein erster 'Hello World'-Entwuf!</h1>
+      <hr>
+    </div>
+
+    <div class="row-fluid">
+
+      <div class="span3 well sidebar-nav">
+        <ul class="nav nav-list">
+          
+            <li class="nav-header">
+              
+                <a href="/html-css-beginners/de/" alt="Get started with HTML & CSS">Home</a>
+              
+            </li>
+            
+          
+            <li class="nav-header">
+              
+                Core
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/core/structure.html" alt="From white page to a 'Hello World'">The template structure</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/style.html" alt="Understanding CSS. What is class, Id and selector">Your first styled Hello World!</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio.html" alt="HTML5 elements, float, box model and text style">Create your personal Portfolio - Part 1</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio-2.html" alt="Positioning, anchors and form elements">Create your personal Portfolio - Part 2</a></li>
+            
+          
+            <li class="nav-header">
+              
+                Extras
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/extras/developertools.html" alt="Some helpful tools for HTML/CSS creation, included in your web browser.">Browser Developer Tools</a></li>
+            
+          
+        </ul>
+      </div>
+
+      <div id="main-content" class="span9">
+        <h2>Wie man CSS schreibt</h2>
+
+<p>Es gibt zwei Wege, um CSS in einem Dokument einzubauen.</p>
+
+<p>CSS kann direkt in den head des Codes eingebunden werden, indem es vom style-Tag umschlossen wird. Es sollte direkt vorm Ende des <code>&lt;/head&gt;</code>-Tags eingebunden werden.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;style type=&quot;text/css&quot;&gt;
+    ....
+&lt;/style&gt;
+</code></pre></div>
+<p>Diese Möglichkeit bietet sich an, wenn es nur wenig Inhalt im <code>&lt;style&gt;</code>-Tag gibt. In diesem Fall muss auf keine andere Datei verlinkt werden und der Browser muss keine Dateien nachladen.</p>
+
+<p>In der zweiten Möglichkeit wird der CSS style in eine externe Datei ausgelagert.</p>
+
+<p>Erstellt ein externes Stylesheet, indem ihr in eurem Editor eine neue Datei mit der Endung &quot;.css&quot; im gleichen Verzeichnis eures HTML-Dokuments anlegt. (Nennt es z.B. <code>styles.css</code>.)</p>
+
+<p>Danach kann die Datei im HTML-Dokument mit folgender Syntax (wieder vorm Ende des <code>&lt;/head&gt;</code>-Tags) eingebunden werden: </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;link href=&quot;styles.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre></div>
+<p>Dies ist der beste Weg für mehr als bloß ein paar Zeilen und schafft ebenfalls eine bessere Übersicht.</p>
+
+<p><strong>TIPP:</strong> Der Verweis (&quot;href&quot;) zu <code>&quot;styles.css&quot;</code> erwartet einen relativen Pfad vom HTML-Dokument ausgehend, ebenso wie &quot;src&quot; es für das <code>&lt;img&gt;</code>-Tag erwartet.</p>
+
+<h2>Machen wir&#39;s bunt!</h2>
+
+<p>CSS hat eine sehr einfache Syntax.
+Die Datei besteht aus einer Liste von Regeln. Jede Regel besteht aus einem oder mehreren Selektoren und dem Beschreibungsblock.</p>
+
+<p><strong>Selektoren</strong> werden verwendet um festzulegen, auf welche Teile des HTML-Codes sich der Style bezieht.
+Um dies direkt für unseren erstellten Quelltext anzuwenden, ändern wir über das Überschrifts-Tag <code>&lt;h1&gt;</code> die Schriftfarbe auf rot.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">h1 {
+    color: red;
+}
+</code></pre></div>
+<p>h1 ist hierbei der Selektor, also der Elementtyp aus unserem HTML-Quelltext, den wir verändern möchten.
+<em>color</em> ist die Eigenschaft, die wir verändern möchten and <em>red</em> ist der vergebene Eigenschaftswert.
+Die Syntax ist somit:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">Selektor {
+    Eigenschaft: Wert; /* Bitte denkt daran, dass immer ein abschließendes ; hinter den Wert gehört */
+    Eigenschaft: Wert;
+}
+</code></pre></div>
+<p>Ladet nun eure Seite neu und ihr seht, dass sich die Farbe der Überschrift geändert hat.</p>
+
+<p>War das nicht leicht?
+Um unserem Paragraphen eine Hintergrundfarbe zu geben, fügen wir nun folgendes hinzu:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">p {
+    background-color: #ddd;
+}
+</code></pre></div>
+<h2>Fehlersuche</h2>
+
+<p>Hat sich die Farbe der Überschrift nicht verändert, nachdem die Seite neu geladen wurde?</p>
+
+<p>Prüft den Dateinamen im <code>&lt;link&gt;</code>-Tag und schaut nach, ob die CSS-Datei auch wirklich im gleichen Ordner wie die HTML-Datei liegt.</p>
+
+<hr>
+
+<p>Die sogenannten Web-Farben sind Farben, die beim Gestalten von Websites verwendet werden.
+Farben können entweder im 3-stelligen RGB-Format definiert werden (256 Werte für jeden Wert, also rot, grün und blau) oder als hexadezimaler Wert (z.B. #ddd).
+Hexadezimale Farbwerte beginnen mit einer Raute (#).
+Diese Farben können der Einfachheit halber mit einem Werkzeug wie dem <a href="http://www.colorpicker.com/">Color picker</a>, gewählt werden.
+Sobald die gewünschte Farbe ausgesucht ist, kopiert diese einfach in eure CSS-Datei und vergesst die führende # nicht.</p>
+
+<p>Gut zu wissen: #000 ist schwarz und #fff ist weiß.</p>
+
+<hr>
+
+<p>Lasst uns nun für unser im <a href="structure.md">ersten Kapitel</a> eingebundenes Bild einen Rahmen erstellen.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">img {
+    border: 1px solid #000;
+}
+</code></pre></div>
+<p>Somit haben wir für alle eingebundenen Bilder die folgenden Werte des Rahmens vergeben: 1-pixel Dicke, durchgängiger Strich (solid) in Schwarz. Dieser Rahmen wird um alle vier Ränder des Bildes gezogen.
+Wenn wir den Rahmen nur an einem der 4 Ränder haben möchten, so könnten wir das wie nachfolgend angegeben z.B. für den oberen Rand erstellen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">img {
+    border-top: 1px solid #000;
+}
+</code></pre></div>
+<p><strong>Zusätzlich hilft auch ein <a href="http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/">CSS cheat sheet</a> für eine Eigenschaftsübersicht weiter.</strong></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>
+      © 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+    </p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="/html-css-beginners/de/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/html-css-beginners/de/js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

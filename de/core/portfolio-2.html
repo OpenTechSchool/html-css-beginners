@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>OpenTechSchool – Erstelle dein persönliches Portfolio</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
+  <link href="/html-css-beginners/de/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/zenburn.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/styles.css" rel="stylesheet" media="screen">
+
+  <link rel="icon" href="/html-css-beginners/de/favicon.ico" type="image/png">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3"><a href="http://www.opentechschool.org/" target="_blank"><h1>OpenTechSchool</a></h1></div>
+          <div class="span6"><h1><a href="/html-css-beginners/de/"></a></h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="container-fluid">
+
+    <div class="row-fluid">
+      <h1 class="title">Erstelle dein persönliches Portfolio</h1>
+      <hr>
+    </div>
+
+    <div class="row-fluid">
+
+      <div class="span3 well sidebar-nav">
+        <ul class="nav nav-list">
+          
+            <li class="nav-header">
+              
+                <a href="/html-css-beginners/de/" alt="Get started with HTML & CSS">Home</a>
+              
+            </li>
+            
+          
+            <li class="nav-header">
+              
+                Core
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/core/structure.html" alt="From white page to a 'Hello World'">The template structure</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/style.html" alt="Understanding CSS. What is class, Id and selector">Your first styled Hello World!</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio.html" alt="HTML5 elements, float, box model and text style">Create your personal Portfolio - Part 1</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio-2.html" alt="Positioning, anchors and form elements">Create your personal Portfolio - Part 2</a></li>
+            
+          
+            <li class="nav-header">
+              
+                Extras
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/extras/developertools.html" alt="Some helpful tools for HTML/CSS creation, included in your web browser.">Browser Developer Tools</a></li>
+            
+          
+        </ul>
+      </div>
+
+      <div id="main-content" class="span9">
+        <p>Bisher haben wir die Grundstruktur unserer Website erstellt.
+Es fehlt eine Startseite (Homepage) und eine Kontaktseite.
+Folgend ein paar Grundlagen, danach kannst du deiner Kreativität Ausdruck
+verleihen und selbst experimentieren.</p>
+
+<h2>Homepage und Positionierung</h2>
+
+<p>Wir beginnen mit der Startseite.</p>
+
+<p><strong>Das Ziel</strong></p>
+
+<p>Die Startseite besteht aus:</p>
+
+<ul>
+<li>Navigationsmenü</li>
+<li>einem großen zentrierten und in der Größe anpassbarem Bild</li>
+<li>zwei Einleitungssätze (auf dem Bild)</li>
+</ul>
+
+<p>Erstelle eine neue Datei und beschreibe die Grundstruktur.
+Um ein Navigationsmenü zu erstellen, kopiere einfach deine Ergebnisse des ersten
+Teils.
+Suche dir ein Bild aus, das du magst. Es sollte groß genug sein und mit einer guten
+Auflösung.</p>
+
+<p>Füge das Bild direkt nach dem <strong>nav</strong>-Tag ein und gib diesem einen Klassennamen
+(class). Setze die Breite (width) des Bildes auf die volle Seitenbreite, also 100%.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.home-image {
+    width: 100%
+}
+</code></pre></div>
+<p>Auf diese Weise passt sich das Bild an die Breite des Browserfensters an.
+Es kann sein, dass weisse Ränder an der Unterseite des Bildes entstehen. Das kann
+dadurch verhindertwerden, dass man die Höhe (height) auch auf 100% setzt. Jetzt musst du
+aber sicherstellen, dass das Bild nicht gestreckt wird.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.home-image {
+    height: 100%
+}
+</code></pre></div>
+<p>Dem Bild muss jetzt ein weiterer header-Tag folgen, gefüllt mit einem h1 und h2.
+Dem header solltest du noch eine Klasse geben, damit du ihn gestalten kannst.
+Verwechsle ihn nicht mit dem für das Bild. Wir benutzen hier &quot;header-home&quot;.
+In der CSS-Datei fügen wir danach dies hinzu:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.header-home {
+    position: relative;
+    top: -300px;
+}
+</code></pre></div>
+<p>Das ändert die Position des Elements dadurch, dass es aus dem normalen Fluss (flow) genommen wird.
+Seine Position orientiert sich jetzt am Elternelement. (In deinem Fall div#wrap-centered).
+Jetzt kannst du das Element mittels der Eigenschaften
+top (Position von Oben), right (Position von Rechts), bottom (Position von Unten)
+und left (Position von Links) dort positionieren, wo du möchtest.</p>
+
+<p><strong>Was bedeutet diese Positionierung?</strong></p>
+
+<p>Wenn ein Element aus dem normalen Fluss genommen wird ignoriert jeder andere Inhalt der
+weiterhin im normalen Fluss ist dieses Elment komplett und macht keinen Platz dafür.
+Wie bereits angedeutet kann das Elmenent mittels top, bottom, left und right positioniert werden.
+Damit diese Eigenschaften wirken muss jedoch zuerst die Positionseigenschaft (position)
+gesetzt werden. Die Wirkung dieser Eigenschaften ist verschieden, je nachdem welche
+Positionierungsart gewählt wurde.</p>
+
+<p>Es gibt insgesamt vier verschiedene Positionierungsarten.</p>
+
+<p><strong>Statisch (position:static)</strong>
+Ein statisch positioniertes Element ist eines, das im normalen Fluss liegt, von oben nach unten.</p>
+
+<p><strong>Fixiert (position:fixed)</strong>
+Ein fixiertes Element wird relativ zum Browserfenster positioniert.
+Nachdem du diese gesetzt hast, kannst du mit der Position etwas herumspielen.
+Versuche verschiedene Pixelwerte für top, bottom, left oder right zu setzen.</p>
+
+<p><strong>Relativ (position:relative)</strong>
+Ein realativ positioniertes Element wird, wie es der Name vermuten lässt, relativ zu der
+Positon verschoben an der es normalerweise stehen würde.
+Elemente, die danach folgen, verhalten sich als wäre das Element weiterhin an der ursprünglichen
+Stelle. Es wird also Platz dafür freigehalten.
+Versuche auch hier mit den top, bottom, left und right zu experimentieren.</p>
+
+<p><strong>Absolut (position:absolute)</strong>
+Ein absolut positioniertes Element wird komplett aus dem normalen Fluss entfernt.
+Es ist aber abhängig ist von Elternelementen, die entweder auch absolut oder relativ positioniert sind. </p>
+
+<p><strong>Überlappende Elemente (z-index Eigenschaft)</strong></p>
+
+<p>Wenn Elemente ausserhalb des normalen Flusses liegen, können diese unter Umständen überlappen.
+Der z-index (Quasi die Position auf einer gedachten z-Achse) definiert die Stapelreihenfolge
+eines Elements. (Welche Element liegt vor oder hinter anderen).</p>
+
+<p>Mit diesem Wissen kannst du Deine Startseite vollenden.</p>
+
+<h2>Kontaktseite</h2>
+
+<p>Zeit, um die Kontaktseite anzugehen.</p>
+
+<p><strong>Das Ziel</strong></p>
+
+<p>Erstelle eine Seite mit:
+* einem kleinen Absatz über dich selbst
+* Einige Links über die du erreicht werden kannst</p>
+
+<p>Die Kontaktseite wird die gleiche Struktur haben, wie die Seite zuvor.
+Kopiere einfach die Datei und bennene sie in <code>kontakt.html</code> um.</p>
+
+<p>Entferne dann alles aus dem <code>#wrap-centered</code> <em>div</em>-Tag, denn dort sollen jetzt die
+Inhalte der der Kontaktseite stehen.</p>
+
+<p>Füge einen Absatz hinzu und erzähle dem Besucher, wer du bist. Dafür eignet sich der
+<code>&lt;p&gt;&lt;/p&gt;</code>-Tag.</p>
+
+<p>Innerhalb dieses Tags kannst du den Text hinzufügen, der sichtbar sein soll.</p>
+
+<p>Zum Beispiel: <code>&lt;p&gt;Hallo ich bin Doctor Who. Ich freue mich von Dir zu hören.&lt;/p&gt;</code></p>
+
+<p>Um einen Zeilenumbruch nach dem ersten Satz zu erzwingen kannst du <code>&lt;br/&gt;</code> verwenden.
+Vielleicht möchtest du deinen Namen auch noch <em>kursiv</em> darstellen: <code>&lt;i&gt;Doctor Who&lt;/i&gt;</code>.</p>
+
+<p>Wenn du den Absatz noch weiter gestalten willst, solltest du dies über die CSS-Datei tun.
+Mittels einer Klasse am Absatz <code>&lt;p class=&quot;contact-info&quot;&gt;</code> kannst du in der CSS-Datei
+die Textgestaltung anpassen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.contact-intro {
+    font-size: 20px;
+    font-family: Arial;
+    margin: 10px;
+}
+</code></pre></div>
+<p>Das reicht vorerst als kurze Vorstellung. Es geht weiter mit den Links über die Besucher
+deiner Seite dich erreichen können.</p>
+
+<p>Füge eine Liste für die verschiedenen Kontaktwege ein mit dem <code>&lt;ul&gt; &lt;/ul&gt;</code>-Tag (ul steht für ungeordnete Liste) und versehe auch diese mit einer Klasse <code>&lt;ul class=&quot;contact-links&quot;&gt;</code> um eine spätere Gestaltung zu ermöglichen.</p>
+
+<p>Sagen wir also es sollen Links zu eMail, Twitter, Facebook und Github erscheinen.
+Hierzu füge vier Listenelemente, also <code>&lt;li&gt;&lt;/li&gt;</code>-Tags zwischen den <code>ul</code>-Tag ein.</p>
+
+<p>Schreibe in jedes dieser Elemente einen Link-Tag ein, auf den der Besucher klicken kann.
+Diese sollten in etwa so aussehen <code>&lt;a href=&quot;#&quot;&gt; &lt;/a&gt;</code>. Das <code>href</code>-Attribut kannst du vorerst so belassen. Wir sorgen später dafür, dass diese Links auch funktionieren.</p>
+
+<p>Prinzipiell kannst du alles als Link benutzen. Einen Button, ein Bild, oder normalen Text.</p>
+
+<p>Lass uns die Links vorerst etwas aufpeppen, indem wir diese um den ersten Buchstaben des Textes setzen und jedem Link ein paar Klassen vergeben.
+<code>contact-link</code> für die Eigenschaften, die alle Links gemeinsam haben und für die anderen setzen wir einzigartige (<code>email</code>, <code>twitter</code>, <code>facebook</code>, <code>github</code>).
+Dadurch solltest du zu folgendem Ergebnis gelangen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;ul class=&quot;contact-links&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;contact-link email&quot;&gt;e&lt;/a&gt;mail&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;contact-link twitter&quot;&gt;t&lt;/a&gt;witter&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;contact-link facebook&quot;&gt;f&lt;/a&gt;acebook&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;contact-link github&quot;&gt;g&lt;/a&gt;ithub&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div>
+<p>Wenn du möchtest kannst du das <code>#</code>-Zeichen oben bereits durch die URL deines Kontos ersetzen.</p>
+
+<p><strong>Zeit die Links mit CSS zu gestalten:</strong></p>
+
+<p>Du kannst die Schriftart ändern, einen Rahmen um jeden Link in verschiedenen Farben und die Position für jeden ersten Buchstabens perfekt bestimmen.</p>
+
+<p>Hier hier einmal ein einfaches Layout.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.contact-links {
+    padding: 0;
+            list-style-type: none;
+}
+
+.contact-link {
+    display: block;
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.email {
+    background: #dd1812;
+    width: 39px;
+    height: 45px;
+    padding: 1px 0 0 9px;
+}
+
+.twitter {
+    background: #00acee;
+    width: 30px;
+    height: 42px;
+    padding: 4px 0 0 18px;
+}
+
+.facebook {
+    background: #3B5998;
+    width: 30px;
+    height: 42px;
+    padding: 4px 0 0 18px;
+}
+
+.github {
+    background: #171515;
+    width: 35px;
+    height: 46px;
+    padding: 0 0 0 13px;
+}
+</code></pre></div>
+<p>Das war es bereits für diesen Bereich.
+Probiere es aus und passe es dann an deine Wünsche an.</p>
+
+<h2>a-Tag</h2>
+
+<p>Sehr gut. Dein Portfolio ist so gut wie fertig.
+Die einzelnen Seiten sollten miteinander verlinkt sein.
+Dafür verwenden wir den <em>a</em>-Tag (Anker), der einen Hyperlink beschreibt.
+Das wichtigste Attribut eines <em>a</em>-Elements ist dessen <em>href</em> (Hypertext-Referenz) Attribut.
+Es definiert das Ziel des Links.</p>
+
+<p>Die HTML Syntax für einen Link sieht vollständig dann so aus:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;a href=&quot;irgendeineUrl&quot;&gt;Der Linktext&lt;/a&gt;
+</code></pre></div>
+<p>Es gibt verschiedene Typen von Links. Es gibt <strong>externe Links</strong>, die auf andere Websites zeigen.
+Dieser Link ist absolut und entspricht dem, was Du in der Adresszeile des Browsers siehst.
+Ein Link auf die OpenTechSchool in Dortmund würde so aussehen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text"> &lt;a href=&quot;http://opentechschool.org/dortmund&quot;&gt;OpenTechSchool Dortmund&lt;/a&gt;
+</code></pre></div>
+<p>Auch sehr wichtig sind <em>interne Links</em>, die auf andere Unterseiten deiner eigenen Website zeigen.
+Das wollen wir als nächstes tun, indem du dein Portfolio im Navigationsmenü um einen <em>a</em>-Tag innerhalb der <em>li</em>-Elemente erweiterst:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;li&gt;&lt;a href=&quot;home.html&quot; &gt;Home |&lt;/a&gt; &lt;/li&gt;
+</code></pre></div>
+<p>Achte darauf, die URL korrekt zu schreiben, ansonsten führt diese ins Nichts.
+Wenn die Seite, auf die du verlinken möchtest, nicht ebenfalls am gleichen Ort wie die aktuelle Seite liegt, musst du eventuelle Unterverzeichnisse ebenfalls miteinbeziehen.
+Wenn die Kontaktseite z.B. in einem extra Kontaktverzeichnis liegen würde, sähe dies so aus:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;li&gt;&lt;a href=&quot;contact/contact.html&quot;&gt; Contact &lt;/a&gt; &lt;/li&gt;
+</code></pre></div>
+<p>Prüfe es im Browser uuuuuuuuund.... Tadaaaaaaa ein Link von der Startseite zur Kontaktseite.</p>
+
+<p>Erweitere den Rest des Navigationsmenüs und alle Kontaktlinks auf die gleiche Weise.</p>
+
+<p>Standardmäßig wird ein Tag vom Browser folgendermaßen dargestellt:</p>
+
+<ul>
+<li>Ein unbesuchter Link ist unterstrichen und blau</li>
+<li>Ein besuchter Link ist unterstrichen aber lila</li>
+<li>Ein aktiver Link (also die aktuelle Seite) ist unterstrichen und rot</li>
+</ul>
+
+<p>Das kannst du ebenfalls anpassen.</p>
+
+<p>Eine kleine Erklärung auch noch zum mailto-Link.
+Schreibe mailto:ich@google.com, um dem Browser zu sagen er soll das E-Mail-Programm des Benutzers öffnen, um eine neue Email an die angegebene Adresse zu schreiben.
+Praktisch oder?
+Füge also bei deinem E-Mail-Link statt # einen mailto mit deiner Emailadresse ein.</p>
+
+<p><strong>:hover</strong>
+Es ist auch möglich die Darstellung eines Links zu verändern, sobald die Maus sich darüber bewegt.
+Dafür benötigst du den <code>:hover</code> (hover=schweben/im Bereich) Selektor.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">a:hover {
+    color: red;
+}
+</code></pre></div>
+<p>Super! Du bist ferig. Jetzt liegt es an dir, noch weitere Änderungen vorzunehmen. Mach die Seite hübscher und individueller. Verändere Farben, Schriftarten oder füge Bilder hinzu. Mach&#39; was immer du möchtest und bereite es vor, um es am Ende des Workshops zu präsentieren.</p>
+
+<p>Wir freuen uns auf deine persönliche Website!</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>
+      © 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+    </p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="/html-css-beginners/de/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/html-css-beginners/de/js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

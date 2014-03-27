@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Position, anchors and form elements &mdash; Basic Web Site Construction 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:400italic,400,700" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Basic Web Site Construction 1.0 documentation" href="../index.html" />
+    <link rel="next" title="Helpful tools for HTML/CSS creation" href="../extras/developertools.html" />
+    <link rel="prev" title="HTML5 structure and starter CSS" href="portfolio.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Basic Web Site Construction</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">The template structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style.html">Your first styled Hello World!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio.html">HTML5 structure and starter CSS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Position, anchors and form elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extras/developertools.html">Helpful tools for HTML/CSS creation</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Position, anchors and form elements</a><ul>
+<li><a class="reference internal" href="#home-page-and-positioning">Home page and positioning</a></li>
+<li><a class="reference internal" href="#contact-page">Contact page</a></li>
+<li><a class="reference internal" href="#a-tag">&lt;a&gt; tag</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="portfolio.html" title="Previous Chapter: HTML5 structure and starter CSS"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; HTML5 structure ...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../extras/developertools.html" title="Next Chapter: Helpful tools for HTML/CSS creation"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Helpful tools fo... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/core/portfolio-2.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="position-anchors-and-form-elements">
+<h1>Position, anchors and form elements<a class="headerlink" href="#position-anchors-and-form-elements" title="Permalink to this headline">¶</a></h1>
+<p>So far we built the core of our website. Now we need a home page and a
+contact page. Here we explain some basic concepts but after that you
+have the freedom to experiment.</p>
+<div class="section" id="home-page-and-positioning">
+<h2>Home page and positioning<a class="headerlink" href="#home-page-and-positioning" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s start from the home page.</p>
+<p><strong>Goal</strong></p>
+<p>The home page is made by:</p>
+<ul class="simple">
+<li>navigation menu</li>
+<li>big centered and resizable image</li>
+<li>two sentence intro text (on the top of the image)</li>
+</ul>
+<p>So let&#8217;s open a new file and set the basic structure. To make the nav
+menu we can just copy what we have done in the first part. Then, take an
+image that you like. It should be big enough and with good resolution.</p>
+<p>Just after the nav tag, include your image and give it a class name. Now
+you need to set the width of just this image as full-width, which is
+100%.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.home-imag</span> <span class="p">{</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>In this way your image will follow the size of the browser window. It is
+possible that when the window is very small or very big, you can see a
+white space at the bottom of the image. You can change it setting the
+height: 100%. But now you need to be sure that you image isn&#8217;t
+stretched.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.home-imag</span> <span class="p">{</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>After the image, write another header tag within h1 and h2, add a class
+name to your header so you can style it and not be confused with the
+other one. (I will use header-home as the class name) In the CSS we are
+goint to write this:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.header-home</span> <span class="p">{</span>
+    <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+    <span class="k">top</span><span class="o">:</span> <span class="m">-300px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Here we are changing the position of this element by bringing it outside
+of the normal flow. Its position is now relative to its parent element
+(in our case the <tt class="docutils literal"><span class="pre">div#wrap-centered</span></tt>). Now you can move your element where
+you prefer in the page using the properties top, right, bottom and left.</p>
+<p>So, what is positioning? When a box is taken out of the normal flow, all
+the content that is still within normal flow will ignore it completely
+and not make space for it. Elements can be positioned using the top,
+bottom, left, and right properties. These properties will not work,
+however, unless the position property is set first. They also work
+differently depending on the positioning method.</p>
+<p>There are four different positioning methods.</p>
+<dl class="docutils">
+<dt>Static positioning</dt>
+<dd>A statically positioned box is one that is in
+normal flow, from top to bottom.</dd>
+<dt>Fixed Positioning</dt>
+<dd>An element with fixed position is positioned
+relative to the browser window. What makes it possible is: position:
+fixed. After setting this, you can play with changing the position,
+adding a different pixel value to top, bottom, left or right
+positioning.</dd>
+<dt>Relative Positioning</dt>
+<dd>A relatively positioned element is positioned
+relative to its normal position. Elements that come after a
+relatively-positioned element behave as if the relatively-positioned
+element was still in its ‘normal flow’ position - leaving a gap for it.
+What makes it possible is: position: relative. After setting this, you
+can play with changing the position, adding a different pixel value to
+top, bottom, left or right positioning.</dd>
+<dt>Absolute Positioning</dt>
+<dd>An absolutely positioned box is moved out of the normal flow entirely.
+What makes it possible is: position: absolute. After setting this, you
+can play with changing the position, adding a different pixel value to
+top, bottom, left or right positioning.</dd>
+<dt>Overlapping Elements: z-index property</dt>
+<dd>When elements are positioned outside of the normal flow, they can
+overlap other elements. The z-index property specifies the stack order
+of an element (which element should be placed in front of, or behind,
+the others). What make it possible is: z-index: n°pixel.</dd>
+</dl>
+<p>Knowing all that, create your own home page!</p>
+<p>If you want to learn more about positioning,
+<a class="reference external" href="http://www.barelyfitz.com/screencast/html-training/css/positioning/">check this demo out</a></p>
+</div>
+<div class="section" id="contact-page">
+<h2>Contact page<a class="headerlink" href="#contact-page" title="Permalink to this headline">¶</a></h2>
+<p>Time to create the contact page!</p>
+<p><strong>Goal</strong></p>
+<p>Create a page with:</p>
+<ul class="simple">
+<li>a small paragraph about yourself</li>
+<li>some nice links to contact you</li>
+</ul>
+<p>The contact page will have the same structure as the page you created
+before. So just copy the file and rename it to <tt class="docutils literal"><span class="pre">contact.html</span></tt> or
+something like that.</p>
+<p>Then you remove everything inside the <tt class="docutils literal"><span class="pre">#wrap-centered</span></tt> div container
+because that&#8217;s where you want to display the contact page now.</p>
+<p>Next let&#8217;s add a paragraph to tell the user who you are. You can do that
+using the <tt class="docutils literal"><span class="pre">&lt;p&gt;</span> <span class="pre">&lt;/p&gt;</span></tt> tag.</p>
+<p>Inside that tag you can write some text that will be displayed to the
+user.</p>
+<p>For example: <tt class="docutils literal"><span class="pre">&lt;p&gt;Hi</span> <span class="pre">I</span> <span class="pre">am</span> <span class="pre">Mr.</span> <span class="pre">Smith.</span> <span class="pre">Feel</span> <span class="pre">free</span> <span class="pre">to</span> <span class="pre">contact</span> <span class="pre">me.&lt;/p&gt;</span></tt></p>
+<p>You also can add a linebreak after the first sentence with a <tt class="docutils literal"><span class="pre">&lt;br&gt;</span></tt>
+tag and maybe you want to highlight your name by making it italic:
+<tt class="docutils literal"><span class="pre">&lt;i&gt;Mr.</span> <span class="pre">Smith&lt;/i&gt;</span></tt>.</p>
+<p>If you want to add more styling to the paragraph you should do that in
+the CSS file. Just add a class to the paragraph
+<tt class="docutils literal"><span class="pre">&lt;p</span> <span class="pre">class=&quot;contact-intro&quot;&gt;</span></tt> and over in the CSS file add some styling
+to the text:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.contact-intro</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>That&#8217;s it for the short introduction. Now let&#8217;s get to the links where
+visitors of your site can actually contact you.</p>
+<p>Just create a list for the different contact options using the
+<tt class="docutils literal"><span class="pre">&lt;ul&gt;</span> <span class="pre">&lt;/ul&gt;</span></tt> tag (ul for unordered list) and also add a class to the
+list so you can style it later on: <tt class="docutils literal"><span class="pre">&lt;ul</span> <span class="pre">class=&quot;contact-links&quot;&gt;</span></tt>.</p>
+<p>For now we want to add links to Mail, Twitter, Facebook and Github. So
+you have to create four list items with <tt class="docutils literal"><span class="pre">&lt;li&gt;</span> <span class="pre">&lt;/li&gt;</span></tt> tags.</p>
+<p>Inside each item you add a link tag so the user of your site can click
+on something. You can do that using an <tt class="docutils literal"><span class="pre">&lt;a</span> <span class="pre">href=&quot;#&quot;&gt;</span> <span class="pre">&lt;/a&gt;</span></tt> tag. You
+can ignore the <tt class="docutils literal"><span class="pre">href</span></tt> attribute for now. We will cover that later to
+make the links actually work.</p>
+<p>In general you can use everything as a link. A button element, an image
+or just plain text. But let&#8217;s create a stylish icon using CSS here.</p>
+<p>For doing so add the first letter of the name of each link in the link
+tag and add some classes to the links so you can style them. Add one
+class <tt class="docutils literal"><span class="pre">contact-link</span></tt> to each link to apply styles to all links and add
+a unique class for each link (<tt class="docutils literal"><span class="pre">mail</span></tt>, <tt class="docutils literal"><span class="pre">twitter</span></tt>, <tt class="docutils literal"><span class="pre">facebook</span></tt>,
+<tt class="docutils literal"><span class="pre">github</span></tt>). The whole list should look like the following:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">ul</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;contact-links&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;#&quot;</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;contact-link mail&quot;</span><span class="o">&gt;</span><span class="nt">m</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;#&quot;</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;contact-link twitter&quot;</span><span class="o">&gt;</span><span class="nt">t</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;#&quot;</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;contact-link facebook&quot;</span><span class="o">&gt;</span><span class="nt">f</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;#&quot;</span> <span class="nt">class</span><span class="o">=</span><span class="s2">&quot;contact-link github&quot;</span><span class="o">&gt;</span><span class="nt">g</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">ul</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>If you like you can replace each # above with the URL to your respective
+social network account.</p>
+<p>And now you can style the links using CSS.</p>
+<p>You can change the font, create a box for each link in a different
+colour and position the letter pixel perfect for each link individually.</p>
+<p>Here is some simple styling. Have a look at it and adjust it to your
+needs:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nc">.contact-links</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+            <span class="k">list-style-type</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.contact-link</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+    <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+    <span class="k">margin</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="m">900</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">35px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.mail</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#dd1812</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">39px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">45px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">9px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.twitter</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#00acee</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">42px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.facebook</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#3B5998</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">42px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.github</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="m">#171515</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">35px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">46px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">13px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>That&#8217;s it for this section. Feel free to extend and customize the
+contact page in every way you can imagine.</p>
+</div>
+<div class="section" id="a-tag">
+<h2>&lt;a&gt; tag<a class="headerlink" href="#a-tag" title="Permalink to this headline">¶</a></h2>
+<p>Good! Our portfolio is almost ready. Now we need just one more thing: to
+link all your pages together. To do that there is a special tag: a tag
+(anchor) that defines a hyperlink. The most important attribute of the &lt;
+a &gt; element is the href attribute, which indicates the link’s
+destination. So the HTML syntrax for a link look like this:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;yourUrl&quot;</span><span class="o">&gt;</span><span class="nt">Link</span> <span class="nt">text</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>There are different types of links. You can create an <strong>external link</strong>,
+a link that go to another web site. This link is absolute and basically
+need all the line that usually you see or type in the Url bar of your
+browser. If we want to link our web site to the OTS site, it look like
+this:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;http://opentechschool.org&quot;</span><span class="o">&gt;</span><span class="nt">OpenTechSchool</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Also very important is the Internal link or rather a link that point on
+your own web site, point just to another page of the same website. And
+that one is also the one we need right now, so let&#8217;s proceed with our
+portfolio. In our nav menu, we need to add an <tt class="docutils literal"><span class="pre">&lt;a&gt;</span></tt> tag to our li elements:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;home.html&quot;</span> <span class="o">&gt;</span><span class="nt">Home</span> <span class="o">|&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Be careful to type the url right. If the page to which you are going to
+link is not in the same root, in the same folder of your file, you need
+to specify in which one it can be found. For example, if I have the
+contact page in a contact folder I write:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">li</span><span class="o">&gt;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;contact/contact.html&quot;</span><span class="o">&gt;</span><span class="nt">Contact</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">li</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Check in the browser and... Done! Now you can do the same for the rest
+of your nav menu and for your social buttons links.</p>
+<p>By default the <tt class="docutils literal"><span class="pre">&lt;a&gt;</span></tt> tag is styled like this:</p>
+<ul class="simple">
+<li>An unvisited link is underlined and blue</li>
+<li>A visited link is underlined and purple</li>
+<li>An active link is underlined and red</li>
+</ul>
+<p>You can change the style and the colour by selecting the <tt class="docutils literal"><span class="pre">&lt;a&gt;</span></tt> tag.</p>
+<p>There is still at least one important link to explain. The <strong>mailto</strong> link.
+Write <tt class="docutils literal"><span class="pre">href=&quot;mailto:myemail&#64;google.com&quot;</span></tt> tell to the browser to open the
+default email program on the user machine with the email destination field
+already fill in. Nice, isn&#8217;t it? So go ahead and write the mailto link
+with your personal email instead of # in your contact list and try it
+out.</p>
+<p>To get the nice effect of changing the color of a link when the mouse
+moves over it, you need to use the <tt class="docutils literal"><span class="pre">:hover</span></tt> selector.
+Because we don&#8217;t need to set the class manually,
+but rather the browser does it automatically, it&#8217;s called <strong>pseudo class</strong>.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Great! We are done but if you still have a time keep going to play with
+your portfolio, make it nicer, change colors, fonts, add images or
+whatever you like most and be ready for present it at the end of the
+workshop. We want to see your amazing personal website!</p>
+<p>Don&#8217;t hesitated to ask to our coaches if you have any question.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, OpenTechSchool.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

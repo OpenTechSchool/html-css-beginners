@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>OpenTechSchool – Die Template-Struktur</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
+  <link href="/html-css-beginners/de/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/zenburn.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/styles.css" rel="stylesheet" media="screen">
+
+  <link rel="icon" href="/html-css-beginners/de/favicon.ico" type="image/png">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3"><a href="http://www.opentechschool.org/" target="_blank"><h1>OpenTechSchool</a></h1></div>
+          <div class="span6"><h1><a href="/html-css-beginners/de/"></a></h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="container-fluid">
+
+    <div class="row-fluid">
+      <h1 class="title">Die Template-Struktur</h1>
+      <hr>
+    </div>
+
+    <div class="row-fluid">
+
+      <div class="span3 well sidebar-nav">
+        <ul class="nav nav-list">
+          
+            <li class="nav-header">
+              
+                <a href="/html-css-beginners/de/" alt="Get started with HTML & CSS">Home</a>
+              
+            </li>
+            
+          
+            <li class="nav-header">
+              
+                Core
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/core/structure.html" alt="From white page to a 'Hello World'">The template structure</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/style.html" alt="Understanding CSS. What is class, Id and selector">Your first styled Hello World!</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio.html" alt="HTML5 elements, float, box model and text style">Create your personal Portfolio - Part 1</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio-2.html" alt="Positioning, anchors and form elements">Create your personal Portfolio - Part 2</a></li>
+            
+          
+            <li class="nav-header">
+              
+                Extras
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/extras/developertools.html" alt="Some helpful tools for HTML/CSS creation, included in your web browser.">Browser Developer Tools</a></li>
+            
+          
+        </ul>
+      </div>
+
+      <div id="main-content" class="span9">
+        <h2>Preamble: Wie man ein HTML-Dokument schreibt</h2>
+
+<p>Das ist eigentlich recht einfach: HTML wird als eine einfache Textdatei 
+geschrieben. Eine HTML-Datei nutzt immer die Dateierweiterung <strong>.html</strong>, um die 
+Art der Datei anzuzeigen.</p>
+
+<h2>Texteditor</h2>
+
+<p>Um HTML-Dateien zu editieren, wirst du einen reinen Texteditor benötigen.</p>
+
+<p>Du kannst ausserdem komplett grafische WYSIWYG 
+(What You See Is What You Get) HTML-Editoren finden, die dich eine Website 
+grafisch editieren lassen. Dies ist vergleichbar mit einer Oberfläche wie von Word.</p>
+
+<p>Solche Software kann nuetzlich sein, aber viele, die mit HTML &amp; CSS arbeiten, 
+bevorzugen einen reinen Texteditor. Genau so einen nutzen wir heute.</p>
+
+<p>Wenn du bereits einen Texteditor installiert hast (vielleicht von einem vorherigen
+OTS Workshop) dann kannst du diesen nutzen. Andernfalls sind hier einige Vorschläge:</p>
+
+<h3>Windows</h3>
+
+<p><a href="http://www.notepad-plus-plus.org/">Notepad++</a> ist kostenlos und nützlich. 
+Du kannst aber auch <a href="http://www.sublimetext.com/">Sublime Text</a> ausprobieren.</p>
+
+<h3>OS X</h3>
+
+<p><a href="http://www.barebones.com/products/textwrangler/">TextWrangler</a> ist kostenlos und 
+nützlich. Weitere gute Optionen (mit einigen fortgeschrittenen Funktionen,
+in die du hineinwachsen kannst) sind <a href="http://www.sublimetext.com/">Sublime Text</a> or 
+<a href="http://macromates.com/">Text Mate</a>.</p>
+
+<h3>Linux</h3>
+
+<p>GEdit ist auf den meisten Linux Distributionen vorinstalliert. 
+Andernfalls kannst du es auch mit <a href="http://www.sublimetext.com/">Sublime Text</a> 
+oder einem der zahlreichen anderen Linux Texteditoren versuchen.</p>
+
+<hr>
+
+<p><strong>Texteditor installiert und geöffnet? Grossartig! Zeit für das erste HTML-Dokument!</strong></p>
+
+<h2>Doctype</h2>
+
+<p>Das erste Element einer HTML-Seite ist der <strong>doctype</strong>, welcher wie du dir 
+vielleicht denken kannst, dem Browser den Typ des Dokuments anzeigt. 
+Dies ist wichtig, damit der Browser weiss, wie er das HTML-Dokument anzeigen und lesen soll.</p>
+
+<p>Glücklicherweise ist der HTML5-Doctype extrem simpel - er ist einfach <code>html</code>.</p>
+
+<p>Öffne eine neue Datei mit deinem Texteditor und schreibe dies in die erste 
+Zeile:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;!DOCTYPE html&gt;
+</code></pre></div>
+<p>Dann speichere die Textdatei mit der Datei-Erweiterung <code>.html</code>. Du editierst nun
+ganz offiziell ein HTML Dokument.</p>
+
+<h2>Strukturiere dein Projekt</h2>
+
+<p>Du kannst überall wo du möchtest HTML-Dateien anlegen. Jedoch empfehlen wir dir,
+dass du Verzeichnisse nutzt, um deine Dateien zu organisieren. So sind sie später
+einfacher wiederzufinden.</p>
+
+<ul>
+<li><p>Erstelle an beliebiger Stelle ein Verzeichnis für diesen Workshop. Zum 
+Beispiel auf dem Desktop oder in deinem Benutzer-Verzeichnis. 
+Nenne das Verzeichnis <em>OTS<em>HTML</em>Workshop</em> oder ähnlich.</p></li>
+<li><p>Erstelle ein Verzeichnis innerhalb des Workshop-Verzeichnisses. 
+Nenne es <strong>exercise1</strong> oder ähnlich.</p></li>
+<li><p>Vom Texteditor aus, speichere dein erstes HTML-Dokument in 
+dem <em>exercise1</em>-Verzeichnis. Nenne die HTML Datei <em>page.html</em> oder ähnlich.</p></li>
+</ul>
+
+<p>Mit der Zeit werden wir noch weitere Dateien zu diesem Verzeichnis hinzufügen, vielleicht sogar ganz neue Verzeichnisse, parallel zu exercise1 anlegen.</p>
+
+<h2>Elemente und Tags</h2>
+
+<p>Das sind die grundlegenden Bausteine von HTML.</p>
+
+<p><strong>Elemente</strong> <em>sind das</em>, was ein HTML-Dokument ausmacht. Weil man keine, 
+eines oder mehr Elemente ineinander verschachteln kann, entsteht eine 
+<em>hierachische</em> Struktur im HTML-Dokument. Ein Element kann drei 
+Dinge beinhalten: ein Tag, ein Attribut und Inhalt.</p>
+
+<p>Ein <strong>Tag</strong> ist etwas, das den Nutzen eines Elements angibt. Das <code>&lt;p&gt;</code> Tag zum
+Beispiel gibt an, dass es sich bei dem Element um einen 
+Paragraphen-Text handelt. Das <code>&lt;li&gt;</code> Tag gibt an, dass hier ein Listen-Eintrag 
+stehen soll. Du wirst bereits festgestellt haben, dass Tags immer von spitzen
+Klammern eingefasst sind. <strong>Öffnende</strong> und <strong>schliessende</strong> tags markiegen den
+Anfang und das Ende eines Elements. Ausserdem umschliessen sie dessen Inhalt:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+</code></pre></div>
+<p>Wie du siehst, beinhaltet das schließende Tag ein <code>/</code> vor dem Namen. Andernfalls
+wäre es ein weiteres öffnendes Tag!</p>
+
+<p>Prüfe bitte <strong>immer</strong> doppelt, dass du alle deine öffnenden Elemente wieder 
+geschlossen hast. Andernfalls wird der Browser beim Anzeigen deines 
+HTML-Dokuments seltsame Dinge machen.</p>
+
+<p>Es gibt eine Hand voll spezieller Elemente, die eine Auznahme zur Regel 
+darstellen. Wenn Elemente nichts anderes als den Tag-Namen beinhalten können, 
+brauchen sie auch nicht geschlossen werden. Zum Beispiel die folgenden Elemente 
+sind sogenannte &#39;selbst schliessende&#39; Elemente:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;hr&gt;
+&lt;input&gt;
+&lt;img&gt;
+</code></pre></div>
+<p>Es gibt nicht viele dieser Elemente und du wirst schnell herausfinden, welche
+Elemente selbstschliessend sind, indem du ein wenig mehr Code schreibst. :)</p>
+
+<p>Zu guter letzt, Elemente <strong>verschachteln</strong>. Das ist gar nicht so schwer, aber 
+fundamental für die Funktionsweise von HTML. Verschachteln sieht wie folgt aus:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;p&gt;This is a sentence, with a &lt;span&gt;span&lt;/span&gt; element inside it.&lt;/p&gt;
+</code></pre></div>
+<p>oder so:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;div id=&quot;first-heading&quot;&gt;
+    &lt;h1&gt;The h1 tags indicates the primary header of the document&lt;/h1&gt;
+&lt;/div&gt;
+</code></pre></div>
+<p>Du wirst festgestellt haben, dass HTML sich um Leerzeichen oder Zeilenumbrüche 
+<strong>zwischen</strong> Tags nicht kümmert. Wenn das obige Beispiel in eine einzige Zeile 
+zusammen gerückt würde, käme im Browser das gleiche Ergebnis heraus.</p>
+
+<p>Im Beispiel findest du zum ersten Mal ein <strong>Attribut</strong>. Ein Attribut beginnt 
+mit einem Namen in Kleinbuchstaben und wird dann nahezu immer 
+mit <code>=</code> und einem &#39;Wert&#39; weiter geführt. Der Wert ist von doppelten 
+Anführungszeichen umschlossen. In etwa wie <code>&quot;das hier&quot;</code>. Ein Element kann viele
+Attribute haben. In so einem Fall werden die Attribute mit einem Leerzeichen von
+einander getrennt. Dazu gleich mehr. Attribute geben bestimmte Informationen über
+Elemente.</p>
+
+<p>In diesem Fall, hat das <code>&lt;div&gt;</code>-Tag, welches genutzt wird um Elemente 
+zu gruppieren, ein <code>id</code>-Attribut mit dem Wert <code>first-heading</code>. Das sagt uns, 
+dass diese Sektion des HTML-Dokuments bestimmt wurde, um die erste Überschrift
+der Website zu beinhalten. Du wirst später mehr über spezielle Attribute lernen.</p>
+
+<h2>Html und Head-Elemente</h2>
+
+<p>Zurück zu unserer Datei (hoffentlich programmiert ihr bereits nebenher mit!).
+Nach dem Doctype beginnen wir das HTML-Dokument, mit einem <code>html</code> Element:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;html&gt;
+&lt;/html&gt;
+</code></pre></div>
+<p>Es umschliesst jedes weitere Element in unserem HTML-Dokument. Kein Element darf
+ausserhalb des Elements <code>html</code> stehen. Als nächstes trennen wir jedes Dokument
+in zwei wichtige Teile: einen <strong>head</strong> und einen <strong>body</strong>. Stellvertretend für 
+Dokumenten-Kopf und Dokumenten-Körper.</p>
+
+<p>Der Kopf beinhaltet den Titel der Seite und Informationen <strong>über</strong> das Dokument.
+Man nennt diese Informationen auf <strong>meta</strong> Informationen. Die meisten 
+Meta-Informationen sind für den Benutzer nicht sichtbar und haben dennoch 
+eine Menge Sinn. Zum Beispiel können Meta-Informationen den Suchmaschinen 
+mitteilen, wer der Autor einer Website und was in etwa der Inhalt der Seite 
+ist. Hier ist ein Beispiel:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt; 
+    &lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;
+    &lt;title&gt;My first Portfolio&lt;/title&gt;
+&lt;/head&gt;
+</code></pre></div>
+<p>Wie du siehst ist das Meta-Tag ein selbstschliessendes Element! Als erstes
+steht dort ein <code>charset</code> Meta-Tag. Das ist das wichtigste Meta-Tag. Ohne dieses
+könnte es sein, dass deine Website nicht korrekt angezeigt wird. Es wird als 
+empfohlene Vorgehensweise angesehen, dass es als erstes Folge-Element des 
+<code>head</code>-Elements eingesetzt wird. Es spezifiziert den Zeichensatz deines 
+HTML-Dokuments. Das bedeutet, dass der Browser in der Lage sein wird, 
+Sonderzeichen wie ä, ö, ü, €, è und so weiter, auch auf Systemen anderer
+Sprache korrekt anzuzeigen. <code>UTF-8</code> ist üblicherweise das gängigste Zeichensatz-Encoding, das im Web eingesetzt wird.</p>
+
+<p>Hier haben wir ausserdem ein weiteres Meta-Tag genutzt: die <code>description</code> 
+(Beschreibung). Wir definieren dieses Meta-Tag mit dem Attribut <code>name</code> und
+setzen <code>description</code> als Wert zwischen die doppelten Anführungszeichen.</p>
+
+<p>Innerhalb unseres <code>head</code>-Elements, haben wir als letztes Element den Titel
+unserer Website. Schreibe den oberen HTML Code aus dem Beispiel in dein eigenes
+HTML-Dokument im Editor. Dann ändere den Inhalt zwischen dem <code>&lt;title&gt;</code>-Element.
+Jetzt kannst du dein Dokument im Browser öffnen und schau dir mal an, was im Titel
+des Browserfensters steht. Das ist ebenfalls der Titel, der genutzt wird, wenn
+du eine Website als Lesezeichen hinzufügst.</p>
+
+<p>Tags im <code>head</code>-Bereich können ebenfalls externe Resourcen wie CSS- oder JavaScript-Dateien beinhalten. Wir werden uns damit später noch beschäftigen.</p>
+
+<h2>Der HTML-Body</h2>
+
+<p>Endlich kommen wir an die Stelle, wo unser Inhalt hinkommt.
+Der <code>body</code> beinhaltet den eigentlichen Inhalt einer Seite. Alles innerhalb der 
+öffnenden und schließenden <code>body</code>-Tags ist für den Besucher der Website sichtbar.</p>
+
+<p>Direkt nach dem schließendem <code>head</code>-Tag, aber noch innerhalb des <code>html</code>-Elements
+fügen wir die <code>body</code>-Tags hinzu:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;body&gt;
+&lt;/body&gt;
+</code></pre></div>
+<p>Alles innerhalb des <code>body</code>-Tags wird dem Besucher angezeigt werden.
+Schreibe etwas einfachen Text zwischen die <code>body</code>-Tags und schau dir das Ergebnis
+im Browser an.</p>
+
+<p><strong>TIPP</strong>: Benutze die &quot;Seite aktualisieren&quot;-Funktion (STRG+R oder F5), um das 
+gleiche HTML-Dokument im Browser neu zu laden.</p>
+
+<h2>Inhalts-Typen</h2>
+
+<p>Es gibt verschiedene HTML-Elemente, die wir einsetzen können, um unterschiedliche
+Inhaltes-Typen anzugeben. Beispielsweise das <code>p</code> Tag, das wir bereits kennen 
+gelernt haben. Versuchen wir zunächst eine Überschrift gefolgt von einem 
+Paragraphen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;body&gt;
+    &lt;h1&gt;I&#39;m the title.&lt;/h1&gt;
+    &lt;p&gt;And I&#39;m a paragraph!&lt;/p&gt;
+&lt;/body&gt;
+</code></pre></div>
+<p>Überschrifts-Elemente sind ziemlich einfach zu verstehen. Sie beginnen mit <code>h1</code> 
+stellvertretend für die größte Schrift und Wichtigkeit, bis hin zu <code>h6</code> mit der 
+kleinsten Schrift.</p>
+
+<h2>Einrückung</h2>
+
+<p>Wunderst du dich, warum wir die <code>h1</code> und <code>p</code>-Tags innerhalb des <code>body</code>-Tags <em>eingerückt</em> haben?</p>
+
+<p>Das wird in keinster Weise die Interpretation und Darstellung durch den Browser 
+beeinflussen, aber es gilt als guter Stil unter Programmierern, dass man Code
+so formatiert. Damit soll gewährleistet bleiben, dass ein Dokument sauber 
+strukturiert und verständlich bleibt. Selbst wenn die Anzahl an Code-Zeilen wächst oder 
+man lange nichts mehr an dem Dokument gemacht hat. Ausserdem unterstreicht diese
+Art der Formatierung sehr gut die hierachische Natur von HTML.</p>
+
+<h2>Kommentare</h2>
+
+<p>Es ist ausserdem möglich &quot;Kommentare&quot; in dein HTML zu setzen. Kommentare in HTML
+sind dazu da, dich oder andere Leute auf bestimmte Dinge zu hinzuweisen, ohne die 
+Darstellung deiner Website im Browser zu verändern.</p>
+
+<p>Wie andere HTML-Elemente werden auch Kommentare als ein Tag geschrieben. Mit 
+dem einzigen Unterschied, dass ein Kommentar ein wenig anders aussieht:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;!-- I am a comment --&gt;
+</code></pre></div>
+<p>Das &quot;Kommentar Start&quot;-Tag ist <code>&lt;!--</code> und das &quot;Kommentar Ende&quot;-Tag ist <code>--&gt;</code>.</p>
+
+<p>Kommentare können andere HTML-Elemente umschließen, um sie 
+&quot;aus zu kommentieren&quot;. Das ist eine nützliche Vorgehensweise, wenn du mit einer
+Website experimentieren möchtest um zu sehen, wie sich Dinge im Browser 
+verändern werden.</p>
+
+<p>Versuche zum Beispiel mal die Überschrift <code>h1</code>, im <code>body</code> Teil des HTML Dokuments,
+aus zu kommentieren.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;body&gt;
+    &lt;!-- &lt;h1&gt;I&#39;m the title.&lt;/h1&gt; --&gt;
+    &lt;p&gt;And I&#39;m a paragraph!&lt;/p&gt;
+&lt;/body&gt;
+</code></pre></div>
+<p>Wenn du die Seite im Browser neu lädst, wirst du feststellen, dass die Überschrift
+verschwunden ist.</p>
+
+<p>Entferne die Kommentar-Tags (damit die Überschrift wieder erscheint) bevor du
+zur nächsten Sektion übergehst.</p>
+
+<h2>Bilder</h2>
+
+<p>Überschriften und Paragraphen geben dir die grundlegenden Elemente zur Textformatierung. Doch was ist mit Bildern?</p>
+
+<p>Bilder werden in separaten Bild-Dateien ausserhalb des HTML Dokuments 
+gespeichert. Suche dir ein Lieblings-Bild aus dem Web und speichere es in das 
+gleiche Verzeichnis, wo auch deine HTML-Datei bereits liegt. Klicke dazu mit der
+rechten Maustaste auf das entsprechende Bild und wähle &quot;Bild speichern&quot; 
+(oder ähnliches) aus dem Menü.</p>
+
+<p>Falls dir spontan kein Bild einfällt, dann 
+<a href="http://www.flickr.com/photos/nengard/67501122/sizes/s/">ist hier eine Website mit Fotos von Katzen</a>, die du nutzen kannst. ()
+(Süße Katzen im Internet? Bei Gott!)</p>
+
+<p>Nachdem du dir ein Bild ausgesucht hast, kannst du es in dein HTML-Dokument 
+einbauen, indem du das <code>img</code> Tag nutzt.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;img src=&quot;kittens.jpg&quot;&gt;
+</code></pre></div>
+<p>Füge das <code>img</code>-Tag irgendwo innerhalb des <code>body</code>-Tags hinzu. Am besten dort, wo 
+du es gerne anzeigen lassen würdest. Ersetze &quot;kittens.jpg&quot; mit dem Dateinamen
+des Bildes, dass du in das gleiche Verzeichnis wie dein HTML-Dokument gespeichert
+hast.</p>
+
+<p>Beachte bitte, dass <code>img</code>-Tag ist eines der Tags, die kein separates, 
+schliessendes Tag benötigen. Du kannst zwar ein schliessendes &quot;</img>&quot;-Tag direkt 
+nach dem öffnendem &quot;<img>&quot;-Tag setzen, jedoch wird das nichts daran ändern, wie
+der Browser die Website anzeigen wird.</p>
+
+<p><strong>TIPP:</strong> Die Bildquelle (&quot;src&quot;) von <code>kittens.jpg</code> ist ein Pfad, relativ zur
+HTML-Datei. In diesem Fall befindet sich <code>kittens.jpg</code> im selben Verzeichnis.
+Du könntest ebenso eine Bildquelle wie <code>images/kittens.jpg</code> nutzen, solange du
+das Bild in ein Unterverzeichnis namens &quot;images&quot; legst. Du kannst sogar komplette
+URLs wie <code>http://myawesomesite.com/pictures/kittens.jpg</code> nutzen, aber es ist 
+(wenn möglich) besser sowas zu gunsten eines relativen Pfads zu vermeiden.</p>
+
+<h3>Alternativer Text</h3>
+
+<p>Es ist eine gute Angewohnheit, sogenannten &quot;alt text&quot; zur textuellen 
+Beschreibung des Bild-Inhalts zu nutzen.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;img src=&quot;kittens.jpg&quot; alt=&quot;Some kittens&quot;&gt;
+</code></pre></div>
+<p>Das ist wichtig für jeden Besucher, der keine Bilder anzeigen oder sehen kann. Zum Beispiel 
+sehbehinderte Menschen, die einen Screenreader nutzen (auch Braile-Zeile genannt).
+Jedes Bild, das nicht aus dekorativen Gründen im HTML eingebettet wird, sollte
+eine Bild-Beschreibung über das &quot;alt=&quot; Attribut bekommen.</p>
+
+<h2>Nochmal alles zusammen</h2>
+
+<p>Bis hierhin sollte unser gesamtes HTML-Dokument in etwa wie folgt aussehen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt; 
+        &lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;
+        &lt;title&gt;My first Portfolio&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;I&#39;m the title.&lt;/h1&gt;
+        &lt;p&gt;And I&#39;m a paragraph!&lt;/p&gt;
+        &lt;p&gt;
+             &lt;img src=&quot;kittens.jpg&quot; alt=&quot;All the kittens are shown here&quot;&gt;
+        &lt;/p&gt;
+        &lt;h3&gt;This is a sub-heading...&lt;/h3&gt;
+        &lt;p&gt;Well now we&#39;re just blathering on.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+<p>Bitte beachte, dass das Katzen-Bild hier in einem eigenen Paragraphen steht,
+so dass es im Browser in einer eigenen neuen Zeile dargestellt wird.</p>
+
+<p>Hoffentlich schaut das Dokument in deiner Datei vergleichbar aber nicht
+identisch aus. Vermutlich unterscheiden sich einige der Texte. Funktioniert 
+alles in deinem Browser?</p>
+
+<h2>Warum sollte man kein grafischen Editoren nutzen?</h2>
+
+<p>Grafische existieren und einige Leute benutzen diese auch. Man spricht hierbei
+oft von einem &quot;What You See Is What You Get&quot; editor oder auch einfach WYSIWYG.
+Auf lange Sicht hin betrachtet, kann ein grafischer HTML Editor sehr
+einschränken. Denn oftmals gibt es bessere und schnellere Wege Texte zu ändern.
+Außerdem Schränken WYSIWYG Editoren deine Möglichkeiten ein, wenn es darum geht
+zu verstehen, was wirklich auf deiner HTML Seite passiert, da du nur automatisch
+generierten Code nutzt.</p>
+
+<h2>Warum sollte man kein Word nutzen?</h2>
+
+<p>MS Word nutzt eine Menge Format-Informationen, die man im Web nicht versteht.
+Die Art und Weise, wie HTML Paragraphen (oder grosse Schriften, Bilder und mehr)
+positioniertunterscheidet sich total von wie HTML und CSS funktionieren. Für
+Code jeder Art, HTML und CSS eingeschlossen, ist es sehr wichtig, einen
+Text-Editor zu nutzen, damit dein Code sauber bleibt.</p>
+
+<p>Zusätzlich haben Text-Editoren oftmals den Vorteil, dass sie Hinweise zu deinem
+Code anzeigen. Man nennt sowas Syntax Highlighting.</p>
+
+<p>It is like showing nouns in red and showing the verbs in blue in a sentence.</p>
+
+<p>Das ist als so ähnlich als <span style="color:blue;">hebe</span> man die 
+<span style="color:red">Nomen</span> eines
+<span style="color:red;">Satzes</span> <span style="color:blue;">rot</span>
+und die <span style="color:red;">Verben</span> 
+<span style="color:blue;">blau</span> hervor.</p>
+
+<h2>Wie geht es weiter?</h2>
+
+<p>Du magst deine HTML-Seite in diesem Stadium etwas farblos und fade finden.
+Wie kann man sie ein bisschen mehr aufpeppen?</p>
+
+<p>Lese in der folgenden Sektion weiter, 
+<a href="style.html">your first styled Hello World!</a>.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>
+      © 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+    </p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="/html-css-beginners/de/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/html-css-beginners/de/js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Your first styled Hello World! &mdash; Basic Web Site Construction 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat:700|Open+Sans:400italic,400,700" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Basic Web Site Construction 1.0 documentation" href="../index.html" />
+    <link rel="next" title="HTML5 structure and starter CSS" href="portfolio.html" />
+    <link rel="prev" title="The template structure" href="structure.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Basic Web Site Construction</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">The template structure</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Your first styled Hello World!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio.html">HTML5 structure and starter CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio-2.html">Position, anchors and form elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extras/developertools.html">Helpful tools for HTML/CSS creation</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Your first styled Hello World!</a><ul>
+<li><a class="reference internal" href="#writing-css">Writing CSS</a></li>
+<li><a class="reference internal" href="#let-s-add-some-colors">Let&#8217;s add some colors!</a></li>
+<li><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+<li><a class="reference internal" href="#a-short-note-on-hierarchy">A short note on hierarchy</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="structure.html" title="Previous Chapter: The template structure"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; The template str...</span>
+    </a>
+  </li>
+  <li>
+    <a href="portfolio.html" title="Next Chapter: HTML5 structure and starter CSS"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">HTML5 structure ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/core/style.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="your-first-styled-hello-world">
+<h1>Your first styled Hello World!<a class="headerlink" href="#your-first-styled-hello-world" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="writing-css">
+<h2>Writing CSS<a class="headerlink" href="#writing-css" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to write CSS for a document.</p>
+<p>An internal CSS code can be typed in the head section of the code. The
+coding starts with the style tag, written just before the closing
+<tt class="docutils literal"><span class="pre">&lt;/head&gt;</span></tt> tag.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">style</span> <span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text/css&quot;</span><span class="o">&gt;</span>
+    <span class="o">....</span>
+<span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This way is good when you do not have many styles. In such a case, it is
+easier to refer to because the browser has no need to load another file.</p>
+<p>The second way to write CSS for a document is with an &#8220;external&#8221; CSS
+file.</p>
+<p>Open a new file in your editor and save it with a <tt class="docutils literal"><span class="pre">.css</span></tt> extension in the
+same directory as your HTML file (give it a name like <tt class="docutils literal"><span class="pre">styles.css</span></tt> for
+now.)</p>
+<p>Then you can link that to an HTML document using the following syntax.
+Write it just after the meta tag, before the closing <tt class="docutils literal"><span class="pre">&lt;/head&gt;</span></tt> tag.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">link</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&quot;styles.css&quot;</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This is the best way if you have a lot of CSS to write and you want to
+keep it organized.</p>
+<p><strong>TIP:</strong> The link reference (&#8220;href&#8221;) to <tt class="docutils literal"><span class="pre">&quot;styles.css&quot;</span></tt> is a path
+relative to the HTML document, same as the <tt class="docutils literal"><span class="pre">src</span></tt> for the <tt class="docutils literal"><span class="pre">&lt;img&gt;</span></tt> tag
+in the previous chapter.</p>
+</div>
+<div class="section" id="let-s-add-some-colors">
+<h2>Let&#8217;s add some colors!<a class="headerlink" href="#let-s-add-some-colors" title="Permalink to this headline">¶</a></h2>
+<p>CSS has a simple syntax. The file consists of a list of rules. Each rule
+consists of one or more selectors and a declaration block.</p>
+<p><strong>Selectors</strong> are used to declare which part of the markup a style
+applies to. Let&#8217;s take the h1 title we wrote in our HTML file and give
+it a nice red color.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">h1</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">h1</span></tt> is the selector, the HTML element we want to style. <tt class="docutils literal"><span class="pre">color</span></tt> is one of
+the properties that we can give to our selector, and <tt class="docutils literal"><span class="pre">red</span></tt> is the value
+of this property. The right syntax is:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">selector</span> <span class="p">{</span>
+    <span class="n">property</span><span class="o">:</span> <span class="n">value</span><span class="p">;</span> <span class="c">/* remember always to write a ; after your value */</span>
+    <span class="n">property</span><span class="o">:</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Refresh your browser and see how the colour of your title has changed.</p>
+<p>Isn&#8217;t it nice? To give a background colour to our paragraph, write</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="o">:</span> <span class="m">#ddd</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>Did the title text colour not change when you refreshed?</p>
+<p>Double check the name of the CSS file in the <tt class="docutils literal"><span class="pre">&lt;link&gt;</span></tt> tag, and also
+double check that the CSS file is in the same directory as the HTML
+file.</p>
+<p>Also make sure that all rules end with a <tt class="docutils literal"><span class="pre">;</span></tt> and are placed inside of the
+curly brackets of the selector you want to style.</p>
+<hr class="docutils" />
+<p>Web colours are colours used in designing web pages. Colours may be
+specified as an RGB triplet or in hexadecimal format (a hex triplet).
+Hexadecimal color codes begin with a number sign (#). This number can be
+picked from a graphics software or from some nice web tool, such as,
+<a class="reference external" href="http://www.colorpicker.com/">Color picker</a>, for example. When you
+have chosen your color, copy the number that starts with # and paste
+that in your CSS file.</p>
+<p>Good to know: <tt class="docutils literal"><span class="pre">#000</span></tt> is black and <tt class="docutils literal"><span class="pre">#fff</span></tt> is white.</p>
+<hr class="docutils" />
+<p>Let&#8217;s try now to give a nice border to our image, that we added to our
+page in the <a class="reference internal" href="structure.html"><em>first chapter</em></a>.</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">img</span> <span class="p">{</span>
+    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Here we are giving the following style to all the img tags we have: a
+1-pixel thick, solid black border to all four edges of our images. If we
+want to give the style to just one of the four edges, for example, the
+top edge, we would write</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">img</span> <span class="p">{</span>
+    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Look at the <a class="reference external" href="http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/">CSS cheat
+sheet</a>
+and give some more styles to your images.</p>
+</div>
+<div class="section" id="a-short-note-on-hierarchy">
+<h2>A short note on hierarchy<a class="headerlink" href="#a-short-note-on-hierarchy" title="Permalink to this headline">¶</a></h2>
+<p>As you learned in the <a class="reference internal" href="structure.html"><em>structure section</em></a> in HTML you can
+nest your tags inside of one another like so:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="s2">&quot;main-content&quot;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">h1</span><span class="o">&gt;</span><span class="nt">The</span> <span class="nt">h1</span> <span class="nt">tag</span> <span class="nt">indicates</span> <span class="nt">the</span> <span class="nt">primary</span> <span class="nt">header</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">document</span><span class="o">.&lt;/</span><span class="nt">h1</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Some</span> <span class="nt">text</span><span class="o">.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>In CSS you can apply hierarchical styling like this:</p>
+<div class="highlight-css"><div class="highlight"><pre><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span> <span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>So we have two rules here. The first says the text colour in paragraphs
+should be black. The second rule is more <em>specific</em> - it says the text in
+paragraphs should be red, but only if those paragraphs are inside of a
+div tag. A more specific rule always beats a less specific rule.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, OpenTechSchool.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

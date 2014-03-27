@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>OpenTechSchool – Erstellt euer eigenes Portfolio</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,400,700" rel="stylesheet" type="text/css">
+  <link href="/html-css-beginners/de/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/zenburn.min.css" rel="stylesheet" media="screen">
+  <link href="/html-css-beginners/de/css/styles.css" rel="stylesheet" media="screen">
+
+  <link rel="icon" href="/html-css-beginners/de/favicon.ico" type="image/png">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3"><a href="http://www.opentechschool.org/" target="_blank"><h1>OpenTechSchool</a></h1></div>
+          <div class="span6"><h1><a href="/html-css-beginners/de/"></a></h1></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="container-fluid">
+
+    <div class="row-fluid">
+      <h1 class="title">Erstellt euer eigenes Portfolio</h1>
+      <hr>
+    </div>
+
+    <div class="row-fluid">
+
+      <div class="span3 well sidebar-nav">
+        <ul class="nav nav-list">
+          
+            <li class="nav-header">
+              
+                <a href="/html-css-beginners/de/" alt="Get started with HTML & CSS">Home</a>
+              
+            </li>
+            
+          
+            <li class="nav-header">
+              
+                Core
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/core/structure.html" alt="From white page to a 'Hello World'">The template structure</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/style.html" alt="Understanding CSS. What is class, Id and selector">Your first styled Hello World!</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio.html" alt="HTML5 elements, float, box model and text style">Create your personal Portfolio - Part 1</a></li>
+            
+              <li><a href="/html-css-beginners/de/core/portfolio-2.html" alt="Positioning, anchors and form elements">Create your personal Portfolio - Part 2</a></li>
+            
+          
+            <li class="nav-header">
+              
+                Extras
+              
+            </li>
+            
+              <li><a href="/html-css-beginners/de/extras/developertools.html" alt="Some helpful tools for HTML/CSS creation, included in your web browser.">Browser Developer Tools</a></li>
+            
+          
+        </ul>
+      </div>
+
+      <div id="main-content" class="span9">
+        <h1>HTML5-Struktur und CSS</h1>
+
+<h2>Das Ziel</h2>
+
+<p>Wir werden eine persönliche Website mit einem Hauptmenü, dem Inhaltsbereich und einer Fußzeile erstellen.
+Den Inhalt werden wir mit einem Bild und etwas Text füllen.</p>
+
+<p>In diesem Abschnitt arbeiten wir speziell mit HTML5-Elementen, die ihr in diesem 
+<a href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/">HTML5 cheat sheet</a> finden könnt.</p>
+
+<h2>Hauptinhalt</h2>
+
+<p>Wir werden mit der Hauptseite unserer Website beginnen, da diese überwiegend das Design un den Aufbau der gesamten Website vorgibt.</p>
+
+<h2>Projektaufbau</h2>
+
+<p>Erstellt ein neues Verzeichnis (z.B. namens <em>portfolio</em>) für eure Website und kopiert alle Dateien aus dem Verzeichnis <em>example1</em> hinein. Somit müsst ihr nicht komplett von vorn anfangen und habe eine Basis, auf der ihr aufbauen könnt.</p>
+
+<p>Nachdem ihr die Dateien in <em>portfolio</em> kopiert habt könnt ihr mit dem Bearbeiten der HTML-Datei beginnen. Bitte entfernt alle Inhalte des <code>&lt;body&gt;</code>-Tags, um eine leere Seite zu erhalten. Die Meta-Informationen und der Link zur CSS-Datei bleiben hierbei erhalten.</p>
+
+<h2>Erstellen der Seite</h2>
+
+<p>Fangen wir damit an, den Inhalt unserer Seite mit einem <code>&lt;div&gt;</code>-Tag zu umgeben, um den Inhalt zentriert darstellen zu können.
+ <em>&quot;Ein <code>&lt;div&gt;</code>-Tag definiert einen Abschnitt innerhalb eines HTML-Dokuments und wird verwendet, um Elemente zu gruppieren und gemeinsam mit CSS zu formatieren, um eine Website zu gestalten.&quot;</em></p>
+
+<p>Um <code>&lt;div&gt;</code>-Elemente sinnvoll zur Gruppierung verwenden zu können, müssen wir diesen einen Namen geben, da wir diese sonst nicht einzeln ansprechen können. 
+Es gibt zwei Möglichkeiten, ihnen einen Namen zu geben: Anhand einer ID (id) oder einer Klasse (class).
+Unter der ID ist dabei etwas einzigartiges zu verstehen, das nur ein Mal verwendet wird. Eine ID wird somit nur verwendet, wenn man ihr ein einzigartiges Design, das nur für dieses eine Element gültig ist, geben möchte. 
+Klassen hingegen werden verwendet, um gleichartige Dinge zu gruppieren, die immer wieder auftreten können.</p>
+
+<p>Wir können nun mit dem Inhalt unserer Seite anfangen:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;div id=&quot;wrap-centered&quot;&gt;
+&lt;/div&gt;
+</code></pre></div>
+<p>Dieses Element soll den Hauptinhalt unserer Seite beinhalten. Da wir nur einen Hauptinhalt haben, arbeiten wir mit dem ID-Selektor.</p>
+
+<p>In der Datei styles.css können wir nun festlegen, dass der Inhalt dieses Div-Elements immer zentriert dargestellt wird. 
+Um eine Klasse via CSS aufzurufen, wird diese mit einem vorangestellten Punkt (.Klassenname) aufgerufen. IDs hingegen werden mit einer vorangestellten Raute (#) aufgerufen.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">#wrap-centered {
+    width: 100%;
+    margin: 0 auto;
+}
+</code></pre></div>
+<p>Hier legen wir fest, dass das Element eine Breite von 100% hat und mit dem Abstand (margin) wird festgelegt, dass das Element zentriert ist.
+Wir verwenden Prozentangaben bei der Breite, damit die Website sich bei niedrigeren oder höheren Bildschirmauflösungen oder bei der Größenänderung des Browser-Fensters anpasst.</p>
+
+<p>Am Anfang der <code>styles.css</code> fügen wir nun eine Beschreibung für alle Elemente (*) ein:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+</code></pre></div>
+<p>Damit wird für alle Elemente kein Innen- und Außenabstand, sowie kein Rahmen vorgegeben. 
+Das setzen dieser Ausgangswerte ist besonders wichtig, da jeder Browser für verschiedene Elemente andere Ausgangswerte verwendet und die Positionierung von Elementen somit unwahrscheinlich schwierig werden kann.</p>
+
+<h2>Navigationsmenü</h2>
+
+<p>Nun wird es zeit für unsere Navigation.
+Innerhalb unseres div-Elements erstellen wir nun unser erstes HTML5-Element.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;|&lt;/li&gt;
+        &lt;li&gt;Contact&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre></div>
+<p>Hier haben wir 3 neue Elemente: Zu allererst haben wir das <code>&lt;nav&gt;</code>-Tag, welches die Hauptnavigation einer Website beinhaltet.
+das <code>&lt;ul&gt;</code>-Tag beinhaltet eine Auflistung und jeder Eintrag, der mit <code>&lt;li&gt;</code> gekennzeichnet ist, wird in dieser Liste dargestellt. <code>&lt;ul&gt;</code> steht im übrigen für &quot;unordered list&quot;, was für eine unsortierte Liste steht. </p>
+
+<p>Eure styles.css:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">nav {
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    color: #08c;
+}
+</code></pre></div>
+<p>Nav ul ist eine Methode, um nicht alle unsortieren Listen zu beschreiben, sondern nur die, die sich innerhalb des <code>&lt;nav&gt;</code>-Elements befinden.
+Die meisten hier verwendeten Elemente kennt ihr entweder bereits oder könnt sie einfach nachschlagen. </p>
+
+<p>Jetzt möchten wir um über eine bestimmte Eigenschaft reden, welche sehr mächtig ist: float: right.</p>
+
+<p>Diese Eigenschaft sorgt dafür, dass das Element sich nicht nach dem üblichen Textfluss der Seite richtet (normalerweise sind HTML-Elemente Block-Elemente, welche nacheinander vertikal dargestellt werden). Stattdessen wird es zum weitestgehend rechten Rand des <code>&lt;div&gt;</code>-Tags, in dem es sich befindet, gesetzt.</p>
+
+<p>Wenn ihr euch das in eurem Browser anseht, ist das nav ul auf der rechten Seite platziert. 
+Float kann die Werte left oder right haben. Man sollte bei der Verwendung von float immer bedenken, dass es die Orientierung aller (nachfolgender) HTML-Elemente ändert und nicht nur des Elements, in dem man es setzt.</p>
+
+<p>Durch float kann somit der vorgegebene vertikale Text- und Objektfluss von HTML verändert werden. </p>
+
+<p>Eine weitere Eigenschaft, die den Textfluss verändert ist: display: inline. 
+Tatsächlich handelt es sich hier um keine Änderung des gesamten Textflusses, sondern sorgt lediglich dafür, dass dieses Element in der gleichen Zeile mit anderen inline-Elementen angezeigt werden kann.
+Schaut es euch in eurem Hauptmenü einmal an.
+Da mit float auch das Verhalten der nachfolgenden Elemente verändert wird, müssen wir dies für die kommenden Elemente wieder zurücksetzen. Dafür erstellen wir im HTML-Quelltext einen neuen Abschnitt.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+</code></pre></div>
+<p>Und in der CSS-Datei legen wir folgendes an:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.clear {
+    clear: both;
+}
+</code></pre></div>
+<p>Hiermit entfernen wir die float-Eigenschaften sowohl für float: right als auch für float: left. (Es kann auch nur eine Eigenschaft mit <code>clear: left</code> oder <code>clear: right</code> zurückgesetzt werden.
+Wenn man mit float experimentiert empfiehlt und Probleme mit nachfolgenden Elementen hat empfiehlt es sich immer, zu Testzwecken <code>clear: both;</code> in den entsprechenden Abschnitt einzufügen, um sicher zu gehen, dass es nicht am float liegt.</p>
+
+<h2>Die Fußzeile (footer)</h2>
+
+<p>Der footer befindet sich immer ganz am Ende einer Seite und enthält zusätzliche Informationen.
+Einen footer legt man wie folgt an:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;footer&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre></div>
+<p>Innerhalb des <code>&lt;p&gt;</code>-Tags könnt ihr schreiben was immer ihr mögt, zum Beispiel wer diese Website erstellt hat oder eure E-Mail-Adresse.</p>
+
+<p>In der CSS-Datei legt ihr dann folgendes an:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">footer {
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}
+</code></pre></div>
+<p>Man muss natürlich nicht zwingend ein Design für den footer angeben, aber um es optisch ein wenig vom Rest der Seite zu trennen empfiehlt sich ein Abstand zu Elementen darüber via: margin-top: 50px. 
+Abschließend zentrieren wir den Text im footer noch via text-align: center. Mehr gibt es hier nicht zu tun.</p>
+
+<h2>Box Model und Schriftarten</h2>
+
+<p>Jetzt können wir endlich mit dem eigentlichen Inhalt unserer Seite beginnen. Zu allererst legen wir eine Struktur fest. Es soll ein 2-Spalten-Design werden: Eine Spalte ist schmaler (auch sidebar genannt) und wird durch das <code>&lt;aside&gt;</code>-Tag beschrieben. Die andere Spalte beinhaltet unseren Hauptinhalt, welche durch das <code>&lt;section&gt;</code>-Tag umfasst wird. Innerhalb der section lässt sich der Inhalt noch in verschiedene Einträge/Beiträge, sogenannte articles, unterscheiden. 
+Um über den eigentlichen Inhalt unserer Seite mehr Kontrolle zu haben, schachteln wir diesen ebenfalls in ein weiteres div-Element namens &quot;content&quot;.</p>
+
+<p>Tipp: Wenn ihr euch bei der Größe oder genauen Anordnung eurer Elemente nicht sicher seid, so ändert einfach mal die Hintergrundfarbe, damit ihr besser sehen könnt, wo das Element anfängt und wo es aufhört.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;div class=&quot;content&quot;&gt;
+    &lt;aside&gt;
+    &lt;/aside&gt;
+    &lt;section&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+</code></pre></div>
+<p>Und in der styles.css:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">.content {
+    width: 70%;
+    margin:0 auto;
+}
+
+aside {
+    width: 35%;
+    margin: 20px;
+    border-right: 1px solid #000;
+    min-height: 300px;
+    float: left;
+}
+
+section {
+    width: 55%;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 10px;
+}
+</code></pre></div>
+<p>Zuerst haben wir dem Inhalt der Seite eine relative Breite gegeben und es in de rMitte der Seite platziert. Anschließend haben wir dem aside-Block eine Minimalgröße und Abstand zu anderen Elementen gegeben. Zusätzlich haben wir den Rand zur rechten durch einen dünnen Rahmen hervorgehoben.
+Zu guter letzt haben wir den Textfluss wie float: left geändert, um den Hauptinhalt der Seite direkt rechts von der sidebar anzuzeigen.
+Es ist wichtig, dass auch display: inline-block für die <code>&lt;section&gt;</code> gesetzt wird.</p>
+
+<p>Im aside-Block fügen wir nun ein Profilbild von uns ein, um die Seite persönlicher zu gestalten.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;aside&gt;
+    &lt;img src=&quot;me.jpg&quot;/&gt;
+&lt;/aside&gt;
+
+img {
+    width: 272px;
+    margin-top: 10px;
+}
+</code></pre></div>
+<p>Wenn ihr die Größe des Bildes nicht kennt, schaut am besten in den Dateieigenschaften nach der Größe und passt die Bildgröße im Code entsprechend an.</p>
+
+<p>Jetzt wird es Zeit für eure persönliche Vorstellung!</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;section&gt;
+    &lt;article&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Title&lt;/h1&gt;
+            &lt;h2&gt;Second title&lt;/h2&gt;
+            &lt;p&gt;Hello hello hello&lt;/p&gt;
+        &lt;/header&gt;
+    &lt;/article&gt;  
+&lt;/section&gt;
+</code></pre></div>
+<p>In diesem Beispiel haben wir innerhalb der section noch einen article eingeschoben. Jeder article hat eine Überschrift und einen Untertitel. Danach folgt der eigentliche Inhalt im <code>&lt;p&gt;</code>-Tag. Füllt die Einträge bitte mit etwas Inhalt, da wir hiermit noch weiterarbeiten werden.</p>
+
+<p>Bevor wir das Design anpassen, gilt es etwas über das Box Model zu lernen.</p>
+
+<p>Warum ist das Box Model eigentlich so wichtig?</p>
+
+<p>Jedes Element im Webdesign ist eine rechteckige Box. Man kann sie mit Innen- und Außenabständen versehen.
+In CSS wird der Begriff &quot;Box Model&quot; verwendet, wenn wir von Layout und Design sprechen.
+Das CSS Box Model umschließt HTML-Elemente, fasst sie zusammen und beschreibt sie mit Eigenschaften wie Abständen und Rändern.
+Wie setzt sich die Größe einer Box eigentlich zusammen? Eine graphische Darstellung seht ihr hier:</p>
+
+<p><img src="../images/css-box-model.gif" /></p>
+
+<p>Was genau machen diese Elemente?
+* Margin: Außenabstand außerhalb des Rahmens. Eine Hintergrundfarbe kann nicht angegeben werden. Der Abstand ist immer transparent.
+* Borders: Der Rahmen wird außerhalb des Innenabstandes (padding) gezeichnet. Ein Rahmen wird meist mit einer Farbe und der Rahmenstärke beschrieben.
+* Padding: Dies ist der Innenabstand vom Inhalt der Box zum Rahmen. Der Innenabstand hat immer die Hintergrundfarbe des Boxinhaltes selbst.
+* Content: Dies ist der Inhalt der Box, inklusive Texten, Bildern, etc.</p>
+
+<p>Margin beeinflusst nicht die Größe der Box selbst, aber ggf. die Größe anderer Boxen auf der Seite.</p>
+
+<p>Die größe einer Box berechnet sich wie folgt:</p>
+
+<p><strong>Breite:</strong> width + padding-left + padding-right + border-left + border-right</p>
+
+<p><strong>Höhe:</strong> height + padding-top + padding-bottom + border-top + border-bottom</p>
+
+<p>Tipp: Wie bereits erwähnt sollte man alle Abstände zu Beginn des Stylesheets auf 0px setzen.</p>
+
+<p>Da wir jetzt wissen, wie man die Boxgröße berechnet, sollten wir mit der Box um unseren article arbeiten.</p>
+
+<p><strong>Textdarstellung</strong></p>
+
+<p>Da unser Text noch ziemlich langwielig aussieht, sollten wir diesen etwas aufstylen.
+Bisher haben wir nur mit der Textfarbe und Textausrichtung gearbeitet.
+Andere Werte für die Textausrichtung (text-align) sind left, right and justified (Blocksatz). Der Standardwert für die Textausrichtung ist left.</p>
+
+<p>Blocksatz bietet sich an, damit der Text ein wenig aufgeräumter aussieht und die Zeilen komplett ausfüllt - wie in Tageszeitungen und Zeitschriften. Eine weitere wichtige Frage ist die nach dem Schrifttyp. Mittels der Eigenschaft font-family legt man die Schriftart fest.</p>
+
+<p>Es gibt zwei Typen von Schriftarten:
+generic family: Hierbei handelt es sich nicht um eine genaue Schriftart, sondern um eine Gruppe von Schriftarten (z.B. <code>Serif</code> oder <code>Monospace</code>, wobei es sich um Serifen-Schriftarten oder Schriftarten mit gleichbleibender Buchstabenbreite handelt)
+font family: Hierbei handelt es sich um eine konkrete Schriftart (wie z.B. <code>Times New Roman</code> oder <code>Arial</code>) </p>
+
+<p>Eine Möglichkeit ist es, eine häufige font-family zu wählen (damit die meisten Browser diese ähnlich darstellen können). Diese nennt man &quot;web-safe&quot;.</p>
+
+<p>Tipp: Falls ihr eigene Schriftarten herunterladet und diese verwendet, bedeutet das nicht, dass andere Besucher der Website diese auch zur Verfügung haben. Daher empfiehlt es sich, auf Standard-Schriftarten zurückzugreifen.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">h1, h2 {
+    font-family: Georgia, serif;
+}
+
+p {
+    font-family: &quot;Trebuchet MS&quot;, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+</code></pre></div>
+<p>Hier sehen wir direkt eine sehr wichtige Eigenschaft: font-size (die Schriftgröße). Wie ihr bereits wisst bezieht sich die Schriftgröße ebenfalls auf den gesamten Selektor. Jeder Browser verwendet eine Standard-Schriftgröße, aber um ein möglichst gutes Aussehen zu erreichen, solltet ihr diese selbst setzen.
+Man sollte allerdings niemals Schriftgrößen verwenden, um Texte wie Überschriften aussehen zu lassen oder umgekehrt. Verwendet hierfür immer die dafür vorgesehenen Tags.</p>
+
+<p>Die Schriftgröße kann in px, em oder % angegeben werden.
+Eure Bildschirmauflösung legt fest, wie viele Pixel ihr auf eurem Bildschirm seht. Ihr könnt also eine Schriftgröße von 12 Pixeln (font-size: 12px;) festlegen. Hierbei hat die Schrift dann eine Höhe von 12 Pixeln.
+Mit font-size: 50%; setzen wir die Schriftgröße auf 50% der Schriftgröße des übergeordneten Elements. em ist ebenfalls eine relative Größenangabe, wobei es sich um die relative Größe des Buchstabens &#39;m&#39; in Relation zum übergeordneten Element handelt. Es handelt sich auch um Prozentangaben, allerdings werden diese anders angegeben. 150% wären hierbei 1.5em.</p>
+
+<p>Um von der Schriftgröße in Pixeln zu em umzurechnen, rechnet man: Pixel / 16 = em.</p>
+
+<p>Zum Beispiel:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">h1 {
+    font-size: 2.5em;  /* 40px / 16 = 2.5em */
+}
+</code></pre></div>
+<p>Es ist schwierig zu sagen, wie man Größen wählen sollte, da dies sehr stark abhängig vom allgemeinen Design der Website abhängig ist.
+Derzeit lässt sich sagen, dass die Schriftgrößenangabe in em am praktischsten ist. Die meisten Anwender haben verschiedenste Endgeräte mit mehreren Auflösungen, Pixeldichte und Formaten. Hierbei sind relative Größenangaben am besten und am leichtesten anpassbar.</p>
+
+<p>Eine gute Lösung kann auch sein, die Schriftgröße im body-Element auf 100% zu setzen (font-size: 100%) und in jedem weiteren Selektor mit em zu arbeiten.</p>
+
+<p>So, jetzt ist es Zeit, die Seite nach euren Vorlieben anzupassen und zu experimentieren.
+Wenn ihr mehr als die angesprochenen Eigenschaften ausprobieren wollt, könnt ihr auf den verlinkten Seiten nachschauen oder uns ansprechen.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>
+      © 2013-2014 - made by <a href="http://www.opentechschool.org">OpenTechSchool</a> and its <a href="https://github.com/OpenTechSchool/html-css-beginners/graphs/contributors">Contributors</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="http://www.opentechschool.org/imprint.html">Impressum</a>
+    </p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="/html-css-beginners/de/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/html-css-beginners/de/js/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
