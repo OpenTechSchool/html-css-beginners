@@ -311,7 +311,7 @@ Images
 
 Headings and paragraphs give you the basics of text. What about images?
 
-Images have to kept in separate image files, outside the HTML file. Find
+Images have to be kept in separate image files, outside the HTML file. Find
 a favourite image on the web and save it in the same directory as your
 HTML file (right-click the image in your browser and "Save Image...").
 
