@@ -27,6 +27,8 @@ Textschattens die z.b. die Übersicht über die Seite verbessern oder etwas aufl
 Der Schatten wird in CSS über die Eigenschaft "text-shadow" definiert. Der Wert setzt sich zusammen aus dem
 horizontalem und vertikalem Versatz, einer Unschärfe und eines Farbwertes zusammen.
 
+Die Werte werden also folgendermaßen gelesen:
+
     text-shadow: horizontal vertikal unschärfe farbwert;
 
 Möchten wir also einen dunkelgrauen Schatten der 2 Pixel nach rechts und nach unten versetzt ist erzielen müssen wir
@@ -34,7 +36,7 @@ dies so definieren. Um keinen harten Schatten zu haben setzen wir auch eine Unsc
 
     text-shadow: 2px 2px 3px #777777;
 
-Wende diesen Effekt auf alle Überschriften (h1) an und überprüfe das Ergebnis im Browser.
+Wende diesen Effekt auf alle Überschriften **`<h1>`** an und überprüfe das Ergebnis im Browser.
 
 Ist es geglückt dann probiere mit den Einstellungen ein wenig herum. Durch ändern der Farben und Werte
 lassen sich auch andere spannende Effekte erzielen. Selbst mehrere Schatten auf einem Elemente sind möglich.
@@ -98,5 +100,41 @@ Das Internet ist nicht nur Konsummedium. Es bietet auch Möglichkeiten die Inhal
 Kommunikation über Emails (z.b. googlemail) oder Nachrichten z.b. in Foren.
 All das ist auch über Webseiten realisierbar. Um diese Eingaben möglich zu machen, verwendet man Formulare.
 
-Formular bestehen aus verschiedenen Feldern.
+Formulare müssen mit einem **`<form>`** Tag umgeben sein. Dieser sorgt dafür, das der Browser später alle Daten aus den Formularelementen nimmt und mittels eines Senden Buttons **submit** verschickt. Innerhalb des Form Elements können aber jegliche anderen HTML Elemente auftauchen. Nur ineinander verschachtelte Forms sind zu vermeiden.
+
+    <form action="mailto:ich@opentechschool.org">
+    </form>
+
+Das Form ist definiert aber leider noch leer. Das Attribut **action** definiert wohin das Formular geschickt werden soll. Hier wird entweder eine URL angeben oder wie in unserem Fall mit **mailto:** eine Emailadresse. Da die meisten Browser nicht in der Lage sind direkt selbst Emails zu versenden, wird beim klick auf die **submit** Schaltfläche daher das  Emailprogramm des Besuchers geöffnet und die Zieladresse sowie die Feldinhalte entsprechend vorausgefüllt.
+
+Beginne also jetzt ein Betreffeld mit einer Beschriftung innerhalb des **`<Form>`** hinzuzufügen. 
+
+    <label for="subject">Betreff</label>
+    <input name="subject" type="text"/>
+
+Hierdurch wird die Beschriftung "Betreff" und ein Texteingabefeld hinzugefügt. Wichtig sind hier vor allem der Name des Feldes *subject* und der Typ des Felds. Das **for** Attribut am **`<label>`** sagt dem Browser nur zu welchem Formelement die Beschriftung gehört. Eine wichtige Information speziell für Blinde und fehlsichtige Menschen.
+
+Der Name wird beim Absenden vom Browser mit übertragen. Da wir die Eingabe als Email versenden wurde hier **subject** verwendet um den Inhalt im Betreffsfeld der Email einzufügen.
+
+Bei unserem Betreff handelte es sich um den Feldtyp **text**. Es gibt noch eine Reihe weiterer Feldtypen wie Ankreuzfelder (Multiple Choice), Optionsfelder, Datumsfelder oder Zahlenfelder. Jede dieser Typen ermöglicht es die Eingabemöglichkeiten einzuschränken um Fehleingaben zu vermeiden und dem Benutzer eine bessere Bedienung zu ermöglichen.
+Wie der jeweilige Browser das genau anzeigt kann sich jedoch unterscheiden. Eine Übersicht mit Erklärung gibt es im Internet beispielsweise [hier](http://webkompetenz.wikidot.com/html-handbuch:feldtypen-kontrollierte-eingabe).
+
+Was fehlt ist ein Freitextfeld, wo der Besucher einen Text verfassen kann. Wir nennen es **body** um am Ende die Daten in den Text der Email zu bekommen.
+
+    <label for="body">Ihre Nachricht an mich:</label>
+    <textarea name="body" cols="50" rows="20"></textarea>
+
+Die Textarea ist ein großes Eingabefeld das in der Länge nicht limitiert ist. Die Attribute **cols** und **rows** sagen lediglich aus das der Browser es mit 50 Zeichen Breit und 20 Zeilen höhe darstellen soll.
+
+Kurze Kontrolle im Browser? Das Formular steht. Super! Gleich mal ausfüllen und ... ooops da fehlt ja was. Ein Knopf zum Absenden fehlt. In aktuellen Browsern erreicht man das mit dem **`<Button>`** Element.
+
+    <button type="submit">Senden</button>
+
+Der Type **submit** (Senden) bewirkt das der Browser beim Klick auf den Knopf, das umgebende Formular an den in der Action definierten Ort sendet. In unserem Falle eine Emailadresse.
+
+Versuch mal ob jetzt alle klappt und der Benutzer Dir darüber eine Email senden kann.
+
+
+
+
 
