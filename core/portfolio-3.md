@@ -238,7 +238,7 @@ Erstellt eine Kopie eurer CSS-Datei im gleichen Ordner und benennt diese in "pri
 
 Bindet nun in eurem HTML-Dokument die neu erstellte CSS-Datei im `<head>`-Bereich mit folgender Zeile ein:
 
-	<link rel="stylesheet" type="text/css"; media="print" href="print.css">
+	<link rel="stylesheet" type="text/css" media="print" href="print.css">
 
 Durch die Medienangabe "print" wird festgelegt, dass dieses Stylesheet speziell zum Druck verwendet wird.
 
