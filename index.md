@@ -59,10 +59,14 @@ dir diese Resourcen dabei helfen.
   Benutzt HTML um aus einer blanken Seite ein 'Hello World'-Beispiel zu machen.
 * [Your first styled Hello World!](core/style.html) - 
   CSS Verständnis. Was ist eine Klasse, eine ID und ein Selektor.
-* [Create your personal Portfolio - Part 1.](core/portfolio.html) - 
+* [Erstelle Dein perönliches Portfolio - Part 1.](core/portfolio.html) - 
   HTML5-Elemente, float, Box Modell und Schrift-Gestaltung.
-* [Create your personal Portfolio - Part 2.](core/portfolio-2.html) - 
+* [Erstelle Dein perönliches Portfolio - Part 2.](core/portfolio-2.html) - 
   Positionierung, Web-Links und Formular-Elemente.
+* [Erstelle Dein perönliches Portfolio - Part 3.](core/portfolio-3.html) - 
+  Tabellen und Listen 
+* [Effekte und Formular](core/effects.html) - 
+  Effekte und Formulare
 
 ## Cheat Sheet
 
@@ -72,10 +76,15 @@ während du dich mit dem Workshop beschäfftigst und insbesondere darüber hinau
 
 * <a href="http://www.smashingmagazine.com/2009/07/06/html-5-cheat-sheet-pdf/" target= "_blank" > 
   HTML5 </a> - Benutze diesen Cheat Sheet um neue HTML-Elemente auszuprobieren.
+* <a href="http://tinyurl.com/plb4eju" target= "_blank" > 
+  HTML5 in Kurzform (DE)</a> - Benutze diesen Cheat Sheet um eine kurze Übersicht der wichtigsten Elemente zu erhalten.
 * <a href="http://coding.smashingmagazine.com/2009/07/13/css-3-cheat-sheet-pdf/" target= "_blank" >
   CSS3</a> - Benutze diesen Cheat Sheet um neue CSS-Selektoren kennen zu lernen.
+* <a href="http://www.cheatography.com/karionis/cheat-sheets/css2-1-deutsch/" target= "_blank" >
+  CSS (DE)</a> - Eine kurze Übersicht der wichtigsten Selektoren.
 * <a href="http://csslint.net/" target= "_blank" > 
   CSS LINT</a> - Diese Seite prüft deinen CSS Code und zeigt eventuelle Fehler auf.
+
 
 
 ## Referenz-Materialien

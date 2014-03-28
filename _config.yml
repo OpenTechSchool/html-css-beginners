@@ -10,18 +10,24 @@ map:
  - title: Core
    caption: The 'mandatory' workshop content
    subpages:
-     - title: The template structure
+     - title: Die Template Struktur
        path: /core/structure.html
-       caption: From white page to a 'Hello World'
-     - title: Your first styled Hello World!
+       caption: Von der weißen Seite zum 'Hallo Welt'
+     - title: Erstelle Dein erstes formatiertes 'Hallo Welt'
        path: /core/style.html
-       caption: Understanding CSS. What is class, Id and selector
-     - title: Create your personal Portfolio - Part 1
+       caption: CSS Verstehen. Was ist sind Klasse, Id und Selector
+     - title: Erstelle Dein persönliches Portfolio - Teil 1
        path: /core/portfolio.html
-       caption: HTML5 elements, float, box model and text style
-     - title: Create your personal Portfolio - Part 2
+       caption: HTML5 elemente, float, box model und text style
+     - title: Erstelle Dein persönliches Portfolio - Teil 2
        path: /core/portfolio-2.html
-       caption: Positioning, anchors and form elements
+       caption: Positionierung, Anker and Formelemente
+     - title: Erstelle Dein persönliches Portfolio - Teil 3
+       path: /core/portfolio-3.html
+       caption: Positionierung, Anker and Formelemente
+     - title: Effekte und Formulare
+       path: /core/effects.html
+       caption: Schatten, Runde ecken, Hover, Formulare
  - title: Extras
    caption: Interesting or useful extras
    subpages:

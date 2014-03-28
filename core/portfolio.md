@@ -52,7 +52,7 @@ Um eine Klasse via CSS aufzurufen, wird diese mit einem vorangestellten Punkt (.
 Hier legen wir fest, dass das Element eine Breite von 100% hat und mit dem Abstand (margin) wird festgelegt, dass das Element zentriert ist.
 Wir verwenden Prozentangaben bei der Breite, damit die Website sich bei niedrigeren oder höheren Bildschirmauflösungen oder bei der Größenänderung des Browser-Fensters anpasst.
 
-Am Anfang der `styles.css` fügen wir nun eine Beschreibung für alle Elemente (*) ein:
+Am Anfang der `styles.css` fügen wir nun eine Beschreibung für alle Elemente (`*`) ein:
 
     * {
         padding: 0;
