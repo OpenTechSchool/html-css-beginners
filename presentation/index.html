@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>HTML and CSS for beginners</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="themes/gim/styles/style.css">
+</head>
+
+<body class="list">
+
+  <header class="meta">
+		<hgroup class="container">
+			<h1>Welcome to Open Tech School</span></h1>
+		</hgroup>
+  </header>
+
+  <section class="slides">
+
+		<header class="caption">
+			<h1>HTML and CSS for beginners</h1>
+		</header>
+
+		<div class="slide" id="HistoryOfInternet"><div>
+			<section>
+				<header>
+					<h2>A short history of the Internet</h2>
+				</header>
+				<ul>
+					<li>Developed at CERN</li>
+					<li>Tim Berners-Lee</li>
+					<li>Starting in 1989</li>
+					<li>Computer service system for communication</li>
+					<li>Not only make information available, but link it</li>
+					<li>Thus creating a web of informations</li>
+				</ul>
+			</section>
+		</div></div>	
+
+		<div class="slide" id="History"><div>
+			<section>
+				<header>
+					<h2>History of HTML I</h2>
+				</header>
+				<ul>
+					<li>Developed at CERN (again)</li>
+					<li>Tim Berners-Lee</li>
+					<li>In 1980 first hypertext System "Enquire" for personal use</li>
+					<li>Late 1980s Hypercards for Macintosh</li>
+					<li>In 1990 Berners-Lee developed browser and server</li>
+					<li>Never officially adopted by CERN</li>
+				</ul>
+			</section>
+		</div></div>
+
+		<div class="slide" id="HistoryII"><div>
+			<section>
+				<header>
+					<h2>History of HTML II</h2>
+				</header>
+				<ul>
+					<li>1991: Open discussions about HTML in the Internet</li>
+					<li>1992: Two copies of a free web browser beeing downloaded</li>
+					<li>1993: Companies thought the Internet was for academics</li>
+					<li>1994: First WWW-Conference in Geneva, Netscape is formed, W3C</li>
+					<li>1995: MS Internet Explorer</li>
+				</ul>
+			</section>
+		</div></div>
+
+		<div class="slide cover w" id="HTML"><div>
+			<section>
+				<img src="pictures/webstandards/html.jpg" alt="">
+			</section>
+			<a href="http://www.flickr.com/photos/f-l-e-x/3096005116/" class="source">Foto: Sjoerd van Oosten</a>		
+		</div></div>	
+
+		<div class="slide cover dark" id="DocumentI"><div>
+			<section>
+				<header>
+					<h2>A simple HTML-Document</h2>
+				</header>
+
+				<pre>
+					<code class="lots-of-code">&lt;!doctype html&gt;</code>
+					<code class="lots-of-code">&lt;html&gt;</code>
+					<code class="lots-of-code">  <mark>&lt;head&gt;</mark></code>
+					<code class="lots-of-code">    &lt;title&gt;Das ist der Titel der Seite&lt;/title&gt;</code>
+					<code class="lots-of-code">  <mark>&lt;/head&gt;</mark></code>
+					<code class="lots-of-code">  <mark>&lt;body&gt;</mark></code>
+					<code class="lots-of-code">    &lt;h1&gt;Das ist die Überschrift&lt;/h1&gt;</code>
+					<code class="lots-of-code">    &lt;p&gt;Das ist etwas Fließtext.&lt;/p&gt;</code>
+					<code class="lots-of-code">  <mark>&lt;/body&gt;</mark></code>
+					<code class="lots-of-code">&lt;/html&gt;</code>					
+				</pre>	
+					
+			</section>
+		</div></div>
+
+		<div class="slide cover h" id="PlainHTML"><div>
+			<section>
+				<header>
+				</header>
+				<img src="pictures/webstandards/plainhtml.png" alt="">
+			</section>
+		</div></div>
+
+		<div class="slide cover w" id="MM"><div>
+			<header>
+				<h2>Fear not. For there is CSS!</h2>
+			</header>
+		    <section>
+		    	<img src="pictures/webstandards/mm.jpg" alt="">
+		    </section>
+		    <a href="http://www.flickr.com/photos/cowfish/20709381/" class="source">Foto: Billy Abbott</a>    
+	    </div></div>
+
+		<div class="slide" id="DarstellungVsContent"><div>
+		<section>
+			<header>
+				<h2>Separation of structure and presentation</h2>
+			</header>
+			<dl>
+				<dd><b>Structure</b> – HTML</dd>
+				<dt>– logical structure of content</dt>
+				<dd><b>Presentation</b> – CSS</dd>
+				<dt>– visual presentation</dt>
+			</dl>
+		</section>
+		</div></div>
+
+		<div class="slide cover h" id="HTMLstyled"><div>
+			<section>
+				<header>
+				</header>
+				<img src="pictures/webstandards/htmltobestyled.png" alt="">
+			</section>
+		</div></div>
+
+		<div class="slide" id="Presentation"><div>
+			<section>
+				<pre>
+					<code class="lots-of-code">	<mark>body</mark> {</code>
+					<code class="lots-of-code">		<mark>font-family</mark> : sans-serif;</code>
+					<code class="lots-of-code">	}</code>
+					<code class="lots-of-code">	<mark>h1</mark> {</code>
+					<code class="lots-of-code">		<mark>color</mark> : green;</code>
+					<code class="lots-of-code">	}</code>
+					<code class="lots-of-code">	<mark>p</mark> {</code>
+					<code class="lots-of-code">		<mark>padding</mark> : 20px;</code>
+					<code class="lots-of-code">		<mark>background-color</mark> : black;</code>
+					<code class="lots-of-code">		<mark>color</mark> : white; </code>
+					<code class="lots-of-code">	}</code>
+				</pre>
+			</section>			
+		</div></div>	
+
+		<div class="slide cover h" id="PlainCSS"><div>
+			<section>
+				<header>
+				</header>
+				<img src="pictures/webstandards/plaincss.png" alt="">
+			</section>
+		</div></div>
+
+	    <div class="slide cover" id="PE"><div>
+	      <section>
+	        <header>
+	          <h2>Progressive Enhancement</h2>
+	        </header>
+	        <img src="pictures/webstandards/progressive-enhancement.png" alt="">
+	      </section>
+	    </div></div> 
+	    
+	    <div class="slide" id="BlockQuote"><div>
+	      <section>
+	        <header>
+	          <h2>Graceful Degradation</h2>
+	        </header>
+	        <blockquote>
+	          <p>
+	            An Escalator can never break.<br/> 
+	            It can only become stairs.
+	          </p>
+	        </blockquote>
+	        <p>– A HTML-Document works without CSS!</p>
+	      </section>
+	    </div></div>		
+
+		<div class="slide" id="Examples"><div>
+			<section>
+				<header>
+					<h2>Examples</h2>
+				</header>
+				<a href="http://www.themostamazingwebsiteontheinternet.com/">Themostamazingwebsiteontheinternet</a><br>
+				<a href="http://www.nyan.cat/">Nyan Cat</a></br>
+				<a href="http://www.hasthelargehadroncolliderdestroyedtheworldyet.com/">Hasthelargehydroncolliderdestroyedtheworldyet</a>
+			</section>
+		</div></div>
+
+		<div class="slide" id="ThankYou"><div>
+			<section>
+				<header>
+					<h2>Any questions?</h2>
+				</header>
+				<p>Feel free to ask us!<br/>
+			</section>
+		</div></div>
+
+	</section>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="scripts/script.js"></script>
+	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
+</body>
+</html>

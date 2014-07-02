@@ -1,0 +1,30 @@
+permalinks: title
+baseurl: /html-css-beginners
+markdown: redcarpet
+encoding: UTF-8
+
+map:
+ - title: Home
+   path: /
+   caption: Get started with HTML & CSS
+ - title: Core
+   caption: The 'mandatory' workshop content
+   subpages:
+     - title: The template structure
+       path: /core/structure.html
+       caption: From white page to a 'Hello World'
+     - title: Your first styled Hello World!
+       path: /core/style.html
+       caption: Understanding CSS. What is class, Id and selector
+     - title: Create your personal Portfolio - Part 1
+       path: /core/portfolio.html
+       caption: HTML5 elements, float, box model and text style
+     - title: Create your personal Portfolio - Part 2
+       path: /core/portfolio-2.html
+       caption: Positioning, anchors and form elements
+ - title: Extras
+   caption: Interesting or useful extras
+   subpages:
+     - title: Browser Developer Tools
+       path: /extras/developertools.html
+       caption: Some helpful tools for HTML/CSS creation, included in your web browser.
