@@ -32,27 +32,28 @@ This material is built with the help of [Sphinx][sphinx], [Invoke][invoke],
 and translated with [Transifex][transifex].
 
 To get started, you should have the python packages needed. To do this, use
-[pip][pip] like so:
+[pip][pip] like so (probably in a virtualenv you've made to work on this):
 
     pip install -r requirements.txt
 
-You can then use the invoke task runner to run things. E.g, build the docs:
+You can then use the invoke task runner to run things. E.g, build the project
+from the source files you've edited:
 
     invoke build -l en
 
-(builds them in English). To serve the built files on your localhost,
+(builds them in English). To serve the built sphinx project on your own computer,
 you can run:
 
     invoke serve
 
-And visit the url that your console prints to read the result.
+And visit the url that your console prints to view the result.
 
-The `setup` invoke task should git checkout the gh-pages correctly should
+The `setup` invoke task should git checkout the `gh-pages` branch correctly, should
 you wish to push to that branch to publish a new version of the workshop.
 
 Translation should be coming soon.
 
 [sphinx]: https://pypi.python.org/pypi/Sphinx/
-[invoke]: https://pypi.python.org/pypi/invoke/0.7.0
+[invoke]: https://pypi.python.org/pypi/invoke/
 [transifex]: http://transifex.com/
-[pip]: https://pypi.python.org/pypi/pip/
+[pip]: https://pip.pypa.io/en/latest/
