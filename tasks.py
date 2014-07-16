@@ -24,6 +24,7 @@ SERVE_PORT = 8000
 
 @task
 def clean(language=None, target=MAIN_TARGET):
+    """Clean the sphinx build folder"""
     if language is not None:
         run('rm -rf %s' % path.join(BUILD_DIR, target, language))
     else:
@@ -32,6 +33,7 @@ def clean(language=None, target=MAIN_TARGET):
 
 @task('clean')
 def setup():
+    """Recreate the build html folder, under a new gh-pages branch checkout"""
     target_dir = path.join(BUILD_DIR, MAIN_TARGET)
     run('mkdir -p %s' % target_dir)
     run('git clone %s -b %s --single-branch %s' %
@@ -40,6 +42,7 @@ def setup():
 
 @task
 def build(language=None, target=MAIN_TARGET):
+    """Build the sphinx project for a specific language"""
     if language is None:
         print('Please build a specific language; one of: %s' %
               ', '.join(LANGUAGES))
