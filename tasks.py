@@ -18,7 +18,7 @@ LOCALE_DIR = path.join(SOURCE_DIR, 'locale',
                        '%s', 'LC_MESSAGES')
 LANGUAGES = set(['en', 'de'])
 MAIN_TARGET = 'html'
-REPOSITORY = 'git@github.com:OpenTechSchool/html-css-beginners.git'
+REPOSITORY = 'git@github.com:%s/html-css-beginners.git'
 SERVE_PORT = 8000
 
 
@@ -31,13 +31,14 @@ def clean(language=None, target=MAIN_TARGET):
         run('rm -rf %s' % path.join(BUILD_DIR, target))
 
 
-@task('clean')
-def setup():
+@task(clean)
+def setup(owner='OpenTechSchool'):
     """Recreate the build html folder, under a new gh-pages branch checkout"""
+    repo = REPOSITORY % owner
     target_dir = path.join(BUILD_DIR, MAIN_TARGET)
     run('mkdir -p %s' % target_dir)
     run('git clone %s -b %s --single-branch %s' %
-        (REPOSITORY, 'gh-pages', target_dir))
+        (repo, 'gh-pages', target_dir))
 
 
 @task
@@ -65,6 +66,7 @@ def build(language=None, target=MAIN_TARGET):
         run('cp %s %s' % (static_files, target_dir))
 
 
+@task
 def serve(port=SERVE_PORT, serve_dir=None):
     """Run a web server to serve the built project"""
     if serve_dir is None:
