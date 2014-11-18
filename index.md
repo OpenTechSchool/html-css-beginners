@@ -8,7 +8,7 @@ title: Get started with HTML & CSS
 # Willkommen
 
 Willkommen zum Open Tech School HTML & CSS Workshop! Dieser Kurs is eine simple
-und zusammengesfasste Anleitung, um Beginnern beim Lernen von HTML und CSS 
+und zusammengefasste Anleitung, um Beginnern beim Lernen von HTML und CSS 
 zu helfen.
 
 **HTML** oder auch **HyperText Markup Language** ist eine Beschreibungs-Sprache,
